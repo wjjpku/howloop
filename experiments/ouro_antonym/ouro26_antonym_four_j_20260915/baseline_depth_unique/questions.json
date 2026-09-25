@@ -1,0 +1,2306 @@
+[
+  {
+    "id": "validation-0-5",
+    "kind": "cancellation",
+    "sequence_id": 0,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: rich poor wet dead alive cold dirty clean heavy light hot dry old slow fast full empty young happy sad open closed far near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "cold hot"
+  },
+  {
+    "id": "validation-0-6",
+    "kind": "cancellation",
+    "sequence_id": 0,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: rich poor wet dead alive cold dirty clean heavy light hot dry old slow fast full empty young happy sad open closed far near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "wet dry"
+  },
+  {
+    "id": "validation-0-7",
+    "kind": "cancellation",
+    "sequence_id": 0,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: rich poor wet dead alive cold dirty clean heavy light hot dry old slow fast full empty young happy sad open closed far near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "slow fast"
+  },
+  {
+    "id": "validation-0-8",
+    "kind": "cancellation",
+    "sequence_id": 0,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: rich poor wet dead alive cold dirty clean heavy light hot dry old slow fast full empty young happy sad open closed far near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-1-5",
+    "kind": "cancellation",
+    "sequence_id": 1,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: closed full empty open near far hot cold poor clean dirty dry sad happy wet rich old dead slow light heavy fast alive young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "clean dirty"
+  },
+  {
+    "id": "validation-1-6",
+    "kind": "cancellation",
+    "sequence_id": 1,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: closed full empty open near far hot cold poor clean dirty dry sad happy wet rich old dead slow light heavy fast alive young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "sad happy"
+  },
+  {
+    "id": "validation-1-7",
+    "kind": "cancellation",
+    "sequence_id": 1,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: closed full empty open near far hot cold poor clean dirty dry sad happy wet rich old dead slow light heavy fast alive young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "dry wet"
+  },
+  {
+    "id": "validation-1-8",
+    "kind": "cancellation",
+    "sequence_id": 1,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: closed full empty open near far hot cold poor clean dirty dry sad happy wet rich old dead slow light heavy fast alive young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-2-5",
+    "kind": "cancellation",
+    "sequence_id": 2,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: old young full far near slow happy sad fast dirty clean empty closed open wet cold hot dry rich poor light alive dead heavy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "dirty clean"
+  },
+  {
+    "id": "validation-2-6",
+    "kind": "cancellation",
+    "sequence_id": 2,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: old young full far near slow happy sad fast dirty clean empty closed open wet cold hot dry rich poor light alive dead heavy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-2-7",
+    "kind": "cancellation",
+    "sequence_id": 2,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: old young full far near slow happy sad fast dirty clean empty closed open wet cold hot dry rich poor light alive dead heavy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-2-8",
+    "kind": "cancellation",
+    "sequence_id": 2,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: old young full far near slow happy sad fast dirty clean empty closed open wet cold hot dry rich poor light alive dead heavy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "cold hot"
+  },
+  {
+    "id": "validation-3-5",
+    "kind": "cancellation",
+    "sequence_id": 3,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dry wet hot cold clean fast young dead alive old heavy light sad happy far near slow full empty closed open dirty rich poor. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-3-6",
+    "kind": "cancellation",
+    "sequence_id": 3,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dry wet hot cold clean fast young dead alive old heavy light sad happy far near slow full empty closed open dirty rich poor. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "sad happy"
+  },
+  {
+    "id": "validation-3-7",
+    "kind": "cancellation",
+    "sequence_id": 3,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dry wet hot cold clean fast young dead alive old heavy light sad happy far near slow full empty closed open dirty rich poor. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-3-8",
+    "kind": "cancellation",
+    "sequence_id": 3,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dry wet hot cold clean fast young dead alive old heavy light sad happy far near slow full empty closed open dirty rich poor. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "fast slow"
+  },
+  {
+    "id": "validation-4-5",
+    "kind": "cancellation",
+    "sequence_id": 4,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: near closed open full dead alive sad dirty clean happy rich poor empty light heavy young slow wet dry hot cold fast old far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-4-6",
+    "kind": "cancellation",
+    "sequence_id": 4,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: near closed open full dead alive sad dirty clean happy rich poor empty light heavy young slow wet dry hot cold fast old far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-4-7",
+    "kind": "cancellation",
+    "sequence_id": 4,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: near closed open full dead alive sad dirty clean happy rich poor empty light heavy young slow wet dry hot cold fast old far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "light heavy"
+  },
+  {
+    "id": "validation-4-8",
+    "kind": "cancellation",
+    "sequence_id": 4,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: near closed open full dead alive sad dirty clean happy rich poor empty light heavy young slow wet dry hot cold fast old far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "wet dry"
+  },
+  {
+    "id": "validation-5-5",
+    "kind": "cancellation",
+    "sequence_id": 5,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: sad happy alive dead young dirty clean far near rich poor open empty full closed old wet dry hot cold slow light heavy fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-5-6",
+    "kind": "cancellation",
+    "sequence_id": 5,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: sad happy alive dead young dirty clean far near rich poor open empty full closed old wet dry hot cold slow light heavy fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "empty full"
+  },
+  {
+    "id": "validation-5-7",
+    "kind": "cancellation",
+    "sequence_id": 5,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: sad happy alive dead young dirty clean far near rich poor open empty full closed old wet dry hot cold slow light heavy fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-5-8",
+    "kind": "cancellation",
+    "sequence_id": 5,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: sad happy alive dead young dirty clean far near rich poor open empty full closed old wet dry hot cold slow light heavy fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-6-5",
+    "kind": "cancellation",
+    "sequence_id": 6,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: fast dry wet hot clean dirty rich near far light heavy poor cold full open closed alive dead young old empty slow happy sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-6-6",
+    "kind": "cancellation",
+    "sequence_id": 6,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: fast dry wet hot clean dirty rich near far light heavy poor cold full open closed alive dead young old empty slow happy sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-6-7",
+    "kind": "cancellation",
+    "sequence_id": 6,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: fast dry wet hot clean dirty rich near far light heavy poor cold full open closed alive dead young old empty slow happy sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-6-8",
+    "kind": "cancellation",
+    "sequence_id": 6,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: fast dry wet hot clean dirty rich near far light heavy poor cold full open closed alive dead young old empty slow happy sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-7-5",
+    "kind": "cancellation",
+    "sequence_id": 7,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: slow old young fast poor dirty dead alive clean rich near far cold hot sad closed open happy empty full dry wet heavy light. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-7-6",
+    "kind": "cancellation",
+    "sequence_id": 7,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: slow old young fast poor dirty dead alive clean rich near far cold hot sad closed open happy empty full dry wet heavy light. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "near far"
+  },
+  {
+    "id": "validation-7-7",
+    "kind": "cancellation",
+    "sequence_id": 7,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: slow old young fast poor dirty dead alive clean rich near far cold hot sad closed open happy empty full dry wet heavy light. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "cold hot"
+  },
+  {
+    "id": "validation-7-8",
+    "kind": "cancellation",
+    "sequence_id": 7,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: slow old young fast poor dirty dead alive clean rich near far cold hot sad closed open happy empty full dry wet heavy light. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-8-5",
+    "kind": "cancellation",
+    "sequence_id": 8,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: full rich sad happy far near poor wet hot cold dry alive dead clean dirty empty closed open light fast slow heavy old young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "wet dry"
+  },
+  {
+    "id": "validation-8-6",
+    "kind": "cancellation",
+    "sequence_id": 8,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: full rich sad happy far near poor wet hot cold dry alive dead clean dirty empty closed open light fast slow heavy old young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-8-7",
+    "kind": "cancellation",
+    "sequence_id": 8,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: full rich sad happy far near poor wet hot cold dry alive dead clean dirty empty closed open light fast slow heavy old young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "clean dirty"
+  },
+  {
+    "id": "validation-8-8",
+    "kind": "cancellation",
+    "sequence_id": 8,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: full rich sad happy far near poor wet hot cold dry alive dead clean dirty empty closed open light fast slow heavy old young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-9-5",
+    "kind": "cancellation",
+    "sequence_id": 9,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: open far dirty clean dead poor rich hot wet dry cold alive empty full near closed young light heavy old slow sad happy fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "dead alive"
+  },
+  {
+    "id": "validation-9-6",
+    "kind": "cancellation",
+    "sequence_id": 9,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: open far dirty clean dead poor rich hot wet dry cold alive empty full near closed young light heavy old slow sad happy fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "empty full"
+  },
+  {
+    "id": "validation-9-7",
+    "kind": "cancellation",
+    "sequence_id": 9,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: open far dirty clean dead poor rich hot wet dry cold alive empty full near closed young light heavy old slow sad happy fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-9-8",
+    "kind": "cancellation",
+    "sequence_id": 9,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: open far dirty clean dead poor rich hot wet dry cold alive empty full near closed young light heavy old slow sad happy fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-10-5",
+    "kind": "cancellation",
+    "sequence_id": 10,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: closed open rich poor near fast slow young heavy light old hot cold far full empty alive dead wet dry sad happy dirty clean. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-10-6",
+    "kind": "cancellation",
+    "sequence_id": 10,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: closed open rich poor near fast slow young heavy light old hot cold far full empty alive dead wet dry sad happy dirty clean. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-10-7",
+    "kind": "cancellation",
+    "sequence_id": 10,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: closed open rich poor near fast slow young heavy light old hot cold far full empty alive dead wet dry sad happy dirty clean. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "near far"
+  },
+  {
+    "id": "validation-10-8",
+    "kind": "cancellation",
+    "sequence_id": 10,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: closed open rich poor near fast slow young heavy light old hot cold far full empty alive dead wet dry sad happy dirty clean. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-11-5",
+    "kind": "cancellation",
+    "sequence_id": 11,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: poor rich sad heavy hot cold full empty light closed open young old happy dirty clean dead alive slow fast dry wet near far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-11-6",
+    "kind": "cancellation",
+    "sequence_id": 11,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: poor rich sad heavy hot cold full empty light closed open young old happy dirty clean dead alive slow fast dry wet near far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-11-7",
+    "kind": "cancellation",
+    "sequence_id": 11,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: poor rich sad heavy hot cold full empty light closed open young old happy dirty clean dead alive slow fast dry wet near far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "sad happy"
+  },
+  {
+    "id": "validation-11-8",
+    "kind": "cancellation",
+    "sequence_id": 11,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: poor rich sad heavy hot cold full empty light closed open young old happy dirty clean dead alive slow fast dry wet near far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "dirty clean"
+  },
+  {
+    "id": "validation-12-5",
+    "kind": "cancellation",
+    "sequence_id": 12,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: happy sad dirty poor empty full old hot cold young heavy light open alive dead closed rich clean fast near wet dry far slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-12-6",
+    "kind": "cancellation",
+    "sequence_id": 12,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: happy sad dirty poor empty full old hot cold young heavy light open alive dead closed rich clean fast near wet dry far slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-12-7",
+    "kind": "cancellation",
+    "sequence_id": 12,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: happy sad dirty poor empty full old hot cold young heavy light open alive dead closed rich clean fast near wet dry far slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-12-8",
+    "kind": "cancellation",
+    "sequence_id": 12,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: happy sad dirty poor empty full old hot cold young heavy light open alive dead closed rich clean fast near wet dry far slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-13-5",
+    "kind": "cancellation",
+    "sequence_id": 13,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: happy wet slow fast dry open closed sad far hot cold near alive full empty dead poor old young rich light dirty clean heavy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-13-6",
+    "kind": "cancellation",
+    "sequence_id": 13,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: happy wet slow fast dry open closed sad far hot cold near alive full empty dead poor old young rich light dirty clean heavy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-13-7",
+    "kind": "cancellation",
+    "sequence_id": 13,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: happy wet slow fast dry open closed sad far hot cold near alive full empty dead poor old young rich light dirty clean heavy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-13-8",
+    "kind": "cancellation",
+    "sequence_id": 13,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: happy wet slow fast dry open closed sad far hot cold near alive full empty dead poor old young rich light dirty clean heavy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-14-5",
+    "kind": "cancellation",
+    "sequence_id": 14,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: young old rich hot cold far closed open dead wet dry alive near poor heavy light dirty clean happy sad full empty slow fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "dead alive"
+  },
+  {
+    "id": "validation-14-6",
+    "kind": "cancellation",
+    "sequence_id": 14,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: young old rich hot cold far closed open dead wet dry alive near poor heavy light dirty clean happy sad full empty slow fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-14-7",
+    "kind": "cancellation",
+    "sequence_id": 14,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: young old rich hot cold far closed open dead wet dry alive near poor heavy light dirty clean happy sad full empty slow fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-14-8",
+    "kind": "cancellation",
+    "sequence_id": 14,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: young old rich hot cold far closed open dead wet dry alive near poor heavy light dirty clean happy sad full empty slow fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-15-5",
+    "kind": "cancellation",
+    "sequence_id": 15,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: alive dead sad heavy full empty light open near far closed happy clean hot cold old young dry wet dirty fast rich poor slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-15-6",
+    "kind": "cancellation",
+    "sequence_id": 15,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: alive dead sad heavy full empty light open near far closed happy clean hot cold old young dry wet dirty fast rich poor slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "sad happy"
+  },
+  {
+    "id": "validation-15-7",
+    "kind": "cancellation",
+    "sequence_id": 15,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: alive dead sad heavy full empty light open near far closed happy clean hot cold old young dry wet dirty fast rich poor slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-15-8",
+    "kind": "cancellation",
+    "sequence_id": 15,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: alive dead sad heavy full empty light open near far closed happy clean hot cold old young dry wet dirty fast rich poor slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-16-5",
+    "kind": "cancellation",
+    "sequence_id": 16,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: poor rich hot dead dry far near wet happy sad alive cold light heavy closed clean dirty open fast slow empty young old full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "dead alive"
+  },
+  {
+    "id": "validation-16-6",
+    "kind": "cancellation",
+    "sequence_id": 16,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: poor rich hot dead dry far near wet happy sad alive cold light heavy closed clean dirty open fast slow empty young old full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-16-7",
+    "kind": "cancellation",
+    "sequence_id": 16,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: poor rich hot dead dry far near wet happy sad alive cold light heavy closed clean dirty open fast slow empty young old full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "light heavy"
+  },
+  {
+    "id": "validation-16-8",
+    "kind": "cancellation",
+    "sequence_id": 16,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: poor rich hot dead dry far near wet happy sad alive cold light heavy closed clean dirty open fast slow empty young old full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "clean dirty"
+  },
+  {
+    "id": "validation-17-5",
+    "kind": "cancellation",
+    "sequence_id": 17,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dirty clean dry light happy sad heavy alive dead wet old young hot full rich near far poor slow fast closed open empty cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "dry wet"
+  },
+  {
+    "id": "validation-17-6",
+    "kind": "cancellation",
+    "sequence_id": 17,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dirty clean dry light happy sad heavy alive dead wet old young hot full rich near far poor slow fast closed open empty cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-17-7",
+    "kind": "cancellation",
+    "sequence_id": 17,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dirty clean dry light happy sad heavy alive dead wet old young hot full rich near far poor slow fast closed open empty cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "near far"
+  },
+  {
+    "id": "validation-17-8",
+    "kind": "cancellation",
+    "sequence_id": 17,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dirty clean dry light happy sad heavy alive dead wet old young hot full rich near far poor slow fast closed open empty cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-18-5",
+    "kind": "cancellation",
+    "sequence_id": 18,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: hot cold full light heavy empty far young alive dead old near sad open closed rich poor dry slow fast wet dirty clean happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-18-6",
+    "kind": "cancellation",
+    "sequence_id": 18,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: hot cold full light heavy empty far young alive dead old near sad open closed rich poor dry slow fast wet dirty clean happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-18-7",
+    "kind": "cancellation",
+    "sequence_id": 18,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: hot cold full light heavy empty far young alive dead old near sad open closed rich poor dry slow fast wet dirty clean happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-18-8",
+    "kind": "cancellation",
+    "sequence_id": 18,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: hot cold full light heavy empty far young alive dead old near sad open closed rich poor dry slow fast wet dirty clean happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-19-5",
+    "kind": "cancellation",
+    "sequence_id": 19,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: near old sad happy young dirty clean closed open far cold slow fast rich poor alive dead full empty dry heavy light wet hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "near far"
+  },
+  {
+    "id": "validation-19-6",
+    "kind": "cancellation",
+    "sequence_id": 19,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: near old sad happy young dirty clean closed open far cold slow fast rich poor alive dead full empty dry heavy light wet hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "slow fast"
+  },
+  {
+    "id": "validation-19-7",
+    "kind": "cancellation",
+    "sequence_id": 19,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: near old sad happy young dirty clean closed open far cold slow fast rich poor alive dead full empty dry heavy light wet hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-19-8",
+    "kind": "cancellation",
+    "sequence_id": 19,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: near old sad happy young dirty clean closed open far cold slow fast rich poor alive dead full empty dry heavy light wet hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-20-5",
+    "kind": "cancellation",
+    "sequence_id": 20,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: happy slow young old fast sad open clean dirty closed full empty rich poor hot cold heavy dead alive near far light dry wet. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-20-6",
+    "kind": "cancellation",
+    "sequence_id": 20,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: happy slow young old fast sad open clean dirty closed full empty rich poor hot cold heavy dead alive near far light dry wet. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-20-7",
+    "kind": "cancellation",
+    "sequence_id": 20,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: happy slow young old fast sad open clean dirty closed full empty rich poor hot cold heavy dead alive near far light dry wet. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-20-8",
+    "kind": "cancellation",
+    "sequence_id": 20,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: happy slow young old fast sad open clean dirty closed full empty rich poor hot cold heavy dead alive near far light dry wet. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-21-5",
+    "kind": "cancellation",
+    "sequence_id": 21,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: far dry wet hot sad dirty dead alive clean closed open happy cold fast heavy light empty poor rich full slow young old near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "sad happy"
+  },
+  {
+    "id": "validation-21-6",
+    "kind": "cancellation",
+    "sequence_id": 21,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: far dry wet hot sad dirty dead alive clean closed open happy cold fast heavy light empty poor rich full slow young old near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-21-7",
+    "kind": "cancellation",
+    "sequence_id": 21,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: far dry wet hot sad dirty dead alive clean closed open happy cold fast heavy light empty poor rich full slow young old near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-21-8",
+    "kind": "cancellation",
+    "sequence_id": 21,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: far dry wet hot sad dirty dead alive clean closed open happy cold fast heavy light empty poor rich full slow young old near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-22-5",
+    "kind": "cancellation",
+    "sequence_id": 22,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: poor open closed dry wet light far near heavy rich sad slow fast dirty dead alive hot cold old young clean empty full happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-22-6",
+    "kind": "cancellation",
+    "sequence_id": 22,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: poor open closed dry wet light far near heavy rich sad slow fast dirty dead alive hot cold old young clean empty full happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "slow fast"
+  },
+  {
+    "id": "validation-22-7",
+    "kind": "cancellation",
+    "sequence_id": 22,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: poor open closed dry wet light far near heavy rich sad slow fast dirty dead alive hot cold old young clean empty full happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "dead alive"
+  },
+  {
+    "id": "validation-22-8",
+    "kind": "cancellation",
+    "sequence_id": 22,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: poor open closed dry wet light far near heavy rich sad slow fast dirty dead alive hot cold old young clean empty full happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-23-5",
+    "kind": "cancellation",
+    "sequence_id": 23,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: fast open hot alive dead old light heavy young near far rich happy sad poor cold closed clean dirty dry empty full wet slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "happy sad"
+  },
+  {
+    "id": "validation-23-6",
+    "kind": "cancellation",
+    "sequence_id": 23,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: fast open hot alive dead old light heavy young near far rich happy sad poor cold closed clean dirty dry empty full wet slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-23-7",
+    "kind": "cancellation",
+    "sequence_id": 23,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: fast open hot alive dead old light heavy young near far rich happy sad poor cold closed clean dirty dry empty full wet slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-23-8",
+    "kind": "cancellation",
+    "sequence_id": 23,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: fast open hot alive dead old light heavy young near far rich happy sad poor cold closed clean dirty dry empty full wet slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-24-5",
+    "kind": "cancellation",
+    "sequence_id": 24,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: rich full empty clean dirty poor cold closed dead wet dry happy old light near far heavy young sad alive open slow fast hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "near far"
+  },
+  {
+    "id": "validation-24-6",
+    "kind": "cancellation",
+    "sequence_id": 24,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: rich full empty clean dirty poor cold closed dead wet dry happy old light near far heavy young sad alive open slow fast hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "light heavy"
+  },
+  {
+    "id": "validation-24-7",
+    "kind": "cancellation",
+    "sequence_id": 24,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: rich full empty clean dirty poor cold closed dead wet dry happy old light near far heavy young sad alive open slow fast hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-24-8",
+    "kind": "cancellation",
+    "sequence_id": 24,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: rich full empty clean dirty poor cold closed dead wet dry happy old light near far heavy young sad alive open slow fast hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "happy sad"
+  },
+  {
+    "id": "validation-25-5",
+    "kind": "cancellation",
+    "sequence_id": 25,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: light heavy rich poor cold wet closed slow near far fast clean dirty open young old dry happy sad hot empty alive dead full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "clean dirty"
+  },
+  {
+    "id": "validation-25-6",
+    "kind": "cancellation",
+    "sequence_id": 25,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: light heavy rich poor cold wet closed slow near far fast clean dirty open young old dry happy sad hot empty alive dead full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-25-7",
+    "kind": "cancellation",
+    "sequence_id": 25,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: light heavy rich poor cold wet closed slow near far fast clean dirty open young old dry happy sad hot empty alive dead full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-25-8",
+    "kind": "cancellation",
+    "sequence_id": 25,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: light heavy rich poor cold wet closed slow near far fast clean dirty open young old dry happy sad hot empty alive dead full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "wet dry"
+  },
+  {
+    "id": "validation-26-5",
+    "kind": "cancellation",
+    "sequence_id": 26,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: old wet near far dry young full slow fast empty sad happy heavy light cold hot closed open clean dirty dead alive rich poor. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-26-6",
+    "kind": "cancellation",
+    "sequence_id": 26,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: old wet near far dry young full slow fast empty sad happy heavy light cold hot closed open clean dirty dead alive rich poor. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "sad happy"
+  },
+  {
+    "id": "validation-26-7",
+    "kind": "cancellation",
+    "sequence_id": 26,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: old wet near far dry young full slow fast empty sad happy heavy light cold hot closed open clean dirty dead alive rich poor. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-26-8",
+    "kind": "cancellation",
+    "sequence_id": 26,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: old wet near far dry young full slow fast empty sad happy heavy light cold hot closed open clean dirty dead alive rich poor. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "cold hot"
+  },
+  {
+    "id": "validation-27-5",
+    "kind": "cancellation",
+    "sequence_id": 27,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dead poor rich dirty hot cold dry wet clean alive far near fast slow young old happy sad full light open closed heavy empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "dead alive"
+  },
+  {
+    "id": "validation-27-6",
+    "kind": "cancellation",
+    "sequence_id": 27,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dead poor rich dirty hot cold dry wet clean alive far near fast slow young old happy sad full light open closed heavy empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-27-7",
+    "kind": "cancellation",
+    "sequence_id": 27,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dead poor rich dirty hot cold dry wet clean alive far near fast slow young old happy sad full light open closed heavy empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "fast slow"
+  },
+  {
+    "id": "validation-27-8",
+    "kind": "cancellation",
+    "sequence_id": 27,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dead poor rich dirty hot cold dry wet clean alive far near fast slow young old happy sad full light open closed heavy empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-28-5",
+    "kind": "cancellation",
+    "sequence_id": 28,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: empty full open closed rich young cold hot fast dirty clean slow old far near poor dry heavy sad happy light dead alive wet. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "fast slow"
+  },
+  {
+    "id": "validation-28-6",
+    "kind": "cancellation",
+    "sequence_id": 28,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: empty full open closed rich young cold hot fast dirty clean slow old far near poor dry heavy sad happy light dead alive wet. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-28-7",
+    "kind": "cancellation",
+    "sequence_id": 28,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: empty full open closed rich young cold hot fast dirty clean slow old far near poor dry heavy sad happy light dead alive wet. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-28-8",
+    "kind": "cancellation",
+    "sequence_id": 28,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: empty full open closed rich young cold hot fast dirty clean slow old far near poor dry heavy sad happy light dead alive wet. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-29-5",
+    "kind": "cancellation",
+    "sequence_id": 29,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: rich poor heavy light old wet dry empty dirty clean near fast slow closed open far full sad cold hot dead alive happy young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "fast slow"
+  },
+  {
+    "id": "validation-29-6",
+    "kind": "cancellation",
+    "sequence_id": 29,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: rich poor heavy light old wet dry empty dirty clean near fast slow closed open far full sad cold hot dead alive happy young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-29-7",
+    "kind": "cancellation",
+    "sequence_id": 29,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: rich poor heavy light old wet dry empty dirty clean near fast slow closed open far full sad cold hot dead alive happy young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "near far"
+  },
+  {
+    "id": "validation-29-8",
+    "kind": "cancellation",
+    "sequence_id": 29,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: rich poor heavy light old wet dry empty dirty clean near fast slow closed open far full sad cold hot dead alive happy young. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "empty full"
+  },
+  {
+    "id": "validation-30-5",
+    "kind": "cancellation",
+    "sequence_id": 30,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dead alive old dry wet far near young dirty sad slow closed cold hot open full empty fast happy poor light heavy rich clean. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "cold hot"
+  },
+  {
+    "id": "validation-30-6",
+    "kind": "cancellation",
+    "sequence_id": 30,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dead alive old dry wet far near young dirty sad slow closed cold hot open full empty fast happy poor light heavy rich clean. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-30-7",
+    "kind": "cancellation",
+    "sequence_id": 30,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dead alive old dry wet far near young dirty sad slow closed cold hot open full empty fast happy poor light heavy rich clean. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-30-8",
+    "kind": "cancellation",
+    "sequence_id": 30,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dead alive old dry wet far near young dirty sad slow closed cold hot open full empty fast happy poor light heavy rich clean. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "slow fast"
+  },
+  {
+    "id": "validation-31-5",
+    "kind": "cancellation",
+    "sequence_id": 31,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: full clean rich poor sad happy wet open closed dry dead alive heavy hot cold light dirty slow fast empty young old near far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "dead alive"
+  },
+  {
+    "id": "validation-31-6",
+    "kind": "cancellation",
+    "sequence_id": 31,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: full clean rich poor sad happy wet open closed dry dead alive heavy hot cold light dirty slow fast empty young old near far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-31-7",
+    "kind": "cancellation",
+    "sequence_id": 31,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: full clean rich poor sad happy wet open closed dry dead alive heavy hot cold light dirty slow fast empty young old near far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-31-8",
+    "kind": "cancellation",
+    "sequence_id": 31,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: full clean rich poor sad happy wet open closed dry dead alive heavy hot cold light dirty slow fast empty young old near far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "clean dirty"
+  },
+  {
+    "id": "validation-32-5",
+    "kind": "cancellation",
+    "sequence_id": 32,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: cold hot alive dead dry wet young empty light heavy full happy sad old poor dirty clean slow fast open closed far near rich. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "empty full"
+  },
+  {
+    "id": "validation-32-6",
+    "kind": "cancellation",
+    "sequence_id": 32,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: cold hot alive dead dry wet young empty light heavy full happy sad old poor dirty clean slow fast open closed far near rich. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "happy sad"
+  },
+  {
+    "id": "validation-32-7",
+    "kind": "cancellation",
+    "sequence_id": 32,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: cold hot alive dead dry wet young empty light heavy full happy sad old poor dirty clean slow fast open closed far near rich. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-32-8",
+    "kind": "cancellation",
+    "sequence_id": 32,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: cold hot alive dead dry wet young empty light heavy full happy sad old poor dirty clean slow fast open closed far near rich. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "dirty clean"
+  },
+  {
+    "id": "validation-33-5",
+    "kind": "cancellation",
+    "sequence_id": 33,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dead empty sad happy full old young far light heavy poor rich near alive slow dry wet hot dirty clean cold fast open closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-33-6",
+    "kind": "cancellation",
+    "sequence_id": 33,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dead empty sad happy full old young far light heavy poor rich near alive slow dry wet hot dirty clean cold fast open closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-33-7",
+    "kind": "cancellation",
+    "sequence_id": 33,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dead empty sad happy full old young far light heavy poor rich near alive slow dry wet hot dirty clean cold fast open closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "dead alive"
+  },
+  {
+    "id": "validation-33-8",
+    "kind": "cancellation",
+    "sequence_id": 33,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dead empty sad happy full old young far light heavy poor rich near alive slow dry wet hot dirty clean cold fast open closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "dry wet"
+  },
+  {
+    "id": "validation-34-5",
+    "kind": "cancellation",
+    "sequence_id": 34,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dead alive poor near open dry wet cold hot light heavy closed far slow fast old young full empty dirty clean rich sad happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-34-6",
+    "kind": "cancellation",
+    "sequence_id": 34,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dead alive poor near open dry wet cold hot light heavy closed far slow fast old young full empty dirty clean rich sad happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "near far"
+  },
+  {
+    "id": "validation-34-7",
+    "kind": "cancellation",
+    "sequence_id": 34,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dead alive poor near open dry wet cold hot light heavy closed far slow fast old young full empty dirty clean rich sad happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "slow fast"
+  },
+  {
+    "id": "validation-34-8",
+    "kind": "cancellation",
+    "sequence_id": 34,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dead alive poor near open dry wet cold hot light heavy closed far slow fast old young full empty dirty clean rich sad happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-35-5",
+    "kind": "cancellation",
+    "sequence_id": 35,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: alive slow fast young closed open old hot cold clean dirty dead poor rich full heavy wet dry light empty near far sad happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "clean dirty"
+  },
+  {
+    "id": "validation-35-6",
+    "kind": "cancellation",
+    "sequence_id": 35,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: alive slow fast young closed open old hot cold clean dirty dead poor rich full heavy wet dry light empty near far sad happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-35-7",
+    "kind": "cancellation",
+    "sequence_id": 35,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: alive slow fast young closed open old hot cold clean dirty dead poor rich full heavy wet dry light empty near far sad happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-35-8",
+    "kind": "cancellation",
+    "sequence_id": 35,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: alive slow fast young closed open old hot cold clean dirty dead poor rich full heavy wet dry light empty near far sad happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "wet dry"
+  },
+  {
+    "id": "validation-36-5",
+    "kind": "cancellation",
+    "sequence_id": 36,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: young empty closed dry wet open slow heavy light fast full near dead alive cold hot poor rich far old happy clean dirty sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "empty full"
+  },
+  {
+    "id": "validation-36-6",
+    "kind": "cancellation",
+    "sequence_id": 36,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: young empty closed dry wet open slow heavy light fast full near dead alive cold hot poor rich far old happy clean dirty sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "dead alive"
+  },
+  {
+    "id": "validation-36-7",
+    "kind": "cancellation",
+    "sequence_id": 36,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: young empty closed dry wet open slow heavy light fast full near dead alive cold hot poor rich far old happy clean dirty sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "cold hot"
+  },
+  {
+    "id": "validation-36-8",
+    "kind": "cancellation",
+    "sequence_id": 36,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: young empty closed dry wet open slow heavy light fast full near dead alive cold hot poor rich far old happy clean dirty sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-37-5",
+    "kind": "cancellation",
+    "sequence_id": 37,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: slow fast poor rich near empty full alive open closed dirty happy sad clean dead far old dry wet young cold light heavy hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "happy sad"
+  },
+  {
+    "id": "validation-37-6",
+    "kind": "cancellation",
+    "sequence_id": 37,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: slow fast poor rich near empty full alive open closed dirty happy sad clean dead far old dry wet young cold light heavy hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "dirty clean"
+  },
+  {
+    "id": "validation-37-7",
+    "kind": "cancellation",
+    "sequence_id": 37,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: slow fast poor rich near empty full alive open closed dirty happy sad clean dead far old dry wet young cold light heavy hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-37-8",
+    "kind": "cancellation",
+    "sequence_id": 37,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: slow fast poor rich near empty full alive open closed dirty happy sad clean dead far old dry wet young cold light heavy hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "near far"
+  },
+  {
+    "id": "validation-38-5",
+    "kind": "cancellation",
+    "sequence_id": 38,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dead alive sad hot cold happy dry poor closed clean dirty open rich heavy light wet slow fast old young near empty full far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-38-6",
+    "kind": "cancellation",
+    "sequence_id": 38,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dead alive sad hot cold happy dry poor closed clean dirty open rich heavy light wet slow fast old young near empty full far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-38-7",
+    "kind": "cancellation",
+    "sequence_id": 38,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dead alive sad hot cold happy dry poor closed clean dirty open rich heavy light wet slow fast old young near empty full far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-38-8",
+    "kind": "cancellation",
+    "sequence_id": 38,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dead alive sad hot cold happy dry poor closed clean dirty open rich heavy light wet slow fast old young near empty full far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "dry wet"
+  },
+  {
+    "id": "validation-39-5",
+    "kind": "cancellation",
+    "sequence_id": 39,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: wet young closed open clean dirty old empty full dry rich far happy sad near poor alive fast slow heavy light dead hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "wet dry"
+  },
+  {
+    "id": "validation-39-6",
+    "kind": "cancellation",
+    "sequence_id": 39,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: wet young closed open clean dirty old empty full dry rich far happy sad near poor alive fast slow heavy light dead hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "happy sad"
+  },
+  {
+    "id": "validation-39-7",
+    "kind": "cancellation",
+    "sequence_id": 39,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: wet young closed open clean dirty old empty full dry rich far happy sad near poor alive fast slow heavy light dead hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-39-8",
+    "kind": "cancellation",
+    "sequence_id": 39,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: wet young closed open clean dirty old empty full dry rich far happy sad near poor alive fast slow heavy light dead hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-40-5",
+    "kind": "cancellation",
+    "sequence_id": 40,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: young old heavy rich poor sad clean dirty happy light closed open dry near fast alive dead slow far empty full wet hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-40-6",
+    "kind": "cancellation",
+    "sequence_id": 40,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: young old heavy rich poor sad clean dirty happy light closed open dry near fast alive dead slow far empty full wet hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-40-7",
+    "kind": "cancellation",
+    "sequence_id": 40,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: young old heavy rich poor sad clean dirty happy light closed open dry near fast alive dead slow far empty full wet hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-40-8",
+    "kind": "cancellation",
+    "sequence_id": 40,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: young old heavy rich poor sad clean dirty happy light closed open dry near fast alive dead slow far empty full wet hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "fast slow"
+  },
+  {
+    "id": "validation-41-5",
+    "kind": "cancellation",
+    "sequence_id": 41,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: alive dead old happy sad young wet closed open hot far clean dirty near cold dry poor rich light heavy full empty fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "clean dirty"
+  },
+  {
+    "id": "validation-41-6",
+    "kind": "cancellation",
+    "sequence_id": 41,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: alive dead old happy sad young wet closed open hot far clean dirty near cold dry poor rich light heavy full empty fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-41-7",
+    "kind": "cancellation",
+    "sequence_id": 41,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: alive dead old happy sad young wet closed open hot far clean dirty near cold dry poor rich light heavy full empty fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-41-8",
+    "kind": "cancellation",
+    "sequence_id": 41,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: alive dead old happy sad young wet closed open hot far clean dirty near cold dry poor rich light heavy full empty fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "wet dry"
+  },
+  {
+    "id": "validation-42-5",
+    "kind": "cancellation",
+    "sequence_id": 42,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: empty poor rich full cold open closed wet alive dead far young old near happy sad dry hot dirty clean heavy light slow fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-42-6",
+    "kind": "cancellation",
+    "sequence_id": 42,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: empty poor rich full cold open closed wet alive dead far young old near happy sad dry hot dirty clean heavy light slow fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-42-7",
+    "kind": "cancellation",
+    "sequence_id": 42,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: empty poor rich full cold open closed wet alive dead far young old near happy sad dry hot dirty clean heavy light slow fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "happy sad"
+  },
+  {
+    "id": "validation-42-8",
+    "kind": "cancellation",
+    "sequence_id": 42,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: empty poor rich full cold open closed wet alive dead far young old near happy sad dry hot dirty clean heavy light slow fast. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "wet dry"
+  },
+  {
+    "id": "validation-43-5",
+    "kind": "cancellation",
+    "sequence_id": 43,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dirty rich old young poor clean sad happy fast dry wet slow open cold hot closed alive full empty near far dead heavy light. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "dry wet"
+  },
+  {
+    "id": "validation-43-6",
+    "kind": "cancellation",
+    "sequence_id": 43,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dirty rich old young poor clean sad happy fast dry wet slow open cold hot closed alive full empty near far dead heavy light. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "fast slow"
+  },
+  {
+    "id": "validation-43-7",
+    "kind": "cancellation",
+    "sequence_id": 43,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dirty rich old young poor clean sad happy fast dry wet slow open cold hot closed alive full empty near far dead heavy light. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "cold hot"
+  },
+  {
+    "id": "validation-43-8",
+    "kind": "cancellation",
+    "sequence_id": 43,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dirty rich old young poor clean sad happy fast dry wet slow open cold hot closed alive full empty near far dead heavy light. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-44-5",
+    "kind": "cancellation",
+    "sequence_id": 44,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dead alive wet dry old young closed dirty near far sad poor rich happy light heavy clean hot cold empty full open fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-44-6",
+    "kind": "cancellation",
+    "sequence_id": 44,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dead alive wet dry old young closed dirty near far sad poor rich happy light heavy clean hot cold empty full open fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "sad happy"
+  },
+  {
+    "id": "validation-44-7",
+    "kind": "cancellation",
+    "sequence_id": 44,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dead alive wet dry old young closed dirty near far sad poor rich happy light heavy clean hot cold empty full open fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "light heavy"
+  },
+  {
+    "id": "validation-44-8",
+    "kind": "cancellation",
+    "sequence_id": 44,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dead alive wet dry old young closed dirty near far sad poor rich happy light heavy clean hot cold empty full open fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "dirty clean"
+  },
+  {
+    "id": "validation-45-5",
+    "kind": "cancellation",
+    "sequence_id": 45,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: light dirty clean happy sad full empty rich poor heavy open alive dry wet dead closed cold hot young old far near fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "light heavy"
+  },
+  {
+    "id": "validation-45-6",
+    "kind": "cancellation",
+    "sequence_id": 45,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: light dirty clean happy sad full empty rich poor heavy open alive dry wet dead closed cold hot young old far near fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "dry wet"
+  },
+  {
+    "id": "validation-45-7",
+    "kind": "cancellation",
+    "sequence_id": 45,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: light dirty clean happy sad full empty rich poor heavy open alive dry wet dead closed cold hot young old far near fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-45-8",
+    "kind": "cancellation",
+    "sequence_id": 45,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: light dirty clean happy sad full empty rich poor heavy open alive dry wet dead closed cold hot young old far near fast slow. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-46-5",
+    "kind": "cancellation",
+    "sequence_id": 46,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: cold hot open closed light wet empty full dry heavy slow fast old young far alive dead near sad rich dirty clean poor happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "light heavy"
+  },
+  {
+    "id": "validation-46-6",
+    "kind": "cancellation",
+    "sequence_id": 46,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: cold hot open closed light wet empty full dry heavy slow fast old young far alive dead near sad rich dirty clean poor happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "slow fast"
+  },
+  {
+    "id": "validation-46-7",
+    "kind": "cancellation",
+    "sequence_id": 46,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: cold hot open closed light wet empty full dry heavy slow fast old young far alive dead near sad rich dirty clean poor happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-46-8",
+    "kind": "cancellation",
+    "sequence_id": 46,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: cold hot open closed light wet empty full dry heavy slow fast old young far alive dead near sad rich dirty clean poor happy. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-47-5",
+    "kind": "cancellation",
+    "sequence_id": 47,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: closed open slow fast dry far sad happy heavy hot cold light old young near wet poor rich empty clean dirty dead alive full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-47-6",
+    "kind": "cancellation",
+    "sequence_id": 47,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: closed open slow fast dry far sad happy heavy hot cold light old young near wet poor rich empty clean dirty dead alive full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-47-7",
+    "kind": "cancellation",
+    "sequence_id": 47,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: closed open slow fast dry far sad happy heavy hot cold light old young near wet poor rich empty clean dirty dead alive full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-47-8",
+    "kind": "cancellation",
+    "sequence_id": 47,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: closed open slow fast dry far sad happy heavy hot cold light old young near wet poor rich empty clean dirty dead alive full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "dry wet"
+  },
+  {
+    "id": "validation-48-5",
+    "kind": "cancellation",
+    "sequence_id": 48,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: heavy old slow dead alive fast dirty cold hot clean rich open closed poor young light near far sad happy wet dry full empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-48-6",
+    "kind": "cancellation",
+    "sequence_id": 48,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: heavy old slow dead alive fast dirty cold hot clean rich open closed poor young light near far sad happy wet dry full empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "rich poor"
+  },
+  {
+    "id": "validation-48-7",
+    "kind": "cancellation",
+    "sequence_id": 48,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: heavy old slow dead alive fast dirty cold hot clean rich open closed poor young light near far sad happy wet dry full empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-48-8",
+    "kind": "cancellation",
+    "sequence_id": 48,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: heavy old slow dead alive fast dirty cold hot clean rich open closed poor young light near far sad happy wet dry full empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-49-5",
+    "kind": "cancellation",
+    "sequence_id": 49,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: happy cold light near far heavy dry wet fast slow empty full dead alive old young hot poor rich open closed dirty clean sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "empty full"
+  },
+  {
+    "id": "validation-49-6",
+    "kind": "cancellation",
+    "sequence_id": 49,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: happy cold light near far heavy dry wet fast slow empty full dead alive old young hot poor rich open closed dirty clean sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "dead alive"
+  },
+  {
+    "id": "validation-49-7",
+    "kind": "cancellation",
+    "sequence_id": 49,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: happy cold light near far heavy dry wet fast slow empty full dead alive old young hot poor rich open closed dirty clean sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-49-8",
+    "kind": "cancellation",
+    "sequence_id": 49,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: happy cold light near far heavy dry wet fast slow empty full dead alive old young hot poor rich open closed dirty clean sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "cold hot"
+  },
+  {
+    "id": "validation-50-5",
+    "kind": "cancellation",
+    "sequence_id": 50,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: fast heavy open empty full poor rich closed light old far hot cold near young slow dead dirty clean alive happy dry wet sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-50-6",
+    "kind": "cancellation",
+    "sequence_id": 50,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: fast heavy open empty full poor rich closed light old far hot cold near young slow dead dirty clean alive happy dry wet sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-50-7",
+    "kind": "cancellation",
+    "sequence_id": 50,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: fast heavy open empty full poor rich closed light old far hot cold near young slow dead dirty clean alive happy dry wet sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-50-8",
+    "kind": "cancellation",
+    "sequence_id": 50,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: fast heavy open empty full poor rich closed light old far hot cold near young slow dead dirty clean alive happy dry wet sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "fast slow"
+  },
+  {
+    "id": "validation-51-5",
+    "kind": "cancellation",
+    "sequence_id": 51,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: open wet dry poor dead heavy light hot cold alive happy sad rich far near full empty young old slow fast clean dirty closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "happy sad"
+  },
+  {
+    "id": "validation-51-6",
+    "kind": "cancellation",
+    "sequence_id": 51,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: open wet dry poor dead heavy light hot cold alive happy sad rich far near full empty young old slow fast clean dirty closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-51-7",
+    "kind": "cancellation",
+    "sequence_id": 51,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: open wet dry poor dead heavy light hot cold alive happy sad rich far near full empty young old slow fast clean dirty closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-51-8",
+    "kind": "cancellation",
+    "sequence_id": 51,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: open wet dry poor dead heavy light hot cold alive happy sad rich far near full empty young old slow fast clean dirty closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-52-5",
+    "kind": "cancellation",
+    "sequence_id": 52,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: slow wet dry rich happy sad poor alive dead light heavy clean old near far young dirty full empty fast open closed hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "light heavy"
+  },
+  {
+    "id": "validation-52-6",
+    "kind": "cancellation",
+    "sequence_id": 52,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: slow wet dry rich happy sad poor alive dead light heavy clean old near far young dirty full empty fast open closed hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "near far"
+  },
+  {
+    "id": "validation-52-7",
+    "kind": "cancellation",
+    "sequence_id": 52,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: slow wet dry rich happy sad poor alive dead light heavy clean old near far young dirty full empty fast open closed hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-52-8",
+    "kind": "cancellation",
+    "sequence_id": 52,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: slow wet dry rich happy sad poor alive dead light heavy clean old near far young dirty full empty fast open closed hot cold. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "clean dirty"
+  },
+  {
+    "id": "validation-53-5",
+    "kind": "cancellation",
+    "sequence_id": 53,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dirty clean wet closed dead alive full empty happy sad open light heavy old young dry near hot fast slow rich poor cold far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-53-6",
+    "kind": "cancellation",
+    "sequence_id": 53,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dirty clean wet closed dead alive full empty happy sad open light heavy old young dry near hot fast slow rich poor cold far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "light heavy"
+  },
+  {
+    "id": "validation-53-7",
+    "kind": "cancellation",
+    "sequence_id": 53,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dirty clean wet closed dead alive full empty happy sad open light heavy old young dry near hot fast slow rich poor cold far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-53-8",
+    "kind": "cancellation",
+    "sequence_id": 53,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dirty clean wet closed dead alive full empty happy sad open light heavy old young dry near hot fast slow rich poor cold far. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "wet dry"
+  },
+  {
+    "id": "validation-54-5",
+    "kind": "cancellation",
+    "sequence_id": 54,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: full dry wet rich poor slow sad happy fast empty hot cold closed open old light heavy young dead alive far near clean dirty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-54-6",
+    "kind": "cancellation",
+    "sequence_id": 54,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: full dry wet rich poor slow sad happy fast empty hot cold closed open old light heavy young dead alive far near clean dirty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "hot cold"
+  },
+  {
+    "id": "validation-54-7",
+    "kind": "cancellation",
+    "sequence_id": 54,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: full dry wet rich poor slow sad happy fast empty hot cold closed open old light heavy young dead alive far near clean dirty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-54-8",
+    "kind": "cancellation",
+    "sequence_id": 54,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: full dry wet rich poor slow sad happy fast empty hot cold closed open old light heavy young dead alive far near clean dirty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "light heavy"
+  },
+  {
+    "id": "validation-55-5",
+    "kind": "cancellation",
+    "sequence_id": 55,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: young old rich poor open wet dry slow light heavy fast far near clean dirty closed alive hot cold happy sad dead empty full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "slow fast"
+  },
+  {
+    "id": "validation-55-6",
+    "kind": "cancellation",
+    "sequence_id": 55,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: young old rich poor open wet dry slow light heavy fast far near clean dirty closed alive hot cold happy sad dead empty full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-55-7",
+    "kind": "cancellation",
+    "sequence_id": 55,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: young old rich poor open wet dry slow light heavy fast far near clean dirty closed alive hot cold happy sad dead empty full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "clean dirty"
+  },
+  {
+    "id": "validation-55-8",
+    "kind": "cancellation",
+    "sequence_id": 55,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: young old rich poor open wet dry slow light heavy fast far near clean dirty closed alive hot cold happy sad dead empty full. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-56-5",
+    "kind": "cancellation",
+    "sequence_id": 56,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: poor light heavy rich dirty dead full empty alive cold wet young old dry hot clean closed sad happy slow fast near far open. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-56-6",
+    "kind": "cancellation",
+    "sequence_id": 56,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: poor light heavy rich dirty dead full empty alive cold wet young old dry hot clean closed sad happy slow fast near far open. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "wet dry"
+  },
+  {
+    "id": "validation-56-7",
+    "kind": "cancellation",
+    "sequence_id": 56,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: poor light heavy rich dirty dead full empty alive cold wet young old dry hot clean closed sad happy slow fast near far open. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "cold hot"
+  },
+  {
+    "id": "validation-56-8",
+    "kind": "cancellation",
+    "sequence_id": 56,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: poor light heavy rich dirty dead full empty alive cold wet young old dry hot clean closed sad happy slow fast near far open. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "dirty clean"
+  },
+  {
+    "id": "validation-57-5",
+    "kind": "cancellation",
+    "sequence_id": 57,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: old young full rich dry wet poor alive fast slow dead empty open closed far near cold hot happy clean light heavy dirty sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-57-6",
+    "kind": "cancellation",
+    "sequence_id": 57,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: old young full rich dry wet poor alive fast slow dead empty open closed far near cold hot happy clean light heavy dirty sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "full empty"
+  },
+  {
+    "id": "validation-57-7",
+    "kind": "cancellation",
+    "sequence_id": 57,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: old young full rich dry wet poor alive fast slow dead empty open closed far near cold hot happy clean light heavy dirty sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-57-8",
+    "kind": "cancellation",
+    "sequence_id": 57,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: old young full rich dry wet poor alive fast slow dead empty open closed far near cold hot happy clean light heavy dirty sad. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-58-5",
+    "kind": "cancellation",
+    "sequence_id": 58,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: happy alive old young dry poor rich dirty clean wet fast slow empty light heavy full dead sad far near open cold hot closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "fast slow"
+  },
+  {
+    "id": "validation-58-6",
+    "kind": "cancellation",
+    "sequence_id": 58,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: happy alive old young dry poor rich dirty clean wet fast slow empty light heavy full dead sad far near open cold hot closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "light heavy"
+  },
+  {
+    "id": "validation-58-7",
+    "kind": "cancellation",
+    "sequence_id": 58,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: happy alive old young dry poor rich dirty clean wet fast slow empty light heavy full dead sad far near open cold hot closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "empty full"
+  },
+  {
+    "id": "validation-58-8",
+    "kind": "cancellation",
+    "sequence_id": 58,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: happy alive old young dry poor rich dirty clean wet fast slow empty light heavy full dead sad far near open cold hot closed. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "alive dead"
+  },
+  {
+    "id": "validation-59-5",
+    "kind": "cancellation",
+    "sequence_id": 59,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: clean dirty poor closed fast slow alive dead heavy old young light dry wet open rich full empty sad hot cold happy far near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "heavy light"
+  },
+  {
+    "id": "validation-59-6",
+    "kind": "cancellation",
+    "sequence_id": 59,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: clean dirty poor closed fast slow alive dead heavy old young light dry wet open rich full empty sad hot cold happy far near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "dry wet"
+  },
+  {
+    "id": "validation-59-7",
+    "kind": "cancellation",
+    "sequence_id": 59,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: clean dirty poor closed fast slow alive dead heavy old young light dry wet open rich full empty sad hot cold happy far near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "closed open"
+  },
+  {
+    "id": "validation-59-8",
+    "kind": "cancellation",
+    "sequence_id": 59,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: clean dirty poor closed fast slow alive dead heavy old young light dry wet open rich full empty sad hot cold happy far near. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-60-5",
+    "kind": "cancellation",
+    "sequence_id": 60,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: poor rich cold clean young old slow fast dirty near far hot open closed sad happy dry full empty wet light heavy alive dead. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "near far"
+  },
+  {
+    "id": "validation-60-6",
+    "kind": "cancellation",
+    "sequence_id": 60,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: poor rich cold clean young old slow fast dirty near far hot open closed sad happy dry full empty wet light heavy alive dead. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "cold hot"
+  },
+  {
+    "id": "validation-60-7",
+    "kind": "cancellation",
+    "sequence_id": 60,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: poor rich cold clean young old slow fast dirty near far hot open closed sad happy dry full empty wet light heavy alive dead. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "open closed"
+  },
+  {
+    "id": "validation-60-8",
+    "kind": "cancellation",
+    "sequence_id": 60,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: poor rich cold clean young old slow fast dirty near far hot open closed sad happy dry full empty wet light heavy alive dead. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "sad happy"
+  },
+  {
+    "id": "validation-61-5",
+    "kind": "cancellation",
+    "sequence_id": 61,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: dry sad rich poor closed open happy fast slow wet clean dirty dead old young far near heavy light alive full hot cold empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "dry wet"
+  },
+  {
+    "id": "validation-61-6",
+    "kind": "cancellation",
+    "sequence_id": 61,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: dry sad rich poor closed open happy fast slow wet clean dirty dead old young far near heavy light alive full hot cold empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "clean dirty"
+  },
+  {
+    "id": "validation-61-7",
+    "kind": "cancellation",
+    "sequence_id": 61,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: dry sad rich poor closed open happy fast slow wet clean dirty dead old young far near heavy light alive full hot cold empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-61-8",
+    "kind": "cancellation",
+    "sequence_id": 61,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: dry sad rich poor closed open happy fast slow wet clean dirty dead old young far near heavy light alive full hot cold empty. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  },
+  {
+    "id": "validation-62-5",
+    "kind": "cancellation",
+    "sequence_id": 62,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: poor near open dry wet closed far empty dead alive full rich heavy fast old young slow clean dirty happy sad light cold hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "empty full"
+  },
+  {
+    "id": "validation-62-6",
+    "kind": "cancellation",
+    "sequence_id": 62,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: poor near open dry wet closed far empty dead alive full rich heavy fast old young slow clean dirty happy sad light cold hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "poor rich"
+  },
+  {
+    "id": "validation-62-7",
+    "kind": "cancellation",
+    "sequence_id": 62,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: poor near open dry wet closed far empty dead alive full rich heavy fast old young slow clean dirty happy sad light cold hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "old young"
+  },
+  {
+    "id": "validation-62-8",
+    "kind": "cancellation",
+    "sequence_id": 62,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: poor near open dry wet closed far empty dead alive full rich heavy fast old young slow clean dirty happy sad light cold hot. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "fast slow"
+  },
+  {
+    "id": "validation-63-5",
+    "kind": "cancellation",
+    "sequence_id": 63,
+    "k": 5,
+    "template": 0,
+    "prompt": "Word sequence: cold hot alive dead sad happy wet dry young old clean far empty slow fast full near dirty light heavy poor rich closed open. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 5? Answer with only those two words in their original left-to-right order.",
+    "answer": "young old"
+  },
+  {
+    "id": "validation-63-6",
+    "kind": "cancellation",
+    "sequence_id": 63,
+    "k": 6,
+    "template": 0,
+    "prompt": "Word sequence: cold hot alive dead sad happy wet dry young old clean far empty slow fast full near dirty light heavy poor rich closed open. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 6? Answer with only those two words in their original left-to-right order.",
+    "answer": "slow fast"
+  },
+  {
+    "id": "validation-63-7",
+    "kind": "cancellation",
+    "sequence_id": 63,
+    "k": 7,
+    "template": 0,
+    "prompt": "Word sequence: cold hot alive dead sad happy wet dry young old clean far empty slow fast full near dirty light heavy poor rich closed open. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 7? Answer with only those two words in their original left-to-right order.",
+    "answer": "empty full"
+  },
+  {
+    "id": "validation-63-8",
+    "kind": "cancellation",
+    "sequence_id": 63,
+    "k": 8,
+    "template": 0,
+    "prompt": "Word sequence: cold hot alive dead sad happy wet dry young old clean far empty slow fast full near dirty light heavy poor rich closed open. Repeatedly delete the leftmost adjacent pair of antonyms, then join the remaining words without changing their order. Which two words are deleted on deletion number 8? Answer with only those two words in their original left-to-right order.",
+    "answer": "far near"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "architecture": {
+    "block_schedule": "all_blocks",
+    "d_mlp": 1024,
+    "d_model": 256,
+    "max_depth": 8,
+    "n_heads": 4,
+    "node_count": 8,
+    "normalization": "pre_layernorm",
+    "physical_blocks": 2,
+    "trained_calls": 8
+  },
+  "backbone_seed": 106,
+  "final_test_lock": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/locks/final_test_permutations_512.pt",
+  "final_test_lock_sha256": "3154ac43e1c58b3fea132ba2864074b1f7c2ae94cabba781a843a97e2523cc9e",
+  "log": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/logs/backbone_seed106.log",
+  "output_dir": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed106/graphpath_N8_D8_d256_B2_L8_seed106",
+  "physical_cuda_visible_devices": "4",
+  "protocol_id": "paper2027.graph.g4.disjoint_backbone.v1",
+  "selection_lock": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/locks/selection_permutations_512.pt",
+  "selection_lock_sha256": "72a1bce76b43a8a0256fc36418532b80e50a362d7442ae0eb7d144a803f987e8",
+  "source": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/code/reasoning_loop/paper2027_graph_g4_backbone.py",
+  "source_sha256": "095e5c16e32c06e78da29a0dc9936b522b7135c06c95cc4e5791bb5c89994eb8",
+  "status": "complete",
+  "training": {
+    "aux_loss": 0.0,
+    "batch_size": 512,
+    "learning_rate": 0.0003,
+    "loss": "final-only successor CE at call 8",
+    "sampler": "reject both immutable held-out locks",
+    "trajectory_aux_weight": 0.0,
+    "updates": 20000,
+    "warmup_steps": 500,
+    "weight_decay": 0.3
+  },
+  "updated_at": "2026-08-12T00:02:56.595967+00:00"
+}

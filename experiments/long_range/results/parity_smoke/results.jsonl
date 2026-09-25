@@ -1,0 +1,2 @@
+{"variant": "raw", "length": 1000, "loop": 1000, "examples": 8, "correct": 6, "exact_match": 0.75, "elapsed": 15.445032358169556}
+{"variant": "J", "length": 1000, "loop": 1000, "examples": 8, "correct": 4, "exact_match": 0.5, "elapsed": 15.445786714553833}

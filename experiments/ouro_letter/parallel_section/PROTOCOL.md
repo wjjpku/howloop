@@ -1,0 +1,7 @@
+# Aligning semantic patching and J mediation in Ouro
+
+Primary site is the exact fixed16heads at call4 from the preceding J-mediation experiment. No head re-selection based on semantic outcomes. Pattern versus output comparisons use the shared-seven-edge construction with three different answer identities. Describe the target as source route + base graph in writing. Prior64 semantic population is not reused for primary evaluation: generate64 new graph pairs seed2026092901, excluding all544 previous graph identities, then add the same-base-graph/source-start reference prompt. No success filtering.
+
+Primary: source-pattern and source-output patches at16heads/call4. Value, matched-size disjoint same-layer neighbors, wrong-call(source call2 into receiving4), identity, same16heads acrosscalls2–4, and original full256heads acrosscalls2–4 are fixed controls. Preserve failures; no site changes to force matching signatures. Fullname generation for base/source/reference plus primarypattern/output; first-token full-vocabulary argmax primary. Receiver J schedule stays fixed, patches only prefill. Same frozen backbone and dense affine J, same numerical arithmetic as earlier verified runners.
+
+An 8-pair old-discovery smoke checks intervention implementation and footprint; not used to alter sites. Dataset/code/config/protocol hashes recorded. Identity output must reproduce exact logits and selfpattern preserve predictions. New result determines whether the same16head set supports both claims; a negative result will remain explicit in the unified section.

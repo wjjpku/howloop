@@ -1,0 +1,65 @@
+{
+  "localize_smoke": {
+    "pairs": 1,
+    "conditions": 6,
+    "rows": 6,
+    "hashes_match": true,
+    "generated": 0
+  },
+  "localize_layers8": {
+    "pairs": 8,
+    "conditions": 54,
+    "rows": 432,
+    "hashes_match": true,
+    "generated": 0
+  },
+  "localize_combos8": {
+    "pairs": 8,
+    "conditions": 46,
+    "rows": 368,
+    "hashes_match": true,
+    "generated": 0
+  },
+  "localize_headgroups8": {
+    "pairs": 8,
+    "conditions": 98,
+    "rows": 784,
+    "hashes_match": true,
+    "generated": 0
+  },
+  "localize_ranked8": {
+    "pairs": 8,
+    "conditions": 118,
+    "rows": 944,
+    "hashes_match": true,
+    "generated": 0
+  },
+  "localize_compact8": {
+    "pairs": 8,
+    "conditions": 56,
+    "rows": 448,
+    "hashes_match": true,
+    "generated": 0
+  },
+  "localize_ten_refine8": {
+    "pairs": 8,
+    "conditions": 36,
+    "rows": 288,
+    "hashes_match": true,
+    "generated": 0
+  },
+  "localize_confirmation64": {
+    "pairs": 64,
+    "conditions": 24,
+    "rows": 1536,
+    "hashes_match": true,
+    "generated": 384
+  },
+  "holdout": {
+    "previous_graphs": 416,
+    "new_graphs": 128,
+    "disjoint": true,
+    "single_cycles": true,
+    "token_slots_aligned": true
+  }
+}

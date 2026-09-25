@@ -1,0 +1,37 @@
+{
+  "initial_sha256": "082b4c359eb2f06b3280d1a326ee41b12dcd29e4b3260d82e8511efaef5fa9b1",
+  "input_stream_sha256": "fc46add545b6b19d73fdf1befbcb20179ab644b511f703baa10887e3063eeee3",
+  "final_parameter_sha256": "e42b0d954f2b14d26c0a775bf52f873b590a9e18d3bd966ea74c2a6f98b6ea4b",
+  "backbone_parameter_sha256": "208abcc1392fe8ec48b7d53ade248816a44190fdc905c18b9213f3899dcebb4b",
+  "backbone_unchanged": true,
+  "pid": 3864231,
+  "gpu": "6",
+  "peak_memory_bytes": 288947712,
+  "seconds": 116.45439743995667,
+  "arguments": {
+    "action": "train",
+    "validation_lock": "/data/wujiaju/n10_migration_20260923/locks/selection.pt",
+    "train_exclude_locks": [
+      "/data/wujiaju/n10_migration_20260923/locks/confirmation.pt",
+      "/data/wujiaju/n10_migration_20260923/locks/discovery.pt",
+      "/data/wujiaju/n10_migration_20260923/locks/donors.pt",
+      "/data/wujiaju/n10_migration_20260923/locks/rings.pt",
+      "/data/wujiaju/n10_migration_20260923/locks/selection.pt",
+      "/data/wujiaju/n10_migration_20260923/locks/smoke.pt"
+    ],
+    "checkpoint": "/data/wujiaju/n10_migration_20260923/backbones/local_control_L6_seed3/best.pt",
+    "out_dir": "/data/wujiaju/n10_migration_20260923/local/B/hop1_seed2",
+    "target_hop": 1,
+    "seed": 2,
+    "rank": 48,
+    "updates": 8000,
+    "batch_size": 128,
+    "learning_rate": 0.0001,
+    "grad_clip": 1.0,
+    "validation_every": 400,
+    "validation_seed": 10002,
+    "validation_batches": 8,
+    "validation_batch_size": 500,
+    "device": "cuda"
+  }
+}

@@ -1,0 +1,258 @@
+[
+  {
+    "scope": null,
+    "condition": "native",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0004884466561634326,
+    "max_identity_error": 0
+  },
+  {
+    "scope": null,
+    "condition": "J",
+    "n": 8,
+    "correct": 8,
+    "mean_probability": 0.9435874447226524,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "all",
+    "condition": "self_output",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0004884466561634326,
+    "max_identity_error": 0.0
+  },
+  {
+    "scope": "all",
+    "condition": "self_pattern",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.00048809127110871486,
+    "max_identity_error": 0.125
+  },
+  {
+    "scope": "all",
+    "condition": "rescue_pattern",
+    "n": 8,
+    "correct": 8,
+    "mean_probability": 0.8850547894835472,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "all",
+    "condition": "rescue_output",
+    "n": 8,
+    "correct": 8,
+    "mean_probability": 0.8981625586748123,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "all",
+    "condition": "rescue_value",
+    "n": 8,
+    "correct": 4,
+    "mean_probability": 0.47964806389063597,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "all",
+    "condition": "damage_pattern",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0007798246990660118,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "early",
+    "condition": "self_output",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0004884466561634326,
+    "max_identity_error": 0.0
+  },
+  {
+    "scope": "early",
+    "condition": "self_pattern",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.000481243577269197,
+    "max_identity_error": 0.125
+  },
+  {
+    "scope": "early",
+    "condition": "rescue_pattern",
+    "n": 8,
+    "correct": 1,
+    "mean_probability": 0.2154726681765169,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "early",
+    "condition": "rescue_output",
+    "n": 8,
+    "correct": 3,
+    "mean_probability": 0.3402683916501701,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "early",
+    "condition": "rescue_value",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.005855694616911933,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "early",
+    "condition": "damage_pattern",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0017546543549542548,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "middle",
+    "condition": "self_output",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0004884466561634326,
+    "max_identity_error": 0.0
+  },
+  {
+    "scope": "middle",
+    "condition": "self_pattern",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.00048781188161228783,
+    "max_identity_error": 0.125
+  },
+  {
+    "scope": "middle",
+    "condition": "rescue_pattern",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.002952710801764624,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "middle",
+    "condition": "rescue_output",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.006939942357348627,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "middle",
+    "condition": "rescue_value",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0005168350216990802,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "middle",
+    "condition": "damage_pattern",
+    "n": 8,
+    "correct": 4,
+    "mean_probability": 0.4359527272172272,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "late",
+    "condition": "self_output",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0004884466561634326,
+    "max_identity_error": 0.0
+  },
+  {
+    "scope": "late",
+    "condition": "self_pattern",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.00047541670483042253,
+    "max_identity_error": 0.125
+  },
+  {
+    "scope": "late",
+    "condition": "rescue_pattern",
+    "n": 8,
+    "correct": 8,
+    "mean_probability": 0.9114083349704742,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "late",
+    "condition": "rescue_output",
+    "n": 8,
+    "correct": 8,
+    "mean_probability": 0.8989516571164131,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "late",
+    "condition": "rescue_value",
+    "n": 8,
+    "correct": 3,
+    "mean_probability": 0.3124098280677572,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "late",
+    "condition": "damage_pattern",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.00031694877509380603,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "local",
+    "condition": "self_output",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0004884466561634326,
+    "max_identity_error": 0.0
+  },
+  {
+    "scope": "local",
+    "condition": "self_pattern",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0004740306894746027,
+    "max_identity_error": 0.125
+  },
+  {
+    "scope": "local",
+    "condition": "rescue_pattern",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.004892934139206773,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "local",
+    "condition": "rescue_output",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.01473175529827131,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "local",
+    "condition": "rescue_value",
+    "n": 8,
+    "correct": 0,
+    "mean_probability": 0.0004256024276401149,
+    "max_identity_error": 0
+  },
+  {
+    "scope": "local",
+    "condition": "damage_pattern",
+    "n": 8,
+    "correct": 1,
+    "mean_probability": 0.12163656379379972,
+    "max_identity_error": 0
+  }
+]

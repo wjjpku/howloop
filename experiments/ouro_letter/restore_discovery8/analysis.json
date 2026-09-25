@@ -1,0 +1,323 @@
+{
+  "conditions": {
+    "base": {
+      "n": 8,
+      "correct": 8,
+      "broken_n": 6,
+      "recovered": 6,
+      "conditional_recovery": 1.0,
+      "conditional_ci95": [
+        1.0,
+        1.0
+      ],
+      "generation_correct": 8,
+      "truncations": 0,
+      "conditional_wilson_ci95": [
+        0.6096657120978346,
+        1.0
+      ]
+    },
+    "alternative": {
+      "n": 8,
+      "correct": 0,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "corrupt": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "generation_correct": 2,
+      "truncations": 0,
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_0": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_1": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_2": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_3": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_4": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "generation_correct": 2,
+      "truncations": 0,
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_5": {
+      "n": 8,
+      "correct": 8,
+      "broken_n": 6,
+      "recovered": 6,
+      "conditional_recovery": 1.0,
+      "conditional_ci95": [
+        1.0,
+        1.0
+      ],
+      "generation_correct": 8,
+      "truncations": 0,
+      "conditional_wilson_ci95": [
+        0.6096657120978346,
+        1.0
+      ]
+    },
+    "restore_6": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_7": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_8": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_9": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_10": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_11": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_12": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_13": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_14": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_15": {
+      "n": 8,
+      "correct": 2,
+      "broken_n": 6,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ]
+    },
+    "restore_all": {
+      "n": 8,
+      "correct": 8,
+      "broken_n": 6,
+      "recovered": 6,
+      "conditional_recovery": 1.0,
+      "conditional_ci95": [
+        1.0,
+        1.0
+      ],
+      "generation_correct": 8,
+      "truncations": 0,
+      "conditional_wilson_ci95": [
+        0.6096657120978346,
+        1.0
+      ]
+    }
+  },
+  "h5_comparison": {
+    "h5_minus_best_other": 1.0,
+    "ci95_reselect_best_other_each_bootstrap": [
+      1.0,
+      1.0
+    ]
+  },
+  "all_head_max_logit_error": 0.0,
+  "bootstrap_replicates": 10000
+}

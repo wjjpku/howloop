@@ -1,0 +1,18 @@
+from pathlib import Path
+R=Path(__file__).resolve().parent/'code'
+s=(R/'reasoning_loop/paper2027_graph_g4_backbone.py').read_text()
+s=s.replace('paper2027.graph.n10.disjoint_backbone.v1','paper2027.graph.n10.matched_supervision.v1')
+s=s.replace('    return cfg','    return cfg',1)
+s=s.replace('            with torch.autocast(','            order = torch.rand(len(tokens), cfg.node_count, device=device).argsort(-1)\n            tokens[:,1:1+3*cfg.node_count] = tokens[:,1:1+3*cfg.node_count].reshape(-1,cfg.node_count,3).gather(1,order[:,:,None].expand(-1,-1,3)).reshape(len(tokens),-1)\n            with torch.autocast(',1)
+s=s.replace('        target = targets[:, -1]','        order = torch.rand(len(tokens), cfg.node_count, device=device).argsort(-1)\n        tokens[:,1:1+3*cfg.node_count] = tokens[:,1:1+3*cfg.node_count].reshape(-1,cfg.node_count,3).gather(1,order[:,:,None].expand(-1,-1,3)).reshape(len(tokens),-1)\n        target = targets[:, -1]')
+s=s.replace('            logits = model.forward_all(tokens, max_loops=cfg.max_loops)["logits_by_loop"][:, -1]\n            loss = F.cross_entropy(logits, target)','            all_logits = model.forward_all(tokens, max_loops=cfg.max_loops)["logits_by_loop"]\n            logits = all_logits[:, -1]\n            loss = F.cross_entropy(all_logits.reshape(-1,cfg.node_count),targets.reshape(-1)) if args.supervision == "per_loop" else F.cross_entropy(logits, target)')
+s=s.replace('"protocol_id": PROTOCOL_ID,\n        "config"','"protocol_id": PROTOCOL_ID,\n        "supervision": args.supervision, "edge_layout": "randomized triplets",\n        "args": {"trajectory_aux_weight": 1.0 if args.supervision == "per_loop" else 0.0, "trajectory_aux_jump": 1},\n        "config"',1)
+s=s.replace('"loss": f"final-only endpoint CE at call {cfg.max_loops}"','"loss": "per-call path CE" if args.supervision == "per_loop" else f"final-only endpoint CE at call {cfg.max_loops}"')
+s=s.replace('parser.add_argument("--out-dir", type=Path, required=True)','parser.add_argument("--supervision",choices=["final_only","per_loop"],required=True)\n    parser.add_argument("--out-dir", type=Path, required=True)')
+(R/'reasoning_loop/n10_supervision_backbone.py').write_text(s)
+s=Path('/Users/jiaju/Documents/Codex/2026-09-06/ga/d8l8_shuffled_J_matched_20260915/code/train_postunit_J.py').read_text()
+s=s.replace('sys.path.insert(0,str(Path(__file__).resolve().parents[2]/"d8l8_j_extension_20260915/code"))','sys.path.insert(0,str(Path(__file__).resolve().parent))').replace('from extend_j import','from supervision_utils import')
+s=s.replace('R=Path(__file__).resolve().parent.parent','R=Path(__file__).resolve().parent.parent/"supervision"')
+s=s.replace('repeat_interleave(8,0)','repeat_interleave(10,0)').replace('torch.arange(8,device=device)','torch.arange(10,device=device)').replace('tokens[:,1:25]','tokens[:,1:31]').replace('reshape(-1,8,3)','reshape(-1,10,3)').replace('reshape(-1,24)','reshape(-1,30)').replace('.roll(8,0)','.roll(10,0)').replace('c.node_count==8','c.node_count==10').replace("'cycle8'","'cycle10'").replace('(4*1024**3)','(8*1024**3)')
+(R/'train_supervision_J.py').write_text(s)
+s=Path('/Users/jiaju/Documents/Codex/2026-09-06/ga/d8l8_j_extension_20260915/code/extend_j.py').read_text();s=s[:s.index('def datasets():')].replace('[:,:8]','[:,:10]');(R/'supervision_utils.py').write_text(s)

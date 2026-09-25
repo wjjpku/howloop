@@ -1,0 +1,693 @@
+{
+  "method": {
+    "carrier_period": 4.0,
+    "phase_estimator": "row-centered normalized Fourier coefficient, then phase unwrap",
+    "fit_range": [
+      41,
+      490
+    ],
+    "bootstrap": "moving-block residual bootstrap",
+    "metrics_files": [
+      "/data/wujiaju/consolidation_20260923/parity/seed2/source/diagonal_band_metrics.csv"
+    ]
+  },
+  "metrics": {
+    "exact_match": {
+      "raw": {
+        "variant": "raw",
+        "metric": "exact_match",
+        "fitted_equation_t_from_n": {
+          "t_per_n_slope": 0.9903949188226284,
+          "intercept": -0.1174014621344443,
+          "slope_ci95": [
+            0.9902618607492693,
+            0.9905215991882657
+          ]
+        },
+        "equivalent_heatmap_equation_n_from_t": {
+          "n_per_t_slope": 1.0096982334973912,
+          "intercept": 0.11854004892715926,
+          "slope_ci95": [
+            1.0095691005824627,
+            1.0098339031691703
+          ]
+        },
+        "phase_drift": {
+          "loops_per_input_token": -0.009605081177371539,
+          "loops_per_100_tokens": -0.9605081177371539,
+          "predicted_offset_at_n500": -4.9199420508202145,
+          "input_tokens_per_four_loop_wrap": -416.4462461205989,
+          "observed_unwrapped_offset_first": -0.4101323734400069,
+          "observed_unwrapped_offset_last": -4.725274461511168
+        },
+        "fit_quality": {
+          "r_squared": 0.9956576623050772,
+          "rmse_loops": 0.08240027009400054,
+          "mae_loops": 0.06560655194913458,
+          "mean_fourier_amplitude": 14.24035394664336
+        },
+        "bootstrap": {
+          "samples": 5000,
+          "block_length": 20,
+          "slope_ci95": [
+            -0.009738139250730695,
+            -0.009478400811734341
+          ],
+          "slope_bootstrap_median": -0.009603373886790667,
+          "slope_bootstrap_std": 6.593072728346009e-05
+        },
+        "split_fits": [
+          {
+            "length_range": [
+              41,
+              190
+            ],
+            "offset_slope": -0.010584418148923695,
+            "t_per_n_slope": 0.9894155818510763,
+            "r_squared": 0.9843757527509389
+          },
+          {
+            "length_range": [
+              191,
+              340
+            ],
+            "offset_slope": -0.009581732799920362,
+            "t_per_n_slope": 0.9904182672000796,
+            "r_squared": 0.9729507245678599
+          },
+          {
+            "length_range": [
+              341,
+              490
+            ],
+            "offset_slope": -0.008972333341070376,
+            "t_per_n_slope": 0.9910276666589296,
+            "r_squared": 0.9477083876852421
+          }
+        ],
+        "period_scan": {
+          "best_period": 3.978,
+          "mean_amplitude_at_best": 14.256089050645167,
+          "mean_amplitude_at_period_4": 14.240353946643358,
+          "relative_gain_over_period_4": 0.0011049657937411972
+        }
+      },
+      "J": {
+        "variant": "J",
+        "metric": "exact_match",
+        "fitted_equation_t_from_n": {
+          "t_per_n_slope": 0.9981733641451991,
+          "intercept": -0.1557078807171502,
+          "slope_ci95": [
+            0.9981156519462403,
+            0.9982300097588701
+          ]
+        },
+        "equivalent_heatmap_equation_n_from_t": {
+          "n_per_t_slope": 1.0018299785592508,
+          "intercept": 0.15599282280036894,
+          "slope_ci95": [
+            1.0017731286615572,
+            1.001887905524861
+          ]
+        },
+        "phase_drift": {
+          "loops_per_input_token": -0.0018266358548009469,
+          "loops_per_100_tokens": -0.18266358548009468,
+          "predicted_offset_at_n500": -1.0690258081176236,
+          "input_tokens_per_four_loop_wrap": -2189.817959330427,
+          "observed_unwrapped_offset_first": -0.15127266174109452,
+          "observed_unwrapped_offset_last": -1.0595797343970488
+        },
+        "fit_quality": {
+          "r_squared": 0.9171413725710253,
+          "rmse_loops": 0.07132200136649675,
+          "mae_loops": 0.0520590440294753,
+          "mean_fourier_amplitude": 14.045624834778966
+        },
+        "bootstrap": {
+          "samples": 5000,
+          "block_length": 20,
+          "slope_ci95": [
+            -0.0018843480537597515,
+            -0.0017699902411298964
+          ],
+          "slope_bootstrap_median": -0.001825853925853271,
+          "slope_bootstrap_std": 2.9103648699102182e-05
+        },
+        "split_fits": [
+          {
+            "length_range": [
+              41,
+              190
+            ],
+            "offset_slope": -0.002261043659575788,
+            "t_per_n_slope": 0.9977389563404242,
+            "r_squared": 0.8856267404777167
+          },
+          {
+            "length_range": [
+              191,
+              340
+            ],
+            "offset_slope": -0.0018795905115145137,
+            "t_per_n_slope": 0.9981204094884855,
+            "r_squared": 0.6393808621501287
+          },
+          {
+            "length_range": [
+              341,
+              490
+            ],
+            "offset_slope": -0.0015726220302549271,
+            "t_per_n_slope": 0.9984273779697451,
+            "r_squared": 0.32550773803052546
+          }
+        ],
+        "period_scan": {
+          "best_period": 4.0275,
+          "mean_amplitude_at_best": 14.068643602367601,
+          "mean_amplitude_at_period_4": 14.045624834778963,
+          "relative_gain_over_period_4": 0.0016388567870360138
+        }
+      }
+    },
+    "correct_parity_probability": {
+      "raw": {
+        "variant": "raw",
+        "metric": "correct_parity_probability",
+        "fitted_equation_t_from_n": {
+          "t_per_n_slope": 0.9903898815517324,
+          "intercept": -0.1151684972132918,
+          "slope_ci95": [
+            0.9902596862404153,
+            0.990514500956248
+          ]
+        },
+        "equivalent_heatmap_equation_n_from_t": {
+          "n_per_t_slope": 1.0097033689734498,
+          "intercept": 0.11628601963587008,
+          "slope_ci95": [
+            1.0095763353636868,
+            1.009836120661
+          ]
+        },
+        "phase_drift": {
+          "loops_per_input_token": -0.00961011844826768,
+          "loops_per_100_tokens": -0.961011844826768,
+          "predicted_offset_at_n500": -4.920227721347132,
+          "input_tokens_per_four_loop_wrap": -416.2279603037608,
+          "observed_unwrapped_offset_first": -0.4090695214920198,
+          "observed_unwrapped_offset_last": -4.725873359966042
+        },
+        "fit_quality": {
+          "r_squared": 0.9958025769397664,
+          "rmse_loops": 0.0810502405501079,
+          "mae_loops": 0.06418636748544147,
+          "mean_fourier_amplitude": 14.264804911844532
+        },
+        "bootstrap": {
+          "samples": 5000,
+          "block_length": 20,
+          "slope_ci95": [
+            -0.009740313759584753,
+            -0.009485499043751913
+          ],
+          "slope_bootstrap_median": -0.009608243766666736,
+          "slope_bootstrap_std": 6.456181968826401e-05
+        },
+        "split_fits": [
+          {
+            "length_range": [
+              41,
+              190
+            ],
+            "offset_slope": -0.010587855213812988,
+            "t_per_n_slope": 0.989412144786187,
+            "r_squared": 0.9854103676545692
+          },
+          {
+            "length_range": [
+              191,
+              340
+            ],
+            "offset_slope": -0.009573837968293766,
+            "t_per_n_slope": 0.9904261620317062,
+            "r_squared": 0.9736246254065837
+          },
+          {
+            "length_range": [
+              341,
+              490
+            ],
+            "offset_slope": -0.008993086701058523,
+            "t_per_n_slope": 0.9910069132989415,
+            "r_squared": 0.9491723648440638
+          }
+        ],
+        "period_scan": {
+          "best_period": 3.978,
+          "mean_amplitude_at_best": 14.281033078610104,
+          "mean_amplitude_at_period_4": 14.264804911844541,
+          "relative_gain_over_period_4": 0.0011376367826865241
+        }
+      },
+      "J": {
+        "variant": "J",
+        "metric": "correct_parity_probability",
+        "fitted_equation_t_from_n": {
+          "t_per_n_slope": 0.9981690102006077,
+          "intercept": -0.15267990781728707,
+          "slope_ci95": [
+            0.9981116382534466,
+            0.9982252406097483
+          ]
+        },
+        "equivalent_heatmap_equation_n_from_t": {
+          "n_per_t_slope": 1.0018343484727343,
+          "intercept": 0.15295997597300895,
+          "slope_ci95": [
+            1.0017779147611692,
+            1.0018919344031072
+          ]
+        },
+        "phase_drift": {
+          "loops_per_input_token": -0.001830989799392305,
+          "loops_per_100_tokens": -0.1830989799392305,
+          "predicted_offset_at_n500": -1.0681748075134396,
+          "input_tokens_per_four_loop_wrap": -2184.610750604715,
+          "observed_unwrapped_offset_first": -0.15943364643922056,
+          "observed_unwrapped_offset_last": -1.060082465744221
+        },
+        "fit_quality": {
+          "r_squared": 0.9195413298976663,
+          "rmse_loops": 0.0703570369704309,
+          "mae_loops": 0.05148689708220054,
+          "mean_fourier_amplitude": 14.073736458139154
+        },
+        "bootstrap": {
+          "samples": 5000,
+          "block_length": 20,
+          "slope_ci95": [
+            -0.0018883617465533748,
+            -0.0017747593902517377
+          ],
+          "slope_bootstrap_median": -0.0018303378280232238,
+          "slope_bootstrap_std": 2.8978639588026265e-05
+        },
+        "split_fits": [
+          {
+            "length_range": [
+              41,
+              190
+            ],
+            "offset_slope": -0.0022631342875835537,
+            "t_per_n_slope": 0.9977368657124165,
+            "r_squared": 0.8919191684627983
+          },
+          {
+            "length_range": [
+              191,
+              340
+            ],
+            "offset_slope": -0.001872893974791789,
+            "t_per_n_slope": 0.9981271060252083,
+            "r_squared": 0.6454290153139853
+          },
+          {
+            "length_range": [
+              341,
+              490
+            ],
+            "offset_slope": -0.001562600740018452,
+            "t_per_n_slope": 0.9984373992599815,
+            "r_squared": 0.3278576599869911
+          }
+        ],
+        "period_scan": {
+          "best_period": 4.027,
+          "mean_amplitude_at_best": 14.095763033676505,
+          "mean_amplitude_at_period_4": 14.07373645813915,
+          "relative_gain_over_period_4": 0.0015650837006129237
+        }
+      }
+    },
+    "mean_parity_margin": {
+      "raw": {
+        "variant": "raw",
+        "metric": "mean_parity_margin",
+        "fitted_equation_t_from_n": {
+          "t_per_n_slope": 0.9903517068695915,
+          "intercept": -0.0789769226093269,
+          "slope_ci95": [
+            0.9902519293362423,
+            0.9904503307872996
+          ]
+        },
+        "equivalent_heatmap_equation_n_from_t": {
+          "n_per_t_slope": 1.0097422895961938,
+          "intercept": 0.07974633866080316,
+          "slope_ci95": [
+            1.0096417446850763,
+            1.0098440309733017
+          ]
+        },
+        "phase_drift": {
+          "loops_per_input_token": -0.009648293130408539,
+          "loops_per_100_tokens": -0.9648293130408538,
+          "predicted_offset_at_n500": -4.903123487813596,
+          "input_tokens_per_four_loop_wrap": -414.58110216336553,
+          "observed_unwrapped_offset_first": -0.3590490836699557,
+          "observed_unwrapped_offset_last": -4.678053393907866
+        },
+        "fit_quality": {
+          "r_squared": 0.9965943938138898,
+          "rmse_loops": 0.07326715046176398,
+          "mae_loops": 0.056817771490844916,
+          "mean_fourier_amplitude": 14.346615264090122
+        },
+        "bootstrap": {
+          "samples": 5000,
+          "block_length": 20,
+          "slope_ci95": [
+            -0.009748070663757751,
+            -0.0095496692127004
+          ],
+          "slope_bootstrap_median": -0.00964773961796266,
+          "slope_bootstrap_std": 5.107688727647046e-05
+        },
+        "split_fits": [
+          {
+            "length_range": [
+              41,
+              190
+            ],
+            "offset_slope": -0.010576666136127183,
+            "t_per_n_slope": 0.9894233338638728,
+            "r_squared": 0.9923751970144562
+          },
+          {
+            "length_range": [
+              191,
+              340
+            ],
+            "offset_slope": -0.009596783927279426,
+            "t_per_n_slope": 0.9904032160727205,
+            "r_squared": 0.9786370503785929
+          },
+          {
+            "length_range": [
+              341,
+              490
+            ],
+            "offset_slope": -0.008960585710779654,
+            "t_per_n_slope": 0.9910394142892204,
+            "r_squared": 0.9524821751471321
+          }
+        ],
+        "period_scan": {
+          "best_period": 3.978,
+          "mean_amplitude_at_best": 14.36246234617085,
+          "mean_amplitude_at_period_4": 14.346615264090126,
+          "relative_gain_over_period_4": 0.0011045868164032413
+        }
+      },
+      "J": {
+        "variant": "J",
+        "metric": "mean_parity_margin",
+        "fitted_equation_t_from_n": {
+          "t_per_n_slope": 0.9980264091511225,
+          "intercept": -0.07802451493268626,
+          "slope_ci95": [
+            0.9979474698483666,
+            0.9981046423595946
+          ]
+        },
+        "equivalent_heatmap_equation_n_from_t": {
+          "n_per_t_slope": 1.0019774936121741,
+          "intercept": 0.07817880791255864,
+          "slope_ci95": [
+            1.001898956842766,
+            1.0020567516965049
+          ]
+        },
+        "phase_drift": {
+          "loops_per_input_token": -0.001973590848877523,
+          "loops_per_100_tokens": -0.19735908488775228,
+          "predicted_offset_at_n500": -1.0648199393714477,
+          "input_tokens_per_four_loop_wrap": -2026.7625390921298,
+          "observed_unwrapped_offset_first": -0.08280587679737715,
+          "observed_unwrapped_offset_last": -1.0235415043617129
+        },
+        "fit_quality": {
+          "r_squared": 0.9327941525840572,
+          "rmse_loops": 0.06881586361512614,
+          "mae_loops": 0.05217591030379189,
+          "mean_fourier_amplitude": 14.198858175847025
+        },
+        "bootstrap": {
+          "samples": 5000,
+          "block_length": 20,
+          "slope_ci95": [
+            -0.0020525301516333963,
+            -0.0018953576404054254
+          ],
+          "slope_bootstrap_median": -0.0019723892555944793,
+          "slope_bootstrap_std": 4.020823923500778e-05
+        },
+        "split_fits": [
+          {
+            "length_range": [
+              41,
+              190
+            ],
+            "offset_slope": -0.0025915097473871557,
+            "t_per_n_slope": 0.9974084902526128,
+            "r_squared": 0.9252974928388754
+          },
+          {
+            "length_range": [
+              191,
+              340
+            ],
+            "offset_slope": -0.002007533113459964,
+            "t_per_n_slope": 0.9979924668865401,
+            "r_squared": 0.6821097726360867
+          },
+          {
+            "length_range": [
+              341,
+              490
+            ],
+            "offset_slope": -0.0015471367546699092,
+            "t_per_n_slope": 0.9984528632453301,
+            "r_squared": 0.3626021643880266
+          }
+        ],
+        "period_scan": {
+          "best_period": 4.0205,
+          "mean_amplitude_at_best": 14.21179321751781,
+          "mean_amplitude_at_period_4": 14.19885817584702,
+          "relative_gain_over_period_4": 0.0009109916804996843
+        }
+      }
+    }
+  },
+  "exact_match_comparison": {
+    "raw_to_J_phase_slope_reduction_fraction": 0.8098260888097135,
+    "raw_to_J_phase_slope_reduction_factor": 5.2583448157587105
+  },
+  "schedule_validation": {
+    "full_fit": {
+      "raw": {
+        "length_range": [
+          41,
+          490
+        ],
+        "scheduled_mean": 0.9109375,
+        "registered_t_equals_n_mean": 0.4976388888888889,
+        "local_oracle_mean": 0.9212152777777778,
+        "oracle_gap": 0.4235763888888889,
+        "fraction_of_oracle_gap_recovered": 0.9757357160422985,
+        "selected_offset_counts": {
+          "-2": 53,
+          "-1": 137,
+          "0": 104,
+          "1": 104,
+          "2": 52
+        }
+      },
+      "J": {
+        "length_range": [
+          41,
+          490
+        ],
+        "scheduled_mean": 0.9238541666666666,
+        "registered_t_equals_n_mean": 0.7773263888888889,
+        "local_oracle_mean": 0.9374305555555555,
+        "oracle_gap": 0.1601041666666666,
+        "fraction_of_oracle_gap_recovered": 0.9152027759705051,
+        "selected_offset_counts": {
+          "-1": 302,
+          "0": 148
+        }
+      }
+    },
+    "half_split_cross_validation": {
+      "raw": [
+        {
+          "length_range": [
+            266,
+            490
+          ],
+          "scheduled_mean": 0.8479166666666667,
+          "registered_t_equals_n_mean": 0.7113194444444444,
+          "local_oracle_mean": 0.8672916666666667,
+          "oracle_gap": 0.1559722222222223,
+          "fraction_of_oracle_gap_recovered": 0.8757791629563667,
+          "selected_offset_counts": {
+            "-1": 51,
+            "0": 98,
+            "1": 76
+          },
+          "train_length_range": [
+            41,
+            265
+          ],
+          "trained_t_per_n_slope": 0.9898484315063244
+        },
+        {
+          "length_range": [
+            41,
+            265
+          ],
+          "scheduled_mean": 0.9683333333333334,
+          "registered_t_equals_n_mean": 0.2839583333333333,
+          "local_oracle_mean": 0.9751388888888889,
+          "oracle_gap": 0.6911805555555556,
+          "fraction_of_oracle_gap_recovered": 0.99015372249573,
+          "selected_offset_counts": {
+            "-2": 55,
+            "-1": 92,
+            "1": 24,
+            "2": 54
+          },
+          "train_length_range": [
+            266,
+            490
+          ],
+          "trained_t_per_n_slope": 0.990838436111696
+        }
+      ],
+      "J": [
+        {
+          "length_range": [
+            266,
+            490
+          ],
+          "scheduled_mean": 0.8836805555555556,
+          "registered_t_equals_n_mean": 0.6167361111111112,
+          "local_oracle_mean": 0.8976388888888889,
+          "oracle_gap": 0.2809027777777777,
+          "fraction_of_oracle_gap_recovered": 0.950309023485785,
+          "selected_offset_counts": {
+            "-1": 225
+          },
+          "train_length_range": [
+            41,
+            265
+          ],
+          "trained_t_per_n_slope": 0.997966758599321
+        },
+        {
+          "length_range": [
+            41,
+            265
+          ],
+          "scheduled_mean": 0.9645833333333333,
+          "registered_t_equals_n_mean": 0.9379166666666666,
+          "local_oracle_mean": 0.9772222222222222,
+          "oracle_gap": 0.039305555555555594,
+          "fraction_of_oracle_gap_recovered": 0.6784452296819797,
+          "selected_offset_counts": {
+            "-1": 100,
+            "0": 125
+          },
+          "train_length_range": [
+            266,
+            490
+          ],
+          "trained_t_per_n_slope": 0.9983694649730052
+        }
+      ]
+    },
+    "coefficient_swap_control": {
+      "raw_coefficient_on_raw_surface": {
+        "length_range": [
+          41,
+          490
+        ],
+        "scheduled_mean": 0.9109375,
+        "registered_t_equals_n_mean": 0.4976388888888889,
+        "local_oracle_mean": 0.9212152777777778,
+        "oracle_gap": 0.4235763888888889,
+        "fraction_of_oracle_gap_recovered": 0.9757357160422985,
+        "selected_offset_counts": {
+          "-2": 53,
+          "-1": 137,
+          "0": 104,
+          "1": 104,
+          "2": 52
+        }
+      },
+      "raw_coefficient_on_J_surface": {
+        "length_range": [
+          41,
+          490
+        ],
+        "scheduled_mean": 0.4334375,
+        "registered_t_equals_n_mean": 0.7773263888888889,
+        "local_oracle_mean": 0.9374305555555555,
+        "oracle_gap": 0.1601041666666666,
+        "fraction_of_oracle_gap_recovered": -2.14790717848623,
+        "selected_offset_counts": {
+          "-2": 53,
+          "-1": 137,
+          "0": 104,
+          "1": 104,
+          "2": 52
+        }
+      },
+      "J_coefficient_on_raw_surface": {
+        "length_range": [
+          41,
+          490
+        ],
+        "scheduled_mean": 0.358125,
+        "registered_t_equals_n_mean": 0.4976388888888889,
+        "local_oracle_mean": 0.9212152777777778,
+        "oracle_gap": 0.4235763888888889,
+        "fraction_of_oracle_gap_recovered": -0.3293712599393393,
+        "selected_offset_counts": {
+          "-1": 302,
+          "0": 148
+        }
+      },
+      "J_coefficient_on_J_surface": {
+        "length_range": [
+          41,
+          490
+        ],
+        "scheduled_mean": 0.9238541666666666,
+        "registered_t_equals_n_mean": 0.7773263888888889,
+        "local_oracle_mean": 0.9374305555555555,
+        "oracle_gap": 0.1601041666666666,
+        "fraction_of_oracle_gap_recovered": 0.9152027759705051,
+        "selected_offset_counts": {
+          "-1": 302,
+          "0": 148
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "raw": {
+    "comparisons": 4360,
+    "different_counts": 0,
+    "examples": []
+  },
+  "rank48_seed1/full": {
+    "comparisons": 4360,
+    "different_counts": 0,
+    "examples": []
+  },
+  "rank48_seed2/full": {
+    "comparisons": 4360,
+    "different_counts": 0,
+    "examples": []
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "pid": 3146081,
+  "gpu": "7",
+  "mode": "train",
+  "model": "/data/wujiaju/models/Ouro-2.6B",
+  "parameters": 2667974657,
+  "trainable_parameters": 2667972608,
+  "frozen_names": [
+    "model.early_exit_gate.weight",
+    "model.early_exit_gate.bias"
+  ],
+  "loops": 4,
+  "final_only": true,
+  "tbptt": false,
+  "optimizer": "Adafactor FP32 factored states, no first moment",
+  "master_weights": "FP32",
+  "autocast": "BF16",
+  "lr": 1e-05,
+  "warmup": 50,
+  "steps": 500,
+  "task_examples_per_update": 8,
+  "k_uniform": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "templates": 5,
+  "general_input_token_fraction": 0.2,
+  "loss": "0.8 mean task answer CE + 0.2 general token CE",
+  "general_source_mix": [
+    0.7,
+    0.2,
+    0.1
+  ],
+  "validation_guard_nll_delta": null,
+  "checkpoint_retention": 1,
+  "task": "antonym cancellation only; no lexical classification",
+  "split": "topology-disjoint train/validation; historical bank topologies excluded",
+  "gate": "explicitly frozen; unused in final-only loss; no auxiliary gate training",
+  "script_sha256": "c25fec016f27ebcb332e4d34476c6bb5273b0f26a62f0da1e340d61960b292a2"
+}

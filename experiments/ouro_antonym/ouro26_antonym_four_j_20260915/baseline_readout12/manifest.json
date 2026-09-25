@@ -1,0 +1,20 @@
+{
+  "pid": 3751477,
+  "gpu": 6,
+  "checkpoint": "/data/wujiaju/ouro26_antonym_full_20260915/run/checkpoint.pt",
+  "checkpoint_step": 500,
+  "loops_executed": 4,
+  "readout_loops": [
+    1,
+    2
+  ],
+  "use_j": false,
+  "training": false,
+  "rows_per_readout": 512,
+  "batch": 4,
+  "max_new_tokens": 64,
+  "template": 0,
+  "seed": 20260915,
+  "shared_with_J_training": true,
+  "script_sha256": "019f66e640fa0d7a944d7caa2a5f27dad1e8e10257bec85bf45c7ea60b44ee3b"
+}

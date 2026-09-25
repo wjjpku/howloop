@@ -1,0 +1,192 @@
+{"step": 0, "k": 1, "template": 0, "graph": 0, "expected": "Alice", "generated": "Carol", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 1, "expected": "Frank", "generated": "David", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 2, "expected": "Frank", "generated": "Carol", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 3, "expected": "Henry", "generated": "David", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 4, "expected": "Grace", "generated": "Frank", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 5, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 0, "k": 1, "template": 0, "graph": 6, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 0, "k": 1, "template": 0, "graph": 7, "expected": "Jack", "generated": "Alice", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 8, "expected": "Iris", "generated": "Iris", "correct": true}
+{"step": 0, "k": 1, "template": 0, "graph": 9, "expected": "Emma", "generated": "Alice", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 10, "expected": "David", "generated": "David", "correct": true}
+{"step": 0, "k": 1, "template": 0, "graph": 11, "expected": "Carol", "generated": "Alice", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 12, "expected": "Frank", "generated": "Bob", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 13, "expected": "Jack", "generated": "Alice", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 14, "expected": "Jack", "generated": "Grace", "correct": false}
+{"step": 0, "k": 1, "template": 0, "graph": 15, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 0, "k": 2, "template": 0, "graph": 0, "expected": "Frank", "generated": "After exactly 02 transfers, the letter is with Alice.", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 1, "expected": "Emma", "generated": "After exactly 02 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 2, "expected": "Alice", "generated": "After exactly 02 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 3, "expected": "Grace", "generated": "David", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 4, "expected": "Henry", "generated": "Frank", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 5, "expected": "Emma", "generated": "Bob", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 6, "expected": "David", "generated": "After exactly 02 transfers, the letter is with Carol.", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 7, "expected": "Iris", "generated": "Alice", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 8, "expected": "Alice", "generated": "Iris", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 9, "expected": "Henry", "generated": "Alice", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 10, "expected": "Grace", "generated": "After exactly 02 transfers, the letter is with Emma.", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 11, "expected": "Bob", "generated": "After exactly 02 transfers, the letter is with Alice.", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 12, "expected": "Jack", "generated": "After exactly 02 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 13, "expected": "Henry", "generated": "After exactly 02 transfers, the letter is with Alice.", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 14, "expected": "Carol", "generated": "After exactly 02 transfers, the letter is with Grace.", "correct": false}
+{"step": 0, "k": 2, "template": 0, "graph": 15, "expected": "Grace", "generated": "Iris", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 0, "expected": "David", "generated": "After exactly 03 transfers, the letter is with Grace.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 1, "expected": "Alice", "generated": "After exactly 03 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 2, "expected": "Iris", "generated": "After exactly 03 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 3, "expected": "Iris", "generated": "After exactly 03 transfers, the letter is with Alice.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 4, "expected": "David", "generated": "Frank", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 5, "expected": "Henry", "generated": "After exactly 03 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 6, "expected": "Emma", "generated": "After exactly 03 transfers, the letter is with Carol.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 7, "expected": "Bob", "generated": "Alice", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 8, "expected": "Emma", "generated": "After exactly 03 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 9, "expected": "David", "generated": "After exactly 03 transfers, the letter is with Emma.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 10, "expected": "Bob", "generated": "After exactly 03 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 11, "expected": "Henry", "generated": "After exactly 03 transfers, the letter is with Alice.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 12, "expected": "Henry", "generated": "After exactly 03 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 13, "expected": "Carol", "generated": "After exactly 03 transfers, the letter is with Alice.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 14, "expected": "Frank", "generated": "After exactly 03 transfers, the letter is with Grace.", "correct": false}
+{"step": 0, "k": 3, "template": 0, "graph": 15, "expected": "Emma", "generated": "After exactly 03 transfers, the letter is with Iris.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 0, "expected": "Bob", "generated": "After exactly 04 transfers, the letter is with Grace.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 1, "expected": "Henry", "generated": "After exactly 04 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 2, "expected": "Henry", "generated": "After exactly 04 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 3, "expected": "Jack", "generated": "After exactly 04 transfers, the letter is with Emma.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 4, "expected": "Emma", "generated": "Frank", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 5, "expected": "Jack", "generated": "After exactly 04 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 6, "expected": "Alice", "generated": "After exactly 04 transfers, the letter is with Bob.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 7, "expected": "Henry", "generated": "Alice", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 8, "expected": "Henry", "generated": "After exactly 04 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 9, "expected": "Frank", "generated": "After exactly 04 transfers, the letter is with Emma.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 10, "expected": "Carol", "generated": "After exactly 04 transfers, the letter is with Frank.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 11, "expected": "Jack", "generated": "After exactly 04 transfers, the letter is with Alice.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 12, "expected": "Carol", "generated": "Iris.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 13, "expected": "Bob", "generated": "After exactly 04 transfers, the letter is with Alice.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 14, "expected": "David", "generated": "After exactly 04 transfers, the letter is with Grace.", "correct": false}
+{"step": 0, "k": 4, "template": 0, "graph": 15, "expected": "Carol", "generated": "Iris", "correct": false}
+{"step": 100, "k": 1, "template": 0, "graph": 0, "expected": "Alice", "generated": "Alice", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 1, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 2, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 3, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 4, "expected": "Grace", "generated": "Grace", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 5, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 6, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 7, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 8, "expected": "Iris", "generated": "Iris", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 9, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 10, "expected": "David", "generated": "David", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 11, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 12, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 13, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 14, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 100, "k": 1, "template": 0, "graph": 15, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 100, "k": 2, "template": 0, "graph": 0, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 100, "k": 2, "template": 0, "graph": 1, "expected": "Emma", "generated": "Alice", "correct": false}
+{"step": 100, "k": 2, "template": 0, "graph": 2, "expected": "Alice", "generated": "Iris", "correct": false}
+{"step": 100, "k": 2, "template": 0, "graph": 3, "expected": "Grace", "generated": "Grace", "correct": true}
+{"step": 100, "k": 2, "template": 0, "graph": 4, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 100, "k": 2, "template": 0, "graph": 5, "expected": "Emma", "generated": "Henry", "correct": false}
+{"step": 100, "k": 2, "template": 0, "graph": 6, "expected": "David", "generated": "David", "correct": true}
+{"step": 100, "k": 2, "template": 0, "graph": 7, "expected": "Iris", "generated": "Bob", "correct": false}
+{"step": 100, "k": 2, "template": 0, "graph": 8, "expected": "Alice", "generated": "Emma", "correct": false}
+{"step": 100, "k": 2, "template": 0, "graph": 9, "expected": "Henry", "generated": "David", "correct": false}
+{"step": 100, "k": 2, "template": 0, "graph": 10, "expected": "Grace", "generated": "Grace", "correct": true}
+{"step": 100, "k": 2, "template": 0, "graph": 11, "expected": "Bob", "generated": "Bob", "correct": true}
+{"step": 100, "k": 2, "template": 0, "graph": 12, "expected": "Jack", "generated": "Henry", "correct": false}
+{"step": 100, "k": 2, "template": 0, "graph": 13, "expected": "Henry", "generated": "Carol", "correct": false}
+{"step": 100, "k": 2, "template": 0, "graph": 14, "expected": "Carol", "generated": "Frank", "correct": false}
+{"step": 100, "k": 2, "template": 0, "graph": 15, "expected": "Grace", "generated": "Emma", "correct": false}
+{"step": 100, "k": 3, "template": 0, "graph": 0, "expected": "David", "generated": "David", "correct": true}
+{"step": 100, "k": 3, "template": 0, "graph": 1, "expected": "Alice", "generated": "Iris", "correct": false}
+{"step": 100, "k": 3, "template": 0, "graph": 2, "expected": "Iris", "generated": "Henry", "correct": false}
+{"step": 100, "k": 3, "template": 0, "graph": 3, "expected": "Iris", "generated": "Iris", "correct": true}
+{"step": 100, "k": 3, "template": 0, "graph": 4, "expected": "David", "generated": "David", "correct": true}
+{"step": 100, "k": 3, "template": 0, "graph": 5, "expected": "Henry", "generated": "Jack", "correct": false}
+{"step": 100, "k": 3, "template": 0, "graph": 6, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 100, "k": 3, "template": 0, "graph": 7, "expected": "Bob", "generated": "Henry", "correct": false}
+{"step": 100, "k": 3, "template": 0, "graph": 8, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 100, "k": 3, "template": 0, "graph": 9, "expected": "David", "generated": "David", "correct": true}
+{"step": 100, "k": 3, "template": 0, "graph": 10, "expected": "Bob", "generated": "Bob", "correct": true}
+{"step": 100, "k": 3, "template": 0, "graph": 11, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 100, "k": 3, "template": 0, "graph": 12, "expected": "Henry", "generated": "Carol", "correct": false}
+{"step": 100, "k": 3, "template": 0, "graph": 13, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 100, "k": 3, "template": 0, "graph": 14, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 100, "k": 3, "template": 0, "graph": 15, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 100, "k": 4, "template": 0, "graph": 0, "expected": "Bob", "generated": "Bob", "correct": true}
+{"step": 100, "k": 4, "template": 0, "graph": 1, "expected": "Henry", "generated": "Iris", "correct": false}
+{"step": 100, "k": 4, "template": 0, "graph": 2, "expected": "Henry", "generated": "Emma", "correct": false}
+{"step": 100, "k": 4, "template": 0, "graph": 3, "expected": "Jack", "generated": "Iris", "correct": false}
+{"step": 100, "k": 4, "template": 0, "graph": 4, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 100, "k": 4, "template": 0, "graph": 5, "expected": "Jack", "generated": "Carol", "correct": false}
+{"step": 100, "k": 4, "template": 0, "graph": 6, "expected": "Alice", "generated": "Alice", "correct": true}
+{"step": 100, "k": 4, "template": 0, "graph": 7, "expected": "Henry", "generated": "Carol", "correct": false}
+{"step": 100, "k": 4, "template": 0, "graph": 8, "expected": "Henry", "generated": "David", "correct": false}
+{"step": 100, "k": 4, "template": 0, "graph": 9, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 100, "k": 4, "template": 0, "graph": 10, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 100, "k": 4, "template": 0, "graph": 11, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 100, "k": 4, "template": 0, "graph": 12, "expected": "Carol", "generated": "Alice", "correct": false}
+{"step": 100, "k": 4, "template": 0, "graph": 13, "expected": "Bob", "generated": "Carol", "correct": false}
+{"step": 100, "k": 4, "template": 0, "graph": 14, "expected": "David", "generated": "David", "correct": true}
+{"step": 100, "k": 4, "template": 0, "graph": 15, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 0, "expected": "Alice", "generated": "Alice", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 1, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 2, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 3, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 4, "expected": "Grace", "generated": "Grace", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 5, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 6, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 7, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 8, "expected": "Iris", "generated": "Iris", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 9, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 10, "expected": "David", "generated": "David", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 11, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 12, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 13, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 14, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 200, "k": 1, "template": 0, "graph": 15, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 0, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 1, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 2, "expected": "Alice", "generated": "Alice", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 3, "expected": "Grace", "generated": "Grace", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 4, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 5, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 6, "expected": "David", "generated": "David", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 7, "expected": "Iris", "generated": "Iris", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 8, "expected": "Alice", "generated": "Alice", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 9, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 10, "expected": "Grace", "generated": "Grace", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 11, "expected": "Bob", "generated": "Bob", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 12, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 13, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 14, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 200, "k": 2, "template": 0, "graph": 15, "expected": "Grace", "generated": "Grace", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 0, "expected": "David", "generated": "David", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 1, "expected": "Alice", "generated": "Alice", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 2, "expected": "Iris", "generated": "Iris", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 3, "expected": "Iris", "generated": "Iris", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 4, "expected": "David", "generated": "David", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 5, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 6, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 7, "expected": "Bob", "generated": "Bob", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 8, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 9, "expected": "David", "generated": "David", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 10, "expected": "Bob", "generated": "Bob", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 11, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 12, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 13, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 14, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 200, "k": 3, "template": 0, "graph": 15, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 0, "expected": "Bob", "generated": "Bob", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 1, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 2, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 3, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 4, "expected": "Emma", "generated": "Emma", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 5, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 6, "expected": "Alice", "generated": "Alice", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 7, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 8, "expected": "Henry", "generated": "Henry", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 9, "expected": "Frank", "generated": "Frank", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 10, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 11, "expected": "Jack", "generated": "Jack", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 12, "expected": "Carol", "generated": "Carol", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 13, "expected": "Bob", "generated": "Bob", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 14, "expected": "David", "generated": "David", "correct": true}
+{"step": 200, "k": 4, "template": 0, "graph": 15, "expected": "Carol", "generated": "Carol", "correct": true}

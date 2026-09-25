@@ -1,0 +1,75 @@
+{
+  "status": "complete",
+  "metrics": {
+    "lexical": {
+      "correct": 10,
+      "total": 48,
+      "accuracy": 0.20833333333333334,
+      "strict_accuracy": 0.0
+    },
+    "cancellation": {
+      "correct": 1,
+      "total": 128,
+      "accuracy": 0.0078125,
+      "strict_accuracy": 0.0078125
+    },
+    "per_k": {
+      "1": {
+        "correct": 1,
+        "total": 16,
+        "accuracy": 0.0625,
+        "strict_accuracy": 0.0625
+      },
+      "2": {
+        "correct": 0,
+        "total": 16,
+        "accuracy": 0.0,
+        "strict_accuracy": 0.0
+      },
+      "3": {
+        "correct": 0,
+        "total": 16,
+        "accuracy": 0.0,
+        "strict_accuracy": 0.0
+      },
+      "4": {
+        "correct": 0,
+        "total": 16,
+        "accuracy": 0.0,
+        "strict_accuracy": 0.0
+      },
+      "5": {
+        "correct": 0,
+        "total": 16,
+        "accuracy": 0.0,
+        "strict_accuracy": 0.0
+      },
+      "6": {
+        "correct": 0,
+        "total": 16,
+        "accuracy": 0.0,
+        "strict_accuracy": 0.0
+      },
+      "7": {
+        "correct": 0,
+        "total": 16,
+        "accuracy": 0.0,
+        "strict_accuracy": 0.0
+      },
+      "8": {
+        "correct": 0,
+        "total": 16,
+        "accuracy": 0.0,
+        "strict_accuracy": 0.0
+      }
+    },
+    "dependency_ge_3": {
+      "correct": 0,
+      "total": 22,
+      "accuracy": 0.0,
+      "strict_accuracy": 0.0
+    }
+  },
+  "length_limit_reached": 5,
+  "seconds": 201.044038772583
+}

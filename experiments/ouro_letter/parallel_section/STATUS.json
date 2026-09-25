@@ -1,0 +1,10 @@
+{
+  "stage": "complete",
+  "version": 61,
+  "active_jobs": [],
+  "semantic": "parallel_confirmation64",
+  "restoration": "parallel_restore64",
+  "audit": "AUDIT.json",
+  "main_pdf": "/Users/jiaju/Documents/looped_transformer_paper_repro_20260920/paper_spotlight_v1/build_v61_parallel/main_v61_parallel_mechanism.pdf",
+  "section_pdf": "/Users/jiaju/Documents/looped_transformer_paper_repro_20260920/paper_spotlight_v1/build_v61_section/section_v61_parallel.pdf"
+}

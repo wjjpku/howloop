@@ -1,0 +1,14 @@
+{
+  "examples": 20,
+  "device": "cpu",
+  "node_count": 10,
+  "loops": 6,
+  "finite": true,
+  "batch_predictions_equal": true,
+  "frozen_backbone_no_grad": true,
+  "controller_gradient": true,
+  "one_hop_correct": 20,
+  "checkpoint_sha256": "faca3e18f01122fa395e0ba08fc953e840c87b5f4c82cfb61603dab294640291",
+  "controller_sha256": "74dab7f6806f0a51a4f775c69193b30bcc66ebe43bdb8c97ca4876874526790a",
+  "scope": "smoke check only, not a full statistical reproduction"
+}

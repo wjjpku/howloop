@@ -1,0 +1,67 @@
+{
+  "protocol": "n10_migration_20260923",
+  "node_count": 10,
+  "task_max_depth": 8,
+  "status": "implementation_and_smoke",
+  "backbones": {
+    "local_control": {
+      "loops": 6,
+      "seeds": [
+        6,
+        3,
+        4,
+        5,
+        7
+      ],
+      "depth_mode": "uniform"
+    },
+    "trajectory": {
+      "loops": 8,
+      "seeds": [
+        0,
+        1,
+        6,
+        8
+      ],
+      "depth_mode": "uniform"
+    },
+    "continuation": {
+      "loops": 8,
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111
+      ],
+      "depth_mode": "fixed"
+    }
+  },
+  "steps": 20000,
+  "batch_size": 512,
+  "checkpoints": "best locked D8 selection accuracy, earliest tie; final also retained",
+  "protocol_change": "All selection/test graphs excluded from backbone and J training; original local backbones did not enforce this. Record as redesigned N10 cohort, not node-count-only causal comparison.",
+  "section3": "Two D8L8 and two D8L6 panels selected descriptively from complete registered cohorts; all seed results retained. One/two-step-looking readouts are not verified algorithmic steps.",
+  "experiments": [
+    "native trajectories calls0-16",
+    "D8L6 same-state f9/f10 target control, 2 pureCE fits each",
+    "cross-graph pattern/content semantic counterfactual",
+    "same-input routing transfer and component controls",
+    "corrupt-restore",
+    "D8L8 on-policy J calls1-16, 12 backbones x2fits",
+    "continuation calls1-128 and executor-off/shuffle/component controls"
+  ],
+  "unchanged_tasks": [
+    "Ouro",
+    "parity",
+    "KG"
+  ],
+  "no_claim_until_measured": true
+}

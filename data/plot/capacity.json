@@ -1,0 +1,62 @@
+{
+  "KG_128x16": {
+    "Rank-48 affine": [
+      78.91,
+      1.56,
+      0.78,
+      0.78
+    ],
+    "Dense affine": [
+      98.44,
+      78.91,
+      32.81,
+      3.12
+    ],
+    "MLP": [
+      98.44,
+      92.97,
+      75.0,
+      35.94
+    ],
+    "Attention": [
+      99.22,
+      94.53,
+      84.38,
+      24.22
+    ]
+  },
+  "lengths": [
+    8,
+    16,
+    24,
+    32
+  ],
+  "source": "main_v64_subfigures.tex tab:kg-scope; 128 examples per cell, length-32 curriculum checkpoint",
+  "Ouro": {
+    "n": 128,
+    "final_only_raw": [
+      128,
+      128,
+      128,
+      128
+    ],
+    "final_only_J": [
+      128,
+      128,
+      128,
+      127
+    ],
+    "stepwise_raw": [
+      0,
+      0,
+      0,
+      128
+    ],
+    "stepwise_J": [
+      23,
+      19,
+      13,
+      21
+    ]
+  }
+}

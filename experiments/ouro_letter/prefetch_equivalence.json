@@ -1,0 +1,6 @@
+{
+  "scope": "one discovery case; all13 result records exactly equal, including probabilities, self errors and generated names",
+  "reference": "confirmation_code_smoke",
+  "optimized": "prefetch_equivalence_smoke",
+  "vectorized_version_rejected_for_primary": "same discrete answers but probability deviations up to0.013072; retained as numerical diagnostic"
+}

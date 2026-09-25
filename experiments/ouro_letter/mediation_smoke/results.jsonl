@@ -1,0 +1,32 @@
+{"pair": 0, "condition": "native", "scope": null, "prediction": 21070, "target": 57, "correct": false, "probability": 0.0001756501878844574, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "J", "scope": null, "prediction": 57, "target": 57, "correct": true, "probability": 0.9948490262031555, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "self_output", "scope": "all", "prediction": 21070, "target": 57, "correct": false, "probability": 0.0001756501878844574, "native_correct": false, "J_correct": true, "max_logit_error": 0.0}
+{"pair": 0, "condition": "self_pattern", "scope": "all", "prediction": 21070, "target": 57, "correct": false, "probability": 0.0001756452111294493, "native_correct": false, "J_correct": true, "max_logit_error": 0.125}
+{"pair": 0, "condition": "rescue_pattern", "scope": "all", "prediction": 57, "target": 57, "correct": true, "probability": 0.9430181980133057, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "rescue_output", "scope": "all", "prediction": 57, "target": 57, "correct": true, "probability": 0.9680811166763306, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "rescue_value", "scope": "all", "prediction": 57, "target": 57, "correct": true, "probability": 0.9311563968658447, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "damage_pattern", "scope": "all", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00013730624050367624, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "self_output", "scope": "early", "prediction": 21070, "target": 57, "correct": false, "probability": 0.0001756501878844574, "native_correct": false, "J_correct": true, "max_logit_error": 0.0}
+{"pair": 0, "condition": "self_pattern", "scope": "early", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00017564365407451987, "native_correct": false, "J_correct": true, "max_logit_error": 0.125}
+{"pair": 0, "condition": "rescue_pattern", "scope": "early", "prediction": 32160, "target": 57, "correct": false, "probability": 0.21534711122512817, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "rescue_output", "scope": "early", "prediction": 57, "target": 57, "correct": true, "probability": 0.8346695899963379, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "rescue_value", "scope": "early", "prediction": 55, "target": 57, "correct": false, "probability": 0.013438524678349495, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "damage_pattern", "scope": "early", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00046739698154851794, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "self_output", "scope": "middle", "prediction": 21070, "target": 57, "correct": false, "probability": 0.0001756501878844574, "native_correct": false, "J_correct": true, "max_logit_error": 0.0}
+{"pair": 0, "condition": "self_pattern", "scope": "middle", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00017564132576808333, "native_correct": false, "J_correct": true, "max_logit_error": 0.125}
+{"pair": 0, "condition": "rescue_pattern", "scope": "middle", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00044700875878334045, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "rescue_output", "scope": "middle", "prediction": 21070, "target": 57, "correct": false, "probability": 0.001114914775826037, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "rescue_value", "scope": "middle", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00026452806196175516, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "damage_pattern", "scope": "middle", "prediction": 32160, "target": 57, "correct": false, "probability": 0.46561339497566223, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "self_output", "scope": "late", "prediction": 21070, "target": 57, "correct": false, "probability": 0.0001756501878844574, "native_correct": false, "J_correct": true, "max_logit_error": 0.0}
+{"pair": 0, "condition": "self_pattern", "scope": "late", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00017564852896612138, "native_correct": false, "J_correct": true, "max_logit_error": 0.125}
+{"pair": 0, "condition": "rescue_pattern", "scope": "late", "prediction": 57, "target": 57, "correct": true, "probability": 0.9549972414970398, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "rescue_output", "scope": "late", "prediction": 57, "target": 57, "correct": true, "probability": 0.9782804250717163, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "rescue_value", "scope": "late", "prediction": 55, "target": 57, "correct": false, "probability": 0.07236414402723312, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "damage_pattern", "scope": "late", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00013567187124863267, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "self_output", "scope": "local", "prediction": 21070, "target": 57, "correct": false, "probability": 0.0001756501878844574, "native_correct": false, "J_correct": true, "max_logit_error": 0.0}
+{"pair": 0, "condition": "self_pattern", "scope": "local", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00017553716315887868, "native_correct": false, "J_correct": true, "max_logit_error": 0.125}
+{"pair": 0, "condition": "rescue_pattern", "scope": "local", "prediction": 55, "target": 57, "correct": false, "probability": 0.026080667972564697, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "rescue_output", "scope": "local", "prediction": 11811, "target": 57, "correct": false, "probability": 0.0960773229598999, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "rescue_value", "scope": "local", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00022207039000932127, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "damage_pattern", "scope": "local", "prediction": 32160, "target": 57, "correct": false, "probability": 0.18302109837532043, "native_correct": false, "J_correct": true}

@@ -1,0 +1,16 @@
+{
+  "rows": 3072,
+  "reference_rows": 3072,
+  "all_rows_identical": true,
+  "cohort": "512 graphs x 10 starts; 4110 distinct-label examples",
+  "modes": [
+    "raw",
+    "full",
+    "batch_shuffle"
+  ],
+  "readouts": [
+    "pre_executor",
+    "post_executor"
+  ],
+  "reference": "experiments/n10/local/A/hop1_seed1/evaluation/permutation_clusters.csv"
+}

@@ -1,0 +1,26 @@
+{
+  "checkpoint": "/data/wujiaju/n10_migration_20260923/smoke_L8/best.pt",
+  "checkpoint_sha256": "557ecfcc0d30cd20d405ab77f97a4c97d2d75fa7cdf69f4e7dee315c5ad2e133",
+  "controller_seed": 1,
+  "excluded_locks": {
+    "/data/wujiaju/n10_migration_20260923/locks/confirmation.pt": "635ccb11c182e41ed046415f3a9f1c4d3043e4a7ca6d14444efa9b6feb20eac4",
+    "/data/wujiaju/n10_migration_20260923/locks/discovery.pt": "b3af6af8d58b6f9a0a9c16eabaf98ae486e76c3c19470feae5134a9a0a896279",
+    "/data/wujiaju/n10_migration_20260923/locks/donors.pt": "df59428a4445303df66f74327257100b3f42b8aebd76bfc48548ecbc2d31085c",
+    "/data/wujiaju/n10_migration_20260923/locks/rings.pt": "23a0d47e4bf6e50f3fbf17c4d20d34e9a077a8ded990a6297225ceb403660066",
+    "/data/wujiaju/n10_migration_20260923/locks/selection.pt": "d101bbdd50f61fd179bc1bfd8ba8c4151734ec6c6f1158f32e4197454adacd74",
+    "/data/wujiaju/n10_migration_20260923/locks/smoke.pt": "5d7dbd317536d4784fcde4501020f7eb02787de2dc905452695cebd1a9cc1534"
+  },
+  "max_train_call": 16,
+  "protocol_id": "paper2027.graph.g3.controller.v1",
+  "rank": 48,
+  "status": "complete",
+  "training_seed": 1,
+  "updates": 2,
+  "validation": {
+    "call16_successor_accuracy": 0.1,
+    "call8_successor_accuracy": 0.10078125,
+    "mean_successor_ce": 2.321966332662851,
+    "selection_lock_graphs": 128.0
+  },
+  "validation_seed": 10001
+}

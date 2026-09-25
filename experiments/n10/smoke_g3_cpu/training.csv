@@ -1,0 +1,2 @@
+update,train_successor_ce,mean_successor_ce,call8_successor_accuracy,call16_successor_accuracy,selection_lock_graphs
+2,2.3170344829559326,2.321966332662851,0.10078125,0.1,128.0

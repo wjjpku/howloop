@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "pid": 1705606,
+  "gpu": "3",
+  "code_sha256": "3dabb1548c0bfa7d29f3960508d105a534ba78b2f69f08d586c4d9606090c113",
+  "graph_seed": 2026092402,
+  "graphs": 32,
+  "unique_population": 40320,
+  "sampling": "uniform without replacement, no topology or prediction filters",
+  "graph_sha256": "293ed0a986cba75e193c683b0300993f726b641c4179559fba4af61048e596d8",
+  "backbone_seeds": [
+    100
+  ],
+  "J_seeds": [
+    1,
+    2
+  ],
+  "max_call": 40,
+  "starts": 8,
+  "schedule": "Raw from h0; J before every F call from h0, matching archived G4 evaluation",
+  "metric": "ordinary fraction of all node predictions correct; no collision exclusions",
+  "training_graph_disjoint": false,
+  "models": [
+    {
+      "seed": 100,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed100/graphpath_N8_D8_d256_B2_L8_seed100/final.pt",
+      "checkpoint_sha256": "cdfff11ac086ba87266e84a96c684b57395672644c4b9482479998cc86c82e11",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed100/rank48_seed1/best_controller.pt",
+          "sha256": "74e4301bd470cc67a2aa7666aba97d8aab8d97103891198e70414dd2de6d33cf"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed100/rank48_seed2/best_controller.pt",
+          "sha256": "13f6c8a717a4e8ff981f14e9f9de5edbed615d4ff6935f0074db6104bc8d54fa"
+        }
+      ]
+    }
+  ],
+  "separate_branch_check": [
+    true,
+    true,
+    true
+  ],
+  "elapsed": 1.1109976768493652,
+  "peak_mib": 335.4384765625
+}

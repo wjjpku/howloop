@@ -1,0 +1,36 @@
+{
+  "appendix_modes": [
+    "executor_off",
+    "batch_shuffle",
+    "D_only",
+    "no_AB",
+    "identity_D",
+    "AB_only",
+    "no_bias",
+    "mean_D",
+    "shuffle_D",
+    "spectrum_matched_random_delta"
+  ],
+  "backbone_seed": 110,
+  "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed110/graphpath_N8_D8_d256_B2_L8_seed110/final.pt",
+  "checkpoint_sha256": "3e17abdf54e3a40c0a9bd9158cb6c5bfdd1eef36502968b78f28843a12ff0cea",
+  "controller_source": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/analysis_code/reasoning_loop/paper2027_graph_g3_controller.py",
+  "controller_source_sha256": "9941d9bed9b2af30095103775cc0cfd8ca46588762f140ca08272b65c17a8d3b",
+  "evaluation_dir": "g4_evaluation",
+  "evaluation_manifest_prefix": "evaluation_seed",
+  "final_test_lock": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/locks/final_test_permutations_512.pt",
+  "final_test_lock_sha256": "3154ac43e1c58b3fea132ba2864074b1f7c2ae94cabba781a843a97e2523cc9e",
+  "full_controller_replicas": [
+    "rank48_seed1",
+    "rank48_seed2"
+  ],
+  "log": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/logs/evaluation_seed110.log",
+  "physical_cuda_visible_devices": "3",
+  "protocol_id": "paper2027.graph.g4.final_lock_evaluation.v1",
+  "raw_source": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/analysis_code/scripts/evaluate_paper2027_graph_g4.py",
+  "raw_source_sha256": "88778b556b49f2e398c189df74bdf65dc65e96b2efb3822522fc5bb7f13e25f9",
+  "runner_source": "scripts/run_paper2027_graph_g4_evaluation.sh",
+  "runner_source_sha256": "d9595eb545ef2b66337b545e6fe05cbc362ea46040d9c7f5ba69a6fc47c6b684",
+  "status": "complete",
+  "updated_at": "2026-08-12T01:06:33.547219+00:00"
+}

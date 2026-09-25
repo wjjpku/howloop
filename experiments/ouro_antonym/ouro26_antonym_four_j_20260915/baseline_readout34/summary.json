@@ -1,0 +1,126 @@
+{
+  "status": "complete",
+  "per_k": {
+    "1": {
+      "n": 64,
+      "loop3_correct": 64,
+      "loop4_correct": 64,
+      "answer_agreement": 64,
+      "loop4_repairs": 0,
+      "loop4_breaks": 0,
+      "loop3_unparsed": 0,
+      "loop4_unparsed": 0,
+      "loop3_without_eos": 47,
+      "loop4_without_eos": 47
+    },
+    "2": {
+      "n": 64,
+      "loop3_correct": 64,
+      "loop4_correct": 64,
+      "answer_agreement": 64,
+      "loop4_repairs": 0,
+      "loop4_breaks": 0,
+      "loop3_unparsed": 0,
+      "loop4_unparsed": 0,
+      "loop3_without_eos": 40,
+      "loop4_without_eos": 40
+    },
+    "3": {
+      "n": 64,
+      "loop3_correct": 64,
+      "loop4_correct": 64,
+      "answer_agreement": 64,
+      "loop4_repairs": 0,
+      "loop4_breaks": 0,
+      "loop3_unparsed": 0,
+      "loop4_unparsed": 0,
+      "loop3_without_eos": 51,
+      "loop4_without_eos": 51
+    },
+    "4": {
+      "n": 64,
+      "loop3_correct": 63,
+      "loop4_correct": 64,
+      "answer_agreement": 63,
+      "loop4_repairs": 1,
+      "loop4_breaks": 0,
+      "loop3_unparsed": 0,
+      "loop4_unparsed": 0,
+      "loop3_without_eos": 47,
+      "loop4_without_eos": 47
+    },
+    "5": {
+      "n": 64,
+      "loop3_correct": 6,
+      "loop4_correct": 3,
+      "answer_agreement": 60,
+      "loop4_repairs": 0,
+      "loop4_breaks": 3,
+      "loop3_unparsed": 0,
+      "loop4_unparsed": 0,
+      "loop3_without_eos": 64,
+      "loop4_without_eos": 64
+    },
+    "6": {
+      "n": 64,
+      "loop3_correct": 0,
+      "loop4_correct": 0,
+      "answer_agreement": 60,
+      "loop4_repairs": 0,
+      "loop4_breaks": 0,
+      "loop3_unparsed": 0,
+      "loop4_unparsed": 0,
+      "loop3_without_eos": 64,
+      "loop4_without_eos": 64
+    },
+    "7": {
+      "n": 64,
+      "loop3_correct": 0,
+      "loop4_correct": 0,
+      "answer_agreement": 58,
+      "loop4_repairs": 0,
+      "loop4_breaks": 0,
+      "loop3_unparsed": 0,
+      "loop4_unparsed": 0,
+      "loop3_without_eos": 63,
+      "loop4_without_eos": 64
+    },
+    "8": {
+      "n": 64,
+      "loop3_correct": 0,
+      "loop4_correct": 0,
+      "answer_agreement": 62,
+      "loop4_repairs": 0,
+      "loop4_breaks": 0,
+      "loop3_unparsed": 0,
+      "loop4_unparsed": 0,
+      "loop3_without_eos": 64,
+      "loop4_without_eos": 64
+    }
+  },
+  "k1_4": {
+    "n": 256,
+    "loop3_correct": 255,
+    "loop4_correct": 256,
+    "answer_agreement": 255,
+    "loop4_repairs": 1,
+    "loop4_breaks": 0,
+    "loop3_unparsed": 0,
+    "loop4_unparsed": 0,
+    "loop3_without_eos": 185,
+    "loop4_without_eos": 185
+  },
+  "k5_8": {
+    "n": 256,
+    "loop3_correct": 6,
+    "loop4_correct": 3,
+    "answer_agreement": 240,
+    "loop4_repairs": 0,
+    "loop4_breaks": 3,
+    "loop3_unparsed": 0,
+    "loop4_unparsed": 0,
+    "loop3_without_eos": 255,
+    "loop4_without_eos": 256
+  },
+  "seconds": 192.07427501678467
+}

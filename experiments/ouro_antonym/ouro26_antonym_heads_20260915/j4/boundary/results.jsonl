@@ -1,0 +1,96 @@
+{"group": "last_j_only", "j_sites": [3], "i": 16, "answer": "happy sad", "generated": "happy sad", "parsed": "happy sad", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 17, "answer": "alive dead", "generated": "alive dead", "parsed": "alive dead", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 18, "answer": "alive dead", "generated": "alive dead", "parsed": "alive dead", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 19, "answer": "closed open", "generated": "closed open", "parsed": "closed open", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 20, "answer": "clean dirty", "generated": "clean dirty", "parsed": "clean dirty", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 21, "answer": "closed open", "generated": "closed open", "parsed": "closed open", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 22, "answer": "light heavy", "generated": "light heavy", "parsed": "light heavy", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 23, "answer": "near far", "generated": "near far", "parsed": "near far", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 24, "answer": "wet dry", "generated": "wet dry", "parsed": "wet dry", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 25, "answer": "slow fast", "generated": "slow fast", "parsed": "slow fast", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 26, "answer": "slow fast", "generated": "slow fast", "parsed": "slow fast", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 27, "answer": "dirty clean", "generated": "dirty clean", "parsed": "dirty clean", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 28, "answer": "dirty clean", "generated": "dirty clean", "parsed": "dirty clean", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 29, "answer": "dirty clean", "generated": "dirty clean", "parsed": "dirty clean", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 30, "answer": "old young", "generated": "old young", "parsed": "old young", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 31, "answer": "wet dry", "generated": "wet dry", "parsed": "wet dry", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 32, "answer": "light heavy", "generated": "light heavy", "parsed": "light heavy", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 33, "answer": "light heavy", "generated": "light heavy", "parsed": "light heavy", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 34, "answer": "light heavy", "generated": "light heavy", "parsed": "light heavy", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 35, "answer": "hot cold", "generated": "hot cold", "parsed": "hot cold", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 36, "answer": "slow fast", "generated": "slow fast", "parsed": "slow fast", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 37, "answer": "open closed", "generated": "open closed", "parsed": "open closed", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 38, "answer": "clean dirty", "generated": "clean dirty", "parsed": "clean dirty", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 39, "answer": "empty full", "generated": "empty full", "parsed": "empty full", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 40, "answer": "sad happy", "generated": "sad happy", "parsed": "sad happy", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 41, "answer": "closed open", "generated": "closed open", "parsed": "closed open", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 42, "answer": "alive dead", "generated": "alive dead", "parsed": "alive dead", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 43, "answer": "sad happy", "generated": "sad happy", "parsed": "sad happy", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 44, "answer": "near far", "generated": "near far", "parsed": "near far", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 45, "answer": "rich poor", "generated": "rich poor", "parsed": "rich poor", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 46, "answer": "wet dry", "generated": "wet dry", "parsed": "wet dry", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 47, "answer": "hot cold", "generated": "hot cold", "parsed": "hot cold", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 48, "answer": "dirty clean", "generated": "dirty clean", "parsed": "dirty clean", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 49, "answer": "fast slow", "generated": "fast slow", "parsed": "fast slow", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 50, "answer": "heavy light", "generated": "heavy light", "parsed": "heavy light", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 51, "answer": "dead alive", "generated": "dead alive", "parsed": "dead alive", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 52, "answer": "alive dead", "generated": "alive dead", "parsed": "alive dead", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 53, "answer": "happy sad", "generated": "happy sad", "parsed": "happy sad", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 54, "answer": "slow fast", "generated": "slow fast", "parsed": "slow fast", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 55, "answer": "light heavy", "generated": "light heavy", "parsed": "light heavy", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 56, "answer": "dead alive", "generated": "dead alive", "parsed": "dead alive", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 57, "answer": "fast slow", "generated": "fast slow", "parsed": "fast slow", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 58, "answer": "dry wet", "generated": "dry wet", "parsed": "dry wet", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 59, "answer": "old young", "generated": "old young", "parsed": "old young", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 60, "answer": "clean dirty", "generated": "clean dirty", "parsed": "clean dirty", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 61, "answer": "fast slow", "generated": "fast slow", "parsed": "fast slow", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 62, "answer": "dead alive", "generated": "dead alive", "parsed": "dead alive", "correct": true}
+{"group": "last_j_only", "j_sites": [3], "i": 63, "answer": "wet dry", "generated": "wet dry", "parsed": "wet dry", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 16, "answer": "happy sad", "generated": "clean dirty", "parsed": "clean dirty", "correct": false}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 17, "answer": "alive dead", "generated": "alive dead", "parsed": "alive dead", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 18, "answer": "alive dead", "generated": "alive dead", "parsed": "alive dead", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 19, "answer": "closed open", "generated": "closed open", "parsed": "closed open", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 20, "answer": "clean dirty", "generated": "clean dirty", "parsed": "clean dirty", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 21, "answer": "closed open", "generated": "closed open", "parsed": "closed open", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 22, "answer": "light heavy", "generated": "light heavy", "parsed": "light heavy", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 23, "answer": "near far", "generated": "near far", "parsed": "near far", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 24, "answer": "wet dry", "generated": "wet dry", "parsed": "wet dry", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 25, "answer": "slow fast", "generated": "slow fast", "parsed": "slow fast", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 26, "answer": "slow fast", "generated": "slow fast", "parsed": "slow fast", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 27, "answer": "dirty clean", "generated": "dirty clean", "parsed": "dirty clean", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 28, "answer": "dirty clean", "generated": "dirty clean", "parsed": "dirty clean", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 29, "answer": "dirty clean", "generated": "dirty clean", "parsed": "dirty clean", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 30, "answer": "old young", "generated": "old young", "parsed": "old young", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 31, "answer": "wet dry", "generated": "wet dry", "parsed": "wet dry", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 32, "answer": "light heavy", "generated": "light heavy", "parsed": "light heavy", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 33, "answer": "light heavy", "generated": "light heavy", "parsed": "light heavy", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 34, "answer": "light heavy", "generated": "light heavy", "parsed": "light heavy", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 35, "answer": "hot cold", "generated": "hot cold", "parsed": "hot cold", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 36, "answer": "slow fast", "generated": "slow fast", "parsed": "slow fast", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 37, "answer": "open closed", "generated": "open closed", "parsed": "open closed", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 38, "answer": "clean dirty", "generated": "clean dirty", "parsed": "clean dirty", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 39, "answer": "empty full", "generated": "empty full", "parsed": "empty full", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 40, "answer": "sad happy", "generated": "sad happy", "parsed": "sad happy", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 41, "answer": "closed open", "generated": "closed open", "parsed": "closed open", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 42, "answer": "alive dead", "generated": "alive dead", "parsed": "alive dead", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 43, "answer": "sad happy", "generated": "sad happy", "parsed": "sad happy", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 44, "answer": "near far", "generated": "near far", "parsed": "near far", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 45, "answer": "rich poor", "generated": "rich poor", "parsed": "rich poor", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 46, "answer": "wet dry", "generated": "wet dry", "parsed": "wet dry", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 47, "answer": "hot cold", "generated": "hot cold", "parsed": "hot cold", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 48, "answer": "dirty clean", "generated": "dirty clean", "parsed": "dirty clean", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 49, "answer": "fast slow", "generated": "fast slow", "parsed": "fast slow", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 50, "answer": "heavy light", "generated": "heavy light", "parsed": "heavy light", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 51, "answer": "dead alive", "generated": "dead alive", "parsed": "dead alive", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 52, "answer": "alive dead", "generated": "alive dead", "parsed": "alive dead", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 53, "answer": "happy sad", "generated": "happy sad", "parsed": "happy sad", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 54, "answer": "slow fast", "generated": "slow fast", "parsed": "slow fast", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 55, "answer": "light heavy", "generated": "open closed", "parsed": "open closed", "correct": false}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 56, "answer": "dead alive", "generated": "dead alive", "parsed": "dead alive", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 57, "answer": "fast slow", "generated": "fast slow", "parsed": "fast slow", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 58, "answer": "dry wet", "generated": "dry wet", "parsed": "dry wet", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 59, "answer": "old young", "generated": "old young", "parsed": "old young", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 60, "answer": "clean dirty", "generated": "sad happy", "parsed": "sad happy", "correct": false}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 61, "answer": "fast slow", "generated": "fast slow", "parsed": "fast slow", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 62, "answer": "dead alive", "generated": "dead alive", "parsed": "dead alive", "correct": true}
+{"group": "internal_j_only", "j_sites": [0, 1, 2], "i": 63, "answer": "wet dry", "generated": "wet dry", "parsed": "wet dry", "correct": true}

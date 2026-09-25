@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "family": "N10_pure_CE",
+  "peak_memory_bytes": 151064064,
+  "backbone_name": "E",
+  "head": 0,
+  "panel": "discovery",
+  "graphs": 32,
+  "seeds": [
+    1,
+    2
+  ],
+  "events": 2032,
+  "seconds": 4.3031573332846165,
+  "backbone_path": "/data/wujiaju/n10_migration_20260923/backbones/local_control_L6_seed7/best.pt",
+  "backbone_sha256": "d52b0108af764e408e7ef1010defc206997f1065bd8838720abe4ce8dc89eb33",
+  "backbone_step": 5000,
+  "controller_path": "/data/wujiaju/n10_migration_20260923/local/E/controllers.pt",
+  "controller_sha256": "ded34ddf5772907bce190130440a8d6559662f9da4e2e586bc3f35ca28468f47",
+  "controller_rank": 48,
+  "dataset_sha256": "43bc26dedb023e689be384d35e897b6ec32357503ce351e797657fe6b98b7767",
+  "code_sha256": "b01275f4a4b4cdb732bd7c7ab295ef3eb2250a81c1895d7cad801eae3df197fe",
+  "protocol_sha256": "0c8d72e1c46dfb741af0bbc8fd626179b118b707ab2a03074bcbba8893a37151",
+  "predictions_sha256": "7069a4504dde0d56f0c9018d7a52cde8a846c3f52d62f3eabb5b8910b3ea629a",
+  "parameters_unchanged": true
+}

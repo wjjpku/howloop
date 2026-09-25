@@ -1,0 +1,11 @@
+{
+  "checkpoint": "/data/wujiaju/n10_migration_20260923/smoke_snapshot/best.pt",
+  "checkpoint_sha256": "f3c8a746969fe66ca943e9a24eb79aa73cd78e4ad633111a84c62ca5e0098431",
+  "controller_seed": 1,
+  "protocol_id": "paper2027.n10.d8l6.pure_ce.disjoint.v1",
+  "rank": 48,
+  "status": "complete",
+  "target_hop": 1,
+  "updates": 2,
+  "validation": 0.75703125
+}

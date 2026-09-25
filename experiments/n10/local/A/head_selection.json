@@ -1,0 +1,62 @@
+{
+  "locked_head": 2,
+  "rule": "mean eligible J_one pattern CF across two fits on discovery; missing fit => -1; tie smallest head",
+  "scores": [
+    {
+      "head": 0,
+      "score": 0.0031446540880503146,
+      "counts": {
+        "1": [
+          1,
+          318
+        ],
+        "2": [
+          1,
+          318
+        ]
+      }
+    },
+    {
+      "head": 1,
+      "score": 0.0,
+      "counts": {
+        "1": [
+          0,
+          318
+        ],
+        "2": [
+          0,
+          318
+        ]
+      }
+    },
+    {
+      "head": 2,
+      "score": 0.8301886792452831,
+      "counts": {
+        "1": [
+          267,
+          318
+        ],
+        "2": [
+          261,
+          318
+        ]
+      }
+    },
+    {
+      "head": 3,
+      "score": 0.006289308176100629,
+      "counts": {
+        "1": [
+          2,
+          318
+        ],
+        "2": [
+          2,
+          318
+        ]
+      }
+    }
+  ]
+}

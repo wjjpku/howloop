@@ -1,0 +1,10 @@
+{
+  "goal": "Find stronger Ouro letter-walk mechanism evidence for route/content separation, localization and J mediation",
+  "stage": "complete: three independent 64-pair confirmation cohorts audited",
+  "remote_root": "/data/wujiaju/ouro_semantic_20260923",
+  "host": "A100-80G-34200",
+  "active_jobs": [],
+  "report": "REPORT_CN.md",
+  "audit": "AUDIT.json",
+  "paper_modified": false
+}

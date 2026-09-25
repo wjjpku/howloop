@@ -1,0 +1,64 @@
+{
+  "semantic_confirmation64": {
+    "rows": 832,
+    "arms": 13,
+    "pairs": 64,
+    "hashes_verified": true,
+    "generated_runs": 576,
+    "self_logit_errors": {
+      "late_self_output": 0.0,
+      "late_self_pattern": 0.125
+    },
+    "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+    "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898"
+  },
+  "mediation_confirmation64": {
+    "rows": 832,
+    "arms": 13,
+    "pairs": 64,
+    "hashes_verified": true,
+    "generated_runs": 512,
+    "self_logit_errors": {
+      "late_self_output": 0.0,
+      "late_self_pattern": 0.125
+    },
+    "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+    "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898"
+  },
+  "restore_confirmation64": {
+    "rows": 1280,
+    "arms": 20,
+    "pairs": 64,
+    "hashes_verified": true,
+    "generated_runs": 320,
+    "self_logit_errors": {
+      "restore_all": 0.0
+    },
+    "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+    "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898"
+  },
+  "dataset_audit": {
+    "discovery_pairs.json": {
+      "pairs": 8,
+      "unique_graphs": 16
+    },
+    "confirmation_pairs.json": {
+      "pairs": 64,
+      "unique_graphs": 128
+    },
+    "shared_path_discovery.json": {
+      "pairs": 8,
+      "unique_graphs": 16
+    },
+    "shared_path_confirmation_with_cf.json": {
+      "pairs": 64,
+      "unique_graphs": 128
+    },
+    "restore_confirmation_with_cf.json": {
+      "pairs": 64,
+      "unique_graphs": 128
+    }
+  },
+  "total_disjoint_graphs": 416,
+  "scope": "One frozen task-adapted backbone and one affine map; no training-set disjointness claim."
+}

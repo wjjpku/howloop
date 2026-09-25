@@ -1,0 +1,39 @@
+{
+  "pid": 2392496,
+  "gpu": "5,6,7",
+  "rank": 0,
+  "world": 3,
+  "parallelism": "sample-sharded, FP32 gradients SUM; unchanged global loss weights",
+  "initial_model": "/data/wujiaju/models/Ouro-2.6B",
+  "resume": true,
+  "steps": 500,
+  "supervision": "at each loop t=1..4, removed pair only",
+  "requested_k_during_backbone": 4,
+  "prompt_stage_invariant": true,
+  "no_oracle_previous_stage_input": true,
+  "teacher_forcing": "only own output prefix per branch; no earlier-loop target concatenation",
+  "backward": "full BPTT through t loops for each supervised branch; no detach/TBPTT",
+  "branch_implementation": "separate forwards needed for different autoregressive targets; prefixes with t loops equal prefixes of four-loop unroll",
+  "loop_loss_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "task_sequences_per_update": 8,
+  "templates": 5,
+  "gate_frozen": true,
+  "J": false,
+  "lr": 1e-05,
+  "warmup": 50,
+  "optimizer": "Adafactor FP32 factored no momentum",
+  "general_fraction": 0.2,
+  "general_mix": [
+    0.7,
+    0.2,
+    0.1
+  ],
+  "loss": ".8 mean of 4 stage losses + .2 general token CE; replay fraction counts actual branch input tokens",
+  "checkpoint_retention": 1,
+  "script_sha256": "aabc938c15c025cb0f1a3ddbeec089ea6244fff9fe57e0684e7012bf26551e59"
+}

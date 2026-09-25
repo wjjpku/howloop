@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "pid": 383896,
+  "gpu": "6",
+  "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+  "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898",
+  "code_sha": "9d9f7c0256022e12cc3322fb4dd29d70d3db582dbacaa00735b4315123924553",
+  "pairs_sha": "147feef17be4a9942182b6eba5c53b2ce262a542afef66b5a74d33891575280a",
+  "smoke": false,
+  "joint_calls": true,
+  "heads": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+  "layers": "33,34,35,39,43,47",
+  "loops": "1,2,3",
+  "started": 1790173357.0848184,
+  "elapsed": 744.0084657669067,
+  "peak_gib": 10.155090808868408,
+  "parameters_unchanged": true
+}

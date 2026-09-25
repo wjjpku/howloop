@@ -1,0 +1,8 @@
+{
+  "scope": "v66 manuscript as of 2026-09-25",
+  "pca_data": "pca_means.npz contains graph_id and fit1/2_hop1/2_J_mean arrays copied without changes from original states.npz",
+  "runtime": "prepare_runtime rewrites filesystem root and Python interpreter only; original sources remain unchanged",
+  "figure4": "numerical plot and vector attention schematic regenerated; final v66 crop coordinates preserved",
+  "weights": "external, 92 files read and SHA256 checked; no weights committed",
+  "historical_rng_gap": "KG original controller seeds and stage weights were not preserved"
+}

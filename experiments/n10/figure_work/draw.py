@@ -1,0 +1,71 @@
+from pathlib import Path
+import json,csv,hashlib
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
+from matplotlib.colors import LinearSegmentedColormap
+R=Path(__file__).resolve().parent;O=R/'figures';O.mkdir(exist_ok=True)
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.spines.top':False,'axes.spines.right':False,'pdf.fonttype':42,'ps.fonttype':42,'savefig.dpi':220})
+colors=['#9BA5B1','#287EAD','#D46B46','#DDCDAA']; categories=['Stay','One hop','Two hops','Others']; keys=['endpoint','one','two','other']
+rows=[];distributions={}; ns={}
+for name in 'ABCDE':
+ raw=[]; fits={1:[],2:[]}
+ for hop in [1,2]:
+  for fit in [1,2]:
+   p=R/'source/local'/name/f'hop{hop}_seed{fit}/evaluation/aggregate.csv'
+   data=list(csv.DictReader(p.open()))
+   for mode in ['raw','full']:
+    x=next(x for x in data if x['mode']==mode and x['readout']=='post_executor');n=int(x['distinct_examples']);counts=np.array([int(x[k]) for k in keys]);assert counts.sum()==n
+    values=counts/n
+    if mode=='raw':raw.append(values)
+    else:fits[hop].append(values)
+    rows.append(dict(backbone=name,hop=hop,fit=fit,mode=mode,n=n,**dict(zip(keys,counts.tolist()))))
+   ns[name]=n
+ assert all(np.array_equal(raw[0],x) for x in raw)
+ distributions[name]=np.stack([raw[0],np.mean(fits[1],0),np.mean(fits[2],0)])*100
+with (R/'control_counts.csv').open('w') as f:
+ w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+def bars(ax,values,title=None,large=False):
+ for i,row in enumerate(values):
+  left=0
+  for k,v in enumerate(row):
+   ax.barh(i,v,left=left,height=.58,color=colors[k],edgecolor='white',linewidth=.6)
+   if v>=(7 if large else 20):ax.text(left+v/2,i,f'{v:.1f}%',ha='center',va='center',fontsize=12 if large else 9,color='white' if k in [1,2] else '#253345',fontweight='medium')
+   left+=v
+ ax.set_yticks([0,1,2],['No $J$','$J_{\\mathrm{one}}$','$J_{\\mathrm{two}}$']);ax.invert_yaxis();ax.set_xlim(0,100);ax.set_xticks([0,25,50,75,100],['0','25','50','75','100%']);ax.set_xlabel('Post-$F$ output distribution');ax.tick_params(axis='y',length=0,pad=10);ax.spines['left'].set_visible(False);ax.spines['bottom'].set_color('#C7CDD4');ax.tick_params(axis='x',color='#C7CDD4')
+ if title:ax.set_title(title,loc='left',fontweight='bold',pad=12)
+def save(fig,name):
+ for ext in ['pdf','png','svg']:fig.savefig(O/f'{name}.{ext}',bbox_inches='tight',facecolor='white')
+ plt.close(fig)
+fig,ax=plt.subplots(figsize=(8.0,2.7));bars(ax,distributions['A'],large=True)
+fig.legend(handles=[Patch(facecolor=c,label=l) for c,l in zip(colors,categories)],loc='upper center',bbox_to_anchor=(.55,1.08),ncol=4,frameon=False,handlelength=1.4,columnspacing=1.8)
+fig.subplots_adjust(left=.15,right=.98,top=.88,bottom=.21);save(fig,'post_F_control_A')
+fig,axes=plt.subplots(1,5,figsize=(16,2.7),sharex=True)
+for name,ax in zip('ABCDE',axes):bars(ax,distributions[name],f'Backbone {name}')
+fig.legend(handles=[Patch(facecolor=c,label=l) for c,l in zip(colors,categories)],loc='upper center',bbox_to_anchor=(.5,1.08),ncol=4,frameon=False);fig.subplots_adjust(wspace=.55,bottom=.23);save(fig,'post_F_control_all_backbones')
+# Source membership and every fit retained in CSV; main plot is the fit mean.
+(R/'control_distributions.json').write_text(json.dumps({k:{'n_per_fit':ns[k],'rows':v.tolist()} for k,v in distributions.items()},indent=2))
+
+sources={}
+for p in sorted((R/'source/trajectories').glob('*/summary.json')):sources[p.parent.name]=p
+for label in 'ABCDE':sources['L6_'+label]=R/'source/local'/label/'native/summary.json'
+cmap=plt.get_cmap('viridis')
+def trajectory_plot(items,name,width=13):
+ fig,axes=plt.subplots(1,len(items),figsize=(width,3.05),sharey=True)
+ for ax,(key,title) in zip(np.atleast_1d(axes),items):
+  d=json.loads(sources[key].read_text());m=np.array(d['splits']['rings']['category_match']);assert m.shape==(10,17);assert np.allclose(m.sum(0),1,atol=1e-6)
+  im=ax.imshow(m,origin='lower',aspect='auto',cmap=cmap,vmin=0,vmax=1,interpolation='nearest',extent=(-.5,16.5,-.5,9.5))
+  ax.axvline(d['loops'],color='#D46B46',linestyle='--',linewidth=1.25)
+  ax.set_xticks([0,4,8,12,16]);ax.set_yticks(range(10),[f'$f^{k}(s)$' for k in range(10)]);ax.set_xlabel('loop index');ax.set_title(title,loc='left',fontweight='bold',fontsize=11,pad=10);ax.tick_params(length=0);ax.spines['left'].set_visible(False);ax.spines['bottom'].set_visible(False)
+ axes[0].set_ylabel('node')
+ fig.subplots_adjust(left=.065,right=.91,bottom=.19,top=.86,wspace=.16)
+ cb=fig.colorbar(im,cax=fig.add_axes([.93,.19,.012,.67]));cb.set_label('top-1 fraction');cb.set_ticks([0,.5,1]);cb.outline.set_visible(False)
+ save(fig,name)
+# The four-panel main figure is generated only once all candidate sources exist.
+if all(k in sources for k in ['L8_seed5','L8_seed10']):
+ trajectory_plot([('L8_seed10','(a) D8L8'),('L8_seed5','(b) D8L8'),('L6_A','(c) D8L6'),('L6_E','(d) D8L6')],'section3_trajectories')
+ trajectory_plot([(f'L8_seed{s}',f'D8L8 · seed {s}') for s in [0,1,6,8]],'trajectory_L8_all')
+trajectory_plot([(f'L6_{n}',f'D8L6 · {n}') for n in 'ABCDE'],'trajectory_L6_all',16)
+(R/'figure_sources.json').write_text(json.dumps({'files':{str(p.relative_to(R)):hashlib.sha256(p.read_bytes()).hexdigest() for p in (R/'source').rglob('*') if p.is_file()},'main_control_backbone':'A','control_filter':'current, one-hop, two-hop labels pairwise distinct; no success filter','control_aggregation':'equal mean of two independently trained controllers; raw counted once','trajectory_population':'512 locked N10 cycles x10 starts; all predictions, no success filter','trajectory_selection':'D8L8 seeds 10 and 5 selected from 12 evaluated seeds; D8L6 A and E; chosen for visual clarity and contrasting readout paths, not an unbiased cohort summary; all candidates retained'},indent=2))

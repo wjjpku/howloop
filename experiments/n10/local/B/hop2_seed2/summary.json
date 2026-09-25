@@ -1,0 +1,11 @@
+{
+  "checkpoint": "/data/wujiaju/n10_migration_20260923/backbones/local_control_L6_seed3/best.pt",
+  "checkpoint_sha256": "073578dbceb4155eadae52bd0e9438ee200509cc42a4d3d853212eb6acf5e7e5",
+  "controller_seed": 2,
+  "protocol_id": "paper2027.n10.d8l6.pure_ce.disjoint.v1",
+  "rank": 48,
+  "status": "complete",
+  "target_hop": 2,
+  "updates": 8000,
+  "validation": 1.0
+}

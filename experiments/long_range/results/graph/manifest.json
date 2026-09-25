@@ -1,0 +1,218 @@
+{
+  "status": "complete",
+  "pid": 1711795,
+  "gpu": "3",
+  "code_sha256": "3dabb1548c0bfa7d29f3960508d105a534ba78b2f69f08d586c4d9606090c113",
+  "graph_seed": 2026092402,
+  "graphs": 8192,
+  "unique_population": 40320,
+  "sampling": "uniform without replacement, no topology or prediction filters",
+  "graph_sha256": "293ed0a986cba75e193c683b0300993f726b641c4179559fba4af61048e596d8",
+  "backbone_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111
+  ],
+  "J_seeds": [
+    1,
+    2
+  ],
+  "max_call": 40,
+  "starts": 8,
+  "schedule": "Raw from h0; J before every F call from h0, matching archived G4 evaluation",
+  "metric": "ordinary fraction of all node predictions correct; no collision exclusions",
+  "training_graph_disjoint": false,
+  "models": [
+    {
+      "seed": 100,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed100/graphpath_N8_D8_d256_B2_L8_seed100/final.pt",
+      "checkpoint_sha256": "cdfff11ac086ba87266e84a96c684b57395672644c4b9482479998cc86c82e11",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed100/rank48_seed1/best_controller.pt",
+          "sha256": "74e4301bd470cc67a2aa7666aba97d8aab8d97103891198e70414dd2de6d33cf"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed100/rank48_seed2/best_controller.pt",
+          "sha256": "13f6c8a717a4e8ff981f14e9f9de5edbed615d4ff6935f0074db6104bc8d54fa"
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed101/graphpath_N8_D8_d256_B2_L8_seed101/final.pt",
+      "checkpoint_sha256": "0b342d3f41966eaa4bf46bee018f3e2242683169c3314940ce7dda0cd09efa6b",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed101/rank48_seed1/best_controller.pt",
+          "sha256": "855afbcdb4cf1c88fba92c8b9a9219b69676b379722de22908a04175722c0660"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed101/rank48_seed2/best_controller.pt",
+          "sha256": "41f94598505460396cff6798ceedf5608b01e144987e96a89a4bb209163ca658"
+        }
+      ]
+    },
+    {
+      "seed": 102,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed102/graphpath_N8_D8_d256_B2_L8_seed102/final.pt",
+      "checkpoint_sha256": "c0c7986ef8f51089c13c4f78e337a8b819a7b98ae3f8324316b6fef76c9b09cf",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed102/rank48_seed1/best_controller.pt",
+          "sha256": "1a6e30be6838ae41f9dea8a159cb40938b468611abddfe306ee46ca568627957"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed102/rank48_seed2/best_controller.pt",
+          "sha256": "a6b0acc60cc11ae98f3fe852147ce3305a43b7400cba1b9cbbde7d46c02b3247"
+        }
+      ]
+    },
+    {
+      "seed": 103,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed103/graphpath_N8_D8_d256_B2_L8_seed103/final.pt",
+      "checkpoint_sha256": "0655703cfe6c72a0ec998a191f4702211c1ac1abe1a6db5ca870dd970a004fdf",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed103/rank48_seed1/best_controller.pt",
+          "sha256": "ec88c1af3e31151bff784d80dd2f25ad4f37098914d5ad221b13e0b827240a6a"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed103/rank48_seed2/best_controller.pt",
+          "sha256": "449deaf99a23f742dd263e5cf12d4e3dc0450a03eae941b3338054f8102a277c"
+        }
+      ]
+    },
+    {
+      "seed": 104,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed104/graphpath_N8_D8_d256_B2_L8_seed104/final.pt",
+      "checkpoint_sha256": "7e8d9d71e5906d3ec021223df634cc71ff63d179b5775bb4280e8738fad439e5",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed104/rank48_seed1/best_controller.pt",
+          "sha256": "32d1890423c29d7dd07945e326a8f562ffe4ba5c2f3f54f4a3492474732bfff9"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed104/rank48_seed2/best_controller.pt",
+          "sha256": "6a698ea0da1b94582c466adf7133572c631cae58f08a85bfb2b83ca3b290463d"
+        }
+      ]
+    },
+    {
+      "seed": 105,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed105/graphpath_N8_D8_d256_B2_L8_seed105/final.pt",
+      "checkpoint_sha256": "9e6cd91a5b5271fc2820d2c88ee3507117afe83571c2584e4dc3cb20fe1fde00",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed105/rank48_seed1/best_controller.pt",
+          "sha256": "97045c62f98d8cbaab0baa62d350ee3b763e31e6c50dee2aeeb770b4dacb8180"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed105/rank48_seed2/best_controller.pt",
+          "sha256": "ff4947c7b0f661d7e62ec807ffaa0570f825e686cfd2bec70fc4bc3221c60c7f"
+        }
+      ]
+    },
+    {
+      "seed": 106,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed106/graphpath_N8_D8_d256_B2_L8_seed106/final.pt",
+      "checkpoint_sha256": "beb213749a19786a6dfe0d7efe3f31004f6f1fc20bff849d6f19550217e0e3df",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed106/rank48_seed1/best_controller.pt",
+          "sha256": "59bfc50badfccd91fa9eb8dbb7e715a60f6ee3583da593e704b41c73101bb9ab"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed106/rank48_seed2/best_controller.pt",
+          "sha256": "aab1efe34e8d7106bc40fb17a0645775dadfdc65b5004215a5ce9727be63489f"
+        }
+      ]
+    },
+    {
+      "seed": 107,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed107/graphpath_N8_D8_d256_B2_L8_seed107/final.pt",
+      "checkpoint_sha256": "5438382fb4a44dafe07423b48a36224709d856f332219fa868fefabb29afa10d",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed107/rank48_seed1/best_controller.pt",
+          "sha256": "f093e315addd8a6bd76a3d24fe80b9c8d639f5941852ef0a822f5a77bf7986fb"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed107/rank48_seed2/best_controller.pt",
+          "sha256": "8dcbb9e7025daccc24f2e5d52af247ac5a779ef54ba366026dd44fd81a5d562b"
+        }
+      ]
+    },
+    {
+      "seed": 108,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed108/graphpath_N8_D8_d256_B2_L8_seed108/final.pt",
+      "checkpoint_sha256": "846c65a6dc78ca993ea2748649abcb0a188d008ba2fa5ae6edc7f6b8f229b718",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed108/rank48_seed1/best_controller.pt",
+          "sha256": "6d48124873a31500fcd5b8bf15defb0741a6415694c096048b08043d2314c058"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed108/rank48_seed2/best_controller.pt",
+          "sha256": "74eb358c3fb0f445ee80d6b264480d02b3ceee6b5cf58600d82b1b27adb8a7e6"
+        }
+      ]
+    },
+    {
+      "seed": 109,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed109/graphpath_N8_D8_d256_B2_L8_seed109/final.pt",
+      "checkpoint_sha256": "17afb08ea4bd65f5cfb688134e80b58f7a8845d3aa12e60c77b174244809ef39",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed109/rank48_seed1/best_controller.pt",
+          "sha256": "29e65effc5657aa3a55c33344da895e4da45c8b1c0fbcedbe6c2d87c5918f055"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed109/rank48_seed2/best_controller.pt",
+          "sha256": "ed5c235611bc3fcb9b03007f5cdd905c8640544ec4e2ec8481591736433e8b3d"
+        }
+      ]
+    },
+    {
+      "seed": 110,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed110/graphpath_N8_D8_d256_B2_L8_seed110/final.pt",
+      "checkpoint_sha256": "3e17abdf54e3a40c0a9bd9158cb6c5bfdd1eef36502968b78f28843a12ff0cea",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed110/rank48_seed1/best_controller.pt",
+          "sha256": "d9a949aa3c43aeb8c816d405b8c833fd860109ee0583744687a06f7b3bbabeb6"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed110/rank48_seed2/best_controller.pt",
+          "sha256": "63ac1dc3c168afcdff55543b418a13f092674f243fb8be7cc0409ed1aa7b34e9"
+        }
+      ]
+    },
+    {
+      "seed": 111,
+      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed111/graphpath_N8_D8_d256_B2_L8_seed111/final.pt",
+      "checkpoint_sha256": "5669382ef1f6d56a5c972c5c1b8d10d8531c1df54100dbff53b2a2261c873f2b",
+      "controllers": [
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed111/rank48_seed1/best_controller.pt",
+          "sha256": "938c599f107b1260ad88363dcb137a981f0fbaf0a78e980e005334d046f15ae1"
+        },
+        {
+          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed111/rank48_seed2/best_controller.pt",
+          "sha256": "9e3c75e1b0d89823b5b289cfddbde4a324e2789350d135608ad79373a55d681d"
+        }
+      ]
+    }
+  ],
+  "elapsed": 669.4535899162292,
+  "peak_mib": 357.228515625
+}

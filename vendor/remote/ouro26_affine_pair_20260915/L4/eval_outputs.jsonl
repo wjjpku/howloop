@@ -1,0 +1,896 @@
+{"step": 0, "template": 0, "k": 1, "graph": 0, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 1, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 2, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 3, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 4, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 5, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 6, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 7, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 8, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 9, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 10, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 11, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 12, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 13, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 14, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 1, "graph": 15, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 0, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 1, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 2, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 3, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 4, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 5, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 6, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 7, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 8, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 9, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 10, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 11, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 12, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 13, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 14, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 2, "graph": 15, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 0, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 1, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 2, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 3, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 4, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 5, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 6, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 7, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 8, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 9, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 10, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 11, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 12, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 13, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 14, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 3, "graph": 15, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 0, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 1, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 2, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 3, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 4, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 5, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 6, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 7, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 8, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 9, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 10, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 11, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 12, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 13, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 14, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 4, "graph": 15, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 0, "expected": "Emma", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 1, "expected": "Iris", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 2, "expected": "Emma", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 3, "expected": "Bob", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 4, "expected": "Iris", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 5, "expected": "Carol", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 6, "expected": "Iris", "generated": "Alice", "generated_ids": [7356, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 7, "expected": "Carol", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 8, "expected": "David", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 9, "expected": "Iris", "generated": "Frank", "generated_ids": [25677, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 10, "expected": "Jack", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 11, "expected": "Grace", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 12, "expected": "Alice", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 13, "expected": "David", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 14, "expected": "Bob", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 5, "graph": 15, "expected": "David", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 0, "expected": "Jack", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 1, "expected": "Grace", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 2, "expected": "Bob", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 3, "expected": "Frank", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 4, "expected": "Bob", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 5, "expected": "Grace", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 6, "expected": "Frank", "generated": "Alice", "generated_ids": [7356, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 7, "expected": "Emma", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 8, "expected": "Jack", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 9, "expected": "Jack", "generated": "Frank", "generated_ids": [25677, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 10, "expected": "Iris", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 11, "expected": "Iris", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 12, "expected": "Grace", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 13, "expected": "Grace", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 14, "expected": "Alice", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 6, "graph": 15, "expected": "Iris", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 0, "expected": "Grace", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 1, "expected": "Carol", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 2, "expected": "Jack", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 3, "expected": "Emma", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 4, "expected": "Carol", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 5, "expected": "David", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 6, "expected": "Grace", "generated": "Alice", "generated_ids": [7356, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 7, "expected": "Grace", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 8, "expected": "Bob", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 9, "expected": "Carol", "generated": "Frank", "generated_ids": [25677, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 10, "expected": "Alice", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 11, "expected": "Frank", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 12, "expected": "Iris", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 13, "expected": "Emma", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 14, "expected": "Emma", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 7, "graph": 15, "expected": "Bob", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 0, "expected": "Henry", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 1, "expected": "Bob", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 2, "expected": "Grace", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 3, "expected": "Alice", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 4, "expected": "Alice", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 5, "expected": "Alice", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 6, "expected": "Bob", "generated": "Alice", "generated_ids": [7356, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 7, "expected": "David", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 8, "expected": "Grace", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 9, "expected": "Bob", "generated": "Frank", "generated_ids": [25677, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 10, "expected": "Henry", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 11, "expected": "Emma", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 12, "expected": "Emma", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 13, "expected": "Iris", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 14, "expected": "Iris", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 0, "template": 0, "k": 8, "graph": 15, "expected": "Henry", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 0, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 1, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 2, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 3, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 4, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 5, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 6, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 7, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 8, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 9, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 10, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 11, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 12, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 13, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 14, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 1, "graph": 15, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 0, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 1, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 2, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 3, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 4, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 5, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 6, "expected": "David", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 7, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 8, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 9, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 10, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 11, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 12, "expected": "Jack", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 13, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 14, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 2, "graph": 15, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 0, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 1, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 2, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 3, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 4, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 5, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 6, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 7, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 8, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 9, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 10, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 11, "expected": "Henry", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 12, "expected": "Henry", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 13, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 14, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 3, "graph": 15, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 0, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 1, "expected": "Henry", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 2, "expected": "Henry", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 3, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 4, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 5, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 6, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 7, "expected": "Henry", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 8, "expected": "Henry", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 9, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 10, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 11, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 12, "expected": "Carol", "generated": "Alice", "generated_ids": [7356, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 13, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 14, "expected": "David", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 4, "graph": 15, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 0, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 1, "expected": "Iris", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 2, "expected": "Emma", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 3, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 4, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 5, "expected": "Carol", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 6, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 7, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 8, "expected": "David", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 9, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 10, "expected": "Jack", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 11, "expected": "Grace", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 12, "expected": "Alice", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 13, "expected": "David", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 14, "expected": "Bob", "generated": "Alice", "generated_ids": [7356, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 5, "graph": 15, "expected": "David", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 0, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 1, "expected": "Grace", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 2, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 3, "expected": "Frank", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 4, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 5, "expected": "Grace", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 6, "expected": "Frank", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 7, "expected": "Emma", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 8, "expected": "Jack", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 9, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 10, "expected": "Iris", "generated": "Alice", "generated_ids": [7356, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 11, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 12, "expected": "Grace", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 13, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 14, "expected": "Alice", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 6, "graph": 15, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 0, "expected": "Grace", "generated": "Henry", "generated_ids": [27803, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 1, "expected": "Carol", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 2, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 3, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 4, "expected": "Carol", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 5, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 6, "expected": "Grace", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 7, "expected": "Grace", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 8, "expected": "Bob", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 9, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 10, "expected": "Alice", "generated": "Frank", "generated_ids": [25677, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 11, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 12, "expected": "Iris", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 13, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 14, "expected": "Emma", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 7, "graph": 15, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 0, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 1, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 2, "expected": "Grace", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 3, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 4, "expected": "Alice", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 5, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 6, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 7, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 8, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 9, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 10, "expected": "Henry", "generated": "Frank", "generated_ids": [25677, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 11, "expected": "Emma", "generated": "Frank", "generated_ids": [25677, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 12, "expected": "Emma", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 13, "expected": "Iris", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 14, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 100, "template": 0, "k": 8, "graph": 15, "expected": "Henry", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 0, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 1, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 2, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 3, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 4, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 5, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 6, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 7, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 8, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 9, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 10, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 11, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 12, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 13, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 14, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 1, "graph": 15, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 0, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 1, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 2, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 3, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 4, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 5, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 6, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 7, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 8, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 9, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 10, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 11, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 12, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 13, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 14, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 2, "graph": 15, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 0, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 1, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 2, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 3, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 4, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 5, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 6, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 7, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 8, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 9, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 10, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 11, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 12, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 13, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 14, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 3, "graph": 15, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 0, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 1, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 2, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 3, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 4, "expected": "Emma", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 5, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 6, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 7, "expected": "Henry", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 8, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 9, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 10, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 11, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 12, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 13, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 14, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 4, "graph": 15, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 0, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 1, "expected": "Iris", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 2, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 3, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 4, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 5, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 6, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 7, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 8, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 9, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 10, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 11, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 12, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 13, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 14, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 5, "graph": 15, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 0, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 1, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 2, "expected": "Bob", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 3, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 4, "expected": "Bob", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 5, "expected": "Grace", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 6, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 7, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 8, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 9, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 10, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 11, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 12, "expected": "Grace", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 13, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 14, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 6, "graph": 15, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 0, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 1, "expected": "Carol", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 2, "expected": "Jack", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 3, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 4, "expected": "Carol", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 5, "expected": "David", "generated": "Alice", "generated_ids": [7356, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 6, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 7, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 8, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 9, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 10, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 11, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 12, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 13, "expected": "Emma", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 14, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 7, "graph": 15, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 0, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 1, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 2, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 3, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 4, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 5, "expected": "Alice", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 6, "expected": "Bob", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 7, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 8, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 9, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 10, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 11, "expected": "Emma", "generated": "Frank", "generated_ids": [25677, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 12, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 13, "expected": "Iris", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 14, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 200, "template": 0, "k": 8, "graph": 15, "expected": "Henry", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 0, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 1, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 2, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 3, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 4, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 5, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 6, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 7, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 8, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 9, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 10, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 11, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 12, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 13, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 14, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 1, "graph": 15, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 0, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 1, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 2, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 3, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 4, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 5, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 6, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 7, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 8, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 9, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 10, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 11, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 12, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 13, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 14, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 2, "graph": 15, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 0, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 1, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 2, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 3, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 4, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 5, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 6, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 7, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 8, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 9, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 10, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 11, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 12, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 13, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 14, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 3, "graph": 15, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 0, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 1, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 2, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 3, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 4, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 5, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 6, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 7, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 8, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 9, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 10, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 11, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 12, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 13, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 14, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 4, "graph": 15, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 0, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 1, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 2, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 3, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 4, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 5, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 6, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 7, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 8, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 9, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 10, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 11, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 12, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 13, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 14, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 5, "graph": 15, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 0, "expected": "Jack", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 1, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 2, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 3, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 4, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 5, "expected": "Grace", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": false, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 6, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 7, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 8, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 9, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 10, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 11, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 12, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 13, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 14, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 6, "graph": 15, "expected": "Iris", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 0, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 1, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 2, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 3, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 4, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 5, "expected": "David", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 6, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 7, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 8, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 9, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 10, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 11, "expected": "Frank", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 12, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 13, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 14, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 7, "graph": 15, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 0, "expected": "Henry", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 1, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 2, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 3, "expected": "Alice", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": false, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 4, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 5, "expected": "Alice", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 6, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 7, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 8, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 9, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 10, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 11, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 12, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 13, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 14, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 300, "template": 0, "k": 8, "graph": 15, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 0, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 1, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 2, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 3, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 4, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 5, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 6, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 7, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 8, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 9, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 10, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 11, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 12, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 13, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 14, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 1, "graph": 15, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 0, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 1, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 2, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 3, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 4, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 5, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 6, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 7, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 8, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 9, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 10, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 11, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 12, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 13, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 14, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 2, "graph": 15, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 0, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 1, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 2, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 3, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 4, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 5, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 6, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 7, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 8, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 9, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 10, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 11, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 12, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 13, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 14, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 3, "graph": 15, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 0, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 1, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 2, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 3, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 4, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 5, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 6, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 7, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 8, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 9, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 10, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 11, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 12, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 13, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 14, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 4, "graph": 15, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 0, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 1, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 2, "expected": "Emma", "generated": "Bob", "generated_ids": [6777, 2], "correct": false, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 3, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 4, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 5, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 6, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 7, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 8, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 9, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 10, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 11, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 12, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 13, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 14, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 5, "graph": 15, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 0, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 1, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 2, "expected": "Bob", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 3, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 4, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 5, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 6, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 7, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 8, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 9, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 10, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 11, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 12, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 13, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 14, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 6, "graph": 15, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 0, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 1, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 2, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 3, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 4, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 5, "expected": "David", "generated": "Alice", "generated_ids": [7356, 2], "correct": false, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 6, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 7, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 8, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 9, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 10, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 11, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 12, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 13, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 14, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 7, "graph": 15, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 0, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 1, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 2, "expected": "Grace", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 3, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 4, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 5, "expected": "Alice", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": false, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 6, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 7, "expected": "David", "generated": "Frank", "generated_ids": [25677, 2], "correct": false, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 8, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 9, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 10, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 11, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 12, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 13, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 14, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 400, "template": 0, "k": 8, "graph": 15, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 0, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 1, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 2, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 3, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 4, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 5, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 6, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 7, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 8, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 9, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 10, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 11, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 12, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 13, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 14, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 1, "graph": 15, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 0, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 1, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 2, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 3, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 4, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 5, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 6, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 7, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 8, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 9, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 10, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 11, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 12, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 13, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 14, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 2, "graph": 15, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 0, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 1, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 2, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 3, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 4, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 5, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 6, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 7, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 8, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 9, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 10, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 11, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 12, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 13, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 14, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 3, "graph": 15, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 0, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 1, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 2, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 3, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 4, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 5, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 6, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 7, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 8, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 9, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 10, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 11, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 12, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 13, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 14, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 4, "graph": 15, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 0, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 1, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 2, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 3, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 4, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 5, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 6, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 7, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 8, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 9, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 10, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 11, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 12, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 13, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 14, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 5, "graph": 15, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 0, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 1, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 2, "expected": "Bob", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 3, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 4, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 5, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 6, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 7, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 8, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 9, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 10, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 11, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 12, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 13, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 14, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 6, "graph": 15, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 0, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 1, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 2, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 3, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 4, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 5, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 6, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 7, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 8, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 9, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 10, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 11, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 12, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 13, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 14, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 7, "graph": 15, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 0, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 1, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 2, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 3, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 4, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 5, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 6, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 7, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 8, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 9, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 10, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 11, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 12, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 13, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 14, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 0, "k": 8, "graph": 15, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 0, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 1, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 2, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 3, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 4, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 5, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 6, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 7, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 8, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 9, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 10, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 11, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 12, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 13, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 14, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 1, "graph": 15, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 0, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 1, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 2, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 3, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 4, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 5, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 6, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 7, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 8, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 9, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 10, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 11, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 12, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 13, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 14, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 2, "graph": 15, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 0, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 1, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 2, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 3, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 4, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 5, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 6, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 7, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 8, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 9, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 10, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 11, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 12, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 13, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 14, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 3, "graph": 15, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 0, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 1, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 2, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 3, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 4, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 5, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 6, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 7, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 8, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 9, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 10, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 11, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 12, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 13, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 14, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 4, "graph": 15, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 0, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 1, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 2, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 3, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 4, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 5, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 6, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 7, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 8, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 9, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 10, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 11, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 12, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 13, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 14, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 5, "graph": 15, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 0, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 1, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 2, "expected": "Bob", "generated": "Jack", "generated_ids": [32160, 2], "correct": false, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 3, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 4, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 5, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 6, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 7, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 8, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 9, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 10, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 11, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 12, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 13, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 14, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 6, "graph": 15, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 0, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 1, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 2, "expected": "Jack", "generated": "Jack", "generated_ids": [32160, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 3, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 4, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 5, "expected": "David", "generated": "David", "generated_ids": [21070, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 6, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 7, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 8, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 9, "expected": "Carol", "generated": "Carol", "generated_ids": [11811, 308, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 10, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 11, "expected": "Frank", "generated": "Frank", "generated_ids": [25677, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 12, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 13, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 14, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 7, "graph": 15, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 0, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 1, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 2, "expected": "Grace", "generated": "David", "generated_ids": [21070, 2], "correct": false, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 3, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 4, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 5, "expected": "Alice", "generated": "Alice", "generated_ids": [7356, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 6, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 7, "expected": "David", "generated": "Frank", "generated_ids": [25677, 2], "correct": false, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 8, "expected": "Grace", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 9, "expected": "Bob", "generated": "Bob", "generated_ids": [6777, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 10, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 11, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 12, "expected": "Emma", "generated": "Emma", "generated_ids": [10809, 2432, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 13, "expected": "Iris", "generated": "Iris", "generated_ids": [57, 4593, 2], "correct": true, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 14, "expected": "Iris", "generated": "Grace", "generated_ids": [55, 11617, 2], "correct": false, "length_limit_reached": false}
+{"step": 500, "template": 5, "k": 8, "graph": 15, "expected": "Henry", "generated": "Henry", "generated_ids": [27803, 2], "correct": true, "length_limit_reached": false}

@@ -1,0 +1,117 @@
+{
+  "updated_unix": 1790159190.532541,
+  "status": "in_progress",
+  "main_backbones_complete": 2,
+  "main_backbones_total": 21,
+  "completed_backbones": [
+    {
+      "run": "local_control_L6_seed3",
+      "best_step": 15000,
+      "best_selection_accuracy": 1.0,
+      "elapsed_sec": 816.2610220909119
+    },
+    {
+      "run": "local_control_L6_seed6",
+      "best_step": 16000,
+      "best_selection_accuracy": 1.0,
+      "elapsed_sec": 1012.3281543254852
+    }
+  ],
+  "workers": {
+    "worker_backbones_0": {
+      "status": "running",
+      "pid": 3004290,
+      "gpu": "3",
+      "family": "local_control",
+      "seed": 4,
+      "command": [
+        "/data/wujiaju/.venvs/loopreasoner/bin/python",
+        "-u",
+        "-m",
+        "reasoning_loop.paper2027_graph_g4_backbone",
+        "--out-dir",
+        "/data/wujiaju/n10_migration_20260923/backbones/local_control_L6_seed4",
+        "--selection-lock",
+        "/data/wujiaju/n10_migration_20260923/locks/selection.pt",
+        "--final-test-lock",
+        "/data/wujiaju/n10_migration_20260923/locks/confirmation.pt",
+        "--extra-exclude-locks",
+        "/data/wujiaju/n10_migration_20260923/locks/discovery.pt",
+        "/data/wujiaju/n10_migration_20260923/locks/rings.pt",
+        "/data/wujiaju/n10_migration_20260923/locks/smoke.pt",
+        "/data/wujiaju/n10_migration_20260923/locks/donors.pt",
+        "--seed",
+        "4",
+        "--loops",
+        "6",
+        "--depth-mode",
+        "uniform",
+        "--steps",
+        "20000",
+        "--eval-every",
+        "1000",
+        "--batch-size",
+        "512",
+        "--eval-batch-size",
+        "500",
+        "--amp"
+      ],
+      "started": 1790158808.446544,
+      "manifest_sha256": "7f8734c77fa71dbe2e84e3d83ff1e5b9b13ed8608842ba2e457f980ac3c48cc4"
+    },
+    "worker_backbones_1": {
+      "status": "running",
+      "pid": 3041454,
+      "gpu": "6",
+      "family": "local_control",
+      "seed": 5,
+      "command": [
+        "/data/wujiaju/.venvs/loopreasoner/bin/python",
+        "-u",
+        "-m",
+        "reasoning_loop.paper2027_graph_g4_backbone",
+        "--out-dir",
+        "/data/wujiaju/n10_migration_20260923/backbones/local_control_L6_seed5",
+        "--selection-lock",
+        "/data/wujiaju/n10_migration_20260923/locks/selection.pt",
+        "--final-test-lock",
+        "/data/wujiaju/n10_migration_20260923/locks/confirmation.pt",
+        "--extra-exclude-locks",
+        "/data/wujiaju/n10_migration_20260923/locks/discovery.pt",
+        "/data/wujiaju/n10_migration_20260923/locks/rings.pt",
+        "/data/wujiaju/n10_migration_20260923/locks/smoke.pt",
+        "/data/wujiaju/n10_migration_20260923/locks/donors.pt",
+        "--seed",
+        "5",
+        "--loops",
+        "6",
+        "--depth-mode",
+        "uniform",
+        "--steps",
+        "20000",
+        "--eval-every",
+        "1000",
+        "--batch-size",
+        "512",
+        "--eval-batch-size",
+        "500",
+        "--amp"
+      ],
+      "started": 1790158972.8346386,
+      "manifest_sha256": "7f8734c77fa71dbe2e84e3d83ff1e5b9b13ed8608842ba2e457f980ac3c48cc4"
+    },
+    "after_backbones_0": {
+      "status": "waiting_for_backbones",
+      "pid": 3116570,
+      "gpu": "3"
+    },
+    "after_backbones_1": {
+      "status": "waiting_for_backbones",
+      "pid": 3116574,
+      "gpu": "6"
+    }
+  },
+  "paper_recompiled_with_n10": false,
+  "complete_controller_fits": 0,
+  "resource_stop": false
+}

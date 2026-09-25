@@ -1,0 +1,6 @@
+{
+  "unmodified_logits_max_error": 4.5299530029296875e-06,
+  "pattern_patch_logits_max_error": 1.6689300537109375e-06,
+  "independent_context_hook_error": 2.905726432800293e-06,
+  "self_patch_error": 0.0
+}

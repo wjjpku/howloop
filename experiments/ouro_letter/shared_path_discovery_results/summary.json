@@ -1,0 +1,155 @@
+[
+  {
+    "scope": null,
+    "condition": "base",
+    "n": 8,
+    "base": 8,
+    "source": 0,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": null,
+    "condition": "source",
+    "n": 8,
+    "base": 0,
+    "source": 8,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "all",
+    "condition": "self_output",
+    "n": 8,
+    "base": 8,
+    "source": 0,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "all",
+    "condition": "self_pattern",
+    "n": 8,
+    "base": 8,
+    "source": 0,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "all",
+    "condition": "source_pattern",
+    "n": 8,
+    "base": 1,
+    "source": 0,
+    "cf": 7,
+    "other": 0
+  },
+  {
+    "scope": "all",
+    "condition": "source_output",
+    "n": 8,
+    "base": 0,
+    "source": 8,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "all",
+    "condition": "source_value",
+    "n": 8,
+    "base": 0,
+    "source": 8,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "late",
+    "condition": "self_output",
+    "n": 8,
+    "base": 8,
+    "source": 0,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "late",
+    "condition": "self_pattern",
+    "n": 8,
+    "base": 8,
+    "source": 0,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "late",
+    "condition": "source_pattern",
+    "n": 8,
+    "base": 1,
+    "source": 0,
+    "cf": 7,
+    "other": 0
+  },
+  {
+    "scope": "late",
+    "condition": "source_output",
+    "n": 8,
+    "base": 0,
+    "source": 8,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "late",
+    "condition": "source_value",
+    "n": 8,
+    "base": 0,
+    "source": 8,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "local",
+    "condition": "self_output",
+    "n": 8,
+    "base": 8,
+    "source": 0,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "local",
+    "condition": "self_pattern",
+    "n": 8,
+    "base": 8,
+    "source": 0,
+    "cf": 0,
+    "other": 0
+  },
+  {
+    "scope": "local",
+    "condition": "source_pattern",
+    "n": 8,
+    "base": 0,
+    "source": 1,
+    "cf": 7,
+    "other": 0
+  },
+  {
+    "scope": "local",
+    "condition": "source_output",
+    "n": 8,
+    "base": 0,
+    "source": 2,
+    "cf": 5,
+    "other": 1
+  },
+  {
+    "scope": "local",
+    "condition": "source_value",
+    "n": 8,
+    "base": 5,
+    "source": 0,
+    "cf": 0,
+    "other": 3
+  }
+]

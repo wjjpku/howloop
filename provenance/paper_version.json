@@ -1,0 +1,36 @@
+{
+  "version": 66,
+  "source": "/Users/jiaju/Documents/ChatGPT/final paper/v66/overleaf/main.tex",
+  "main": "/Users/jiaju/Documents/ChatGPT/final paper/v66/overleaf/main.tex",
+  "build": "/Users/jiaju/Documents/ChatGPT/final paper/v66/build/main.pdf",
+  "source_sha256": "a34bdec4de807f7dfb703d0f148c08183b5e4e3bba1fd52b80a5014f540c77ec",
+  "main_sha256": "a34bdec4de807f7dfb703d0f148c08183b5e4e3bba1fd52b80a5014f540c77ec",
+  "build_sha256": "f777bf530a3b602c0b019a405004a9d900154bb8b941106b59927854cb4689d1",
+  "bibliography": [
+    "references.bib"
+  ],
+  "assets": [
+    "figures/fig1_overview.pdf",
+    "figures/fig2a_readout.pdf",
+    "figures/fig2b_readout.pdf",
+    "figures/fig2c_readout.pdf",
+    "figures/fig2d_readout.pdf",
+    "figures/fig3a_target_accuracy.pdf",
+    "figures/fig3b_pca.pdf",
+    "figures/fig4_attention_mechanism.pdf",
+    "figures/fig5a_parity.pdf",
+    "figures/fig5b_graph.pdf",
+    "figures/fig5_legend.pdf",
+    "figures/fig6_parity_timing.pdf",
+    "figures/fig7_supervision_capacity.pdf",
+    "figures/figS1_graph_seeds.pdf",
+    "figures/figS2a_parity_seed0.pdf",
+    "figures/figS2b_parity_seed1.pdf",
+    "figures/figS2c_parity_seed2.pdf"
+  ],
+  "latest_delivery": "/Users/jiaju/Documents/ChatGPT/final paper/v66",
+  "overleaf_folder": "/Users/jiaju/Documents/ChatGPT/final paper/v66/overleaf",
+  "latest_edit": "Revised Section 4.2 opening to connect one- and two-hop D8L6 readout advances to testing control of learned multi-step computation.",
+  "future_updates": "Edit v66/overleaf/main.tex in place; v65 is archived. Compile into v66/build and refresh paper_v66.pdf.",
+  "reference_count": 25
+}

@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "pid": 1699859,
+  "gpu": "1",
+  "checkpoint": "/data/wujiaju/parity_input_once_20260811/backbones/parity_input_once_seed2/best.pt",
+  "controller": "/data/wujiaju/parity_input_once_20260811/controllers/seed2/extension20to40/controller.pt",
+  "checkpoint_sha256": "ef6977b3710b84e925599feb42a4dad2b0628bec5ad5235bcc070c801b49b83a",
+  "controller_sha256": "0c6c8c7d01e89763c2055714fb34fd2a265d5a30129019fc3cd880a449991236",
+  "code_sha256": "19d9d2d69e4f04f079d4c60e90f993bcd1b31c5fe62f54a40a663cae69210e4e",
+  "lengths": [
+    1000
+  ],
+  "examples_per_length": 8,
+  "batch_size": 8,
+  "seed": 2026092401,
+  "schedule": "J before calls 2..n; input once; t=n",
+  "metric": "whole answer exact match; all samples retained",
+  "cuda_graph": true,
+  "eager_comparison": {
+    "max_logit_error": 0.0,
+    "all_predictions_identical": true
+  },
+  "elapsed": 15.44785475730896,
+  "peak_mib": 295.97607421875
+}

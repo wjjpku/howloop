@@ -1,0 +1,70 @@
+{
+  "pid": 3216185,
+  "gpu": 6,
+  "model": "/data/wujiaju/models/Ouro-2.6B",
+  "loops": 4,
+  "readout_loop": 4,
+  "use_j": false,
+  "training": false,
+  "trainable_parameters": 0,
+  "system_prompt": "You are a helpful assistant.",
+  "prompt_mode": "historical zero-shot",
+  "seed": 20260915,
+  "max_new_tokens": 64,
+  "batch_size": 4,
+  "parameter_dtype": "FP32",
+  "compute_dtype": "BF16",
+  "rows": 64,
+  "input_lengths": {
+    "0": [
+      98
+    ],
+    "1": [
+      98
+    ],
+    "2": [
+      98
+    ],
+    "3": [
+      98
+    ],
+    "4": [
+      98
+    ],
+    "5": [
+      98
+    ],
+    "6": [
+      98
+    ],
+    "7": [
+      98
+    ],
+    "8": [
+      98
+    ],
+    "9": [
+      98
+    ],
+    "10": [
+      98
+    ],
+    "11": [
+      98
+    ],
+    "12": [
+      98
+    ],
+    "13": [
+      98
+    ],
+    "14": [
+      98
+    ],
+    "15": [
+      98
+    ]
+  },
+  "script_sha256": "f95da1d925577574393fa81d07f6837184264ef9ae953c2d45f264f08fdd47c3",
+  "task_sha256": "cf2a5072b40b89467854bc696ca315ad6af47e849b1d3797c450428015f88772"
+}

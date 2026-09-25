@@ -1,0 +1,7328 @@
+[
+  {
+    "site": null,
+    "condition": "base",
+    "n": 128,
+    "base_answer": 128,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 128
+  },
+  {
+    "site": null,
+    "condition": "source",
+    "n": 128,
+    "base_answer": 0,
+    "source_answer": 128,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.0002475775945640635,
+      0.973545253276825,
+      0.00033077706655149086
+    ],
+    "both_clean_correct": 128
+  },
+  {
+    "site": [
+      1,
+      33,
+      0
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      0
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.944114550948143,
+      0.0003595450374405118,
+      0.000901818179613656
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      0
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9432091489434242,
+      0.00035952218036072736,
+      0.0008908581564810447
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      0
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.941177561879158,
+      0.0003619790843458759,
+      0.0008716773883179485
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      0
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      0
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9430862367153168,
+      0.00035883381156054384,
+      0.0008906489280207097
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      0
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9440008774399757,
+      0.0003521929704675131,
+      0.0008917040706819535
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      0
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9423120990395546,
+      0.0003624203825438599,
+      0.000891183044132049
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      0
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      0
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459541663527489,
+      0.00035864200287960557,
+      0.0008880016939656343
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      0
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459646642208099,
+      0.0003583899554087111,
+      0.0008871777076819853
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      0
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457945451140404,
+      0.00035121332325616095,
+      0.0008784719180994216
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      0
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      0
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9386668726801872,
+      0.0003575293023914128,
+      0.0008020829378665439
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      0
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444343745708466,
+      0.00035165029839845374,
+      0.0008595065444296779
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      0
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9391569271683693,
+      0.000343045044360224,
+      0.0009523602715262314
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      0
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      0
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.938363179564476,
+      0.0003590637450088252,
+      0.0008989045574026022
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      0
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9456515237689018,
+      0.0003597468153202499,
+      0.0008682051220603171
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      0
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9247366711497307,
+      0.0003534362489290288,
+      0.000929815466747641
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      0
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      0
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.942457877099514,
+      0.00036214368924447626,
+      0.0008918459463984618
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      0
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9455739110708237,
+      0.00035917136301577557,
+      0.0008051121520793458
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      0
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9200401082634926,
+      0.0003502429368609228,
+      0.0024118925666698487
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      1
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      1
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9456577003002167,
+      0.0003588682679946942,
+      0.0009006988519786319
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      1
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444664046168327,
+      0.00035731150364881614,
+      0.0008907743164172643
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      1
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.945999763906002,
+      0.000358676158725757,
+      0.0008994891252314119
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      1
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      1
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9442527368664742,
+      0.0003588819432707169,
+      0.0008799082343102782
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      1
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9446644634008408,
+      0.00035886116666006274,
+      0.0008897754335066566
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      1
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9431683346629143,
+      0.0003530626797783043,
+      0.0008882207389433461
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      1
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      1
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454895257949829,
+      0.00035929332511841494,
+      0.0008899571751044277
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      1
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459675326943398,
+      0.00035131652430209215,
+      0.0008882116031827536
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      1
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9427498281002045,
+      0.0003613654882883566,
+      0.0008879458910087124
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      1
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      1
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9458923861384392,
+      0.000358603610834507,
+      0.000900140873568489
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      1
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9369855597615242,
+      0.00036055316695637885,
+      0.0009125781479042416
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      1
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444150999188423,
+      0.00034466887700546067,
+      0.000971035897123329
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      1
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      1
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9433734491467476,
+      0.00035096962710667867,
+      0.0008792111761977139
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      1
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9417890533804893,
+      0.0003608623096624797,
+      0.0008790103458977683
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      1
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9386679828166962,
+      0.0003439077245275257,
+      0.0008898641028736165
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      1
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      1
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9467129334807396,
+      0.0003571220092908334,
+      0.0008887526051921668
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      1
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9484224170446396,
+      0.00035641701708755136,
+      0.0008740880326740808
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      1
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.948702447116375,
+      0.0003418473578449266,
+      0.0008203784228726363
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      2
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      2
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.944279246032238,
+      0.0003573124595277477,
+      0.0009012777477437339
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      2
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457112327218056,
+      0.0003589963922649986,
+      0.0009121440690478266
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      2
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9442422315478325,
+      0.00035881980443264183,
+      0.0009009669444139945
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      2
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      2
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454276412725449,
+      0.0003516695518328561,
+      0.0009009061976712474
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      2
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.944600909948349,
+      0.0003518781329603371,
+      0.0008797419957318198
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      2
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9411072358489037,
+      0.00035646052697302366,
+      0.0008826548333900064
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      2
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      2
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457794576883316,
+      0.0003585155661767203,
+      0.0008783591114251976
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      2
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9426254257559776,
+      0.00036162253877591866,
+      0.000814996272879398
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      2
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9379446282982826,
+      0.00036098560690334125,
+      0.0008293383838235968
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      2
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      2
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9440883100032806,
+      0.0003600790723794489,
+      0.0009029483189806342
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      2
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9398882761597633,
+      0.0003527532918496945,
+      0.000899174371738809
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      2
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459104239940643,
+      0.00035860012371813355,
+      0.0009110712171604973
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      2
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      2
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.944307416677475,
+      0.0003509244204451534,
+      0.0008890551656577372
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      2
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9441906735301018,
+      0.00035037893076150795,
+      0.0008916427303802266
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      2
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9436844065785408,
+      0.0003575926048142719,
+      0.000878866931657285
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      2
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      2
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9471537098288536,
+      0.0003507512997202866,
+      0.0008889382158940862
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      2
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9455566108226776,
+      0.00035849423579747963,
+      0.0008794394494771041
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      2
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9436137676239014,
+      0.0003536918015925039,
+      0.0009562093050590192
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      3
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      3
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9453457891941071,
+      0.0003588571385080286,
+      0.0009662598029080982
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      3
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9426961988210678,
+      0.0003612182033521094,
+      0.0008891095905028124
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      3
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9456020891666412,
+      0.0003610321285805185,
+      0.0009017935948349987
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      3
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      3
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.942957304418087,
+      0.00035113573289891065,
+      0.0008895748712802742
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      3
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9441652968525887,
+      0.00035938058363171876,
+      0.0008917314956988776
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      3
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.944482646882534,
+      0.0003535626008215331,
+      0.0009007340086100157
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      3
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      3
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.946612536907196,
+      0.00035902600620829617,
+      0.0008918741315255829
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      3
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9468094930052757,
+      0.00036109183770349773,
+      0.0008793478446023073
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      3
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457389041781425,
+      0.00035199031117372215,
+      0.0008899750459931965
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      3
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      3
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9431780502200127,
+      0.0003592109942474053,
+      0.0009017089453209337
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      3
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459482505917549,
+      0.0003509432347073016,
+      0.0008787237559317873
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      3
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9385255947709084,
+      0.00035793028678199335,
+      0.0009136790871480116
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      3
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      3
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9458182156085968,
+      0.00035839423242123303,
+      0.0008881178737283335
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      3
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9408877044916153,
+      0.00036114523277319677,
+      0.0008531185887932224
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      3
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9360821396112442,
+      0.0003607291496336984,
+      0.000849975712185369
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      3
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      3
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9466241970658302,
+      0.00035922954089073755,
+      0.0008882187389644969
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      3
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9394944459199905,
+      0.0003613271918538885,
+      0.0009028438256564186
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      3
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.939588226377964,
+      0.0003595992697000838,
+      0.0008892217526863533
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      4
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      4
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9467883631587029,
+      0.0003599880471938377,
+      0.000891106243102513
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      4
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9456369429826736,
+      0.00035887743149487505,
+      0.0009258094453343801
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      4
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9456407949328423,
+      0.000358961950723824,
+      0.0009264519713951813
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      4
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      4
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454238042235374,
+      0.000352065213064634,
+      0.0008905939650958317
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      4
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444843307137489,
+      0.0003588633003346331,
+      0.0008801031340226473
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      4
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9429547861218452,
+      0.0003600564764383307,
+      0.000901597631354889
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      4
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      4
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9464349672198296,
+      0.00035920254106258653,
+      0.0008803370143368738
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      4
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.945652462542057,
+      0.0003591531614119958,
+      0.0008907275030196615
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      4
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457447826862335,
+      0.000358620835640977,
+      0.0008898263689616215
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      4
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      4
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9413845241069794,
+      0.000354749730149706,
+      0.0009030019022020497
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      4
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9414828047156334,
+      0.0003529785590217216,
+      0.0009003015343296283
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      4
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.945985697209835,
+      0.00035844054968947603,
+      0.0009012673311872277
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      4
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      4
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457003697752953,
+      0.00035909651217025385,
+      0.0008789194218934426
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      4
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454780369997025,
+      0.00035168549584341235,
+      0.0009017765987664461
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      4
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9443199634552002,
+      0.00035792141284218815,
+      0.0009030550700117601
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      4
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      4
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9466428980231285,
+      0.00035864099652371806,
+      0.0008796145103815434
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      4
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457636848092079,
+      0.000358908777684519,
+      0.0008889376060778886
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      4
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9455753490328789,
+      0.0003605310054126676,
+      0.0008889295169183242
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      5
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      5
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9412644356489182,
+      0.00036223579695615626,
+      0.0008920192075265732
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      5
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9456489235162735,
+      0.0003512388493618346,
+      0.000976915987052962
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      5
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9400992020964622,
+      0.00035452048837214534,
+      0.0009131191092137669
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      5
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      5
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9428807124495506,
+      0.00035210742953495355,
+      0.0008778077835813747
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      5
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457893967628479,
+      0.00035899473516565195,
+      0.0008777018624641642
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      5
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9437048584222794,
+      0.0003521650940001564,
+      0.0008708711649205725
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      5
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      5
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9455035030841827,
+      0.0003590145402085909,
+      0.0008811255399905349
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      5
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457888379693031,
+      0.00035877894492841733,
+      0.0008787215800794002
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      5
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9458022192120552,
+      0.00036055165617199236,
+      0.0008012529875713881
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      5
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      5
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9442685842514038,
+      0.0003587156395497004,
+      0.000902000497148947
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      5
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 5,
+    "source_answer": 1,
+    "counterfactual": 0,
+    "other": 2,
+    "mean_target_probability": [
+      0.5949991366214817,
+      0.10612516285709717,
+      0.0006265008389618743
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      5
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 6,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 2,
+    "mean_target_probability": [
+      0.6821833496796899,
+      0.007655340465589688,
+      0.0011957660781263257
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      5
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      5
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9431643784046173,
+      0.0003507900223667093,
+      0.0008791020438820851
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      5
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 6,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 2,
+    "mean_target_probability": [
+      0.7656466364860535,
+      0.0005205267929113688,
+      0.02801073349996841
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      5
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 6,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 2,
+    "mean_target_probability": [
+      0.642605422064662,
+      0.0005132054664045427,
+      0.0471515030867522
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      5
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      5
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9466299712657928,
+      0.0003589069904137432,
+      0.0008900043916355571
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      5
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 7,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 1,
+    "mean_target_probability": [
+      0.7685414385050535,
+      0.0006274645829762449,
+      0.014339917247752965
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      5
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 7,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 1,
+    "mean_target_probability": [
+      0.7499066721647978,
+      0.0007757849771223846,
+      0.05865739429009409
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      6
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      6
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9442446157336235,
+      0.00035881178314411954,
+      0.0009128536100888596
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      6
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9382780715823174,
+      0.00035480518363328883,
+      0.0008143393763475615
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      6
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9456069692969322,
+      0.0003536709029958729,
+      0.000811962646594111
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      6
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      6
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9440240934491158,
+      0.0003575847958927625,
+      0.000881088500250371
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      6
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9323626458644867,
+      0.0003624823204972927,
+      0.0009758666978996189
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      6
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9329497590661049,
+      0.00036338136510494223,
+      0.000977540893927653
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      6
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      6
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9458254054188728,
+      0.0003508476797833282,
+      0.0008786375071849761
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      6
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9378677085042,
+      0.00036512755298190314,
+      0.0008562868038097804
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      6
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.927925355732441,
+      0.00035435307006537187,
+      0.0008999747585676232
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      6
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      6
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9431040361523628,
+      0.00035860688467437285,
+      0.00091370563768578
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      6
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9489381089806557,
+      0.0003616578522951386,
+      0.0008993788538873559
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      6
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9473314136266708,
+      0.0003515516159495746,
+      0.000877628581179124
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      6
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      6
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9365031644701958,
+      0.00036095730183660635,
+      0.0008919173562844662
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      6
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9481765925884247,
+      0.0003573392932594288,
+      0.0009243352178600617
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      6
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9551494121551514,
+      0.0003426526704970456,
+      0.000910934445073508
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      6
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      6
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9455268830060959,
+      0.00036027664850735164,
+      0.0008889386863302207
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      6
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9460217505693436,
+      0.0003621370860855677,
+      0.0007335209396615028
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      6
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9461164772510529,
+      0.0003532183282004553,
+      0.0008048074701036967
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      7
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      7
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9395249709486961,
+      0.00036109252880578424,
+      0.0009018722943210378
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      7
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9442808628082275,
+      0.00035884875023839413,
+      0.0008885868232937355
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      7
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9455095529556274,
+      0.00034401530297145655,
+      0.0008791609019453972
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      7
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      7
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9443105757236481,
+      0.00035886261935047514,
+      0.0008887990867378903
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      7
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9442068710923195,
+      0.0003575841049041628,
+      0.0008820075038329378
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      7
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9424338340759277,
+      0.00035452874635666376,
+      0.0009008498727780534
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      7
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      7
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9470346495509148,
+      0.0003568618482177044,
+      0.0008891593356565863
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      7
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459988251328468,
+      0.00035840839268530544,
+      0.0008781296236293201
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      7
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459912776947021,
+      0.0003586384939353593,
+      0.0008888893657967856
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      7
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      7
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9472395181655884,
+      0.00035973054559690354,
+      0.0008891094473710837
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      7
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9368844032287598,
+      0.0003608184156291827,
+      0.0008920555997065094
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      7
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9384940043091774,
+      0.000345025278875255,
+      0.0008801861966958313
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      7
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      7
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9442190229892731,
+      0.0003514273896598752,
+      0.0008809621501768561
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      7
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9427490308880806,
+      0.00035998137082060566,
+      0.0008678437724256582
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      7
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9429392442107201,
+      0.0003589095615552651,
+      0.0007150768366273041
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      7
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      7
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9470994919538498,
+      0.0003572596899630298,
+      0.0008878879546045937
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      7
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.945599190890789,
+      0.0003494128568490851,
+      0.0008128119535513179
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      7
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.952275738120079,
+      0.00035513346631432796,
+      0.000848114787004306
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      8
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      8
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444923177361488,
+      0.0003511627180614596,
+      0.0008784441569105184
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      8
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444708898663521,
+      0.0003511643162710243,
+      0.0008803644168438041
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      8
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9447184652090073,
+      0.0003588898582620459,
+      0.0009249190429727605
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      8
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      8
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454863667488098,
+      0.0003516981487337034,
+      0.0008791586543566154
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      8
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9485444352030754,
+      0.00036172747331875144,
+      0.0008149175021117117
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      8
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9398597404360771,
+      0.000360257711918166,
+      0.0008385295975585905
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      8
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      8
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.944081999361515,
+      0.0003538251487498201,
+      0.000889513546667331
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      8
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9468914195895195,
+      0.0003510895523959334,
+      0.000877585377907053
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      8
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9486363679170609,
+      0.0003630583614722127,
+      0.0008275075897472561
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      8
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      8
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9456543549895287,
+      0.0003585796499692151,
+      0.0009116828323385562
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      8
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9394911080598831,
+      0.0003600700579227123,
+      0.0009851053581542146
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      8
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9401299878954887,
+      0.00035305157871334814,
+      0.0008721681923589131
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      8
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      8
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454722031950951,
+      0.00035900518992093566,
+      0.0008905826158525088
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      8
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 7,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 1,
+    "mean_target_probability": [
+      0.9121710620820522,
+      0.0003522927693211386,
+      0.0008747566121201089
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      8
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9282641112804413,
+      0.00036726168661971315,
+      0.0008787665922227461
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      8
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      8
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9469236209988594,
+      0.00035865754159658536,
+      0.0008891087613847048
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      8
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9396887868642807,
+      0.0003582188043083079,
+      0.0004670505245485401
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      8
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9378718435764313,
+      0.0003364720100762497,
+      0.0006958165355399615
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      9
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      9
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9458109885454178,
+      0.00035868608654254786,
+      0.0009002391446983893
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      9
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454613402485847,
+      0.00035736467816605,
+      0.0008904802497227138
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      9
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444515183568001,
+      0.00035871866225534177,
+      0.0008887403422477291
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      9
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      9
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454898461699486,
+      0.0003595392927309149,
+      0.0008907257661121548
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      9
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457424804568291,
+      0.0003586182798471782,
+      0.00088893556437597
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      9
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9442414492368698,
+      0.0003604790620101994,
+      0.000890700977151937
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      9
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      9
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459646791219711,
+      0.0003602967196911777,
+      0.0008888854101769539
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      9
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9466206282377243,
+      0.0003593049227674783,
+      0.0008908613629046158
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      9
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9452734589576721,
+      0.0003611668396388268,
+      0.0008376118835258239
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      9
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      9
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457512348890305,
+      0.00035900506452435366,
+      0.0009103403198196247
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      9
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9472632110118866,
+      0.00035974052593701344,
+      0.0008707167634156576
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      9
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9460707008838654,
+      0.00035447039726932417,
+      0.0008889070636541874
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      9
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      9
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457531869411469,
+      0.00035322626922607014,
+      0.0008889661717148556
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      9
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9452827796339989,
+      0.0003594697068365349,
+      0.0008695190755361182
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      9
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9431211724877357,
+      0.00035191051347283064,
+      0.0008914684832461717
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      9
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      9
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9467084780335426,
+      0.00035890302615371183,
+      0.0008890138813058002
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      9
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9386575520038605,
+      0.00036149966217635665,
+      0.0009872759701465839
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      9
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9417435675859451,
+      0.0003840019429617314,
+      0.001014380115861968
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      10
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      10
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9431268870830536,
+      0.00035884261501450965,
+      0.0008793770858801508
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      10
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9398641288280487,
+      0.00035474201149554574,
+      0.0008277552333311178
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      10
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9395817741751671,
+      0.0003606572108765249,
+      0.0009127004732363275
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      10
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      10
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9430517554283142,
+      0.00035065559723079787,
+      0.0008815825593728732
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      10
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454765990376472,
+      0.00035886776515781094,
+      0.0008773754796038702
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      10
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454765990376472,
+      0.00035887833951164794,
+      0.0008896533081497182
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      10
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      10
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.946804441511631,
+      0.0003593535631125633,
+      0.0008889744083262485
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      10
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.945739172399044,
+      0.0003591836999703446,
+      0.0008887355564866084
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      10
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.944477804005146,
+      0.0003462415284047893,
+      0.0008141818582316773
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      10
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      10
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444157257676125,
+      0.000352351406490925,
+      0.000901891778994468
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      10
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435467422008514,
+      0.0003587902958770428,
+      0.0008885999503718267
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      10
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9416682571172714,
+      0.0003515561318181426,
+      0.0009134190021313771
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      10
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      10
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9428008049726486,
+      0.0003513756673783064,
+      0.0008912151045024075
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      10
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9485326483845711,
+      0.0003614611126749878,
+      0.0008882716343805441
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      10
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9509073421359062,
+      0.0003580228308237565,
+      0.0008788880999190951
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      10
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      10
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9468734040856361,
+      0.0003586442738878759,
+      0.0008891119886129673
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      10
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9463185220956802,
+      0.0003511314338311422,
+      0.0008822910074286483
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      10
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9488856643438339,
+      0.00035607179279395496,
+      0.0008163835620962345
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      11
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      11
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9443506300449371,
+      0.00035235775112596457,
+      0.0009018526233148805
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      11
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.939528651535511,
+      0.0003610130243032472,
+      0.000903733192103573
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      11
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9458040595054626,
+      0.00035843474779539974,
+      0.0008994893814815441
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      11
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      11
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457691535353661,
+      0.0003583825829309717,
+      0.0008882115167807569
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      11
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444315880537033,
+      0.00034424210730321647,
+      0.0008818979077886979
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      11
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9445076659321785,
+      0.0003588611252780538,
+      0.0009017921198619661
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      11
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      11
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.945534385740757,
+      0.00035901481669498025,
+      0.0008889219419643268
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      11
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9427699148654938,
+      0.00036124345547250414,
+      0.0008999578803923214
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      11
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454758316278458,
+      0.00035900908460462233,
+      0.0008885867955541471
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      11
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      11
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9433127641677856,
+      0.0003585017839213833,
+      0.0009000168965940247
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      11
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9446708709001541,
+      0.0003511763586629968,
+      0.0008792963066071025
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      11
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9441988542675972,
+      0.00035193652468024084,
+      0.0008907667315725121
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      11
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      11
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444500878453255,
+      0.00035883313262274896,
+      0.0008908351019272231
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      11
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9439561069011688,
+      0.00036127102043792547,
+      0.000892458449698097
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      11
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9443198293447495,
+      0.0003576254194967987,
+      0.0008020727519806314
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      11
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      11
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9452904611825943,
+      0.0003574732206743647,
+      0.0008909672037589189
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      11
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9468228071928024,
+      0.0003589054374515399,
+      0.0008898460918089768
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      11
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9470966830849648,
+      0.0003529967746089824,
+      0.0008891480921420225
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      12
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      12
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9425785392522812,
+      0.0003590444455312536,
+      0.0009018558522484454
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      12
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 7,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 1,
+    "mean_target_probability": [
+      0.880949292331934,
+      0.00036013745238960837,
+      0.0007506527110763273
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      12
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9208362698554993,
+      0.00035100443506053125,
+      0.000809291246241628
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      12
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      12
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9378848150372505,
+      0.00035365547478249937,
+      0.0008912193608239249
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      12
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9555793255567551,
+      0.0004199117690859566,
+      0.0023749115684950084
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      12
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9283907562494278,
+      0.0004182190243682271,
+      0.0021064154304895055
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      12
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      12
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9468246325850487,
+      0.00035891044751679146,
+      0.0008898558888859043
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      12
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 7,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 1,
+    "mean_target_probability": [
+      0.9112389758229256,
+      0.00039145306459431595,
+      0.0019094923602551717
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      12
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9474169015884399,
+      0.0004271976852123771,
+      0.0030057988183216366
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      12
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      12
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9415749609470367,
+      0.0003614090295513961,
+      0.0009131252611496166
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      12
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9455758407711983,
+      0.000357397639845658,
+      0.0009017230337349247
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      12
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9444470107555389,
+      0.0003588452875646908,
+      0.0008911207942219335
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      12
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      12
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9412878751754761,
+      0.0003505642997652103,
+      0.0008901830152581169
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      12
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9396214708685875,
+      0.0003603660330782077,
+      0.0008887929777756653
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      12
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454810842871666,
+      0.000351696060647555,
+      0.0008896670306057786
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      12
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      12
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9454665556550026,
+      0.00036001931766804773,
+      0.0008794487944214779
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      12
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9402402937412262,
+      0.00036138883638159314,
+      0.0008620158989742777
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      12
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9483411759138107,
+      0.00035188222955184756,
+      0.0008054230162315434
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      13
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      13
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9445581808686256,
+      0.0003592784137254057,
+      0.0009003298714560515
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      13
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9427633658051491,
+      0.00035930668582295766,
+      0.0009142816001030951
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      13
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9396908953785896,
+      0.0003525797471866099,
+      0.0008504003881171229
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      13
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      13
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9458199143409729,
+      0.00034375965333310887,
+      0.0009001537613357868
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      13
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9445265308022499,
+      0.00035262443020656065,
+      0.0008927572058610167
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      13
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9478537812829018,
+      0.00034465680892026285,
+      0.0008796959563142082
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      13
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      13
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9466373398900032,
+      0.0003590387425447261,
+      0.000890857848730775
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      13
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459214955568314,
+      0.0003692454849897331,
+      0.0008792446992629266
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      13
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9409693107008934,
+      0.00035483899080190895,
+      0.0010313343278767206
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      13
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      13
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9456548541784286,
+      0.00035885831255200173,
+      0.0009021518135341466
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      13
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9446389153599739,
+      0.0003588176771245344,
+      0.000838140891232797
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      13
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9461529925465584,
+      0.0003368421910181496,
+      0.0009123552597429807
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      13
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      13
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9440256655216217,
+      0.0003442305417138414,
+      0.0008923416899051517
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      13
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9373295530676842,
+      0.0003582018528049957,
+      0.0008596714554869322
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      13
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9355349168181419,
+      0.00036739477138780785,
+      0.0008588485143263824
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      13
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      13
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9468543231487274,
+      0.0003573866096076017,
+      0.0008897683578652504
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      13
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.943266898393631,
+      0.00036257786541682435,
+      0.0008924657379338896
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      13
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.946994848549366,
+      0.00036138040672994975,
+      0.0008875561843524338
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      14
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      14
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9394103959202766,
+      0.0003530115865260086,
+      0.0008809414082406875
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      14
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9202999845147133,
+      0.0003567948192539916,
+      0.0007684924481736743
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      14
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9325146153569221,
+      0.000359269863793088,
+      0.0009880542399969272
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      14
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      14
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9441196322441101,
+      0.0003598235573463171,
+      0.0008927101678182225
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      14
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9409688040614128,
+      0.0003971497018255832,
+      0.0009868317724794906
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      14
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9543956145644188,
+      0.0003760901581699727,
+      0.0011036948595801732
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      14
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      14
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.946835845708847,
+      0.0003508249385504314,
+      0.0008778505975897133
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      14
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9339771866798401,
+      0.0003553442165866727,
+      0.0010929153881988896
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      14
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9542903676629066,
+      0.00037552651815531135,
+      0.0009320407204995718
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      14
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      14
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459089413285255,
+      0.0003605272580671226,
+      0.0008890011313269497
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      14
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9371470138430595,
+      0.00036256984162719164,
+      0.0009025718181874254
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      14
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9453710168600082,
+      0.00035955819032551517,
+      0.0009010711082737544
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      14
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      14
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9426486417651176,
+      0.0003626198486017529,
+      0.0009033163421463541
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      14
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9442072436213493,
+      0.00035756040051637683,
+      0.0009028015620060614
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      14
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9482120797038078,
+      0.0003598718938064849,
+      0.0008795128825340726
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      14
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      14
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9468595385551453,
+      0.00035739640054544,
+      0.0008910969289672721
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      14
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9466767311096191,
+      0.0003587565133784665,
+      0.000888035468506132
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      14
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9451935663819313,
+      0.0003593770861698431,
+      0.000892647480100095
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      15
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      15
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9459197074174881,
+      0.0003587354267438059,
+      0.000900147353149805
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      15
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9433117136359215,
+      0.0003607476935485465,
+      0.0008897919009314137
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      33,
+      15
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9399230852723122,
+      0.00036240439612811315,
+      0.0008928404566859172
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      15
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      15
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.943108543753624,
+      0.0003588322601899563,
+      0.000889590435235732
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      15
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9447241798043251,
+      0.00035171557669855247,
+      0.000953623876284837
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      33,
+      15
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9469483643770218,
+      0.0003514734610234882,
+      0.0008633789827854343
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      15
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      15
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457274898886681,
+      0.00035891940069632255,
+      0.0008792695912234194
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      15
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9392691627144814,
+      0.0003664491986228313,
+      0.0008878910873590939
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      33,
+      15
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9306470081210136,
+      0.0003576882241986823,
+      0.0008586449825997988
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      15
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      15
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9428116753697395,
+      0.00035140140880685067,
+      0.0008801009772696489
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      15
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9367117509245872,
+      0.0003608503159284737,
+      0.0009152339090405803
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      1,
+      34,
+      15
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9457691982388496,
+      0.00035143090212841344,
+      0.0008983576101400104
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      15
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      15
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9442735388875008,
+      0.0003509125092477916,
+      0.0008803163589163887
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      15
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9455217644572258,
+      0.00034968226555065485,
+      0.0008790953473862828
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      2,
+      34,
+      15
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9446784034371376,
+      0.0003588547094750538,
+      0.0008890558931398118
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      15
+    ],
+    "condition": "self_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9435874447226524,
+      0.0003617522644390192,
+      0.0008900796105990594
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      15
+    ],
+    "condition": "self_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9465945065021515,
+      0.00036092158961764653,
+      0.0008907474100396939
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      15
+    ],
+    "condition": "source_pattern",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9467155039310455,
+      0.0003587761066228268,
+      0.0008882355281230048
+    ],
+    "both_clean_correct": 8
+  },
+  {
+    "site": [
+      3,
+      34,
+      15
+    ],
+    "condition": "source_output",
+    "n": 8,
+    "base_answer": 8,
+    "source_answer": 0,
+    "counterfactual": 0,
+    "other": 0,
+    "mean_target_probability": [
+      0.9467068314552307,
+      0.0003606778122957621,
+      0.000889147969928672
+    ],
+    "both_clean_correct": 8
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "attempts": [
+    {
+      "command": [
+        "/Users/jiaju/texlive/2025/bin/universal-darwin/latexmk",
+        "-norc",
+        "-pdf",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-synctex=1",
+        "-outdir=/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/preview_build",
+        "/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/fig3_pca_preview.tex"
+      ],
+      "compiler": "texlive",
+      "exitCode": 0,
+      "log": "Rc files read (in order):\n  NONE\nLatexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.\nNo existing .aux file, so I'll make a simple one, and require run of *latex.\nLatexmk: applying rule 'pdflatex'...\nRule 'pdflatex':  Reasons for rerun\nCategory 'other':\n  Rerun of 'pdflatex' forced or previously required:\n    Reason or flag: 'Initial setup'\n\n------------\nRun number 1 of rule 'pdflatex'\n------------\n------------\nRunning 'pdflatex  -interaction=nonstopmode -halt-on-error -synctex=1 -recorder -output-directory=\"preview_build\"  \"/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/fig3_pca_preview.tex\"'\n------------\nThis is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)\n restricted \\write18 enabled.\nentering extended mode\n\n(/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/fig3_pca_previ\new.tex\nLaTeX2e <2026-06-01>\nL3 programming layer <2026-05-26>\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/base/article.cls\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/base/size10.clo))\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty)\n(/Users/jiaju/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty)))\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty)\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def)))\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/caption/caption.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty)))\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)\n (preview_build/fig3_pca_preview.aux)\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(/Users/jiaju/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n)\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))\n[1{/Users/jiaju/.texlive2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Us\ners/jiaju/Documents/looped_transformer_paper_repro_20260920/paper_spotlight_v1/\nfigures/approved_three/target_control.pdf> <./pca_B_transparent.pdf>]\n(preview_build/fig3_pca_preview.aux) )</Users/jiaju/texlive/2025/texmf-dist/fon\nts/type1/public/amsfonts/cm/cmbx10.pfb>\nOutput written on preview_build/fig3_pca_preview.pdf (1 page, 51239 bytes).\nSyncTeX written on preview_build/fig3_pca_preview.synctex.gz.\nTranscript written on preview_build/fig3_pca_preview.log.\nLatexmk: Getting log file 'preview_build/fig3_pca_preview.log'\nLatexmk: Examining 'preview_build/fig3_pca_preview.fls'\nLatexmk: Examining 'preview_build/fig3_pca_preview.log'\nLatexmk: Log file says output to 'preview_build/fig3_pca_preview.pdf'\nLatexmk: All targets (preview_build/fig3_pca_preview.pdf) are up-to-date\n\n",
+      "pdfExists": true,
+      "pdfPath": "/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/preview_build/fig3_pca_preview.pdf"
+    }
+  ],
+  "command": [
+    "/Users/jiaju/texlive/2025/bin/universal-darwin/latexmk",
+    "-norc",
+    "-pdf",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "-synctex=1",
+    "-outdir=/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/preview_build",
+    "/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/fig3_pca_preview.tex"
+  ],
+  "compiler": "texlive",
+  "exitCode": 0,
+  "log": "Rc files read (in order):\n  NONE\nLatexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.\nNo existing .aux file, so I'll make a simple one, and require run of *latex.\nLatexmk: applying rule 'pdflatex'...\nRule 'pdflatex':  Reasons for rerun\nCategory 'other':\n  Rerun of 'pdflatex' forced or previously required:\n    Reason or flag: 'Initial setup'\n\n------------\nRun number 1 of rule 'pdflatex'\n------------\n------------\nRunning 'pdflatex  -interaction=nonstopmode -halt-on-error -synctex=1 -recorder -output-directory=\"preview_build\"  \"/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/fig3_pca_preview.tex\"'\n------------\nThis is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)\n restricted \\write18 enabled.\nentering extended mode\n\n(/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/fig3_pca_previ\new.tex\nLaTeX2e <2026-06-01>\nL3 programming layer <2026-05-26>\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/base/article.cls\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/base/size10.clo))\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty)\n(/Users/jiaju/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty)))\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty)\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def)))\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/caption/caption.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty)))\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)\n (preview_build/fig3_pca_preview.aux)\n*geometry* driver: auto-detecting\n*geometry* detected driver: pdftex\n(/Users/jiaju/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n)\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty\n(/Users/jiaju/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))\n[1{/Users/jiaju/.texlive2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Us\ners/jiaju/Documents/looped_transformer_paper_repro_20260920/paper_spotlight_v1/\nfigures/approved_three/target_control.pdf> <./pca_B_transparent.pdf>]\n(preview_build/fig3_pca_preview.aux) )</Users/jiaju/texlive/2025/texmf-dist/fon\nts/type1/public/amsfonts/cm/cmbx10.pfb>\nOutput written on preview_build/fig3_pca_preview.pdf (1 page, 51239 bytes).\nSyncTeX written on preview_build/fig3_pca_preview.synctex.gz.\nTranscript written on preview_build/fig3_pca_preview.log.\nLatexmk: Getting log file 'preview_build/fig3_pca_preview.log'\nLatexmk: Examining 'preview_build/fig3_pca_preview.fls'\nLatexmk: Examining 'preview_build/fig3_pca_preview.log'\nLatexmk: Log file says output to 'preview_build/fig3_pca_preview.pdf'\nLatexmk: All targets (preview_build/fig3_pca_preview.pdf) are up-to-date\n\n",
+  "pdfExists": true,
+  "pdfPath": "/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/preview_build/fig3_pca_preview.pdf",
+  "rootFile": "/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/fig3_pca_preview.tex",
+  "tectonic": {
+    "checked": [
+      {
+        "path": "/Users/jiaju/.codex/plugins/cache/openai-bundled/latex/0.2.7/bin/tectonic",
+        "source": "bundled"
+      }
+    ],
+    "path": "/Users/jiaju/.codex/plugins/cache/openai-bundled/latex/0.2.7/bin/tectonic",
+    "reason": "Tectonic executable is available.",
+    "source": "bundled",
+    "status": "available",
+    "version": "Tectonic 0.17.0"
+  },
+  "tectonicSuitability": {
+    "reasons": [],
+    "scannedFiles": [
+      "/Users/jiaju/Documents/ChatGPT/final paper/n10_hop_pca_20260924/fig3_pca_preview.tex"
+    ],
+    "suitable": true
+  },
+  "texliveDetection": {
+    "activeBinDir": "/Users/jiaju/texlive/2025/bin/universal-darwin",
+    "commands": {
+      "biber": {
+        "path": "/Users/jiaju/texlive/2025/bin/universal-darwin/biber",
+        "version": "present"
+      },
+      "kpsewhich": {
+        "path": "/Users/jiaju/texlive/2025/bin/universal-darwin/kpsewhich",
+        "version": "kpathsea version 6.4.2"
+      },
+      "latexmk": {
+        "path": "/Users/jiaju/texlive/2025/bin/universal-darwin/latexmk",
+        "version": "Latexmk, John Collins, 9 March 2026. Version 4.88"
+      },
+      "lualatex": {
+        "path": "/Users/jiaju/texlive/2025/bin/universal-darwin/lualatex",
+        "version": "This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)"
+      },
+      "pdflatex": {
+        "path": "/Users/jiaju/texlive/2025/bin/universal-darwin/pdflatex",
+        "version": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)"
+      },
+      "xelatex": {
+        "path": "/Users/jiaju/texlive/2025/bin/universal-darwin/xelatex",
+        "version": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)"
+      }
+    },
+    "knownTexBinDirs": [],
+    "missingRecommended": [],
+    "missingRequired": [],
+    "reason": "Required TeX tools are available.",
+    "searchPath": "/Users/jiaju/.kimi-code/bin:/Users/jiaju/texlive/2025/bin/universal-darwin:/Users/jiaju/.local/bin:/opt/homebrew/Cellar/node/25.8.0/bin:/opt/homebrew/opt/openjdk@17/bin:/Users/jiaju/.codebuddy/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/Users/jiaju/.codex/tmp/arg0/codex-arg0v6FvJB:/Users/jiaju/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/Users/jiaju/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources",
+    "status": "existing-usable",
+    "texmfroot": "/Users/jiaju/texlive/2025"
+  }
+}

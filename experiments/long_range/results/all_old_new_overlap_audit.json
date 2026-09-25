@@ -1,0 +1,218 @@
+[
+  {
+    "seed": 100,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 100,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 100,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 101,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 101,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 101,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 102,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 102,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 102,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 103,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 103,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 1
+  },
+  {
+    "seed": 103,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 104,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 104,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 104,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 1
+  },
+  {
+    "seed": 105,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 105,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 105,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 106,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 106,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 106,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 107,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 107,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 107,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 108,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 108,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 108,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 109,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 109,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 109,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 110,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 110,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 110,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 111,
+    "condition": "raw",
+    "comparisons": 4360,
+    "different_counts": 0
+  },
+  {
+    "seed": 111,
+    "condition": "rank48_seed1/full",
+    "comparisons": 4360,
+    "different_counts": 1
+  },
+  {
+    "seed": 111,
+    "condition": "rank48_seed2/full",
+    "comparisons": 4360,
+    "different_counts": 0
+  }
+]

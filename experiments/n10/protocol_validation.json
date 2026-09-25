@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "unique_disjoint_heldout_graphs": 25720,
+  "training_sample_exclusion_check": 10000,
+  "sequence_length": 35,
+  "target_indexing_cycle10": true,
+  "codes_exceed_int32_checked": true
+}

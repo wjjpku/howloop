@@ -1,0 +1,329 @@
+{
+  "conditions": {
+    "native": {
+      "n": 64,
+      "correct": 0,
+      "accuracy": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_probability": 0.0011325410977178763,
+      "generation_correct": 0,
+      "truncated": 0,
+      "wilson_ci95": [
+        0.0,
+        0.05662405979280534
+      ]
+    },
+    "J": {
+      "n": 64,
+      "correct": 62,
+      "accuracy": 0.96875,
+      "ci95": [
+        0.921875,
+        1.0
+      ],
+      "mean_probability": 0.9269719832227565,
+      "generation_correct": 62,
+      "truncated": 0,
+      "wilson_ci95": [
+        0.8930270822904169,
+        0.9913878616538281
+      ]
+    },
+    "late_self_output": {
+      "n": 64,
+      "correct": 0,
+      "accuracy": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_probability": 0.0011325410977178763,
+      "max_logit_error": 0.0,
+      "wilson_ci95": [
+        0.0,
+        0.05662405979280534
+      ]
+    },
+    "late_self_pattern": {
+      "n": 64,
+      "correct": 0,
+      "accuracy": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_probability": 0.0011274614646481496,
+      "max_logit_error": 0.125,
+      "wilson_ci95": [
+        0.0,
+        0.05662405979280534
+      ]
+    },
+    "late_rescue_pattern": {
+      "n": 64,
+      "correct": 60,
+      "accuracy": 0.9375,
+      "ci95": [
+        0.875,
+        0.984375
+      ],
+      "mean_probability": 0.9104811147553846,
+      "generation_correct": 60,
+      "truncated": 0,
+      "wilson_ci95": [
+        0.8500251490779133,
+        0.9754287986033819
+      ]
+    },
+    "late_rescue_output": {
+      "n": 64,
+      "correct": 60,
+      "accuracy": 0.9375,
+      "ci95": [
+        0.875,
+        0.984375
+      ],
+      "mean_probability": 0.9012581880670041,
+      "generation_correct": 60,
+      "truncated": 0,
+      "wilson_ci95": [
+        0.8500251490779133,
+        0.9754287986033819
+      ]
+    },
+    "late_rescue_value": {
+      "n": 64,
+      "correct": 15,
+      "accuracy": 0.234375,
+      "ci95": [
+        0.140625,
+        0.34375
+      ],
+      "mean_probability": 0.2657882369821891,
+      "generation_correct": 15,
+      "truncated": 0,
+      "wilson_ci95": [
+        0.1474989559392414,
+        0.35133257582568644
+      ]
+    },
+    "late_damage_pattern": {
+      "n": 64,
+      "correct": 0,
+      "accuracy": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_probability": 0.0006522924765874905,
+      "generation_correct": 0,
+      "truncated": 0,
+      "wilson_ci95": [
+        0.0,
+        0.05662405979280534
+      ]
+    },
+    "early_rescue_pattern": {
+      "n": 64,
+      "correct": 16,
+      "accuracy": 0.25,
+      "ci95": [
+        0.140625,
+        0.359375
+      ],
+      "mean_probability": 0.27439952975873894,
+      "wilson_ci95": [
+        0.16014926530970577,
+        0.36816276458669694
+      ]
+    },
+    "middle_rescue_pattern": {
+      "n": 64,
+      "correct": 1,
+      "accuracy": 0.015625,
+      "ci95": [
+        0.0,
+        0.046875
+      ],
+      "mean_probability": 0.02028388967482897,
+      "wilson_ci95": [
+        0.002763541923337505,
+        0.08334101600094265
+      ]
+    },
+    "local_rescue_pattern": {
+      "n": 64,
+      "correct": 11,
+      "accuracy": 0.171875,
+      "ci95": [
+        0.078125,
+        0.265625
+      ],
+      "mean_probability": 0.17677077734140312,
+      "wilson_ci95": [
+        0.09877742301244645,
+        0.282132116226582
+      ]
+    },
+    "late_unrelated_pattern": {
+      "n": 64,
+      "correct": 0,
+      "accuracy": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_probability": 0.015448609014015346,
+      "generation_correct": 0,
+      "truncated": 0,
+      "wilson_ci95": [
+        0.0,
+        0.05662405979280534
+      ]
+    },
+    "late_wrong_call_pattern": {
+      "n": 64,
+      "correct": 0,
+      "accuracy": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_probability": 0.019438975516095525,
+      "generation_correct": 0,
+      "truncated": 0,
+      "wilson_ci95": [
+        0.0,
+        0.05662405979280534
+      ]
+    }
+  },
+  "contrasts": {
+    "late_rescue_pattern_minus_native": {
+      "delta": 0.9375,
+      "ci95": [
+        0.875,
+        0.984375
+      ],
+      "a_only": 60,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.7673754220082645,
+        0.9860139340601803
+      ],
+      "exact_p_two_sided": 1.734723475976807e-18,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "J_minus_late_damage_pattern": {
+      "delta": 0.96875,
+      "ci95": [
+        0.921875,
+        1.0
+      ],
+      "a_only": 62,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.8128335014377117,
+        0.997371787251763
+      ],
+      "exact_p_two_sided": 4.336808689942018e-19,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "late_rescue_pattern_minus_late_rescue_value": {
+      "delta": 0.703125,
+      "ci95": [
+        0.578125,
+        0.8128906249999943
+      ],
+      "a_only": 46,
+      "b_only": 1,
+      "conservative_ci95": [
+        0.4791498612348075,
+        0.8361338403903469
+      ],
+      "exact_p_two_sided": 6.821210263296962e-13,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "late_rescue_pattern_minus_late_unrelated_pattern": {
+      "delta": 0.9375,
+      "ci95": [
+        0.875,
+        0.984375
+      ],
+      "a_only": 60,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.7673754220082645,
+        0.9860139340601803
+      ],
+      "exact_p_two_sided": 1.734723475976807e-18,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "late_rescue_pattern_minus_late_wrong_call_pattern": {
+      "delta": 0.9375,
+      "ci95": [
+        0.875,
+        0.984375
+      ],
+      "a_only": 60,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.7673754220082645,
+        0.9860139340601803
+      ],
+      "exact_p_two_sided": 1.734723475976807e-18,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "late_rescue_pattern_minus_early_rescue_pattern": {
+      "delta": 0.6875,
+      "ci95": [
+        0.5625,
+        0.8125
+      ],
+      "a_only": 45,
+      "b_only": 1,
+      "conservative_ci95": [
+        0.46254363540680754,
+        0.8234018509583382
+      ],
+      "exact_p_two_sided": 1.3358203432289883e-12,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "late_rescue_pattern_minus_middle_rescue_pattern": {
+      "delta": 0.921875,
+      "ci95": [
+        0.84375,
+        0.984375
+      ],
+      "a_only": 59,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.7461992875993195,
+        0.9783974245879721
+      ],
+      "exact_p_two_sided": 3.469446951953614e-18,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "late_rescue_pattern_minus_local_rescue_pattern": {
+      "delta": 0.765625,
+      "ci95": [
+        0.65625,
+        0.859375
+      ],
+      "a_only": 49,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.5594843695552986,
+        0.8733937896758921
+      ],
+      "exact_p_two_sided": 3.552713678800501e-15,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    }
+  },
+  "recovered_gain": 0.967741935483871,
+  "bootstrap_replicates": 10000,
+  "unit": "paired base graph/task instance; one checkpoint and map"
+}

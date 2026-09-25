@@ -1,0 +1,169 @@
+{
+  "protocol": {
+    "graphs": 512,
+    "examples": 5120,
+    "train_graphs": 256,
+    "test_graphs": 256,
+    "split_seed": 20260924,
+    "PCA": "uncentered feature scaling disabled; training mean subtracted; fitted on training graphs only",
+    "probe": "logistic regression; graph-disjoint test; no success filtering"
+  },
+  "results": [
+    {
+      "fit": 1,
+      "representation": "answer",
+      "stage": "J",
+      "explained_variance_2PC": 0.23807185888290405,
+      "probe_accuracy": {
+        "PC1_PC2": 0.559375,
+        "full_hidden": 0.99921875,
+        "other_fit_full_hidden": 0.9939453125
+      },
+      "silhouette_2PC": 0.020082946866750717
+    },
+    {
+      "fit": 1,
+      "representation": "answer",
+      "stage": "JF",
+      "explained_variance_2PC": 0.2339773029088974,
+      "probe_accuracy": {
+        "PC1_PC2": 0.5095703125,
+        "full_hidden": 0.9998046875,
+        "other_fit_full_hidden": 0.9978515625
+      },
+      "silhouette_2PC": 0.01591634750366211
+    },
+    {
+      "fit": 1,
+      "representation": "mean",
+      "stage": "J",
+      "explained_variance_2PC": 0.9859492182731628,
+      "probe_accuracy": {
+        "PC1_PC2": 1.0,
+        "full_hidden": 1.0,
+        "other_fit_full_hidden": 1.0
+      },
+      "silhouette_2PC": 0.9545384645462036
+    },
+    {
+      "fit": 1,
+      "representation": "mean",
+      "stage": "JF",
+      "explained_variance_2PC": 0.9811111688613892,
+      "probe_accuracy": {
+        "PC1_PC2": 1.0,
+        "full_hidden": 1.0,
+        "other_fit_full_hidden": 1.0
+      },
+      "silhouette_2PC": 0.9469164609909058
+    },
+    {
+      "fit": 2,
+      "representation": "answer",
+      "stage": "J",
+      "explained_variance_2PC": 0.23380011320114136,
+      "probe_accuracy": {
+        "PC1_PC2": 0.54609375,
+        "full_hidden": 0.9998046875,
+        "other_fit_full_hidden": 0.9875
+      },
+      "silhouette_2PC": 0.005192093085497618
+    },
+    {
+      "fit": 2,
+      "representation": "answer",
+      "stage": "JF",
+      "explained_variance_2PC": 0.23628166317939758,
+      "probe_accuracy": {
+        "PC1_PC2": 0.4986328125,
+        "full_hidden": 0.9998046875,
+        "other_fit_full_hidden": 0.9951171875
+      },
+      "silhouette_2PC": 0.01980423741042614
+    },
+    {
+      "fit": 2,
+      "representation": "mean",
+      "stage": "J",
+      "explained_variance_2PC": 0.9876778721809387,
+      "probe_accuracy": {
+        "PC1_PC2": 1.0,
+        "full_hidden": 1.0,
+        "other_fit_full_hidden": 1.0
+      },
+      "silhouette_2PC": 0.9560520052909851
+    },
+    {
+      "fit": 2,
+      "representation": "mean",
+      "stage": "JF",
+      "explained_variance_2PC": 0.9829644560813904,
+      "probe_accuracy": {
+        "PC1_PC2": 1.0,
+        "full_hidden": 1.0,
+        "other_fit_full_hidden": 1.0
+      },
+      "silhouette_2PC": 0.9483863711357117
+    }
+  ],
+  "behavior": {
+    "fit1_hop1_J": 0.1037109375,
+    "fit1_hop1_JF": 0.9966796875,
+    "fit1_hop2_J": 0.1984375,
+    "fit1_hop2_JF": 0.9826171875,
+    "fit2_hop1_J": 0.103515625,
+    "fit2_hop1_JF": 0.9951171875,
+    "fit2_hop2_J": 0.1978515625,
+    "fit2_hop2_JF": 0.9828125
+  },
+  "mean_shift_diagnostics": [
+    {
+      "fit": 1,
+      "representation": "answer",
+      "stage": "J",
+      "shared_shift_fraction": 0.10112272202968597
+    },
+    {
+      "fit": 1,
+      "representation": "answer",
+      "stage": "JF",
+      "shared_shift_fraction": 0.034358665347099304
+    },
+    {
+      "fit": 1,
+      "representation": "mean",
+      "stage": "J",
+      "shared_shift_fraction": 0.9972966909408569
+    },
+    {
+      "fit": 1,
+      "representation": "mean",
+      "stage": "JF",
+      "shared_shift_fraction": 0.996787428855896
+    },
+    {
+      "fit": 2,
+      "representation": "answer",
+      "stage": "J",
+      "shared_shift_fraction": 0.10715282708406448
+    },
+    {
+      "fit": 2,
+      "representation": "answer",
+      "stage": "JF",
+      "shared_shift_fraction": 0.03781677037477493
+    },
+    {
+      "fit": 2,
+      "representation": "mean",
+      "stage": "J",
+      "shared_shift_fraction": 0.9973113536834717
+    },
+    {
+      "fit": 2,
+      "representation": "mean",
+      "stage": "JF",
+      "shared_shift_fraction": 0.9967994093894958
+    }
+  ]
+}

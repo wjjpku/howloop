@@ -1,0 +1,187 @@
+{
+  "pid": 3724598,
+  "gpu": "6",
+  "training": false,
+  "loops": 4,
+  "baseline_sha256": "f29324252ee3da7eb73de700b1af1a0679d2a1d93c559033ca0906ca080bd3ae",
+  "J_sha256": "b9172d38fd0a4eaeaa340ebee9e622bbfccdb44c47c78b663b808a650392df31",
+  "J_step": 500,
+  "words_A": [
+    [
+      "big",
+      "small"
+    ],
+    [
+      "tall",
+      "short"
+    ],
+    [
+      "strong",
+      "weak"
+    ],
+    [
+      "left",
+      "right"
+    ],
+    [
+      "up",
+      "down"
+    ],
+    [
+      "day",
+      "night"
+    ],
+    [
+      "black",
+      "white"
+    ],
+    [
+      "true",
+      "false"
+    ],
+    [
+      "hard",
+      "soft"
+    ],
+    [
+      "thick",
+      "thin"
+    ],
+    [
+      "loud",
+      "quiet"
+    ],
+    [
+      "smooth",
+      "rough"
+    ]
+  ],
+  "words_B": [
+    [
+      "good",
+      "bad"
+    ],
+    [
+      "wide",
+      "narrow"
+    ],
+    [
+      "deep",
+      "shallow"
+    ],
+    [
+      "early",
+      "late"
+    ],
+    [
+      "love",
+      "hate"
+    ],
+    [
+      "win",
+      "lose"
+    ],
+    [
+      "buy",
+      "sell"
+    ],
+    [
+      "rise",
+      "fall"
+    ],
+    [
+      "accept",
+      "reject"
+    ],
+    [
+      "begin",
+      "end"
+    ],
+    [
+      "increase",
+      "decrease"
+    ],
+    [
+      "push",
+      "pull"
+    ]
+  ],
+  "n_per_k": 64,
+  "seeds": [
+    9101000,
+    9101001,
+    9101002,
+    9101003,
+    9101004,
+    9101005,
+    9101006,
+    9101007,
+    9101008,
+    9101009,
+    9101011,
+    9101012,
+    9101013,
+    9101014,
+    9101015,
+    9101016,
+    9101017,
+    9101018,
+    9101019,
+    9101021,
+    9101022,
+    9101023,
+    9101024,
+    9101025,
+    9101026,
+    9101028,
+    9101029,
+    9101030,
+    9101031,
+    9101032,
+    9101033,
+    9101034,
+    9101035,
+    9101036,
+    9101037,
+    9101038,
+    9101039,
+    9101040,
+    9101041,
+    9101042,
+    9101043,
+    9101044,
+    9101045,
+    9101046,
+    9101047,
+    9101048,
+    9101049,
+    9101050,
+    9101051,
+    9101052,
+    9101053,
+    9101054,
+    9101055,
+    9101056,
+    9101057,
+    9101058,
+    9101059,
+    9101060,
+    9101061,
+    9101062,
+    9101063,
+    9101064,
+    9101065,
+    9101066
+  ],
+  "template": 0,
+  "max_new_tokens": 160,
+  "batch": 8,
+  "conditions": [
+    "original",
+    "half_A",
+    "new_A",
+    "new_B"
+  ],
+  "pair_relabeling_seed": "sequence seed + 20260916",
+  "caveat": "Unseen in task training, not guaranteed absent from pretraining/general replay. Natural antonym ambiguity and tokenizer changes remain possible."
+}

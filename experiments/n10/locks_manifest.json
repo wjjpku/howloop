@@ -1,0 +1,26 @@
+{
+  "confirmation": {
+    "sha256": "635ccb11c182e41ed046415f3a9f1c4d3043e4a7ca6d14444efa9b6feb20eac4",
+    "graphs": 512
+  },
+  "discovery": {
+    "sha256": "b3af6af8d58b6f9a0a9c16eabaf98ae486e76c3c19470feae5134a9a0a896279",
+    "graphs": 32
+  },
+  "donors": {
+    "sha256": "df59428a4445303df66f74327257100b3f42b8aebd76bfc48548ecbc2d31085c",
+    "graphs": 24532
+  },
+  "rings": {
+    "sha256": "23a0d47e4bf6e50f3fbf17c4d20d34e9a077a8ded990a6297225ceb403660066",
+    "graphs": 512
+  },
+  "selection": {
+    "sha256": "d101bbdd50f61fd179bc1bfd8ba8c4151734ec6c6f1158f32e4197454adacd74",
+    "graphs": 128
+  },
+  "smoke": {
+    "sha256": "5d7dbd317536d4784fcde4501020f7eb02787de2dc905452695cebd1a9cc1534",
+    "graphs": 4
+  }
+}

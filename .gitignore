@@ -1,0 +1,12 @@
+.DS_Store
+._*
+__pycache__/
+*.pyc
+.venv*/
+.runtime*/
+.validation-assets/
+outputs/
+runs/
+*.partial
+.cache/
+*.incomplete

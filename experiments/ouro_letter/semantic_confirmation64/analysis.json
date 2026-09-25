@@ -1,0 +1,586 @@
+{
+  "conditions": {
+    "base": {
+      "n": 64,
+      "base": 63,
+      "source": 0,
+      "counterfactual": 0,
+      "other": 1,
+      "ci95": [
+        [
+          0.953125,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "generation_counts": [
+        63,
+        0,
+        0
+      ],
+      "generation_other": 1,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.9166589839990573,
+          0.9972364580766624
+        ],
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.0,
+          0.05662405979280534
+        ]
+      ]
+    },
+    "source": {
+      "n": 64,
+      "base": 0,
+      "source": 61,
+      "counterfactual": 2,
+      "other": 1,
+      "ci95": [
+        [
+          0.0,
+          0.890625,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.078125
+        ]
+      ],
+      "generation_counts": [
+        0,
+        61,
+        2
+      ],
+      "generation_other": 1,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.8710034625990631,
+          0.983930983213707
+        ],
+        [
+          0.008612138346171874,
+          0.10697291770958313
+        ]
+      ]
+    },
+    "counterfactual": {
+      "n": 64,
+      "base": 0,
+      "source": 2,
+      "counterfactual": 62,
+      "other": 0,
+      "ci95": [
+        [
+          0.0,
+          0.0,
+          0.921875
+        ],
+        [
+          0.0,
+          0.078125,
+          1.0
+        ]
+      ],
+      "generation_counts": [
+        0,
+        2,
+        62
+      ],
+      "generation_other": 0,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.008612138346171874,
+          0.10697291770958313
+        ],
+        [
+          0.8930270822904169,
+          0.9913878616538281
+        ]
+      ]
+    },
+    "late_self_output": {
+      "n": 64,
+      "base": 63,
+      "source": 0,
+      "counterfactual": 0,
+      "other": 1,
+      "ci95": [
+        [
+          0.953125,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "max_logit_error": 0.0,
+      "wilson_ci95": [
+        [
+          0.9166589839990573,
+          0.9972364580766624
+        ],
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.0,
+          0.05662405979280534
+        ]
+      ]
+    },
+    "late_self_pattern": {
+      "n": 64,
+      "base": 63,
+      "source": 0,
+      "counterfactual": 0,
+      "other": 1,
+      "ci95": [
+        [
+          0.953125,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "max_logit_error": 0.125,
+      "wilson_ci95": [
+        [
+          0.9166589839990573,
+          0.9972364580766624
+        ],
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.0,
+          0.05662405979280534
+        ]
+      ]
+    },
+    "late_source_pattern": {
+      "n": 64,
+      "base": 0,
+      "source": 2,
+      "counterfactual": 52,
+      "other": 10,
+      "ci95": [
+        [
+          0.0,
+          0.0,
+          0.71875
+        ],
+        [
+          0.0,
+          0.078125,
+          0.90625
+        ]
+      ],
+      "generation_counts": [
+        0,
+        2,
+        53
+      ],
+      "generation_other": 9,
+      "truncations": 0,
+      "first_token_name_disagreements": 1,
+      "wilson_ci95": [
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.008612138346171874,
+          0.10697291770958313
+        ],
+        [
+          0.7002563943589847,
+          0.8893535682705119
+        ]
+      ]
+    },
+    "late_source_output": {
+      "n": 64,
+      "base": 0,
+      "source": 61,
+      "counterfactual": 2,
+      "other": 1,
+      "ci95": [
+        [
+          0.0,
+          0.890625,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.078125
+        ]
+      ],
+      "generation_counts": [
+        0,
+        61,
+        2
+      ],
+      "generation_other": 1,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.8710034625990631,
+          0.983930983213707
+        ],
+        [
+          0.008612138346171874,
+          0.10697291770958313
+        ]
+      ]
+    },
+    "late_source_value": {
+      "n": 64,
+      "base": 1,
+      "source": 43,
+      "counterfactual": 5,
+      "other": 15,
+      "ci95": [
+        [
+          0.0,
+          0.546875,
+          0.015625
+        ],
+        [
+          0.046875,
+          0.78125,
+          0.140625
+        ]
+      ],
+      "generation_counts": [
+        1,
+        43,
+        5
+      ],
+      "generation_other": 15,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.002763541923337505,
+          0.08334101600094265
+        ],
+        [
+          0.549991058490915,
+          0.7742944209553081
+        ],
+        [
+          0.03383117690855046,
+          0.17019537354162906
+        ]
+      ]
+    },
+    "early_source_pattern": {
+      "n": 64,
+      "base": 0,
+      "source": 0,
+      "counterfactual": 61,
+      "other": 3,
+      "ci95": [
+        [
+          0.0,
+          0.0,
+          0.890625
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "wilson_ci95": [
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.8710034625990631,
+          0.983930983213707
+        ]
+      ]
+    },
+    "middle_source_pattern": {
+      "n": 64,
+      "base": 31,
+      "source": 8,
+      "counterfactual": 13,
+      "other": 12,
+      "ci95": [
+        [
+          0.359375,
+          0.046875,
+          0.109375
+        ],
+        [
+          0.609375,
+          0.203125,
+          0.3125
+        ]
+      ],
+      "wilson_ci95": [
+        [
+          0.3663355166543264,
+          0.6041839852141988
+        ],
+        [
+          0.06472242663330453,
+          0.22774561821129946
+        ],
+        [
+          0.12273417819183653,
+          0.3171363573101416
+        ]
+      ]
+    },
+    "local_source_pattern": {
+      "n": 64,
+      "base": 0,
+      "source": 6,
+      "counterfactual": 57,
+      "other": 1,
+      "ci95": [
+        [
+          0.0,
+          0.03125,
+          0.8125
+        ],
+        [
+          0.0,
+          0.171875,
+          0.953125
+        ]
+      ],
+      "generation_counts": [
+        0,
+        6,
+        57
+      ],
+      "generation_other": 1,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.04367825258519838,
+          0.18982879599645597
+        ],
+        [
+          0.7910135867310387,
+          0.945998866555832
+        ]
+      ]
+    },
+    "local_source_output": {
+      "n": 64,
+      "base": 0,
+      "source": 6,
+      "counterfactual": 50,
+      "other": 8,
+      "ci95": [
+        [
+          0.0,
+          0.03125,
+          0.671875
+        ],
+        [
+          0.0,
+          0.171875,
+          0.875
+        ]
+      ],
+      "generation_counts": [
+        0,
+        6,
+        50
+      ],
+      "generation_other": 8,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.04367825258519838,
+          0.18982879599645597
+        ],
+        [
+          0.6656721604337418,
+          0.8649768059328052
+        ]
+      ]
+    },
+    "late_wrong_call_pattern": {
+      "n": 64,
+      "base": 5,
+      "source": 0,
+      "counterfactual": 1,
+      "other": 58,
+      "ci95": [
+        [
+          0.015625,
+          0.0,
+          0.0
+        ],
+        [
+          0.140625,
+          0.0,
+          0.046875
+        ]
+      ],
+      "generation_counts": [
+        5,
+        0,
+        1
+      ],
+      "generation_other": 58,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.03383117690855046,
+          0.17019537354162906
+        ],
+        [
+          0.0,
+          0.05662405979280534
+        ],
+        [
+          0.002763541923337505,
+          0.08334101600094265
+        ]
+      ]
+    }
+  },
+  "paired_contrasts": {
+    "pattern_minus_output_counterfactual": {
+      "delta": 0.78125,
+      "ci95": [
+        0.671875,
+        0.875
+      ],
+      "a_only": 51,
+      "b_only": 1,
+      "conservative_ci95": [
+        0.5649943346099535,
+        0.8968371455233285
+      ],
+      "exact_p_two_sided": 2.353672812205332e-14,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "output_minus_pattern_source": {
+      "delta": 0.921875,
+      "ci95": [
+        0.84375,
+        0.984375
+      ],
+      "a_only": 59,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.7461992875993195,
+        0.9783974245879721
+      ],
+      "exact_p_two_sided": 3.469446951953614e-18,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "pattern_minus_wrong_call_counterfactual": {
+      "delta": 0.796875,
+      "ci95": [
+        0.703125,
+        0.890625
+      ],
+      "a_only": 51,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.5944285452081347,
+        0.8970336696819078
+      ],
+      "exact_p_two_sided": 8.881784197001252e-16,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "pattern_minus_early_counterfactual": {
+      "delta": -0.140625,
+      "ci95": [
+        -0.234375,
+        -0.046875
+      ],
+      "a_only": 1,
+      "b_only": 10,
+      "conservative_ci95": [
+        -0.2849413031319013,
+        0.02612574291858756
+      ],
+      "exact_p_two_sided": 0.01171875,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "pattern_minus_middle_counterfactual": {
+      "delta": 0.609375,
+      "ci95": [
+        0.484375,
+        0.734375
+      ],
+      "a_only": 40,
+      "b_only": 1,
+      "conservative_ci95": [
+        0.38189230792165985,
+        0.7572798147176334
+      ],
+      "exact_p_two_sided": 3.8198777474462986e-11,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    }
+  },
+  "bootstrap_replicates": 10000,
+  "unit": "paired graph/input; one backbone and map"
+}

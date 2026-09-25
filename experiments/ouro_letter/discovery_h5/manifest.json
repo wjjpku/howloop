@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "pid": 132637,
+  "gpu": "3",
+  "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+  "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898",
+  "code_sha": "e7b5a507437879975c6570e38f963fa0943aea76bcd67437f07c14d7e578ef4c",
+  "pairs_sha": "f38c119b1c19662919faf72c7a56243fedaef6955e0a0d34da7c3feedb8df7c8",
+  "smoke": false,
+  "started": 1790170836.6497228,
+  "elapsed": 209.37950015068054,
+  "peak_gib": 10.155090808868408,
+  "parameters_unchanged": true
+}

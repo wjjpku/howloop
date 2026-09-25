@@ -1,0 +1,4 @@
+{"variant": "raw", "length": 975, "loop": 975, "examples": 128, "correct": 52, "exact_match": 0.40625, "elapsed": 115.38685059547424}
+{"variant": "J", "length": 975, "loop": 975, "examples": 128, "correct": 45, "exact_match": 0.3515625, "elapsed": 115.38746738433838}
+{"variant": "raw", "length": 945, "loop": 945, "examples": 128, "correct": 71, "exact_match": 0.5546875, "elapsed": 101.23235273361206}
+{"variant": "J", "length": 945, "loop": 945, "examples": 128, "correct": 43, "exact_match": 0.3359375, "elapsed": 101.23274374008179}

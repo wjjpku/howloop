@@ -1,0 +1,29 @@
+[
+  {
+    "seed": 103,
+    "mode": "rank48_seed1/full",
+    "new_graph": 5915,
+    "old_graph": 192,
+    "call": 16,
+    "new": 1,
+    "old": 2
+  },
+  {
+    "seed": 104,
+    "mode": "rank48_seed2/full",
+    "new_graph": 2963,
+    "old_graph": 53,
+    "call": 24,
+    "new": 1,
+    "old": 2
+  },
+  {
+    "seed": 111,
+    "mode": "rank48_seed1/full",
+    "new_graph": 967,
+    "old_graph": 21,
+    "call": 23,
+    "new": 2,
+    "old": 3
+  }
+]

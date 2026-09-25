@@ -1,0 +1,5 @@
+# Same-site restoration for fixed16 Ouro heads
+
+Use previously generated restore_confirmation_with_cf64, whose graph identities do not overlap localization discovery or confirmation. Exact16heads and call4 are fixed by preceding mediation study, not restoration results. Same basegraph alternative starting query supplies Q. Replace all Q at layers41,43,47 in call4; receiving K,V stay current. Restore clean pre-o_proj outputs at selected16heads, matched-size disjoint neighbors per layer, selected heads in each individual layer, or all48heads across these three layers. Full48 restoration must recover clean logits exactly. No selection beyond reporting conditional recovery among initially correct cases broken by Q corruption. Retain unfiltered64 counts. Complete-name generation for base/corrupt/selected/neighbor/all. Same frozen backbone,J and BF16 arithmetic. No candidate changes after seeing results.
+
+This cohort was previously evaluated for the distinct L34.H5 corruption test; it is not a newly sampled dataset. It is independent of16head selection. Original H5 test remains separate and is not pooled with this one.

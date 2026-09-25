@@ -1,0 +1,23 @@
+{
+  "parallel_confirmation64": {
+    "rows": 960,
+    "conditions": 15,
+    "generated_names": 320,
+    "parameters_unchanged": true,
+    "code_and_protocol_hash_verified": true,
+    "raw_sha256": "4befddd3ea823f432465b64de7f0a28e32961e95fcaa172fdf74007bee24d072",
+    "generation_forward_agreement": true,
+    "no_truncation": true
+  },
+  "parallel_restore64": {
+    "rows": 576,
+    "conditions": 9,
+    "generated_names": 320,
+    "parameters_unchanged": true,
+    "code_and_protocol_hash_verified": true,
+    "raw_sha256": "52275c8feff43d750e026315a2b8ce54e9903652be54a48e69675cfd65249a78",
+    "generation_forward_agreement": true,
+    "no_truncation": true
+  },
+  "same16_heads_same_checkpoint_same_J": true
+}

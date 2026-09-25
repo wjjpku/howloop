@@ -1,0 +1,30 @@
+[
+  {
+    "step": 1,
+    "lr": 6e-07,
+    "train_final_ce": 2.3551483154296875,
+    "selection_endpoint_accuracy": 0.1,
+    "elapsed_sec": 0.8264822959899902
+  },
+  {
+    "step": 10,
+    "lr": 5.999999999999999e-06,
+    "train_final_ce": 2.316497802734375,
+    "selection_endpoint_accuracy": 0.1015625,
+    "elapsed_sec": 1.578669786453247
+  },
+  {
+    "step": 20,
+    "lr": 1.1999999999999999e-05,
+    "train_final_ce": 2.3145751953125,
+    "selection_endpoint_accuracy": 0.1,
+    "elapsed_sec": 2.356541872024536
+  },
+  {
+    "step": 30,
+    "lr": 1.7999999999999997e-05,
+    "train_final_ce": 2.30731201171875,
+    "selection_endpoint_accuracy": 0.1015625,
+    "elapsed_sec": 3.1463162899017334
+  }
+]

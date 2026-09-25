@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "restricted_identity_logit_errors": {
+    "all": 0.0,
+    "answer": 0.0,
+    "Q": 2.1457672119140625e-06,
+    "random_Q": 2.1457672119140625e-06
+  },
+  "restricted_gradients": true,
+  "fixed8_supervision_J_shape": [
+    10,
+    35,
+    256
+  ],
+  "fixed8_supervision_J_gradients": true
+}

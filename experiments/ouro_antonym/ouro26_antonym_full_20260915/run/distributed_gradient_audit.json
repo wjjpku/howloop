@@ -1,0 +1,10 @@
+{
+  "event": "distributed_gradient_audit",
+  "world": 2,
+  "relative_error": 4.005645096442064e-08,
+  "serial_repeat_noise": 0.0,
+  "threshold": 1e-05,
+  "passed": true,
+  "checkpoint_step": 100,
+  "update_applied": false
+}

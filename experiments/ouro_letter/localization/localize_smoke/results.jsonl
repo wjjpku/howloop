@@ -1,0 +1,6 @@
+{"pair": 0, "condition": "native", "prediction": 21070, "target": 57, "correct": false, "probability": 0.0001756501878844574, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "J", "prediction": 57, "target": 57, "correct": true, "probability": 0.9948490262031555, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "full_rescue_pattern", "prediction": 57, "target": 57, "correct": true, "probability": 0.9549972414970398, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "full_damage_pattern", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00013567187124863267, "native_correct": false, "J_correct": true}
+{"pair": 0, "condition": "full_self_pattern", "prediction": 21070, "target": 57, "correct": false, "probability": 0.00017564852896612138, "native_correct": false, "J_correct": true, "max_logit_error": 0.125}
+{"pair": 0, "condition": "full_self_output", "prediction": 21070, "target": 57, "correct": false, "probability": 0.0001756501878844574, "native_correct": false, "J_correct": true, "max_logit_error": 0.0}

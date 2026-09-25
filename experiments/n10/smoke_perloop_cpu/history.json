@@ -1,0 +1,16 @@
+[
+  {
+    "step": 1,
+    "lr": 6e-07,
+    "train_final_ce": 2.2406256198883057,
+    "selection_endpoint_accuracy": 0.1015625,
+    "elapsed_sec": 7.498807907104492
+  },
+  {
+    "step": 2,
+    "lr": 1.2e-06,
+    "train_final_ce": 2.3418946266174316,
+    "selection_endpoint_accuracy": 0.09296875,
+    "elapsed_sec": 14.542739868164062
+  }
+]

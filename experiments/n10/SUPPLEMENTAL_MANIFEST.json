@@ -1,0 +1,13 @@
+{
+  "status": "queued_after_main_cohort",
+  "supervision_backbones": 2,
+  "supervision_controller_fits": 24,
+  "restricted_controller_fits": 60,
+  "regularized_sensitivity_fits": 4,
+  "single_h64_shared_controller": 1,
+  "single_h64_protocol": "Redesigned native-h8 pure CE curriculum. Not budget-matched to legacy phase-aligned affine initialization.",
+  "main_controller_fits": {"local_target_control": 20, "continuation": 24},
+  "total_backbones": 23,
+  "total_controller_fits": 133,
+  "paper_revision": "unnumbered only; waiting for measured data and review"
+}

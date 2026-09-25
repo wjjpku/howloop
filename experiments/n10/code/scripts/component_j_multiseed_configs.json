@@ -1,0 +1,62 @@
+[
+  {
+    "name": "full_lr1e6_h64",
+    "task_rounds": 8,
+    "task_learning_rate": 1e-6,
+    "task_state_loss_weight": 0.1,
+    "task_parameterization": "full",
+    "task_rank": 256,
+    "task_time_weighting": "uniform",
+    "task_state_answer_weight": 1.0,
+    "task_weight_decay": 0.0,
+    "task_grad_clip": 1.0,
+    "task_detach_interval": 0,
+    "task_freeze_bias": false,
+    "rollout_horizons": [64]
+  },
+  {
+    "name": "lora_r32_mixed",
+    "task_rounds": 6,
+    "task_learning_rate": 3e-6,
+    "task_state_loss_weight": 0.1,
+    "task_parameterization": "lora",
+    "task_rank": 32,
+    "task_time_weighting": "uniform",
+    "task_state_answer_weight": 1.0,
+    "task_weight_decay": 0.0,
+    "task_grad_clip": 1.0,
+    "task_detach_interval": 0,
+    "task_freeze_bias": false,
+    "rollout_horizons": [32, 48, 64]
+  },
+  {
+    "name": "lora_r64_h64",
+    "task_rounds": 8,
+    "task_learning_rate": 1e-6,
+    "task_state_loss_weight": 0.1,
+    "task_parameterization": "lora",
+    "task_rank": 64,
+    "task_time_weighting": "uniform",
+    "task_state_answer_weight": 1.0,
+    "task_weight_decay": 0.0,
+    "task_grad_clip": 1.0,
+    "task_detach_interval": 0,
+    "task_freeze_bias": false,
+    "rollout_horizons": [64]
+  },
+  {
+    "name": "lora_r32_mixed_freeze_bias",
+    "task_rounds": 6,
+    "task_learning_rate": 3e-6,
+    "task_state_loss_weight": 0.1,
+    "task_parameterization": "lora",
+    "task_rank": 32,
+    "task_time_weighting": "uniform",
+    "task_state_answer_weight": 1.0,
+    "task_weight_decay": 0.0,
+    "task_grad_clip": 1.0,
+    "task_detach_interval": 0,
+    "task_freeze_bias": true,
+    "rollout_horizons": [32, 48, 64]
+  }
+]

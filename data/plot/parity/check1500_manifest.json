@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "task": "Parity t approximately n diagonal band",
+  "checkpoint": "/data/wujiaju/parity_input_once_20260811/backbones/parity_input_once_seed2/best.pt",
+  "controller": "/data/wujiaju/parity_input_once_20260811/controllers/seed2/extension20to40/controller.pt",
+  "checkpoint_step": 99000,
+  "backbone_seed": 2,
+  "backbone_loss_placement": "adaptive_step",
+  "controller_anchor_step": 1,
+  "lengths": [
+    500,
+    1000,
+    1500
+  ],
+  "maximum_loop": 1500,
+  "half_width": 0,
+  "examples_per_cell": 64,
+  "batch_size": 32,
+  "seed": 2026084101,
+  "device": "cuda",
+  "cuda_visible_devices": "1",
+  "metric": "strict exact match on the complete answer region and parity-token accuracy",
+  "elapsed_seconds": 248.76796037517488,
+  "peak_gpu_memory_mib": 1562.953125,
+  "row_count": 6
+}

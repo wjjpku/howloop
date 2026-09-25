@@ -1,0 +1,31 @@
+{
+  "step": 500,
+  "acc": {
+    "1": {
+      "exact": 1.0,
+      "fields": [
+        1.0
+      ]
+    },
+    "2": {
+      "exact": 1.0,
+      "fields": [
+        1.0
+      ]
+    },
+    "3": {
+      "exact": 1.0,
+      "fields": [
+        1.0
+      ]
+    },
+    "4": {
+      "exact": 1.0,
+      "fields": [
+        1.0
+      ]
+    }
+  },
+  "gate_passed": true,
+  "gate": "all four loops >=95% 1-field exact match on 64 topology-heldout sequences; necessary, not sufficient for mechanism conclusion"
+}

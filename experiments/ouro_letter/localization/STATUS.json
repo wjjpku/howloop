@@ -1,0 +1,24 @@
+{
+  "stage": "complete",
+  "active_jobs": [],
+  "host": "A100-80G-34200",
+  "primary10": {
+    "rescue": 50,
+    "damage_accuracy": 5,
+    "n": 64
+  },
+  "prespecified16": {
+    "rescue": 61,
+    "damage_accuracy": 0,
+    "n": 64
+  },
+  "full256": {
+    "rescue": 62,
+    "damage_accuracy": 0,
+    "n": 64
+  },
+  "recommendation": "16 heads in call4; not minimality claim",
+  "report": "REPORT_CN.md",
+  "audit": "AUDIT.json",
+  "paper_modified": false
+}

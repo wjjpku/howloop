@@ -1,0 +1,81 @@
+{
+  "status": "complete",
+  "pid": 1293352,
+  "gpu": "6",
+  "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+  "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898",
+  "code_sha": "6eee756de456455a400f0ceb88c7e466e46c9a1e0b9858b2051fdf063f2d3c2b",
+  "pairs_sha": "64090a4748b9fff0a1c47da8868e5c56a3d25dfcf2beefedd42ba3c1439d0c9d",
+  "smoke": true,
+  "omit_call": 0,
+  "patch_call": 0,
+  "started": 1790182511.2529085,
+  "conditions": [
+    "corrupt",
+    "restore_selected",
+    "restore_neighbor",
+    "restore_layer41",
+    "restore_layer43",
+    "restore_layer47",
+    "restore_all"
+  ],
+  "selected_heads": {
+    "47": [
+      4,
+      13,
+      0,
+      3,
+      2,
+      15,
+      7
+    ],
+    "41": [
+      10,
+      12,
+      2,
+      15
+    ],
+    "43": [
+      15,
+      11,
+      13,
+      6,
+      1
+    ]
+  },
+  "neighbor_heads": {
+    "47": [
+      1,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11
+    ],
+    "41": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "43": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "generate": [
+    "base",
+    "corrupt",
+    "restore_all",
+    "restore_neighbor",
+    "restore_selected"
+  ],
+  "protocol_sha": "289520e7d4aba0985de0d20da150c39cb8a44cabcd1512e7ff2cb902b4eaef65",
+  "elapsed": 5.124115943908691,
+  "peak_gib": 10.48606538772583,
+  "parameters_unchanged": true
+}

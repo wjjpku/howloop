@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "graph_fresh_bootstrap_matches": true,
+    "five_backbone_screening": true,
+    "parallel_confirmation64": true,
+    "parallel_restore64": true,
+    "long_range_all_counts": true,
+    "ouro_antonym_pairing_and_counts": true,
+    "kg_last_curriculum_values": true,
+    "parity_length_coverage": true
+  },
+  "all_passed": true,
+  "scope": "reaggregation of saved outputs; not retraining"
+}

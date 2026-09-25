@@ -1,0 +1,72 @@
+{
+  "j4_vs_plain4": [
+    {
+      "loop": 1,
+      "rms_profile_cosine": 1.0,
+      "top10pct_overlap": 1.0,
+      "last_prompt_top10pct_overlap": 1.0,
+      "last_prompt_norm_profile_cosine": 1.0000001192092896,
+      "mean_relative_vector_change": 0.0
+    },
+    {
+      "loop": 2,
+      "rms_profile_cosine": 0.9954403638839722,
+      "top10pct_overlap": 0.8571428571428571,
+      "last_prompt_top10pct_overlap": 0.922077922077922,
+      "last_prompt_norm_profile_cosine": 0.9892641305923462,
+      "mean_relative_vector_change": 0.4353703260421753
+    },
+    {
+      "loop": 3,
+      "rms_profile_cosine": 0.9947112798690796,
+      "top10pct_overlap": 0.8831168831168831,
+      "last_prompt_top10pct_overlap": 0.7922077922077922,
+      "last_prompt_norm_profile_cosine": 0.9738842248916626,
+      "mean_relative_vector_change": 0.5278566479682922
+    },
+    {
+      "loop": 4,
+      "rms_profile_cosine": 0.9949132800102234,
+      "top10pct_overlap": 0.8311688311688312,
+      "last_prompt_top10pct_overlap": 0.7012987012987013,
+      "last_prompt_norm_profile_cosine": 0.9520750045776367,
+      "mean_relative_vector_change": 0.5971916317939758
+    }
+  ],
+  "j8_vs_j4": [
+    {
+      "loop": 1,
+      "rms_profile_cosine": 0.9999932050704956,
+      "top10pct_overlap": 1.0,
+      "last_prompt_top10pct_overlap": 0.987012987012987,
+      "last_prompt_norm_profile_cosine": 0.9999064207077026,
+      "mean_relative_vector_change": 0.03084244765341282
+    },
+    {
+      "loop": 2,
+      "rms_profile_cosine": 0.9999821186065674,
+      "top10pct_overlap": 0.987012987012987,
+      "last_prompt_top10pct_overlap": 0.948051948051948,
+      "last_prompt_norm_profile_cosine": 0.9966278672218323,
+      "mean_relative_vector_change": 0.1315324753522873
+    },
+    {
+      "loop": 3,
+      "rms_profile_cosine": 0.9998407363891602,
+      "top10pct_overlap": 0.987012987012987,
+      "last_prompt_top10pct_overlap": 0.7142857142857143,
+      "last_prompt_norm_profile_cosine": 0.962203860282898,
+      "mean_relative_vector_change": 0.49690791964530945
+    },
+    {
+      "loop": 4,
+      "rms_profile_cosine": 0.9999371767044067,
+      "top10pct_overlap": 1.0,
+      "last_prompt_top10pct_overlap": 0.8181818181818182,
+      "last_prompt_norm_profile_cosine": 0.981753408908844,
+      "mean_relative_vector_change": 0.5989863276481628
+    }
+  ],
+  "loop1_j4_plain4_max_absolute_difference": 0.0,
+  "scope": "Activation summary is descriptive, not causal; head selection first16, summary last48; layer/head indices in groups zero-based."
+}

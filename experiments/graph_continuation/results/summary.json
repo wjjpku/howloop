@@ -1,0 +1,78 @@
+{
+  "backbone_count": 12,
+  "bootstrap_draws": 2000,
+  "controller_replicas_full": 2,
+  "graph_clusters_per_replica": 512,
+  "horizon_auc": {
+    "batch_shuffle": {
+      "OOD": {
+        "ci95_high": 0.1304266032473871,
+        "ci95_low": 0.1283492164835629,
+        "point_estimate": 0.12939942709172814
+      },
+      "all": {
+        "ci95_high": 0.1320648656908556,
+        "ci95_low": 0.13008640669483998,
+        "point_estimate": 0.1310640016135241
+      },
+      "covered": {
+        "ci95_high": 0.15584037088753144,
+        "ci95_low": 0.14784885567962808,
+        "point_estimate": 0.15231478021438613
+      }
+    },
+    "executor_off": {
+      "OOD": {
+        "ci95_high": 0.12668217373724852,
+        "ci95_low": 0.12410350149068684,
+        "point_estimate": 0.12534577713019207
+      },
+      "all": {
+        "ci95_high": 0.12659553583830632,
+        "ci95_low": 0.12420924141473873,
+        "point_estimate": 0.12535940758940303
+      },
+      "covered": {
+        "ci95_high": 0.12696667276902893,
+        "ci95_low": 0.12394493019409639,
+        "point_estimate": 0.12554834298085554
+      }
+    },
+    "full": {
+      "OOD": {
+        "ci95_high": 0.17964595583521495,
+        "ci95_low": 0.16509584485174061,
+        "point_estimate": 0.17217410018642998
+      },
+      "all": {
+        "ci95_high": 0.23492420593526167,
+        "ci95_low": 0.22020188827591833,
+        "point_estimate": 0.22742315627119067
+      },
+      "covered": {
+        "ci95_high": 0.9994605781053469,
+        "ci95_low": 0.8921519323739696,
+        "point_estimate": 0.9640353305900269
+      }
+    },
+    "raw": {
+      "OOD": {
+        "ci95_high": 0.0008084004413668328,
+        "ci95_low": 0.0,
+        "point_estimate": 0.0002700548637286648
+      },
+      "all": {
+        "ci95_high": 0.0007684851389379553,
+        "ci95_low": 0.0,
+        "point_estimate": 0.0002512826212996637
+      },
+      "covered": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "point_estimate": 0.0
+      }
+    }
+  },
+  "statistical_hierarchy": "backbone -> controller replica -> graph permutation",
+  "status": "complete"
+}

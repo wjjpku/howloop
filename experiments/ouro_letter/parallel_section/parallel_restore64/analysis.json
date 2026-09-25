@@ -1,0 +1,158 @@
+{
+  "conditions": {
+    "base": {
+      "n": 64,
+      "correct": 63,
+      "broken_n": 63,
+      "recovered": 63,
+      "conditional_recovery": 1.0,
+      "conditional_ci95": [
+        1.0,
+        1.0
+      ],
+      "generation_correct": 63,
+      "truncations": 0,
+      "conditional_wilson_ci95": [
+        0.9425288004111484,
+        1.0
+      ]
+    },
+    "alternative": {
+      "n": 64,
+      "correct": 0,
+      "broken_n": 63,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "conditional_wilson_ci95": [
+        3.469446951953614e-18,
+        0.05747119958885172
+      ]
+    },
+    "corrupt": {
+      "n": 64,
+      "correct": 0,
+      "broken_n": 63,
+      "recovered": 0,
+      "conditional_recovery": 0.0,
+      "conditional_ci95": [
+        0.0,
+        0.0
+      ],
+      "generation_correct": 0,
+      "truncations": 0,
+      "conditional_wilson_ci95": [
+        3.469446951953614e-18,
+        0.05747119958885172
+      ]
+    },
+    "restore_selected": {
+      "n": 64,
+      "correct": 62,
+      "broken_n": 63,
+      "recovered": 62,
+      "conditional_recovery": 0.9841269841269841,
+      "conditional_ci95": [
+        0.9523809523809523,
+        1.0
+      ],
+      "generation_correct": 62,
+      "truncations": 0,
+      "conditional_wilson_ci95": [
+        0.915414745405616,
+        0.9971925057861307
+      ]
+    },
+    "restore_neighbor": {
+      "n": 64,
+      "correct": 1,
+      "broken_n": 63,
+      "recovered": 1,
+      "conditional_recovery": 0.015873015873015872,
+      "conditional_ci95": [
+        0.0,
+        0.047619047619047616
+      ],
+      "generation_correct": 1,
+      "truncations": 0,
+      "conditional_wilson_ci95": [
+        0.002807494213869277,
+        0.08458525459438397
+      ]
+    },
+    "restore_layer41": {
+      "n": 64,
+      "correct": 32,
+      "broken_n": 63,
+      "recovered": 32,
+      "conditional_recovery": 0.5079365079365079,
+      "conditional_ci95": [
+        0.38095238095238093,
+        0.6349206349206349
+      ],
+      "conditional_wilson_ci95": [
+        0.38762886274954733,
+        0.6273319118601534
+      ]
+    },
+    "restore_layer43": {
+      "n": 64,
+      "correct": 5,
+      "broken_n": 63,
+      "recovered": 5,
+      "conditional_recovery": 0.07936507936507936,
+      "conditional_ci95": [
+        0.015873015873015872,
+        0.14285714285714285
+      ],
+      "conditional_wilson_ci95": [
+        0.03437584717681855,
+        0.17270309850904084
+      ]
+    },
+    "restore_layer47": {
+      "n": 64,
+      "correct": 59,
+      "broken_n": 63,
+      "recovered": 59,
+      "conditional_recovery": 0.9365079365079365,
+      "conditional_ci95": [
+        0.873015873015873,
+        0.9841269841269841
+      ],
+      "conditional_wilson_ci95": [
+        0.8478082215469362,
+        0.9750343819866059
+      ]
+    },
+    "restore_all": {
+      "n": 64,
+      "correct": 63,
+      "broken_n": 63,
+      "recovered": 63,
+      "conditional_recovery": 1.0,
+      "conditional_ci95": [
+        1.0,
+        1.0
+      ],
+      "generation_correct": 63,
+      "truncations": 0,
+      "conditional_wilson_ci95": [
+        0.9425288004111484,
+        1.0
+      ]
+    }
+  },
+  "comparison": {
+    "selected_minus_neighbor": 0.9682539682539681,
+    "ci95_reselect_best_other_each_bootstrap": [
+      0.9206349206349206,
+      1.0
+    ]
+  },
+  "all_head_max_logit_error": 0.0,
+  "bootstrap_replicates": 10000
+}

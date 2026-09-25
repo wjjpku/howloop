@@ -1,0 +1,8 @@
+{
+  "remote_config_mtime": 1790178597,
+  "remote_protocol_mtime": 1790178598,
+  "run_started": 1790178659.0743651,
+  "protocol_sha256": "cc09822b07acb40478fa2f1bf7ab0bd1e5f34faaa0e62ca2690f92764e38fd9d",
+  "config_sha256": "64ec52b21a42e6784ff4c6ea5ed8ea39e3820c32f0ea7b101f9b61129bdbd8ef",
+  "note": "config and protocol uploaded before launch; primary10 and sensitivity8/16 fixed prospectively"
+}

@@ -1,0 +1,12 @@
+# Local LaTeX build artifacts; figure PDFs are source assets.
+.DS_Store
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+/main.pdf
+/build/

@@ -1,5 +1,11 @@
 # PaperExperiment — v66 复现仓库
 
+## 最新论文 / Overleaf
+
+最新版投稿源文件见 [`manuscript-v66/`](manuscript-v66/)，主文件是 `main.tex`。该目录只包含当前稿件、单一文献库、必要模板和实际使用的矢量图，可独立上传 Overleaf。日常修改入口见目录内 README。
+
+下文的 `paper/` 保留复现实验绑定的冻结稿件；本次更新不改动复现代码、数据或历史校验清单。
+
 对应论文 **One Set of Weights, Many Algorithms: How Looped Transformers Route Computation Across Loops**，冻结版本见 [`paper/main.tex`](paper/main.tex)。本仓库覆盖正文和附录中的全部实验类别、17 个论文图形文件、原始结果及复现入口。
 
 ## 最快复现：从保存结果重绘与核算

@@ -1,0 +1,7 @@
+{
+  "planned_steps": 500,
+  "stop_after_checkpoint": 200,
+  "all_first_200_learning_rates_equal_original": true,
+  "stop_occurs_after_save_and_evaluation": true,
+  "scope": "source/learning-rate-expression check; no GPU training run"
+}

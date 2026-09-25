@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Materialize portable run code without changing the archived source snapshots.
 
-Only filesystem roots and interpreter paths are rewritten. Archived result flags
+Filesystem roots/interpreter paths are rewritten; the letter-walk trainer also
+gets a checkpoint-stop flag that preserves the original 500-step LR schedule. Archived result flags
 are deliberately not copied into a new training run.
 """
 from pathlib import Path
@@ -27,6 +28,10 @@ def write(src,dst):
  if src.suffix in text_suffix:
   s=old.decode();s=s.replace('/data/wujiaju/.venvs/loopreasoner/bin/python',sys.executable)
   s=s.replace('/data/wujiaju',str(W))
+  if src == ROOT/'vendor/remote/letter_walk_native_20260914/code/train_full.py':
+   # The paper uses step200 of a schedule configured for500, not a200-step schedule.
+   s=s.replace("p.add_argument('--resume',action='store_true');a=p.parse_args()", "p.add_argument('--resume',action='store_true');p.add_argument('--stop-after',type=int);a=p.parse_args()")
+   s=s.replace("save(step,baseline,counts);task_eval(step)", "save(step,baseline,counts);task_eval(step)\n            if a.stop_after is not None and step>=a.stop_after:emit(dict(event='stopped_at_requested_checkpoint',step=step,planned_steps=a.steps));return")
   new=s.encode()
  dst.write_bytes(new)
  records.append({'source':str(src.relative_to(ROOT)),'target':str(dst.relative_to(W)),'original_sha256':hashlib.sha256(old).hexdigest(),'runtime_sha256':hashlib.sha256(new).hexdigest()})
@@ -52,6 +57,6 @@ write(ROOT/'experiments/n10/trajectory_seed_extension_20260924/worker.py',ext/'w
 for rel in ['ouro26_letter_full_20260915/run/manifest_train.json','ouro26_antonym_full_20260915/run/manifest_train.json']:
  source=ROOT/'vendor/remote'/rel
  if a.mode=='replay' and source.exists():write(source,W/rel)
-(W/'runtime_manifest.json').write_text(json.dumps({'root':str(W),'rewrites':'data root and Python interpreter only','files':records},indent=2))
+(W/'runtime_manifest.json').write_text(json.dumps({'root':str(W),'rewrites':'data root/interpreter; letter-walk adds stop-after-checkpoint without changing planned LR schedule','files':records},indent=2))
 print('Prepared',len(records),'files at',W)
 print('No training was launched. Fetch checkpoints or run documented training stages next.')

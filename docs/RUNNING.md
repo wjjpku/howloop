@@ -16,7 +16,7 @@ python scripts/prepare_runtime.py --work /your/data/paper-v66 --mode replay
 
 - `--mode replay` 会提供冻结评估所需的原backbone说明。
 - `--mode train` 用于新的空目录；不复制历史完成标志或运行目录，避免新训练被旧summary跳过。
-- 原源码保存在仓库中。runtime副本只替换`/data/wujiaju`根路径和解释器路径，不更改算法或协议参数；改写前后SHA写入runtime_manifest。
+- 原源码保存在仓库中。runtime副本替换`/data/wujiaju`根路径和解释器路径；letter-walk trainer额外加入checkpoint停止参数，以保留原500步学习率计划、在第200步保存后停止。改写前后SHA写入runtime_manifest。
 - 配置文件里历史PID、GPU、status只是历史记录，不表示当前有实验运行。
 
 ## 取得权重
@@ -79,7 +79,7 @@ python scripts/run_experiment.py kg --work /your/data/new-run --controller lora_
 
 同样需加`--gpu 0 --execute`才执行。完整范围：N10 L6五seeds、L8十二seeds；N8 seeds100–111×两J；parity seeds0–2；KG四种controller。KG入口需原backbone，Ouro从头SFT需原预训练Ouro权重；不意味着重新预训练2.6B基础模型。
 
-Ouro历史J脚本有冻结backbone SHA断言。要复现原J拟合，使用已核验的原backbone；对重新训练产生的新权重进行统计重复试验时，应先建立新checkpoint身份并修改新runtime中的断言，记录修改，不能称为原权重复现。letter-walk原backbone保存于update200；启动器使用该update预算，保留训练时的验证early-stop逻辑。
+Ouro历史J脚本有冻结backbone SHA断言。要复现原J拟合，使用已核验的原backbone；对重新训练产生的新权重进行统计重复试验时，应先建立新checkpoint身份并修改新runtime中的断言，记录修改，不能称为原权重复现。letter-walk原backbone保存于update200，但原学习率按500步计划衰减。启动器使用`--steps 500 --stop-after 200`，在保存checkpoint200后停止，保留原训练的验证early-stop逻辑。直接改成`--steps 200`会改变学习率，不能作为相同协议。
 
 KG历史控制器种子未记录。新入口强制传递显式seed（命令建议0），保存每阶段权重；论文表格由已存原始结果精确重算。KG原backbone生成逻辑见`vendor/remote/kg-fj-affine-resffn-m64-code-5f49178/experiments/kg_fj_length/`，该锚点优先用哈希锁定权重，未声称已经端到端重训验证。
 

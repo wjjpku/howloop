@@ -43,7 +43,7 @@ elif stage.startswith('parity-'):
  else:cmd=['bash',str(P/'evaluation_code/scripts/run_parity_input_once_paper_figure_recheck.sh')]
 elif stage.startswith('ouro-letter'):
  cwd=W/'letter_walk_native_20260914/code'
- if stage=='ouro-letter-backbone':cmd += ['train_full.py','--root',str(W/'ouro26_letter_full_20260915'),'--mode','train','--steps','200']
+ if stage=='ouro-letter-backbone':cmd += ['train_full.py','--root',str(W/'ouro26_letter_full_20260915'),'--mode','train','--steps','500','--stop-after','200']
  else:cmd+=['train_affine_pair.py','--loops','4','--steps','500']
 elif stage in ['ouro-semantic','ouro-restore']:
  cwd=W/'ouro_mechanism_20260923';d=cwd/'parallel_section';cfg=d/'config.json'

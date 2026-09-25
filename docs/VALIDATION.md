@@ -15,6 +15,7 @@
 | Parity相位 | 三backbones×两条件，从diagonal-band数据重做Fourier phase、unwrap及5000次bootstrap，拟合与区间一致 | `provenance/validation/parity_phase.json` |
 | 原权重CPU冒烟 | 20例，有限输出、逐例/批次预测一致、backbone无梯度、J非零有限梯度 | `provenance/validation/graph_cpu_smoke.json` |
 | 原权重CPU完整评估 | N10 A、one-hop、fit1；512图×10起点；raw/full/shuffle×pre/post，3072条graph-cluster记录与历史记录逐条完全相同 | `provenance/validation/full_cpu_replay_comparison.json` |
+| Ouro训练日程 | 保留500步cosine计划，在checkpoint200后停止；前200步学习率表达式与原代码逐项相等 | `provenance/validation/ouro_learning_rate_schedule.json` |
 | 隔离runtime | 在空目录生成运行副本；23个阶段命令构造成功 | `provenance/validation/runtime_commands.json` |
 | 代码完整性 | 2227个Python文件语法解析通过；未检出所检查的常见token/private-key模式 | `provenance/validation/static_checks.json` |
 | 权重身份 | 92个文件逐个读取核验SHA256；不是只复制旧manifest | `provenance/checkpoints.json` |

@@ -1,166 +1,137 @@
 [
   {
-    "paper_asset": "figures/fig1_overview.pdf",
+    "paper_asset": "figures/fig01_overview.pdf",
     "script": "reproduce.py",
     "inputs": [
-      "data/artwork/fig1_overview.pdf"
+      "paper/figures/fig01_overview.pdf"
     ],
-    "experiment": "conceptual illustration",
-    "kind": "author_supplied_vector"
+    "kind": "conceptual_artwork"
   },
   {
-    "paper_asset": "figures/fig2a_readout.pdf",
+    "paper_asset": "figures/fig02a_readout.pdf",
     "script": "plots/fig2.py",
     "inputs": [
       "experiments/n10/figure_work/source"
     ],
-    "experiment": "E1",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig2b_readout.pdf",
+    "paper_asset": "figures/fig02b_readout.pdf",
     "script": "plots/fig2.py",
     "inputs": [
       "experiments/n10/figure_work/source"
     ],
-    "experiment": "E1",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig2c_readout.pdf",
+    "paper_asset": "figures/fig02c_readout.pdf",
     "script": "plots/fig2.py",
     "inputs": [
       "experiments/n10/figure_work/source"
     ],
-    "experiment": "E1",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig2d_readout.pdf",
+    "paper_asset": "figures/fig02d_readout.pdf",
     "script": "plots/fig2.py",
     "inputs": [
       "experiments/n10/figure_work/source"
     ],
-    "experiment": "E1",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig3a_target_accuracy.pdf",
-    "script": "plots/fig3a.py",
+    "paper_asset": "figures/fig03_legend.pdf",
+    "script": "plots/fig3_submission.py",
     "inputs": [
+      "experiments/composition/A_fit1.npz",
+      "experiments/composition/A_fit2.npz",
       "experiments/n10/figure_work/source"
     ],
-    "experiment": "E2",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig3b_pca.pdf",
-    "script": "plots/fig3b.py",
+    "paper_asset": "figures/fig03a_target_accuracy.pdf",
+    "script": "plots/fig3_submission.py",
     "inputs": [
-      "data/plot/pca_means.npz",
-      "experiments/pca/datasets.json"
+      "experiments/composition/A_fit1.npz",
+      "experiments/composition/A_fit2.npz",
+      "experiments/n10/figure_work/source"
     ],
-    "experiment": "E3",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig4_attention_mechanism.pdf",
-    "script": "plots/fig4.py",
+    "paper_asset": "figures/fig03b_composition_one.pdf",
+    "script": "plots/fig3_submission.py",
     "inputs": [
-      "data/plot/mechanism_intervals.json",
-      "plots/attention_components.py"
+      "experiments/composition/A_fit1.npz",
+      "experiments/composition/A_fit2.npz",
+      "experiments/n10/figure_work/source"
     ],
-    "experiment": "E4+E5",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig5a_parity.pdf",
+    "paper_asset": "figures/fig03c_composition_two.pdf",
+    "script": "plots/fig3_submission.py",
+    "inputs": [
+      "experiments/composition/A_fit1.npz",
+      "experiments/composition/A_fit2.npz",
+      "experiments/n10/figure_work/source"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/fig04_attention_mechanism.pdf",
+    "script": "plots/fig4_submission.py",
+    "inputs": [
+      "experiments/target_exchange/graph_summary.json",
+      "experiments/target_exchange/values.json",
+      "experiments/target_exchange/fig04_before.pdf"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/fig05a_parity.pdf",
     "script": "plots/fig5.py",
     "inputs": [
-      "data/plot/parity/parity_long500.csv",
-      "experiments/long_range/results/parity_dense_extension.csv",
-      "experiments/long_range/results/graph_curve_summary.npz"
+      "experiments/long_range/results/graph_curve_summary.npz",
+      "data/plot/parity/parity_long500.csv"
     ],
-    "experiment": "E6+E7",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig5b_graph.pdf",
+    "paper_asset": "figures/fig05b_graph.pdf",
     "script": "plots/fig5.py",
     "inputs": [
-      "data/plot/parity/parity_long500.csv",
-      "experiments/long_range/results/parity_dense_extension.csv",
-      "experiments/long_range/results/graph_curve_summary.npz"
+      "experiments/long_range/results/graph_curve_summary.npz",
+      "data/plot/parity/parity_long500.csv"
     ],
-    "experiment": "E6+E7",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig5_legend.pdf",
+    "paper_asset": "figures/fig05_legend.pdf",
     "script": "plots/fig5.py",
     "inputs": [
-      "data/plot/parity/parity_long500.csv",
-      "experiments/long_range/results/parity_dense_extension.csv",
-      "experiments/long_range/results/graph_curve_summary.npz"
+      "experiments/long_range/results/graph_curve_summary.npz",
+      "data/plot/parity/parity_long500.csv"
     ],
-    "experiment": "E6+E7",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig6_parity_timing.pdf",
+    "paper_asset": "figures/fig06_parity_timing.pdf",
     "script": "plots/fig6.py",
     "inputs": [
       "data/plot/parity/parity_seed2.csv",
       "data/plot/parity/phase_seed2.csv"
     ],
-    "experiment": "E6",
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig7_supervision_capacity.pdf",
-    "script": "plots/fig7.py",
+    "paper_asset": "figures/fig07_supervision_capacity.pdf",
+    "script": "plots/fig7_submission.py",
     "inputs": [
       "data/plot/ouro_readouts.json",
-      "data/plot/ouro_fixed4.json",
-      "data/plot/capacity.json"
+      "data/plot/ouro_fixed4.json"
     ],
-    "experiment": "E8+E9",
-    "kind": "data_plot"
-  },
-  {
-    "paper_asset": "figures/figS1_graph_seeds.pdf",
-    "script": "plots/figS1.py",
-    "inputs": [
-      "data/plot/graph_seed_intervals.json"
-    ],
-    "experiment": "E4",
-    "kind": "data_plot"
-  },
-  {
-    "paper_asset": "figures/figS2a_parity_seed0.pdf",
-    "script": "plots/figS2.py",
-    "inputs": [
-      "data/plot/parity_long500/registered_accuracy.csv"
-    ],
-    "experiment": "E6",
-    "kind": "data_plot"
-  },
-  {
-    "paper_asset": "figures/figS2b_parity_seed1.pdf",
-    "script": "plots/figS2.py",
-    "inputs": [
-      "data/plot/parity_long500/registered_accuracy.csv"
-    ],
-    "experiment": "E6",
-    "kind": "data_plot"
-  },
-  {
-    "paper_asset": "figures/figS2c_parity_seed2.pdf",
-    "script": "plots/figS2.py",
-    "inputs": [
-      "data/plot/parity_long500/registered_accuracy.csv"
-    ],
-    "experiment": "E6",
     "kind": "data_plot"
   }
 ]

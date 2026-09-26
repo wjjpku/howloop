@@ -20,7 +20,9 @@ maps=[(ROOT/'vendor/remote',W),
 (ROOT/'experiments/kg',W/'kg_curriculum_controllers'),
 (ROOT/'experiments/ouro_letter',W/'ouro_mechanism_20260923'),
 (ROOT/'experiments/long_range',W/'fig6_retest_20260924'),
-(ROOT/'experiments/pca',W/'n10_hop_pca_20260924')]
+(ROOT/'experiments/pca',W/'n10_hop_pca_20260924'),
+(ROOT/'experiments/composition',W/'continuous_composition_20260925'),
+(ROOT/'experiments/target_exchange',W/'paper_strengthening_20260925/code')]
 text_suffix={'.py','.sh','.json','.yaml','.yml','.md','.txt'}
 def write(src,dst):
  # Preserve historical evidence in the repository; run dirs get only inputs/code.
@@ -49,6 +51,7 @@ for srcdir,dstdir in [('graph_mechanism','n10_selected_mechanism_20260924'),('gr
   if src.exists():write(src,W/dstdir/name)
 for name in ['MANIFEST.json','datasets.json','locks_manifest.json']:
  write(ROOT/'experiments/n10'/name,W/'n10_migration_20260923'/name)
+write(ROOT/'experiments/target_exchange/graph_data.json',W/'paper_strengthening_20260925/graph_data.json')
 # Extension cohort lives in its own directory, not the original four-seed queue.
 ext=W/'n10_migration_20260923/trajectory_seed_extension_20260924'
 shutil.copytree(W/'n10_migration_20260923/code',ext/'code',dirs_exist_ok=True)

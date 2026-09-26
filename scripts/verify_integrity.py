@@ -16,7 +16,7 @@ assert used=={x['paper_asset'] for x in figs},'Incomplete paper figure mapping'
 for row in figs:
  for name in row['inputs']+[row['script']]:
   assert (ROOT/name).exists(),name
-assert len(used)==17
+assert len(used)==15
 if failed:
  print(json.dumps(failed,indent=2));raise SystemExit(1)
 print(f'Verified {len(manifest)} hashes and all {len(used)} manuscript figure assets.')

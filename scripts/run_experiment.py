@@ -4,7 +4,7 @@ from pathlib import Path
 import argparse,hashlib,json,os,shlex,subprocess,sys
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser(description=__doc__)
-p.add_argument('stage',choices=['n10-backbone','n10-controller','n10-evaluate','n10-native','n10-export','graph-confirmation','pca','n8-backbone','n8-controller','graph-long','parity-backbone','parity-controller','parity-long','parity-diagnostics','ouro-letter-backbone','ouro-letter-controller','ouro-semantic','ouro-restore','ouro-final-controller','ouro-stepwise-controller','ouro-final-backbone','ouro-stepwise-backbone','kg'])
+p.add_argument('stage',choices=['n10-backbone','n10-controller','n10-evaluate','n10-native','n10-export','graph-confirmation','composition','target-exchange','pca','n8-backbone','n8-controller','graph-long','parity-backbone','parity-controller','parity-long','parity-diagnostics','ouro-letter-backbone','ouro-letter-controller','ouro-semantic','ouro-restore','ouro-final-controller','ouro-stepwise-controller','ouro-final-backbone','ouro-stepwise-backbone','kg'])
 p.add_argument('--work',type=Path,required=True);p.add_argument('--seed',type=int,default=6);p.add_argument('--loops',type=int,choices=[6,8],default=6);p.add_argument('--fit',type=int,choices=[1,2],default=1);p.add_argument('--hop',type=int,choices=[1,2],default=1);p.add_argument('--controller',choices=['lora_r48','dense','mlp_256','attention'],default='lora_r48');p.add_argument('--gpu',help='Physical GPU id, required for execution');p.add_argument('--execute',action='store_true')
 a=p.parse_args();W=a.work.resolve()
 if not (W/'runtime_manifest.json').exists():raise SystemExit('Run prepare_runtime.py first.')
@@ -29,6 +29,10 @@ elif stage=='graph-confirmation':
  lock=json.loads((ROOT/'experiments/graph_mechanism/SELECTION_LOCK.json').read_text())['models'][dict(zip([6,4],['A','C']))[a.seed]];mf=lock['manifest'];name='A' if a.seed==6 else 'C';dest=W/'n10_selected_mechanism_20260924'
  cmd += [str(dest/'code/evaluate_battery.py'),'--looplus',str(dest/'code'),'--checkpoint',str(cp),'--checkpoint-sha256',mf['backbone_sha256'],'--checkpoint-step',str(mf['backbone_step']),'--controllers',str(local/'controllers.pt'),'--controller-sha256',mf['controller_sha256'],'--datasets',str(dest/'datasets.json'),'--family','N10_selected_fresh_confirmation','--backbone-name',name,'--head',str(lock['head']),'--panel','confirmation','--seeds','1','2','--out',str(dest/name/'evaluation')]
 elif stage=='pca':cmd += [str(W/'n10_hop_pca_20260924/extract.py')]
+elif stage=='composition':
+ cwd=W/'continuous_composition_20260925';cmd += ['run.py']
+elif stage=='target-exchange':
+ cwd=W/'paper_strengthening_20260925/code';cmd += ['graph_matrix.py']
 elif stage.startswith('n8-'):
  if not 100<=a.seed<=111:raise SystemExit('N8 continuation seeds100..111 only.')
  cwd=G/('code' if stage=='n8-backbone' else 'analysis_code');cp=G/f'backbones/seed{a.seed}/graphpath_N8_D8_d256_B2_L8_seed{a.seed}/final.pt';sel=G/'locks/selection_permutations_512.pt';test=G/'locks/final_test_permutations_512.pt'

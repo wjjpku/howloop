@@ -1,0 +1,17 @@
+{
+  "source": "/Users/jiaju/Documents/ChatGPT/final paper/iclr2027-submission",
+  "pdf": "/Users/jiaju/Documents/ChatGPT/final paper/iclr2027-submission.pdf",
+  "source_version": "v66 2026-09-26 10:23 appendix revision",
+  "main_text_pages": 9,
+  "total_pages": 21,
+  "figures": 15,
+  "cited_references": 17,
+  "status": "source_zip_and_pdf_identified; CPU_results_audited; full_GPU_retraining_not_run",
+  "pdf_sha256": "696a248291eb2ca99ac8f2c27aee76e2251f39361c17faaa913d26691920fcfb",
+  "official_style_source": "https://media.iclr.cc/Conferences/ICLR2027/iclr-2027-style-files.zip",
+  "source_sha256": "18c0b64b1a9c084319284165d62d446ebe9a48c11b6ff25a6937665632ac9e82",
+  "submission_zip_sha256": "9112329d430a68f1558ca5fbb8a814f3bcd6b020a77c16c574f85592b881dbf1",
+  "submission_source_main_sha256": "0a379fb01efa9ff8982d06cb21339c84d0f2eb5efe6b376c966d96c2a670ee72",
+  "submission_pdf_sha256": "696a248291eb2ca99ac8f2c27aee76e2251f39361c17faaa913d26691920fcfb",
+  "source_sha256_note": "Original audit source_sha256 names v66/overleaf/main.tex; submission_source_main_sha256 identifies the actual ZIP main.tex, whose AI statement differs."
+}

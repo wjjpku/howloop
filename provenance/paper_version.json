@@ -1,36 +1,10 @@
 {
-  "version": 66,
-  "source": "/Users/jiaju/Documents/ChatGPT/final paper/v66/overleaf/main.tex",
-  "main": "/Users/jiaju/Documents/ChatGPT/final paper/v66/overleaf/main.tex",
-  "build": "/Users/jiaju/Documents/ChatGPT/final paper/v66/build/main.pdf",
-  "source_sha256": "a34bdec4de807f7dfb703d0f148c08183b5e4e3bba1fd52b80a5014f540c77ec",
-  "main_sha256": "a34bdec4de807f7dfb703d0f148c08183b5e4e3bba1fd52b80a5014f540c77ec",
-  "build_sha256": "f777bf530a3b602c0b019a405004a9d900154bb8b941106b59927854cb4689d1",
-  "bibliography": [
-    "references.bib"
-  ],
-  "assets": [
-    "figures/fig1_overview.pdf",
-    "figures/fig2a_readout.pdf",
-    "figures/fig2b_readout.pdf",
-    "figures/fig2c_readout.pdf",
-    "figures/fig2d_readout.pdf",
-    "figures/fig3a_target_accuracy.pdf",
-    "figures/fig3b_pca.pdf",
-    "figures/fig4_attention_mechanism.pdf",
-    "figures/fig5a_parity.pdf",
-    "figures/fig5b_graph.pdf",
-    "figures/fig5_legend.pdf",
-    "figures/fig6_parity_timing.pdf",
-    "figures/fig7_supervision_capacity.pdf",
-    "figures/figS1_graph_seeds.pdf",
-    "figures/figS2a_parity_seed0.pdf",
-    "figures/figS2b_parity_seed1.pdf",
-    "figures/figS2c_parity_seed2.pdf"
-  ],
-  "latest_delivery": "/Users/jiaju/Documents/ChatGPT/final paper/v66",
-  "overleaf_folder": "/Users/jiaju/Documents/ChatGPT/final paper/v66/overleaf",
-  "latest_edit": "Revised Section 4.2 opening to connect one- and two-hop D8L6 readout advances to testing control of learned multi-step computation.",
-  "future_updates": "Edit v66/overleaf/main.tex in place; v65 is archived. Compile into v66/build and refresh paper_v66.pdf.",
-  "reference_count": 25
+  "version": "ICLR 2027 submission, 2026-09-26",
+  "source": "paper/main.tex",
+  "source_sha256": "0a379fb01efa9ff8982d06cb21339c84d0f2eb5efe6b376c966d96c2a670ee72",
+  "pdf": "paper/submission.pdf",
+  "pdf_sha256": "696a248291eb2ca99ac8f2c27aee76e2251f39361c17faaa913d26691920fcfb",
+  "figure_count": 15,
+  "submission_zip_sha256": "9112329d430a68f1558ca5fbb8a814f3bcd6b020a77c16c574f85592b881dbf1",
+  "historical_version": 66
 }

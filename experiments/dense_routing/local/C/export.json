@@ -1,0 +1,30 @@
+{
+  "parameterization": "hW+b",
+  "fits": [
+    {
+      "hop": 1,
+      "fit": 1,
+      "matched_input_stream": true,
+      "best_sha256": "4e139a4b49383da66b3d8671092c9160021b3cc823b4182184c8037da2fd61e1"
+    },
+    {
+      "hop": 1,
+      "fit": 2,
+      "matched_input_stream": true,
+      "best_sha256": "4f3ff98681b0c2660cbb289f04cc1628ffa09c50afecc92587fb074a2eee2c71"
+    },
+    {
+      "hop": 2,
+      "fit": 1,
+      "matched_input_stream": true,
+      "best_sha256": "ab8d3d763800990bb270f4f7c9e4debfa3b2d326ea7a3e0e9b9862f0d96a1362"
+    },
+    {
+      "hop": 2,
+      "fit": 2,
+      "matched_input_stream": true,
+      "best_sha256": "e511bbd4495103f6786791bfb9ad3d37c7a8b24bd265d61209b67928ef3fa678"
+    }
+  ],
+  "compatibility_key_rank": 256
+}

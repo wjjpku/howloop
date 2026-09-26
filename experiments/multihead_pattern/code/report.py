@@ -1,0 +1,19 @@
+from pathlib import Path
+import json,numpy as np
+P=Path(__file__).resolve().parents[1];s=json.loads((P/'summary.json').read_text());sel=json.loads((P/'selection.json').read_text());names=['B','D','E'];seeds=[3,5,7]
+def pct(x):return f'{x*100:.2f}%'
+lines=['# 不同层、多 head 的 attention-pattern 替换','', '## 范围','', '只替换 attention patterns，不直接替换 V、head 输出、MLP 或其他 J 状态。冻结 N10 的 seeds 3/5/7，使用既有 dense J_one；在最后一次 F 的两层共八个 heads 上枚举全部 256 个子集。分别替换答案 query 行和所有 query 位置。主要问题是不衰减 residual 能否恢复一跳；附带沿用旧 residual 衰减作对照。','', '发现集64张新 permutation 图，仅J fit1。确认集256张新图、两次既有J拟合，每图10起点。在所有条件上统一排除 u、f(u)、f²(u) 标签碰撞，不按预测正确性筛选。发现集与确认集及前几轮具名图集互斥。确认前固定选择文件；不衰减的所有子集均在确认集测试，衰减组测试各head数的发现集最优组合、单层最优、跨层pair以及删除一个head的对照。','', 'head编号从0开始，层编号从1开始。替换来源是同一输入经过完整J_one后产生的独立运行；接收端从原生h6开始。后续层正常计算，因此L1 pattern修改可能间接改变L2的Q/K/V，不能称这些下游激活完全不变。','', '## 1. 不衰减 residual：穷举后仍失败','', '| seed | 有效样本数 | 完整J一跳 | 所有组合中的最高准确率：答案行 | 所有组合中的最高准确率：全部位置 |','|---|---:|---:|---:|---:|']
+for n,seed in zip(names,seeds):
+ v=s[n];mx=[max(m['mean'] for k,m in v['metrics'].items() if k.startswith(scope+'_0_')) for scope in ['answer','all']];lines.append(f"| {seed} | {v['n']} | {pct(v['baseline']['full_J'])} | {pct(mx[0])} | {pct(mx[1])} |")
+lines+=['', '这包含全部单head、同层/跨层双head，直到两层所有8heads；两个J拟合均测试。结论限于最后一次F的pattern替换，不排除更早loop的干预或其他状态修改。','', '## 2. 配合旧 residual 衰减：选择性组合有效，但不单调','', 'seed3: L2 alpha0；seed5: L1 alpha0.05；seed7: L2 alpha0。只对答案token的attention skip做 centered缩放，不在同层重算Q/K/V。所有参数沿用上轮，不在本轮优化。下表最佳组合仅根据发现集选定，表内均为新图确认结果和两个J拟合的均值。','', '| seed | 位置范围 | 发现集选定组合 | 一跳acc [95% CI] | 同范围最佳单head | 两层8heads全换 | 错误当前节点donor |','|---|---|---|---:|---:|---:|']
+chosen={};effect={}
+for n,seed in zip(names,seeds):
+ dd=np.load(P/'discovery'/f'{n}_1.npz');yy=dd['labels'];mm=(yy[:,0]!=yy[:,1])&(yy[:,0]!=yy[:,2])&(yy[:,1]!=yy[:,2]);sc=dict(zip(dd['conditions'],(dd['predictions'][:,mm]==yy[mm,1]).mean(1)));chosen[n]={};effect[n]={}
+ for scope in ['answer','all']:
+  fam=scope+'_1';candidates=[f'{fam}_{ms:03d}' for k,ms in sel[n]['best_by_size'][fam].items() if k.isdigit()];best=min(candidates,key=lambda k:(-sc[k],int(k.split('_')[-1]).bit_count(),int(k.split('_')[-1])));chosen[n][scope]=best;v=s[n]['metrics'][best];single=f"{fam}_{sel[n]['best_by_size'][fam]['1']:03d}";vs=s[n]['metrics'][single];vf=s[n]['metrics'][fam+'_255'];lo,hi=v['ci95'];lines.append(f"| {seed} | {scope} | {v['heads']} | {pct(v['mean'])} [{pct(lo)}, {pct(hi)}] | {pct(vs['mean'])} | {pct(vf['mean'])} | {pct(v['wrong_current'])} |")
+  ds=[np.load(P/'confirmation'/f'{n}_{fit}.npz') for fit in [1,2]];y=ds[0]['labels'];ok=(y[:,0]!=y[:,1])&(y[:,0]!=y[:,2])&(y[:,1]!=y[:,2]);den=ok.reshape(256,10).sum(1);dif=[]
+  for d in ds:
+   bi=np.where(d['conditions']==best)[0][0];si=np.where(d['conditions']==single)[0][0];dif.append((((d['predictions'][bi]==y[:,1]).astype(float)-(d['predictions'][si]==y[:,1]))*ok).reshape(256,10).sum(1))
+  num=np.mean(dif,0);idx=np.random.default_rng(92608).integers(256,size=(5000,256));boot=num[idx].sum(1)/den[idx].sum(1);effect[n][scope]=dict(best=best,best_single=single,delta=float(num.sum()/den.sum()),ci95=np.quantile(boot,[.025,.975]).tolist(),best_fits=v['fits'])
+lines+=['', '95% CI按图bootstrap，保留同一图的全部起点与两次J拟合。错误当前节点对照在同一张图内改用另一个当前节点的donor patterns，接收端缩放不变。最高分不意味着组合最小，也不保证不同种子共用同一组heads。','', '## 解释','', '增加pattern替换范围本身未解决原生接收状态上的失败。residual衰减后，部分head组合提高恢复；全部head一起替换却可能破坏恢复，因此head数量不是越多越好。这里识别的是对接收状态有依赖的pattern干预效果，仍未识别一个完整执行机制或普适停止开关。','', '完整确认结果与逐拟合分数在 all_confirmed_results.csv；summary.json保存按图区间；discovery/保存全部1024条件逐例预测，confirmation/保存确认及错误当前节点对照。AUDIT.json检查原始模型/控制器/选择文件哈希、数据互斥与同运行替换恒等性。','', '未修改论文，未训练任何模型。']
+(P/'结果分析.md').write_text('\n'.join(lines)+'\n');(P/'paired_improvement.json').write_text(json.dumps(effect,indent=2));(P/'reported_selection.json').write_text(json.dumps(chosen,indent=2));print('\n'.join(lines))

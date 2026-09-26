@@ -22,7 +22,10 @@ maps=[(ROOT/'vendor/remote',W),
 (ROOT/'experiments/long_range',W/'fig6_retest_20260924'),
 (ROOT/'experiments/pca',W/'n10_hop_pca_20260924'),
 (ROOT/'experiments/composition',W/'continuous_composition_20260925'),
-(ROOT/'experiments/target_exchange',W/'paper_strengthening_20260925/code')]
+(ROOT/'experiments/target_exchange',W/'paper_strengthening_20260925/code'),
+(ROOT/'experiments/dense_routing/code',W/'dense_affine_mechanism_20260925/code'),
+(ROOT/'experiments/multihead_pattern',W/'multihead_pattern_20260926'),
+(ROOT/'experiments/native_layer_readout',W/'native_layer_readout_20260926')]
 text_suffix={'.py','.sh','.json','.yaml','.yml','.md','.txt'}
 def write(src,dst):
  # Preserve historical evidence in the repository; run dirs get only inputs/code.
@@ -52,6 +55,16 @@ for srcdir,dstdir in [('graph_mechanism','n10_selected_mechanism_20260924'),('gr
 for name in ['MANIFEST.json','datasets.json','locks_manifest.json']:
  write(ROOT/'experiments/n10'/name,W/'n10_migration_20260923'/name)
 write(ROOT/'experiments/target_exchange/graph_data.json',W/'paper_strengthening_20260925/graph_data.json')
+for name in ['graph_data.json']:
+ write(ROOT/'experiments/dense_routing'/name,W/'dense_affine_mechanism_20260925'/name)
+for model in 'ABCDE':
+ for name in ['controllers.pt','export.json']:
+  write(ROOT/'experiments/dense_routing/local'/model/name,W/'dense_affine_mechanism_20260925/local'/model/name)
+ write(ROOT/'experiments/dense_routing/graph'/f'{model}_fit1.json',W/'dense_affine_mechanism_20260925/graph'/f'{model}_fit1.json')
+for name in ['selection.json','prior_selection.json']:
+ write(ROOT/'experiments/multihead_pattern'/name,W/'multihead_pattern_20260926'/name)
+for model in 'ABCDE':
+ write(ROOT/'experiments/native_layer_readout/prior_confirmation'/f'{model}.npz',W/'state_recombination_20260926/confirmation'/f'{model}.npz')
 # Extension cohort lives in its own directory, not the original four-seed queue.
 ext=W/'n10_migration_20260923/trajectory_seed_extension_20260924'
 shutil.copytree(W/'n10_migration_20260923/code',ext/'code',dirs_exist_ok=True)

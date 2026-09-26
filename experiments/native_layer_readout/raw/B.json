@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "seed": 3,
+  "n": 2560,
+  "checkpoint_sha256": "073578dbceb4155eadae52bd0e9438ee200509cc42a4d3d853212eb6acf5e7e5",
+  "data_sha256": "43c629fac391bc4ef8e5e77f8d6bca3d721f1783a4f2cc1f1e2a9bd16edc6850",
+  "code_sha256": "58e235950e8671e93fa1f13e69e27976cea7d2acbcf3d2af255d665ef1d5ad3f",
+  "max_state_error": 2.5033950805664062e-06,
+  "native_loop_readout_exact": true,
+  "weights_unchanged": true,
+  "seconds": 1.6223628520965576,
+  "peak_mib": 508.0673828125
+}

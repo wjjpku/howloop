@@ -1,0 +1,152 @@
+{
+  "status": "complete",
+  "pid": 2524443,
+  "gpu": "3",
+  "backbone": "/data/wujiaju/n10_migration_20260923/backbones/local_control_L6_seed7/best.pt",
+  "checkpoint_sha256": "d52b0108af764e408e7ef1010defc206997f1065bd8838720abe4ce8dc89eb33",
+  "controllers_sha256": "dcb737c49e91a0680848a24cd8a8754740343265e5a27b8e9f4ebe0db39f150c",
+  "data_sha256": "5d4855374cdc419c9d1c40a24a4d5a496eab9aa994ec6f58a081840f7943f76b",
+  "code_sha256": "0c89a4ac13a870df39ae74015a6054b4ac21d9ff8ad59bbaac959cf3e1914e14",
+  "fit": 1,
+  "n": 5120,
+  "checks": [
+    {
+      "state": "raw",
+      "component": "pattern",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "raw",
+      "component": "value",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "raw",
+      "component": "pattern_value",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "raw",
+      "component": "query",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "raw",
+      "component": "key",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "raw",
+      "component": "query_key",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "raw",
+      "component": "attention_output",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "raw",
+      "component": "mlp",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "raw",
+      "component": "block_input",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "one",
+      "component": "pattern",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "one",
+      "component": "value",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "one",
+      "component": "pattern_value",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "one",
+      "component": "query",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "one",
+      "component": "key",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "one",
+      "component": "query_key",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "one",
+      "component": "attention_output",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "one",
+      "component": "mlp",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "one",
+      "component": "block_input",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "two",
+      "component": "pattern",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "two",
+      "component": "value",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "two",
+      "component": "pattern_value",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "two",
+      "component": "query",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "two",
+      "component": "key",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "two",
+      "component": "query_key",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "two",
+      "component": "attention_output",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "two",
+      "component": "mlp",
+      "max_logit_error": 0.0
+    },
+    {
+      "state": "two",
+      "component": "block_input",
+      "max_logit_error": 0.0
+    }
+  ],
+  "weights_unchanged": true,
+  "seconds": 147.2402765750885,
+  "peak_mib": 909.35205078125
+}

@@ -35,6 +35,8 @@ python scripts/fetch_checkpoints.py --work /your/data/paper-submission --group n
 python scripts/run_experiment.py n10-evaluate --work /your/data/paper-submission --seed 6 --hop 1 --fit 1
 python scripts/run_experiment.py target-exchange --work /your/data/paper-submission
 python scripts/run_experiment.py composition --work /your/data/paper-submission
+python scripts/run_experiment.py native-layer-readout --work /your/data/paper-submission
+python scripts/run_experiment.py dense-pattern-subsets --work /your/data/paper-submission --seed 3
 python scripts/run_experiment.py graph-confirmation --work /your/data/paper-submission --seed 6
 python scripts/run_experiment.py graph-long --work /your/data/paper-submission
 python scripts/run_experiment.py parity-diagnostics --work /your/data/paper-submission --seed 2
@@ -42,6 +44,8 @@ python scripts/run_experiment.py ouro-semantic --work /your/data/paper-submissio
 ```
 
 `target-exchange` 在 `paper_strengthening_20260925/graph` 产出模型预测；`composition` 依赖这些文件中的 first-step 对照，因此顺序不能颠倒。两项都对 A–E×两个 fit 运行，并保留采样锁、checkpoint SHA 和计算设备记录。完整表格需再运行各实验目录的分析脚本。其他各实验的训练和评估入口见 `scripts/run_experiment.py`；旧版 `pca` 和 `kg` 命令仍在，但**不属于提交稿复现流程**。
+
+`native-layer-readout` 重评估全部 A–E；`dense-pattern-subsets` 须分别用 seeds 3/5/7 运行。该实验的五个 dense 控制器包（每个包含两 fit）是较小的原始权重，随 `experiments/dense_routing/local/` 一起入库并受 SHA256 清单约束；N10 backbone 仍需单独下载。密集控制器的从头训练原脚本在 `experiments/dense_routing/code/train_dense.py`，训练身份和原协议在相邻目录。逐层读出的历史运行还与 `experiments/native_layer_readout/prior_confirmation/` 中的原生预测做逐例比对。
 
 ## 3. 从头训练
 

@@ -1,0 +1,73 @@
+{
+  "status": "complete",
+  "training_fits": 20,
+  "matrix_fits": 10,
+  "composition_fits": 10,
+  "dense_head_batteries": 20,
+  "matched_reference_batteries": 5,
+  "checks": [
+    {
+      "model": "A",
+      "fit": 1,
+      "qk_pattern_checks": 18
+    },
+    {
+      "model": "A",
+      "fit": 2,
+      "qk_pattern_checks": 18
+    },
+    {
+      "model": "B",
+      "fit": 1,
+      "qk_pattern_checks": 18
+    },
+    {
+      "model": "B",
+      "fit": 2,
+      "qk_pattern_checks": 18
+    },
+    {
+      "model": "C",
+      "fit": 1,
+      "qk_pattern_checks": 18
+    },
+    {
+      "model": "C",
+      "fit": 2,
+      "qk_pattern_checks": 18
+    },
+    {
+      "model": "D",
+      "fit": 1,
+      "qk_pattern_checks": 18
+    },
+    {
+      "model": "D",
+      "fit": 2,
+      "qk_pattern_checks": 18
+    },
+    {
+      "model": "E",
+      "fit": 1,
+      "qk_pattern_checks": 18
+    },
+    {
+      "model": "E",
+      "fit": 2,
+      "qk_pattern_checks": 18
+    }
+  ],
+  "source_hashes": {
+    "composition.py": "bd7dd416dc35ded2781d4407061399fa065f84816216ff7c3aac7cf666cb83f4",
+    "graph_matrix.py": "0c89a4ac13a870df39ae74015a6054b4ac21d9ff8ad59bbaac959cf3e1914e14",
+    "train_dense.py": "bf95365f5c8a126e81c0b9f54d2ea750ed684b70588c5ff22274a3058eff37c2",
+    "worker.py": "24c8bedb012bb1e3d2e51e7391be127cf134e42c4ee59b3f94e817ca47ae0a3e",
+    "compare.py": "d1de059a8dae28b07e75e72be234425b1a303f34a9c26531bdf76d7ac538d86d",
+    "reference.py": "a49ca79357636f0ec6d2faafd7fa049a988600276d62b2533e52c6b0a2f845c4",
+    "compare_battery.py": "842b68e93608275000d650fe2c6026252c2c0f0be1b841546645fb1520c25c68",
+    "status.py": "b86bed5ef25ebde4d0c7c1b81d0c8702f196f8aac3232dd4298fb42000e3ef3f",
+    "report.py": "6ea0eeaf90a35bb127c5406b4193a5bb29c5d9105da3843fe966870bb766d9c4",
+    "evaluate_remaining.py": "7166be9403675475b26d73e04384b4d795ed1d691a7c1a63eaae1d43dbc87e06",
+    "audit.py": "7a0e0b165b9cbac6dea3a44524e4952bad98df172dcb4ac819a900d862c39237"
+  }
+}

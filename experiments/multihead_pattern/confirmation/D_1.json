@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "hashes": {
+    "checkpoint": "27376e9d4f9662e8ba9bef6eb3b24205636fb1df1eba67ef613af2776c81c2f7",
+    "controllers": "163dca20b43f076cc206abf29e3df2f0a0185ee7c18e90e0ba2dcf182e2f75d3",
+    "data": "a953803554c648f7c54cdb21d0b6a3c7ff1be688b7b746542c14899791625808",
+    "code": "436c2ded8739722699df601a06adf9f76b5d8b4f2235b4db67644bfbf37881d7",
+    "core": "65013eb6da89ed13ae4bb96848baa83008ecd99686d1737268204cb40a41ad7a",
+    "evaluator": "271545be25aaa78f353da1d06fe77f40bb71e321af3c15b182bbfd0c81c99bd7",
+    "prior_selection": "04e20ecfa83fbc8dc93ec32bc6d6c1eeefc960a14e519da0bb787a60060ef9fe",
+    "selection": "d7a2d01bcbf258560b5df995d18998695edc480b160be9ecfee8ca1bf279f4b4"
+  },
+  "settings": {
+    "family": "scalar_head",
+    "site": 0,
+    "alpha": 0.05,
+    "component": "attention_pattern",
+    "head": 0,
+    "id": "c206"
+  },
+  "seconds": 43.64979577064514,
+  "same_run_exact": true,
+  "weights_unchanged": true,
+  "peak_mib": 620.65966796875
+}

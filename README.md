@@ -28,9 +28,11 @@ python scripts/audit_parity_phase.py
 | 图 3b,c | 两次调用 F、连续应用 J_one/J_two，五个 backbone × 两个 fit | [`experiments/composition`](experiments/composition) |
 | 图 4b,c | 跨图 pattern/output patch、steering pattern transfer、Ouro 对照 | [`experiments/graph_mechanism`](experiments/graph_mechanism)、[`experiments/ouro_letter`](experiments/ouro_letter) |
 | 图 4d | one-hop／two-hop target pattern exchange，4,116 例 | [`experiments/target_exchange`](experiments/target_exchange) |
+| Graph Traversal 附录 | 原生逐层读出、dense J 控制和全部 8-head 子集的失败对照 | [`experiments/native_layer_readout`](experiments/native_layer_readout)、[`experiments/dense_routing`](experiments/dense_routing)、[`experiments/multihead_pattern`](experiments/multihead_pattern) |
 | 图 5、6 | Parity 长度与时序；另一个 N8 图 continuation 群体 | [`experiments/parity_phase`](experiments/parity_phase)、[`experiments/long_range`](experiments/long_range) |
 | 图 7 | Ouro final-only／stepwise 监督与四循环 steering | [`experiments/ouro_antonym`](experiments/ouro_antonym) |
 
 细节、分母和训练入口见 [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md)、[`docs/RUNNING.md`](docs/RUNNING.md)。图 3 的 4,110／3,200 和图 4d 的 4,116 是三个不同评估群体。旧版 PCA、KG 和 S1/S2 图不在这份提交稿内；旧资料仍保存，但不计入本版的通过条件。
+此前单独上传的 [`manuscript-v66`](manuscript-v66) 是历史快照，不能与当前 `paper/` 混用。
 
 保存结果的核算与全部图形重绘已通过；全套 GPU 训练**未重新跑完**。原始权重不入仓库，身份与获取办法见 [`provenance/checkpoints.json`](provenance/checkpoints.json) 和 [`docs/RUNNING.md`](docs/RUNNING.md)。验证记录和具体限制见 [`docs/VALIDATION.md`](docs/VALIDATION.md)、[`docs/REPRODUCIBILITY_LIMITS.md`](docs/REPRODUCIBILITY_LIMITS.md)。

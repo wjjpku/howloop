@@ -9,6 +9,8 @@
 | 图 3b,c、Graph Traversal 附录 | 冻结 J_one/J_two 两次组合；512 图×10 起点，经 0–4 hop collision exclusion 后每条件 3,200 例；A–E×2 fits | `experiments/composition/{run.py,analyze.py,*_fit*.npz,summary.json}`；`plots/fig3_submission.py` |
 | 图 4b,c、Graph Traversal/Ouro Letter-Walk | 跨图 pattern/output patch；同输入 steered↔unsteered pattern transfer；head-output restoration | `experiments/graph_mechanism`、`experiments/ouro_letter`；`plots/fig4_submission.py` |
 | 图 4d、Graph Traversal 附录 | J_two→J_one 与 J_one→J_two：L1、L2、both 的 post-softmax pattern 交换；4,116 例，五 backbones×2 fits | `experiments/target_exchange/graph/*_fit*.npz`、`graph_summary.json`、`graph_matrix.py` |
+| Graph Traversal 附录，原生读出 | 五个冻结 backbone；256 个十环×10 起点；在每层的 attention/MLP residual 后应用原 final head，无新 probe | `experiments/native_layer_readout/raw/*.npz`、`code/run.py`、`code/plot.py` |
+| Graph Traversal 附录，dense 控制失败对照 | Seeds 3/5/7 的 dense affine J；新 256 图的 2,067 个互异标签样本；分别枚举 answer-only 和 all-position 的 255 个非空 8-head 子集；两 J fits | `experiments/dense_routing`、`experiments/multihead_pattern/confirmation/*.npz`、`code/run.py` |
 | 图 5a、图 6、Parity 附录 | n1–20 backbone、n20–40 J；seed2 长度和读出时序，另有 seeds0/1 验证 | `experiments/parity_phase`、`data/plot/parity`、`plots/fig5.py`、`plots/fig6.py` |
 | 图 5b、Graph Continuation 附录 | 单独的 N8 D8L8，12 backbones×2 J，1–40 loops | `experiments/long_range`、`plots/fig5.py` |
 | 图 7、Ouro Antonym Cancellation 附录 | stepwise/final-only 的原生读出与四循环 k5–8 控制；各一个 rank128 J | `experiments/ouro_antonym`、`data/plot/ouro_fixed4.json`、`plots/fig7_submission.py` |

@@ -34,6 +34,27 @@ for model,stats in switch.items():
         key=f'{direction}/L2/pattern';i=list(ds[0]['conditions']).index(key)
         actual=np.mean([(d['predictions'][i,mask]==labels[mask,target]).mean() for d in ds])
         assert np.isclose(actual,stats['interventions'][key][donor]['mean'],atol=1e-12)
+readouts={}
+for model,seed in [('B',3),('D',5),('E',7),('C',4),('A',6)]:
+    path=ROOT/f'experiments/native_layer_readout/raw/{model}.npz';d=np.load(path)
+    ids=d['paths'][:,:10];pred=d['predictions']
+    depth=(pred[...,None]==ids).argmax(-1)
+    modes=[int(np.bincount(depth[i],minlength=10).argmax()) for i in (4,8,12,16,20)]
+    if model in 'BDE':assert modes==[0,2,4,6,8],(seed,modes)
+    readouts[str(seed)]=modes
+dense={}
+for model,seed in [('B',3),('D',5),('E',7)]:
+    ds=[np.load(ROOT/f'experiments/multihead_pattern/confirmation/{model}_{fit}.npz') for fit in (1,2)]
+    labels=ds[0]['labels'];mask=(labels[:,0]!=labels[:,1])&(labels[:,0]!=labels[:,2])&(labels[:,1]!=labels[:,2])
+    assert mask.sum()==2067
+    max_pattern=0.0
+    for scope in ('answer','all'):
+        for subset in range(1,256):
+            key=f'{scope}_0_{subset:03d}';j=list(ds[0]['conditions']).index(key)
+            max_pattern=max(max_pattern,*[(d['predictions'][j,mask]==labels[mask,1]).mean() for d in ds])
+    full=float(np.mean([(d['baseline'][1,mask]==labels[mask,1]).mean() for d in ds]))
+    assert max_pattern==0 and full>.998
+    dense[str(seed)]={'n':int(mask.sum()),'full_dense_J_percent':full*100,'maximum_unattenuated_pattern_percent':max_pattern*100,'subsets_per_scope':255}
 out=ROOT/'outputs/audit';out.mkdir(parents=True,exist_ok=True)
-(out/'submission.json').write_text(json.dumps({'composition':rows,'target_exchange_percent':target_rates,'scope':'saved predictions and summaries; no GPU rerun'},indent=2)+'\n')
-print('Submission composition and target-exchange claims verified.')
+(out/'submission.json').write_text(json.dumps({'composition':rows,'target_exchange_percent':target_rates,'native_loop_end_modal_depth':readouts,'dense_all_head_subsets':dense,'scope':'saved predictions and summaries; no GPU rerun'},indent=2)+'\n')
+print('Submission composition, target exchange, native readout, and dense-subset claims verified.')

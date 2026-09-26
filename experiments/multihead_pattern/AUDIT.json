@@ -1,0 +1,24 @@
+{
+  "prior_cohort_disjoint": true,
+  "B": {
+    "fits": 2,
+    "selection_hash_verified": true,
+    "baseline_exact": true,
+    "all_unattenuated_subsets_tested": true,
+    "weights_unchanged": true
+  },
+  "D": {
+    "fits": 2,
+    "selection_hash_verified": true,
+    "baseline_exact": true,
+    "all_unattenuated_subsets_tested": true,
+    "weights_unchanged": true
+  },
+  "E": {
+    "fits": 2,
+    "selection_hash_verified": true,
+    "baseline_exact": true,
+    "all_unattenuated_subsets_tested": true,
+    "weights_unchanged": true
+  }
+}

@@ -8,7 +8,7 @@ from train_ouro_full import MODEL
 from ouro_stepwise_task import example,parse
 from ouro_eval_panel import EVAL_SEEDS
 
-BASE=Path('/data/wujiaju/ouro26_stepwise_control_20260915')
+BASE=Path('/data/paperexperiment/ouro26_stepwise_control_20260915')
 ROOT=BASE/'no_j_L4_k58'
 def sha(path):
     h=hashlib.sha256()

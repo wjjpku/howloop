@@ -7,13 +7,13 @@ if [[ "$#" -ne 1 ]]; then
 fi
 
 PHYSICAL_GPU="$1"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-OUT_DIR=/data/wujiaju/graph_path_telomere_explicit_diagonal_rrr_20260731/boundary_1024
-LOG_ROOT=/data/wujiaju/logs
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+OUT_DIR=/data/paperexperiment/graph_path_telomere_explicit_diagonal_rrr_20260731/boundary_1024
+LOG_ROOT=/data/paperexperiment/logs
 RUN_LOG="${LOG_ROOT}/explicit_diagonal_rrr_boundary_1024.log"
-CHECKPOINT=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-PHASE_SUMMARY=/data/wujiaju/graph_path_telomere_overloop_20260729/phase_grid/D8_L8_seed0/summary.json
+CHECKPOINT=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+PHASE_SUMMARY=/data/paperexperiment/graph_path_telomere_overloop_20260729/phase_grid/D8_L8_seed0/summary.json
 
 mkdir -p "${OUT_DIR}" "${LOG_ROOT}"
 export CUDA_VISIBLE_DEVICES="${PHYSICAL_GPU}"

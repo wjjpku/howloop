@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-run_root=/data/wujiaju/parity_input_once_20260811
+run_root=/data/paperexperiment/parity_input_once_20260811
 seed="${PARITY_SEED:?set PARITY_SEED}"
 code_root="$run_root/evaluation_code"
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
 checkpoint="$run_root/backbones/parity_input_once_seed${seed}/best.pt"
 out_root="$run_root/evaluation/seed${seed}"
-log_file="/data/wujiaju/logs/parity_input_once_20260811/raw_evaluation_seed${seed}.log"
+log_file="/data/paperexperiment/logs/parity_input_once_20260811/raw_evaluation_seed${seed}.log"
 pid_file="$run_root/raw_evaluation_seed${seed}.pid"
 
 mkdir -p "$out_root" "$(dirname "$log_file")"

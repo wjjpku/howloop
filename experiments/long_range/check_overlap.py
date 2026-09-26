@@ -1,11 +1,11 @@
 import sys,json,os
 from pathlib import Path
 import numpy as np,torch
-R=Path('/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3');sys.path.insert(0,str(R/'analysis_code'))
+R=Path('/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3');sys.path.insert(0,str(R/'analysis_code'))
 from reasoning_loop.graph_path_depth_circuit import fixed_depth_batch,load_checkpoint
 from reasoning_loop.graph_path_temporal_intervention import logits_from_raw_state
 from reasoning_loop.paper2027_graph_g3_controller import _load_controller,_initial
-D=Path('/data/wujiaju/fig6_retest_20260924');cases=json.loads((D/'overlap_differences.json').read_text());graphs=np.load(D/'graph/successors.npy');old=np.array(json.loads((D/'old_lock_successors.json').read_text()));result=[];torch.set_num_threads(2)
+D=Path('/data/paperexperiment/fig6_retest_20260924');cases=json.loads((D/'overlap_differences.json').read_text());graphs=np.load(D/'graph/successors.npy');old=np.array(json.loads((D/'old_lock_successors.json').read_text()));result=[];torch.set_num_threads(2)
 @torch.inference_mode()
 def run():
  for case in cases:

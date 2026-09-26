@@ -5,11 +5,11 @@
 # for this evaluation (the matching trainer peaked below 0.5 GiB).
 set -euo pipefail
 
-cd /data/wujiaju/LooPlus
-export PYTHONPATH=/data/wujiaju/LooPlus
+cd /data/paperexperiment/LooPlus
+export PYTHONPATH=/data/paperexperiment/LooPlus
 
-run_root=/data/wujiaju/graph_path_fixed_h1_j_20260801/long_j7_schedule_eval
-mkdir -p "$run_root" /data/wujiaju/logs
+run_root=/data/paperexperiment/graph_path_fixed_h1_j_20260801/long_j7_schedule_eval
+mkdir -p "$run_root" /data/paperexperiment/logs
 monitor_log="$run_root/shared_gpu_monitor.log"
 reserve_mib=$((16 * 1024))
 new_job_allowance_mib=$((2 * 1024))

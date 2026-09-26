@@ -2,15 +2,15 @@
 set -uo pipefail
 
 gpu="${1:-6}"
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
-code=/data/wujiaju/LooPlus
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
+code=/data/paperexperiment/LooPlus
 runner=${code}/scripts/run_graph_path_telomere_canonical_diag_lora_backbone_remote_20260731.sh
-root=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731
-checkpoint=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+root=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731
+checkpoint=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
 phase=${code}/results/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
 artifact=${root}/controllers/final_seed0_ce_h64/task_lora_j.pt
 label=task_diagonal_lora_r48_seed211001
-log=/data/wujiaju/logs/graph_path_telomere_canonical_diag_lora_20260731/mechanism_queue_gpu${gpu}.log
+log=/data/paperexperiment/logs/graph_path_telomere_canonical_diag_lora_20260731/mechanism_queue_gpu${gpu}.log
 
 while tmux has-session -t telomere_canonical_backbone_queue 2>/dev/null; do sleep 30; done
 

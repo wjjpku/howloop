@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-readonly project_dir="/data/wujiaju/LooPlus"
-readonly checkpoint_root="/data/wujiaju/graph_path_N10_D8L8_multiseed_20260809/checkpoints"
-readonly out_dir="/data/wujiaju/graph_path_N10_D8L8_cycle10_f9_readout_20260809"
-readonly log_path="/data/wujiaju/logs/graph_path_N10_D8L8_multiseed_20260809/cycle10_f9_readout.log"
-readonly python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
+readonly project_dir="/data/paperexperiment/LooPlus"
+readonly checkpoint_root="/data/paperexperiment/graph_path_N10_D8L8_multiseed_20260809/checkpoints"
+readonly out_dir="/data/paperexperiment/graph_path_N10_D8L8_cycle10_f9_readout_20260809"
+readonly log_path="/data/paperexperiment/logs/graph_path_N10_D8L8_multiseed_20260809/cycle10_f9_readout.log"
+readonly python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
 
 mkdir -p "$out_dir"
 cd "$project_dir"

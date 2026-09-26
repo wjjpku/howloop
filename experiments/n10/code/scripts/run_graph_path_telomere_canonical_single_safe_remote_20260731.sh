@@ -16,8 +16,8 @@ horizon="$7"
 rank="$8"
 shift 8
 seeds=("$@")
-runner=/data/wujiaju/LooPlus/scripts/run_graph_path_telomere_canonical_diag_lora_backbone_remote_20260731.sh
-log=/data/wujiaju/logs/graph_path_telomere_canonical_diag_lora_20260731/${run}_safe_queue_gpu${gpu}.log
+runner=/data/paperexperiment/LooPlus/scripts/run_graph_path_telomere_canonical_diag_lora_backbone_remote_20260731.sh
+log=/data/paperexperiment/logs/graph_path_telomere_canonical_diag_lora_20260731/${run}_safe_queue_gpu${gpu}.log
 
 consecutive=0
 while [[ "${consecutive}" -lt 2 ]]; do

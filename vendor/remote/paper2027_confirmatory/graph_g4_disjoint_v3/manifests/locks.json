@@ -1,12 +1,12 @@
 {
   "final_test_graphs": 512,
-  "final_test_lock": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/locks/final_test_permutations_512.pt",
+  "final_test_lock": "/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3/locks/final_test_permutations_512.pt",
   "final_test_lock_sha256": "3154ac43e1c58b3fea132ba2864074b1f7c2ae94cabba781a843a97e2523cc9e",
   "max_depth": 8,
   "node_count": 8,
   "overlap_graphs": 0,
   "protocol_id": "paper2027.graph.g4.disjoint_locks.v1",
   "selection_graphs": 512,
-  "selection_lock": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/locks/selection_permutations_512.pt",
+  "selection_lock": "/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3/locks/selection_permutations_512.pt",
   "selection_lock_sha256": "72a1bce76b43a8a0256fc36418532b80e50a362d7442ae0eb7d144a803f987e8"
 }

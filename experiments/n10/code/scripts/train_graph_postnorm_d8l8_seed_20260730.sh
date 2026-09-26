@@ -9,10 +9,10 @@ fi
 physical_gpu="$1"
 shift
 
-repo_dir="${REPO_DIR:-/data/wujiaju/LooPlus_postnorm_20260730}"
-out_root="/data/wujiaju/graph_path_postnorm_D8L8_20260730/training"
-log_root="/data/wujiaju/logs/graph_path_postnorm_D8L8_20260730/training"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
+repo_dir="${REPO_DIR:-/data/paperexperiment/LooPlus_postnorm_20260730}"
+out_root="/data/paperexperiment/graph_path_postnorm_D8L8_20260730/training"
+log_root="/data/paperexperiment/logs/graph_path_postnorm_D8L8_20260730/training"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
 
 mkdir -p "${out_root}" "${log_root}"
 cd "${repo_dir}"

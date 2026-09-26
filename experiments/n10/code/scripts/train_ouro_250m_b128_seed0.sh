@@ -4,11 +4,11 @@ set -euo pipefail
 export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-1}"
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
-log_path=/data/wujiaju/logs/ouro_250m_two_task_b128_seed0_30k.log
-output_dir=/data/wujiaju/ouro_mini_runs/stage1_250m_two_task_b128_seed0_20260712
+log_path=/data/paperexperiment/logs/ouro_250m_two_task_b128_seed0_30k.log
+output_dir=/data/paperexperiment/ouro_mini_runs/stage1_250m_two_task_b128_seed0_20260712
 
 echo "START $(date -Iseconds)" >"$log_path"
-/data/wujiaju/.venvs/loopreasoner/bin/python -u -m ouro_mini.train \
+/data/paperexperiment/.venvs/loopreasoner/bin/python -u -m ouro_mini.train \
   --model-size 250m \
   --mode stage1 \
   --steps 30000 \

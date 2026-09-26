@@ -1,7 +1,7 @@
 {
   "stage": "complete",
   "active_jobs": [],
-  "host": "A100-80G-34200",
+  "host": "GPU_ARCHIVE_HOST",
   "primary10": {
     "rescue": 50,
     "damage_accuracy": 5,

@@ -6,7 +6,7 @@ gm=json.loads((D/'graph/manifest.json').read_text());assert gm['status']=='compl
 counts=np.stack([np.load(D/f'graph/seed{s}.npz')['correct_counts'] for s in range(100,112)]);assert counts.shape==(12,3,40,8192) and counts.min()>=0 and counts.max()<=8
 assert sha(D/'graph/successors.npy')==gm['graph_sha256']
 # Compare every overlap graph with the archived evaluator, without selecting new results.
-oldroot=Path('/Users/jiaju/Documents/looped_transformer_paper_repro_20260920/sec09_coverage/horizon_decomposition_20260921/raw')
+oldroot=Path('/data/paperexperiment/Documents/looped_transformer_paper_repro_20260920/sec09_coverage/horizon_decomposition_20260921/raw')
 old=json.loads((D/'old_lock_successors.json').read_text());lookup={tuple(r):i for i,r in enumerate(old)};graphs=np.load(D/'graph/successors.npy');common=[(i,lookup[tuple(row)]) for i,row in enumerate(graphs) if tuple(row) in lookup];audit=[]
 for si,seed in enumerate(range(100,112)):
  for mi,sub in enumerate(['raw','rank48_seed1/full','rank48_seed2/full']):

@@ -3,14 +3,14 @@ set -euo pipefail
 
 export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-6}"
 
-PY=/data/wujiaju/.venvs/loopreasoner/bin/python
-REPO=/data/wujiaju/LooPlus
-ROOT=/data/wujiaju/graph_path_fixed_h1_j_20260802
-CHECKPOINT=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-PHASE=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
-NATURAL_PROBE=/data/wujiaju/graph_path_age_probe_adversarial_20260801/seed0_full_affine_balanced5_n1024/adversarial_probe_weights.npz
+PY=/data/paperexperiment/.venvs/loopreasoner/bin/python
+REPO=/data/paperexperiment/LooPlus
+ROOT=/data/paperexperiment/graph_path_fixed_h1_j_20260802
+CHECKPOINT=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+PHASE=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
+NATURAL_PROBE=/data/paperexperiment/graph_path_age_probe_adversarial_20260801/seed0_full_affine_balanced5_n1024/adversarial_probe_weights.npz
 
-PARENT=/data/wujiaju/graph_path_fixed_h1_j_20260801/inverse_reuse_10k_balanced_jcalls_r64_s16/age_specific_j_bank_after_inverse_reuse_10k.pt
+PARENT=/data/paperexperiment/graph_path_fixed_h1_j_20260801/inverse_reuse_10k_balanced_jcalls_r64_s16/age_specific_j_bank_after_inverse_reuse_10k.pt
 MAIN="$ROOT/path_equivalence_r64_s16_main/age_specific_j_bank_after_equivalent_k3_to_k12.pt"
 STAGE16="$ROOT/path_equivalence_r64_s16_extension_k24/age_specific_j_bank_after_equivalent_inverse_k3_to_k16.pt"
 STAGE24="$ROOT/path_equivalence_r64_s16_extension_k24/age_specific_j_bank_after_equivalent_inverse_k3_to_k24.pt"

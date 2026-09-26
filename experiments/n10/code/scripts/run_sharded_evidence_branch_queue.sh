@@ -7,10 +7,10 @@ if [[ $# -ne 1 || ! "$1" =~ ^[0-9]+$ ]]; then
 fi
 
 gpu_index=$1
-repo_root=${SHARDED_REUSE_REPO_ROOT:-/data/wujiaju/LooPlus}
-out_root=${SHARDED_REUSE_OUT_ROOT:-/data/wujiaju/sharded_evidence_reuse_20260715}
-log_root=${SHARDED_REUSE_LOG_ROOT:-/data/wujiaju/logs/sharded_evidence_reuse_20260715}
-python_bin=${SHARDED_REUSE_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}
+repo_root=${SHARDED_REUSE_REPO_ROOT:-/data/paperexperiment/LooPlus}
+out_root=${SHARDED_REUSE_OUT_ROOT:-/data/paperexperiment/sharded_evidence_reuse_20260715}
+log_root=${SHARDED_REUSE_LOG_ROOT:-/data/paperexperiment/logs/sharded_evidence_reuse_20260715}
+python_bin=${SHARDED_REUSE_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}
 mkdir -p "$out_root/branches" "$log_root"
 
 run_job() {

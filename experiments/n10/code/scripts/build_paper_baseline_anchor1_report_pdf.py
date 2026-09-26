@@ -433,7 +433,7 @@ def main() -> None:
         topMargin=19 * mm,
         bottomMargin=17 * mm,
         title="论文 Baseline 上的循环端粒干预测试报告",
-        author="Jiaju research experiment",
+        author="Anonymous research experiment",
         subject="Identity-initialized diagonal plus low-rank J on looped Transformer baselines",
     )
     decorator = lambda canvas, doc: page_decorator(canvas, doc, font_name)

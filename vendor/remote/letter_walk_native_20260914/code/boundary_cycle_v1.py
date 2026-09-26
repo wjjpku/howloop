@@ -3,8 +3,8 @@ import json, os, random, re, time, hashlib, subprocess
 from pathlib import Path
 
 NAMES='Alice Bob Carol David Emma Frank Grace Henry Iris Jack'.split()
-ROOT=Path('/data/wujiaju/letter_walk_native_20260914/ouro26_cycle_boundary_v1')
-MODEL='/data/wujiaju/models/Ouro-2.6B-Thinking'
+ROOT=Path('/data/paperexperiment/letter_walk_native_20260914/ouro26_cycle_boundary_v1')
+MODEL='/data/paperexperiment/models/Ouro-2.6B-Thinking'
 COARSE=[1,4,8,9,10,11,16,24,32,48,64,96,99]
 
 def case(g,k):

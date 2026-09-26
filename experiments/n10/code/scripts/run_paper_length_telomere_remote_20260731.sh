@@ -130,10 +130,10 @@ if [[ -n "${CONTROLLER_ANCHOR_STEP}" ]] && ! [[ "${CONTROLLER_ANCHOR_STEP}" =~ ^
     exit 2
 fi
 
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 if [[ "${BASELINE_VARIANT}" == released64 ]]; then
     LABEL="${TASK}_${SUPERVISION}_released64_seed${SEED}"
 elif [[ "${BASELINE_VARIANT}" == official ]]; then

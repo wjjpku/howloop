@@ -11,10 +11,10 @@ fi
 TASK="$1"
 PHYSICAL_GPU="$2"
 SEED="$3"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 TARGET_LOOPS=10
 if [[ "${TASK}" == "addition" ]]; then TARGET_LOOPS=11; fi
 LABEL="${TASK}_fixed_n10_t${TARGET_LOOPS}_official_seed${SEED}"

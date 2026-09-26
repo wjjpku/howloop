@@ -1,0 +1,50 @@
+{
+  "qwen": {
+    "paper_cohort": "5 tasks x 32 base cases x 8 requests, 4 suffix branches",
+    "prediction_sha256": "5391a8e9c86bef55d327624c82c56abd3e3af670338a6769ffd54ae7807374ba",
+    "backbone_sha256": "2d07a4256fdc327f5ba796f35cce4614697c2f74b4d32072089cf35a8c9fabbd",
+    "controller_sha256": "e652e59973ec1fe92ec00c73c7fe87a6390c52343387e5fe493b5727d2bada09",
+    "checkpoint_updates": [
+      9500,
+      12000
+    ]
+  },
+  "kg": {
+    "paper_cohort": "64 entities, 16 relations, lengths 1-32 x 1024 queries",
+    "per_example_sha256": "c7a205d94b7ff4bd16e3847353cd103b1ac9ff7d1bbee83695d236704ef17dff",
+    "summary_sha256": "8c9ba7f616576bd510584dfe120fe1457700e189b53de1637f2d9258b21bd969",
+    "backbone_sha256": "c72a7703b5908ebb7bcdec6d1f95968ac0fcb8ef23fda8125cd50dcdb59f37fa",
+    "parent_m16_sha256": "23ae8dc795ec16d9b20fbcc45bc53cfeeed361daa1744070a2a2a09ff024dcc0",
+    "final_controller_sha256": "17175d1c1131dfe162882464b38ebe0a5b95faaf7383de701a6ff135cb37cabc"
+  },
+  "source_original_sha256": {
+    "experiments/qwen/code/tasks.py": "d6bdeff2dff0e64a2025e2e001fe8f1260f1aef54a24e41c39c2393506168af0",
+    "experiments/qwen/code/qwen_suffix_audit.py": "54b439c2d86c6cd49831eeb8eeaeaec137b2d0a0d72814f4becaacdccd93c756",
+    "experiments/qwen/code/semantic_data.py": "0b3e5fae8cbbbc2eae06c8283b8942f32d0e4a5835b6547575dcb6561ed52a56",
+    "experiments/qwen/code/model.py": "be142831cbee1aa77cdd65ae66deb60b427499f8e3fe84c9cb1d3606cda8920c",
+    "experiments/qwen/code/train.py": "18f0ecff9ed374ecc0d6de00a5e9019029ec5848e80e4adadf198940579b0556",
+    "experiments/qwen/code/prepare_model.py": "2af74703c5e62ff9d6ead1f70e133205de5e3e4538d1b620bc8d96144905156d",
+    "experiments/qwen/code/data.py": "0923cc9982718dfcbe5a06ce91ecaa73069b551da8340ddd6e6fbec417b8cf05",
+    "experiments/kg/code/train_unit_curriculum.py": "d3e063e11ff050bb634e701b49e1f0a378785cdd72bb2e4211dc5fff42f7c185",
+    "experiments/kg/code/evaluate_mixed_wsd_from_m16.py": "81cb621e1c6158e6c798599d452ff85e78f8a0a20634ab1d3b7873b488f25d3c",
+    "experiments/kg/code/run_mixed_wsd_from_m16.py": "58243ad1a0634aa4ec51717bcf1c5b441a98dada7fe561479cdca47989c328b7",
+    "experiments/kg/code/train_dense_variant.py": "7a2b0f1b21eecbb804b1d2876bb74abb5246ae2405069856e1f3402d80a9e1ac",
+    "experiments/kg/code/train_other_controllers_variant.py": "7efe7e650963ab1f3e421dbbd8e7d2c75d8459981e5358ef3fc5668f988ce352",
+    "experiments/kg/code/train_second_wsd.py": "e4e1150e553cfc2968c863ebc446a303adaf7a8b2411dc0a4f6a72ad1ebbf546",
+    "experiments/kg/code/train_5k.py": "3e9a6c78642d0ecfb1153852a69b2c90687f07806c31ef1c5542c57b7f7bf373",
+    "experiments/kg/code/train_mixed_wsd_from_m16.py": "58743a789976858333276cb00da88b8b67271a1d710f190796de6ce40c29eb0f",
+    "experiments/kg/code/run_m20_uniform.py": "6f9e71ad90ec4cb6f096ab67491e79d512c2e0d15b695730ed21e8bf1f2c48f5",
+    "experiments/kg/code/train_m20_uniform.py": "268e54382d1e57311532c187a80184c2d0e25ecdce412367fb93e5a9de489854",
+    "experiments/kg/code/run_mixed_eval.py": "850634666e0c68c7fbe967ac48b2d5cc27ae5a0b308c16383ed8521862e88f7c",
+    "experiments/kg/code/run_variant.py": "b45d7ba1b93053f3fcd8890032eba2e4edbce179759fd1a767e098f27bad9d8f",
+    "experiments/kg/core/experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/kg/core/experiments/kg_fj_length/curriculum.py": "ba423e07f59244956244b9e7f37d01c346d927f6c4202d2db6c646fec994b45f",
+    "experiments/kg/core/experiments/kg_fj_length/controller.py": "5f49178c3659847e830e3c255ae7fd12b6d7e7d229623332e2118ba0512af7cb",
+    "experiments/kg/core/experiments/kg_fj_length/__init__.py": "5e28aecfe70db32c0129dd36913cb057d55093f967d2ff307b53bf332e94f2ff",
+    "experiments/kg/core/experiments/kg_fj_length/model.py": "1deefdab8c23dd62e94c771b8d2824372a6888041556c9070bea43ef316f78bd",
+    "experiments/kg/core/experiments/kg_fj_length/cli.py": "a7bdfbe9f09f2b96bb6338c54055aed6ba21bea902fe516f5932681a06770fb8",
+    "experiments/kg/core/experiments/kg_fj_length/training.py": "d417377eaf73f550c5ccd006cd399bb81ff3ccf55e00cb60e4445d46e4f4a9a4",
+    "experiments/kg/core/experiments/kg_fj_length/data.py": "436c73b0d50c0ed48ad05f68bc9adf75a4b716ec8d9eb0eaf00f8775154981b1"
+  },
+  "source_adaptation": "Neutralized machine roots; KG source import moved to packaged core; Qwen GPU selection uses CUDA_VISIBLE_DEVICES. Original source hashes retained here."
+}

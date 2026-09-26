@@ -1,4 +1,4 @@
-name: Reproduce figures and statistics
+name: Verify reviewer reproduction
 on:
   push:
   pull_request:
@@ -6,29 +6,18 @@ on:
 permissions:
   contents: read
 jobs:
-  cpu-reproduction:
+  cpu:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: pip
-          cache-dependency-path: requirements-plot.txt
       - run: python -m pip install -r requirements-plot.txt
       - run: python scripts/verify_integrity.py
       - run: python reproduce.py
-        env:
-          OPENBLAS_NUM_THREADS: '1'
-          OMP_NUM_THREADS: '1'
       - run: python scripts/audit_results.py
       - run: python scripts/audit_parity_phase.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: v66-reproduction
-          path: |
-            outputs/figures/fig*.pdf
-            outputs/figure_reproduction.json
-            outputs/audit/audit_results.json
-            outputs/parity_phase/verified_phase_table.json
+      - run: python experiments/revision/audit_paper_matched.py
+      - run: python experiments/revision/mechanism_aggregate.py

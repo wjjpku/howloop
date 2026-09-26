@@ -20,10 +20,10 @@ if [[ ! "$gpu_index" =~ ^[0-9]+$ ]]; then
   exit 2
 fi
 
-repo_root=${LOOP_REUSE_REPO_ROOT:-/data/wujiaju/LooPlus}
-out_root=${LOOP_REUSE_OUT_ROOT:-/data/wujiaju/loop_reuse_graph_pilot_20260715}
-log_root=${LOOP_REUSE_LOG_ROOT:-/data/wujiaju/logs/reuse_graph_pilot_20260715}
-python_bin=${LOOP_REUSE_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}
+repo_root=${LOOP_REUSE_REPO_ROOT:-/data/paperexperiment/LooPlus}
+out_root=${LOOP_REUSE_OUT_ROOT:-/data/paperexperiment/loop_reuse_graph_pilot_20260715}
+log_root=${LOOP_REUSE_LOG_ROOT:-/data/paperexperiment/logs/reuse_graph_pilot_20260715}
+python_bin=${LOOP_REUSE_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}
 mkdir -p "$out_root/jobs" "$log_root"
 
 find_base_checkpoint() {

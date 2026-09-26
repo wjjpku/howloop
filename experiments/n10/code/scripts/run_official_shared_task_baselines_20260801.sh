@@ -36,9 +36,9 @@ if ! [[ "${PHYSICAL_GPU}" =~ ^[0-7]$ ]]; then
     exit 2
 fi
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-RUNNER=/data/wujiaju/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+RUNNER=/data/paperexperiment/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
 LOCK_ROOT="${RUN_ROOT}/locks"
 LABEL="${TASK}_adaptive_step_official_seed0"
 BENCHMARK_MANIFEST="${RUN_ROOT}/manifests/${LABEL}/official_benchmark_fp32.json"

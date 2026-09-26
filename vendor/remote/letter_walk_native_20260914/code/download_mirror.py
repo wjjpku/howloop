@@ -12,7 +12,7 @@ import requests
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--hf',required=True);p.add_argument('--mirror',required=True);p.add_argument('--revision',required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
-    assert socket.gethostname()=='lyg0232'
+    assert socket.gethostname()=='researcher'
     original=socket.getaddrinfo;dns={}
     def allowed(h):return h=='modelscope.cn' or h.endswith('.modelscope.cn')
     def resolve(host,port,*args,**kwargs):

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "complete_shards": 2,
+  "rows": 2560,
+  "pairs_per_condition": 256,
+  "conditions": 10,
+  "full_generation_conditions": 8,
+  "full_name_disagreements": 0,
+  "truncations": 0,
+  "manifest_file_hashes_match": true,
+  "backbone_hash": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+  "J_hash": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898",
+  "parameters_unchanged": true
+}

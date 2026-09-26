@@ -1,0 +1,686 @@
+{
+  "passed": true,
+  "completed_fits": 60,
+  "checks": [
+    "paired initialization hashes",
+    "paired full token streams",
+    "all graph pools identical across models",
+    "train selection test graph disjointness",
+    "raw prediction accuracies match summaries",
+    "all raw prediction hashes match"
+  ],
+  "means": {
+    "final": {
+      "stay": {
+        "mean_pct": 100.0,
+        "sd_pct": 0.0,
+        "seed_pct": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "one": {
+        "mean_pct": 66.48537587623882,
+        "sd_pct": 9.962969500898385,
+        "seed_pct": [
+          77.60454435581339,
+          73.39859801788737,
+          55.922165820642974,
+          69.31351220691322,
+          56.18805897993715
+        ]
+      },
+      "two": {
+        "mean_pct": 50.45927000241721,
+        "sd_pct": 15.236023846192765,
+        "seed_pct": [
+          59.427121102248016,
+          66.15905245346869,
+          57.33623398598018,
+          40.01692047377327,
+          29.357021996615906
+        ]
+      }
+    },
+    "stepwise": {
+      "stay": {
+        "mean_pct": 100.0,
+        "sd_pct": 0.0,
+        "seed_pct": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "one": {
+        "mean_pct": 100.0,
+        "sd_pct": 0.0,
+        "seed_pct": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "two": {
+        "mean_pct": 13.183466279912981,
+        "sd_pct": 6.811079957151739,
+        "seed_pct": [
+          20.558375634517766,
+          12.18274111675127,
+          5.740875030215132,
+          19.809040367416003,
+          7.626299250664734
+        ]
+      }
+    }
+  },
+  "rows": [
+    {
+      "seed": 0,
+      "regime": "final",
+      "target": "stay",
+      "fit": 1,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "final",
+      "target": "stay",
+      "fit": 2,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "final",
+      "target": "one",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.7875271936185642,
+      "ring_accuracy": 0.9272727272727272,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "final",
+      "target": "one",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.7645636934977037,
+      "ring_accuracy": 0.8863636363636364,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "final",
+      "target": "two",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.6204979453710419,
+      "ring_accuracy": 0.7833333333333333,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "final",
+      "target": "two",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.5680444766739183,
+      "ring_accuracy": 0.7227272727272728,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "stepwise",
+      "target": "stay",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "stepwise",
+      "target": "stay",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "stepwise",
+      "target": "one",
+      "fit": 1,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "stepwise",
+      "target": "one",
+      "fit": 2,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "stepwise",
+      "target": "two",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.25574087503021514,
+      "ring_accuracy": 0.843939393939394,
+      "n_ring": 660
+    },
+    {
+      "seed": 0,
+      "regime": "stepwise",
+      "target": "two",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.1554266376601402,
+      "ring_accuracy": 0.3878787878787879,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "final",
+      "target": "stay",
+      "fit": 1,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "final",
+      "target": "stay",
+      "fit": 2,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "final",
+      "target": "one",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.7408750302151318,
+      "ring_accuracy": 0.48484848484848486,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "final",
+      "target": "one",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.7270969301426154,
+      "ring_accuracy": 0.4590909090909091,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "final",
+      "target": "two",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.6676335508822818,
+      "ring_accuracy": 0.9484848484848485,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "final",
+      "target": "two",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.6555474981870921,
+      "ring_accuracy": 0.9545454545454546,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "stepwise",
+      "target": "stay",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "stepwise",
+      "target": "stay",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "stepwise",
+      "target": "one",
+      "fit": 1,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "stepwise",
+      "target": "one",
+      "fit": 2,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "stepwise",
+      "target": "two",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.11578438481991782,
+      "ring_accuracy": 0.22272727272727272,
+      "n_ring": 660
+    },
+    {
+      "seed": 1,
+      "regime": "stepwise",
+      "target": "two",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.12787043751510757,
+      "ring_accuracy": 0.2878787878787879,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "final",
+      "target": "stay",
+      "fit": 1,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "final",
+      "target": "stay",
+      "fit": 2,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "final",
+      "target": "one",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.5641769398114576,
+      "ring_accuracy": 0.03939393939393939,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "final",
+      "target": "one",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.554266376601402,
+      "ring_accuracy": 0.03787878787878788,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "final",
+      "target": "two",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.57771331883007,
+      "ring_accuracy": 0.6090909090909091,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "final",
+      "target": "two",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.5690113608895335,
+      "ring_accuracy": 0.6106060606060606,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "stepwise",
+      "target": "stay",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "stepwise",
+      "target": "stay",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "stepwise",
+      "target": "one",
+      "fit": 1,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "stepwise",
+      "target": "one",
+      "fit": 2,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "stepwise",
+      "target": "two",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.06478124244621707,
+      "ring_accuracy": 0.05303030303030303,
+      "n_ring": 660
+    },
+    {
+      "seed": 2,
+      "regime": "stepwise",
+      "target": "two",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.05003625815808557,
+      "ring_accuracy": 0.031818181818181815,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "final",
+      "target": "stay",
+      "fit": 1,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "final",
+      "target": "stay",
+      "fit": 2,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "final",
+      "target": "one",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.6840705825477399,
+      "ring_accuracy": 0.5696969696969697,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "final",
+      "target": "one",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.7021996615905245,
+      "ring_accuracy": 0.5590909090909091,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "final",
+      "target": "two",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.39207154943195555,
+      "ring_accuracy": 0.8181818181818182,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "final",
+      "target": "two",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.4082668600435098,
+      "ring_accuracy": 0.8454545454545455,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "stepwise",
+      "target": "stay",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "stepwise",
+      "target": "stay",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "stepwise",
+      "target": "one",
+      "fit": 1,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "stepwise",
+      "target": "one",
+      "fit": 2,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "stepwise",
+      "target": "two",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.19168479574570946,
+      "ring_accuracy": 0.553030303030303,
+      "n_ring": 660
+    },
+    {
+      "seed": 3,
+      "regime": "stepwise",
+      "target": "two",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.20449601160261058,
+      "ring_accuracy": 0.5878787878787879,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "final",
+      "target": "stay",
+      "fit": 1,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "final",
+      "target": "stay",
+      "fit": 2,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "final",
+      "target": "one",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.5678027556200145,
+      "ring_accuracy": 0.953030303030303,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "final",
+      "target": "one",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.5559584239787285,
+      "ring_accuracy": 0.9378787878787879,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "final",
+      "target": "two",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.3067440174039159,
+      "ring_accuracy": 0.6454545454545455,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "final",
+      "target": "two",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.28039642252840224,
+      "ring_accuracy": 0.5696969696969697,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "stepwise",
+      "target": "stay",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "stepwise",
+      "target": "stay",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "stepwise",
+      "target": "one",
+      "fit": 1,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "stepwise",
+      "target": "one",
+      "fit": 2,
+      "native": 1.0,
+      "accuracy": 1.0,
+      "ring_accuracy": 1.0,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "stepwise",
+      "target": "two",
+      "fit": 1,
+      "native": 0.0,
+      "accuracy": 0.07565868987188784,
+      "ring_accuracy": 0.04393939393939394,
+      "n_ring": 660
+    },
+    {
+      "seed": 4,
+      "regime": "stepwise",
+      "target": "two",
+      "fit": 2,
+      "native": 0.0,
+      "accuracy": 0.07686729514140682,
+      "ring_accuracy": 0.03939393939393939,
+      "n_ring": 660
+    }
+  ]
+}

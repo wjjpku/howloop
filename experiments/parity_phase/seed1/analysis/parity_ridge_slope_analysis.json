@@ -8,7 +8,7 @@
     ],
     "bootstrap": "moving-block residual bootstrap",
     "metrics_files": [
-      "/data/wujiaju/consolidation_20260923/parity/seed1/source/diagonal_band_metrics.csv"
+      "/data/paperexperiment/consolidation_20260923/parity/seed1/source/diagonal_band_metrics.csv"
     ]
   },
   "metrics": {

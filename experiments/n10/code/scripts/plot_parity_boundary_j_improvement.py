@@ -23,7 +23,7 @@ from matplotlib.colors import Normalize
 
 
 DEFAULT_ROOT = Path(
-    "/Users/jiaju/Documents/github/LooPlus/results/"
+    "/data/paperexperiment/Documents/github/LooPlus/results/"
     "parity_input_once_audit_20260811"
 )
 SEED_RANGES = {0: (80, 200), 1: (64, 128), 2: (48, 100)}

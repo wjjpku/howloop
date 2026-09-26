@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-repo="/data/wujiaju/LooPlus"
-run_root="/data/wujiaju/graph_path_loop_activation_five_models_20260729"
+repo="/data/paperexperiment/LooPlus"
+run_root="/data/paperexperiment/graph_path_loop_activation_five_models_20260729"
 out_dir="${run_root}/raw"
-log_dir="/data/wujiaju/logs/graph_path_loop_activation_five_models_20260729"
+log_dir="/data/paperexperiment/logs/graph_path_loop_activation_five_models_20260729"
 log_file="${log_dir}/analysis.log"
 manifest="${run_root}/run_manifest.txt"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
 
 mkdir -p "${out_dir}" "${log_dir}"
 
@@ -33,11 +33,11 @@ trap 'status=$?; if [[ ${status} -eq 0 ]]; then write_manifest complete; else wr
 cd "${repo}"
 CUDA_VISIBLE_DEVICES=2 "${python_bin}" -u \
   -m reasoning_loop.graph_path_loop_activation_circuit \
-  --run D8_L6_seed6=/data/wujiaju/graph_path_functional_multiseed_20260725/training/D8_L6_seed6/graphpath_N8_D8_d256_B2_L6_seed6/best.pt \
-  --run D8_L8_seed0=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt \
-  --run D8_L8_seed1=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt \
-  --run D8_L8_seed2=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed2/graphpath_N8_D8_d256_B2_L8_seed2/best.pt \
-  --run D8_L8_seed5=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed5/graphpath_N8_D8_d256_B2_L8_seed5/best.pt \
+  --run D8_L6_seed6=/data/paperexperiment/graph_path_functional_multiseed_20260725/training/D8_L6_seed6/graphpath_N8_D8_d256_B2_L6_seed6/best.pt \
+  --run D8_L8_seed0=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt \
+  --run D8_L8_seed1=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt \
+  --run D8_L8_seed2=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed2/graphpath_N8_D8_d256_B2_L8_seed2/best.pt \
+  --run D8_L8_seed5=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed5/graphpath_N8_D8_d256_B2_L8_seed5/best.pt \
   --out-dir "${out_dir}" \
   --batch-size 128 \
   --top-k 64 \

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-SHARED_MANAGER=/data/wujiaju/LooPlus/scripts/run_official_shared_task_baselines_20260801.sh
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+SHARED_MANAGER=/data/paperexperiment/LooPlus/scripts/run_official_shared_task_baselines_20260801.sh
 mkdir -p "${RUN_ROOT}/queue"
 
 # Establish matching peak-memory measurements first.  Each one has a bounded

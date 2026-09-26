@@ -3,7 +3,7 @@ from pathlib import Path
 import subprocess
 import torch
 from transformers import AutoModelForCausalLM
-sys.path.insert(0,'/data/wujiaju/letter_walk_native_20260914/code')
+sys.path.insert(0,'/data/paperexperiment/letter_walk_native_20260914/code')
 from train_full import MODEL
 from train_affine_pair import Affine,CK_SHA
 
@@ -15,7 +15,7 @@ def sha(p):
 def emit(v):print(json.dumps(v),flush=True)
 a=argparse.ArgumentParser();a.add_argument('--pairs',required=True);a.add_argument('--out',required=True);a.add_argument('--smoke',action='store_true');args=a.parse_args()
 O=Path(args.out);O.mkdir(parents=True,exist_ok=False);torch.set_num_threads(4);torch.manual_seed(2026092301)
-BASE='/data/wujiaju/ouro26_letter_full_20260915/run/checkpoint.pt';JP='/data/wujiaju/ouro26_affine_pair_20260915/L4/checkpoint.pt'
+BASE='/data/paperexperiment/ouro26_letter_full_20260915/run/checkpoint.pt';JP='/data/paperexperiment/ouro26_affine_pair_20260915/L4/checkpoint.pt'
 assert sha(BASE)==CK_SHA
 jsha=sha(JP);assert jsha=='15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898'
 manifest=dict(status='loading',pid=os.getpid(),gpu=os.environ['CUDA_VISIBLE_DEVICES'],base_sha=CK_SHA,j_sha=jsha,code_sha=sha(__file__),pairs_sha=sha(args.pairs),smoke=args.smoke,started=time.time())

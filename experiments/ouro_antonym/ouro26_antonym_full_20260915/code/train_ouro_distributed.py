@@ -6,7 +6,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.optimization import Adafactor
 
-MODEL='/data/wujiaju/models/Ouro-2.6B'
+MODEL='/data/paperexperiment/models/Ouro-2.6B'
 from task import make_sequence, trace, OPPOSITE, bank
 import re
 import torch.distributed as dist
@@ -70,7 +70,7 @@ def prepare(root,tok):
         for line in p.open():
             obj=json.loads(line);text=obj.get('context','')
             if len(text)>1000:add(text,'documents',str(p))
-    for p in sorted(Path('/data/wujiaju/loop-attnres-tinystories-20260729/raw-parquet').glob('*.parquet')):
+    for p in sorted(Path('/data/paperexperiment/loop-attnres-tinystories-20260729/raw-parquet').glob('*.parquet')):
         for batch in pq.ParquetFile(p).iter_batches(batch_size=256,columns=['text']):
             for text in batch.column(0).to_pylist():add(text,'stories',str(p))
             if all(len(pools[s]['stories'])>= (600 if s=='train' else 40) for s in pools):break
@@ -91,7 +91,7 @@ def main():
     torch.cuda.set_device(int(os.environ.get('LOCAL_RANK','0')))
     if world>1:dist.init_process_group('nccl')
     tok=AutoTokenizer.from_pretrained(MODEL,local_files_only=True)
-    data=Path('/data/wujiaju/ouro26_letter_full_20260915/data');a.root.mkdir(exist_ok=True,parents=True)
+    data=Path('/data/paperexperiment/ouro26_letter_full_20260915/data');a.root.mkdir(exist_ok=True,parents=True)
     if a.mode=='prepare':raise ValueError('Replay is reused read-only; do not regenerate shared data')
     if shutil.disk_usage(a.root).free < 24_000_000_000:
         raise RuntimeError('Need 24 GB free for safe FP32 checkpoint replacement; no model loaded')

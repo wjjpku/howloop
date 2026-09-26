@@ -1,13 +1,13 @@
 {
   "final_only": {
-    "path": "/data/wujiaju/ouro26_antonym_full_20260915/run/shared_j_lora128_k18",
+    "path": "/data/paperexperiment/ouro26_antonym_full_20260915/run/shared_j_lora128_k18",
     "manifest": {
       "pid": 4059337,
       "gpu": "6",
       "world_size": 1,
       "parallelism": "task and replay microbatches sharded; affine gradients summed once per update at unchanged global loss weights",
       "loops": 4,
-      "checkpoint": "/data/wujiaju/ouro26_antonym_full_20260915/run/checkpoint.pt",
+      "checkpoint": "/data/paperexperiment/ouro26_antonym_full_20260915/run/checkpoint.pt",
       "checkpoint_step": 500,
       "checkpoint_sha256": "f29324252ee3da7eb73de700b1af1a0679d2a1d93c559033ca0906ca080bd3ae",
       "controller": "one shared rank128 affine h + B A h + b, applied four times; A Kaiming uniform, B/b zero; alpha=rank=128; scale1; dropout0",
@@ -212,14 +212,14 @@
     "sha256": "e1cb665ca0b38464d3539763381463c38119d28c17276514a3150e4a762287cf"
   },
   "stepwise": {
-    "path": "/data/wujiaju/ouro26_stepwise_pair_control_20260915/shared_j_lora128_k18",
+    "path": "/data/paperexperiment/ouro26_stepwise_pair_control_20260915/shared_j_lora128_k18",
     "manifest": {
       "pid": 3777029,
       "gpu": "6",
       "world_size": 1,
       "parallelism": "task and replay microbatches sharded; affine gradients summed once per update at unchanged global loss weights",
       "loops": 4,
-      "checkpoint": "/data/wujiaju/ouro26_stepwise_pair_control_20260915/checkpoint.pt",
+      "checkpoint": "/data/paperexperiment/ouro26_stepwise_pair_control_20260915/checkpoint.pt",
       "checkpoint_step": 500,
       "checkpoint_sha256": "807db90d207ea86f428b7dfb9602badc4615181c1c0f39fbd555ac2b1917fd72",
       "controller": "one shared rank128 affine h + B A h + b, applied four times; A Kaiming uniform, B/b zero; alpha=rank=128; scale1; dropout0",

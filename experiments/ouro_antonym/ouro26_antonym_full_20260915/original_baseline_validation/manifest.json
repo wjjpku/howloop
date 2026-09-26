@@ -1,7 +1,7 @@
 {
   "pid": 3216185,
   "gpu": 6,
-  "model": "/data/wujiaju/models/Ouro-2.6B",
+  "model": "/data/paperexperiment/models/Ouro-2.6B",
   "loops": 4,
   "readout_loop": 4,
   "use_j": false,

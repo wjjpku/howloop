@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CODE_DIR=/data/wujiaju/LooPlus
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 QUEUE_LOG="${LOG_ROOT}/fixed_n10_sumreverse_wave_manager.log"
 RUNNER="${CODE_DIR}/scripts/run_fixed_n10_baseline_20260803.sh"
 REQUIRED_FREE_MIB=22528

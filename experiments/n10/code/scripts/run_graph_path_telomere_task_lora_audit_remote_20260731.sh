@@ -13,21 +13,21 @@ if [[ "${PLACEMENT}" != "pre_block2" && "${PLACEMENT}" != "loop_boundary" ]]; th
     exit 2
 fi
 
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/graph_path_telomere_task_lora_j_ceonly_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/graph_path_telomere_task_lora_j_ceonly_20260731
 OUT_DIR="${RUN_ROOT}/strict_unseen_${PLACEMENT}"
 ARTIFACT="${RUN_ROOT}/${PLACEMENT}/task_lora_j.pt"
 if [[ -f "${RUN_ROOT}/${PLACEMENT}/task_lora_j_stable.pt" ]]; then
     ARTIFACT="${RUN_ROOT}/${PLACEMENT}/task_lora_j_stable.pt"
 fi
-LOG_ROOT=/data/wujiaju/logs
+LOG_ROOT=/data/paperexperiment/logs
 RUN_LOG="${LOG_ROOT}/task_lora_strict_${PLACEMENT}.log"
 HEARTBEAT_LOG="${LOG_ROOT}/task_lora_strict_${PLACEMENT}.heartbeat.log"
 MANIFEST="${OUT_DIR}/run_manifest.json"
-CHECKPOINT=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-PHASE_SUMMARY=/data/wujiaju/graph_path_telomere_overloop_20260729/phase_grid/D8_L8_seed0/summary.json
-REFERENCE_AFFINE=/data/wujiaju/graph_path_telomere_unit_j_20260731/seed0_curriculum64/unit_j_maps.pt
+CHECKPOINT=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+PHASE_SUMMARY=/data/paperexperiment/graph_path_telomere_overloop_20260729/phase_grid/D8_L8_seed0/summary.json
+REFERENCE_AFFINE=/data/paperexperiment/graph_path_telomere_unit_j_20260731/seed0_curriculum64/unit_j_maps.pt
 
 PRELAUNCH_USED_MIB="$(nvidia-smi -i "${PHYSICAL_GPU}" --query-gpu=memory.used --format=csv,noheader,nounits | tr -d ' ')"
 PRELAUNCH_FREE_MIB="$(nvidia-smi -i "${PHYSICAL_GPU}" --query-gpu=memory.free --format=csv,noheader,nounits | tr -d ' ')"

@@ -4,7 +4,7 @@
   "rank": 0,
   "world": 3,
   "parallelism": "sample-sharded, FP32 gradients SUM; unchanged global loss weights",
-  "initial_model": "/data/wujiaju/models/Ouro-2.6B",
+  "initial_model": "/data/paperexperiment/models/Ouro-2.6B",
   "resume": true,
   "steps": 500,
   "supervision": "at each loop t=1..4, removed pair only",

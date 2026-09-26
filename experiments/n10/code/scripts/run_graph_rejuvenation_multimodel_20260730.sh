@@ -2,13 +2,13 @@
 set -euo pipefail
 
 physical_gpu="${1:?usage: $0 PHYSICAL_GPU}"
-project_root="${PROJECT_ROOT:-/data/wujiaju/LooPlus}"
-output_root="${OUTPUT_ROOT:-/data/wujiaju/graph_path_rejuvenation_multimodel_20260730/formal}"
-python_bin="${PYTHON_BIN:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+project_root="${PROJECT_ROOT:-/data/paperexperiment/LooPlus}"
+output_root="${OUTPUT_ROOT:-/data/paperexperiment/graph_path_rejuvenation_multimodel_20260730/formal}"
+python_bin="${PYTHON_BIN:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 experiment_seed="${EXPERIMENT_SEED:-2026073001}"
-lifespan_root="/data/wujiaju/graph_path_telomere_lifespan_extension_20260729/formal"
-compression_root="/data/wujiaju/graph_path_compression_circuit_20260725/training"
-functional_root="/data/wujiaju/graph_path_functional_multiseed_20260725/training"
+lifespan_root="/data/paperexperiment/graph_path_telomere_lifespan_extension_20260729/formal"
+compression_root="/data/paperexperiment/graph_path_compression_circuit_20260725/training"
+functional_root="/data/paperexperiment/graph_path_functional_multiseed_20260725/training"
 
 mkdir -p "${output_root}"
 cd "${project_root}"

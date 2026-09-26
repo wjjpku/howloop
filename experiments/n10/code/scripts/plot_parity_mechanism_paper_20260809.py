@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-ROOT = Path("/Users/jiaju/Documents")
+ROOT = Path("/data/paperexperiment/Documents")
 PAPER_ROOT = ROOT / "looped transformer的返老回童药"
 LOOPLUS_ROOT = ROOT / "github" / "LooPlus"
 

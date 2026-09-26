@@ -7,8 +7,8 @@ if [[ "$#" -ne 1 ]]; then
 fi
 
 TRAINING_PID="$1"
-PYTHON=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/tn_addition_20260804
+PYTHON=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/tn_addition_20260804
 CHECKPOINT="${RUN_ROOT}/backbones/addition_lsb_variable_m1to10_tn_logicaldigits_nope_seed0/checkpoint_080000.pt"
 CONTROLLER="${RUN_ROOT}/controllers/addition_lsb_variable_m1to10_tn80k_rank48_identity_logicaldigits_m2to10_anchor1_wsd14336_stable10000_seed521101/controller.pt"
 AUDIT_ROOT="${RUN_ROOT}/audits"
@@ -22,7 +22,7 @@ if [[ ! -f "${CONTROLLER}" ]]; then
     exit 31
 fi
 
-cd /data/wujiaju/LooPlus
+cd /data/paperexperiment/LooPlus
 
 ID_DIR="${AUDIT_ROOT}/final80k_j14336_id_l1to10_n1024"
 CUDA_VISIBLE_DEVICES=1 "${PYTHON}" -m scripts.evaluate_addition_controller_endpoint_accuracy \

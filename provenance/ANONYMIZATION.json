@@ -1,0 +1,14 @@
+{
+  "export": "ICLR2027 anonymous reproduction package",
+  "git_history_included": false,
+  "excluded": [
+    "historical manuscript snapshot",
+    "legacy documentation",
+    "obsolete PCA source and input",
+    "dense best-controller files containing machine paths",
+    "experiments and figures absent from this submission"
+  ],
+  "path_replacements": "personal machine paths and host aliases replaced by neutral placeholders",
+  "checkpoint_source_paths": "relative paths only; download requires caller-supplied host and remote root",
+  "verification": "SHA256 manifest and CPU reproduction on extracted ZIP"
+}

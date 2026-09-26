@@ -1,11 +1,11 @@
 import os,sys,time,json,hashlib,argparse
 from pathlib import Path
 import torch,numpy as np
-sys.path.insert(0,'/data/wujiaju/parity_input_once_20260811/evaluation_code')
+sys.path.insert(0,'/data/paperexperiment/parity_input_once_20260811/evaluation_code')
 from reasoning_loop.paper_length_telomere import load_backbone,load_controller,ControllerView,generate_paper_batch
 p=argparse.ArgumentParser();p.add_argument('--out',required=True);p.add_argument('--shard',type=int,default=0);p.add_argument('--shards',type=int,default=2);p.add_argument('--smoke',action='store_true');a=p.parse_args()
 O=Path(a.out);O.mkdir(parents=True,exist_ok=True);torch.set_num_threads(2)
-B=Path('/data/wujiaju/parity_input_once_20260811/backbones/parity_input_once_seed2/best.pt');J=Path('/data/wujiaju/parity_input_once_20260811/controllers/seed2/extension20to40/controller.pt')
+B=Path('/data/paperexperiment/parity_input_once_20260811/backbones/parity_input_once_seed2/best.pt');J=Path('/data/paperexperiment/parity_input_once_20260811/controllers/seed2/extension20to40/controller.pt')
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();m,s,pay=load_backbone(B,device=torch.device('cuda'));j,jpay=load_controller(J,device=torch.device('cuda'));j=ControllerView(j,mode='full').eval();m.eval()
 assert jpay['anchor_step']==1 and m.config.token_embedding_injection=='initial_only' and m.config.position_embedding=='none'
 lengths=([1000] if a.smoke else list(range(500,1001,5))[a.shard::a.shards]);nex=8 if a.smoke else 128;bs=8 if a.smoke else 32

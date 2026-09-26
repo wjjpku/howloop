@@ -1,7 +1,7 @@
 import sys,os,time,json,itertools,hashlib
 from pathlib import Path
 import torch,numpy as np
-ROOT=Path('/data/wujiaju/paper_strengthening_20260925');sys.path.insert(0,str(ROOT/'code'))
+ROOT=Path('/data/paperexperiment/paper_strengthening_20260925');sys.path.insert(0,str(ROOT/'code'))
 from graph_matrix import B,load_checkpoint,fixed_depth_batch,apply_vector_map,_load_controller,sha
 O=Path(__file__).resolve().parent
 @torch.no_grad()

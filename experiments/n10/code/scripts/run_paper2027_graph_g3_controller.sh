@@ -4,15 +4,15 @@
 # test; no post-horizon controller result can select a backbone.
 set -euo pipefail
 
-run_root="${PAPER2027_GRAPH_ROOT:-/data/wujiaju/paper2027_confirmatory/graph_g1_v1}"
+run_root="${PAPER2027_GRAPH_ROOT:-/data/paperexperiment/paper2027_confirmatory/graph_g1_v1}"
 seed="${PAPER2027_GRAPH_SEED:?set PAPER2027_GRAPH_SEED}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_root="$run_root/analysis_code"
 trainer="$code_root/reasoning_loop/paper2027_graph_g3_controller.py"
 checkpoint="$run_root/backbones/seed${seed}/graphpath_N8_D8_d256_B2_L8_seed${seed}/final.pt"
 g1_summary="$run_root/evaluation/seed${seed}/summary.json"
 controller_root="$run_root/g3_controllers/seed${seed}"
-log_dir="/data/wujiaju/logs/paper2027_confirmatory/graph_g1_v1"
+log_dir="/data/paperexperiment/logs/paper2027_confirmatory/graph_g1_v1"
 log_file="$log_dir/g3_controller_seed${seed}.log"
 manifest="$run_root/manifests/g3_controller_seed${seed}.json"
 

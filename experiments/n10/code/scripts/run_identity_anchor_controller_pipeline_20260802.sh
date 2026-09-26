@@ -13,7 +13,7 @@ PHYSICAL_GPU="$4"
 LABEL="$5"
 PIPELINE_AUDIT_LENGTHS="${PIPELINE_AUDIT_LENGTHS:-20 25 30 40 50 60 75 100}"
 
-RUNNER=/data/wujiaju/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
+RUNNER=/data/paperexperiment/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
 
 common_environment=(
     BASELINE_VARIANT="${BASELINE_VARIANT}"

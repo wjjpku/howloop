@@ -7,7 +7,7 @@ from torch import nn
 from transformers import AutoModelForCausalLM,AutoTokenizer
 from train_full import MODEL,task,encode_task
 
-BASE=Path('/data/wujiaju/ouro26_letter_full_20260915')
+BASE=Path('/data/paperexperiment/ouro26_letter_full_20260915')
 CK_SHA='ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44'
 
 class Affine(nn.Module):
@@ -18,7 +18,7 @@ class Affine(nn.Module):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--loops',type=int,choices=[4,8],required=True);p.add_argument('--steps',type=int,default=500);p.add_argument('--resume',action='store_true');p.add_argument('--no-general-early-stop',action='store_true');a=p.parse_args()
     gpu=os.environ['CUDA_VISIBLE_DEVICES'];assert gpu==('7' if a.loops==8 else '5')
-    root=Path('/data/wujiaju/ouro26_affine_pair_20260915')/f'L{a.loops}';root.mkdir(parents=True,exist_ok=a.resume)
+    root=Path('/data/paperexperiment/ouro26_affine_pair_20260915')/f'L{a.loops}';root.mkdir(parents=True,exist_ok=a.resume)
     def emit(row):
         print(json.dumps(row),flush=True)
         with (root/'metrics.jsonl').open('a') as f:f.write(json.dumps(row)+'\n')

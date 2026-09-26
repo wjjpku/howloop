@@ -14,8 +14,8 @@ while tmux has-session -t "$wait_session" 2>/dev/null; do
   sleep 20
 done
 
-launcher="/data/wujiaju/LooPlus/scripts/run_addition_internal_weight_adapter_20260804.sh"
-log_root="/data/wujiaju/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_20260804"
+launcher="/data/paperexperiment/LooPlus/scripts/run_addition_internal_weight_adapter_20260804.sh"
+log_root="/data/paperexperiment/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_20260804"
 
 while (( $# )); do
   baseline="$1"

@@ -1,7 +1,7 @@
 import os,sys,json,time,hashlib,random,argparse,itertools
 from pathlib import Path
 import torch,numpy as np
-B=Path('/data/wujiaju/n10_migration_20260923')
+B=Path('/data/paperexperiment/n10_migration_20260923')
 sys.path.insert(0,str(B/'code'))
 from reasoning_loop.graph_path_depth_circuit import fixed_depth_batch,load_checkpoint
 from reasoning_loop.graph_path_functional_circuit import FunctionalIntervention as I,run_instrumented_state
@@ -12,7 +12,7 @@ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def save(p,x):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,indent=2))
 def prepare():
  used=set()
- for p in [B/'datasets.json',Path('/data/wujiaju/n10_fig4_fresh_20260924/datasets.json'),Path('/data/wujiaju/n10_selected_mechanism_20260924/datasets.json')]:
+ for p in [B/'datasets.json',Path('/data/paperexperiment/n10_fig4_fresh_20260924/datasets.json'),Path('/data/paperexperiment/n10_selected_mechanism_20260924/datasets.json')]:
   d=json.loads(p.read_text())
   for gs in d.values():used.update(map(tuple,gs))
  # Exclude all previously generated semantic donor variants as in fresh confirmation.

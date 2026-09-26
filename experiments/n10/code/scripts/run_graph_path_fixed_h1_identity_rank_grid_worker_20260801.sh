@@ -7,8 +7,8 @@ if (( $# == 0 )); then
   exit 2
 fi
 
-RUNNER=/data/wujiaju/LooPlus/scripts/run_graph_path_fixed_h1_r48_s16_remote_20260801.sh
-LOG_ROOT=/data/wujiaju/logs/graph_path_fixed_h1_j_20260801
+RUNNER=/data/paperexperiment/LooPlus/scripts/run_graph_path_fixed_h1_r48_s16_remote_20260801.sh
+LOG_ROOT=/data/paperexperiment/logs/graph_path_fixed_h1_j_20260801
 mkdir -p "$LOG_ROOT"
 
 for specification in "$@"; do

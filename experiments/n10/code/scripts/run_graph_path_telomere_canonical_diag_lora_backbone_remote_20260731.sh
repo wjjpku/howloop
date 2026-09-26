@@ -31,10 +31,10 @@ if [[ "${INITIALIZATION_MODE}" != "affine_svd" && "${INITIALIZATION_MODE}" != "i
     exit 2
 fi
 
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-OUTPUT_ROOT=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731
-LOG_ROOT=/data/wujiaju/logs/graph_path_telomere_canonical_diag_lora_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+OUTPUT_ROOT=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731
+LOG_ROOT=/data/paperexperiment/logs/graph_path_telomere_canonical_diag_lora_20260731
 INITIALIZER_DIR="${OUTPUT_ROOT}/initializers/${RUN_LABEL}"
 OUT_DIR="${OUTPUT_ROOT}/controllers/${RUN_LABEL}"
 RUN_LOG="${LOG_ROOT}/${RUN_LABEL}.log"

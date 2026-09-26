@@ -8,11 +8,11 @@ fi
 
 gpu_index=$1
 shift
-repo_root=${RESOURCE_REUSE_REPO_ROOT:-/data/wujiaju/LooPlus}
-source_root=${TRIADIC_SOURCE_ROOT:-/data/wujiaju/triadic_shortage_reuse_20260716/runs}
-out_root=${RESOURCE_REUSE_OUT_ROOT:-/data/wujiaju/resource_conditioned_reuse_20260716/triadic_access}
-log_root=${RESOURCE_REUSE_LOG_ROOT:-/data/wujiaju/logs/resource_conditioned_reuse_20260716}
-python_bin=${RESOURCE_REUSE_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}
+repo_root=${RESOURCE_REUSE_REPO_ROOT:-/data/paperexperiment/LooPlus}
+source_root=${TRIADIC_SOURCE_ROOT:-/data/paperexperiment/triadic_shortage_reuse_20260716/runs}
+out_root=${RESOURCE_REUSE_OUT_ROOT:-/data/paperexperiment/resource_conditioned_reuse_20260716/triadic_access}
+log_root=${RESOURCE_REUSE_LOG_ROOT:-/data/paperexperiment/logs/resource_conditioned_reuse_20260716}
+python_bin=${RESOURCE_REUSE_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}
 
 mkdir -p "$out_root" "$log_root"
 cd "$repo_root"

@@ -8,10 +8,10 @@ fi
 
 PHYSICAL_GPU="$1"
 BACKBONE_SEED="$2"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/checkpoint_sweep_20260803
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/checkpoint_sweep_20260803
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 SEED_ROOT="${RUN_ROOT}/seed${BACKBONE_SEED}"
 MANIFEST_PATH="${SEED_ROOT}/pipeline_manifest.json"
 HEARTBEAT_PATH="${SEED_ROOT}/heartbeat.json"
@@ -73,7 +73,7 @@ payload.update({
     "status": sys.argv[2],
     "active_checkpoint_step": int(sys.argv[3]) if sys.argv[3] else None,
     "pid": int(sys.argv[4]) if sys.argv[4] else None,
-    "active_log": str(pathlib.Path("/data/wujiaju/logs/paper_length_telomere_20260731") / f"addition_checkpoint_sweep_seed{payload['backbone_seed']}.log"),
+    "active_log": str(pathlib.Path("/data/paperexperiment/logs/paper_length_telomere_20260731") / f"addition_checkpoint_sweep_seed{payload['backbone_seed']}.log"),
     "updated_unix": time.time(),
 })
 path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
@@ -97,7 +97,7 @@ PY
 
 for PADDED_STEP in "${CHECKPOINT_STEPS[@]}"; do
     STEP=$((10#${PADDED_STEP}))
-    CHECKPOINT="/data/wujiaju/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed${BACKBONE_SEED}/checkpoint_${PADDED_STEP}.pt"
+    CHECKPOINT="/data/paperexperiment/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed${BACKBONE_SEED}/checkpoint_${PADDED_STEP}.pt"
     OUT_DIR="${SEED_ROOT}/step_${PADDED_STEP}"
     if [[ -f "${OUT_DIR}/summary.json" ]] && grep -q '"status": "complete"' "${OUT_DIR}/summary.json"; then
         complete_step "${STEP}"

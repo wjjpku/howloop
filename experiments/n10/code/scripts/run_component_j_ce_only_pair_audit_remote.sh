@@ -8,11 +8,11 @@ fi
 
 TASK_SEED="$1"
 PHYSICAL_GPU="$2"
-CODE_DIR=/data/wujiaju/LooPlus_prenorm_component_20260731
-ROOT=/data/wujiaju/graph_path_component_j_ce_only_20260731
-LOG_ROOT=/data/wujiaju/logs/graph_path_component_j_ce_only_20260731
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-CHECKPOINT=/data/wujiaju/graph_path_prenorm_component_D8L8_20260731/training/full/D8_L8_full_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt
+CODE_DIR=/data/paperexperiment/LooPlus_prenorm_component_20260731
+ROOT=/data/paperexperiment/graph_path_component_j_ce_only_20260731
+LOG_ROOT=/data/paperexperiment/logs/graph_path_component_j_ce_only_20260731
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+CHECKPOINT=/data/paperexperiment/graph_path_prenorm_component_D8L8_20260731/training/full/D8_L8_full_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt
 PHASE_SUMMARY="${CODE_DIR}/phase_summary_twohop.json"
 TARGET_J="${ROOT}/task${TASK_SEED}/ce_only_h64/unit_j_maps.pt"
 TRAINING_STREAMS="${ROOT}/training_streams_task${TASK_SEED}.json"
@@ -21,10 +21,10 @@ LOG_FILE="${LOG_ROOT}/paired_audit_task${TASK_SEED}.log"
 
 case "${TASK_SEED}" in
     404003)
-        BASE_J=/data/wujiaju/graph_path_component_j_sweep_20260731/combinations/full_lr1e6_h64/unit_j_maps.pt
+        BASE_J=/data/paperexperiment/graph_path_component_j_sweep_20260731/combinations/full_lr1e6_h64/unit_j_maps.pt
         ;;
     411003|421003|431003)
-        BASE_J="/data/wujiaju/graph_path_component_j_sweep_20260731/multiseed/task${TASK_SEED}/full_lr1e6_h64/unit_j_maps.pt"
+        BASE_J="/data/paperexperiment/graph_path_component_j_sweep_20260731/multiseed/task${TASK_SEED}/full_lr1e6_h64/unit_j_maps.pt"
         ;;
     *)
         echo "unsupported matched task seed: ${TASK_SEED}" >&2

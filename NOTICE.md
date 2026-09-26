@@ -1,19 +1,9 @@
-# Sources and attribution
+# Source and attribution record
 
-This is a private reproducibility archive for the author's v66 manuscript. It
-contains research code snapshots from the author's LooPlus and experiment
-workspaces, saved experiment outputs, and new packaging/validation scripts.
-No new blanket license is assigned to pre-existing research assets.
+This package contains the anonymous submission source, experiment code, numerical inputs, and validation scripts. Model weights are external except for the small dense-controller bundles under `experiments/dense_routing/local/`.
 
-The Ouro-2.6B model configuration, tokenizer files and Python model implementation
-under `vendor/remote/models/Ouro-2.6B` retain their upstream attribution. The
-included upstream README identifies the model as Apache-2.0 and points to
-https://ouro-llm.github.io/. Model weights are external and hash-pinned.
+The Ouro-2.6B model configuration, tokenizer, and implementation under `vendor/remote/models/Ouro-2.6B` retain upstream attribution and their original notices. Conference template files under `paper/` retain their original notices.
 
-The LaTeX conference template and bundled style files under `paper/` retain their
-original notices. General-language replay token arrays preserve the historical
-experiment inputs and their source manifest; repository privacy is not a grant
-of public redistribution rights.
+Machine-specific path roots in text files were replaced with neutral placeholders for this export. The source code and archived result records may therefore have byte hashes different from the original run manifests. `provenance/SHA256SUMS.json` checks the exact contents of this export. Original model-weight hashes in `provenance/checkpoints.json` are unchanged.
 
-Original file locations and hashes are recorded under `provenance/`. Packaging
-changes do not retroactively change the experiment's provenance or its claims.
+The graph-mechanism and eight-node graph runtime directories share the N10 code snapshot. This export stores that shared snapshot once and keeps the experiment-specific files at their respective paths. `scripts/prepare_runtime.py` reconstructs each runtime directory from those files.

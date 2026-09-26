@@ -1,0 +1,398 @@
+{
+  "aggregation": "Answer distributions on the common 4,137 distinct-label examples; average two map fits within each backbone, then five backbone seeds.",
+  "rows": [
+    "native",
+    "stay",
+    "one",
+    "two"
+  ],
+  "categories": [
+    "Stay",
+    "One hop",
+    "Two hops",
+    "Other"
+  ],
+  "mean_pct": {
+    "final": [
+      [
+        100.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        100.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        3.5073724921440657,
+        66.48537587623882,
+        9.82354363065023,
+        20.183708000966885
+      ],
+      [
+        3.4348561759729273,
+        18.60768672951414,
+        50.45927000241721,
+        27.498187092095726
+      ]
+    ],
+    "stepwise": [
+      [
+        0.0,
+        100.0,
+        0.0,
+        0.0
+      ],
+      [
+        100.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        100.0,
+        0.0,
+        0.0
+      ],
+      [
+        32.339859801788734,
+        18.10007251631617,
+        13.183466279912981,
+        36.376601401982114
+      ]
+    ]
+  },
+  "seed_distributions_pct": {
+    "final": [
+      [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          5.6079284505680445,
+          77.6045443558134,
+          4.266376601401983,
+          12.521150592216578
+        ],
+        [
+          4.012569494802998,
+          7.529610829103214,
+          59.42712110224801,
+          29.030698573845783
+        ]
+      ],
+      [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          5.535412134396905,
+          73.39859801788737,
+          7.070340826686005,
+          13.995649021029728
+        ],
+        [
+          0.8097655305777134,
+          9.620497945371042,
+          66.15905245346869,
+          23.410684070582548
+        ]
+      ],
+      [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.6163886874546773,
+          55.922165820642974,
+          14.769156393521875,
+          28.69228909838047
+        ],
+        [
+          1.6557892192409958,
+          11.14334058496495,
+          57.33623398598018,
+          29.864636209813874
+        ]
+      ],
+      [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.1208605269518975,
+          69.31351220691322,
+          19.240995890742084,
+          11.324631375392798
+        ],
+        [
+          6.79236161469664,
+          41.68479574570945,
+          40.01692047377327,
+          11.505922165820643
+        ]
+      ],
+      [
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          5.656272661348804,
+          56.18805897993715,
+          3.7708484408992025,
+          34.384819917814845
+        ],
+        [
+          3.9037950205462892,
+          23.060188542422043,
+          29.357021996615906,
+          43.678994440415764
+        ]
+      ]
+    ],
+    "stepwise": [
+      [
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          17.440174039158812,
+          24.002900652646844,
+          20.558375634517766,
+          37.99854967367658
+        ]
+      ],
+      [
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          25.15107565868987,
+          18.99927483683829,
+          12.18274111675127,
+          43.66690838772057
+        ]
+      ],
+      [
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          60.381919265167994,
+          10.490693739424703,
+          5.740875030215132,
+          23.386511965192156
+        ]
+      ],
+      [
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          21.35605511240029,
+          23.21730722745951,
+          19.809040367416003,
+          35.617597292724206
+        ]
+      ],
+      [
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0,
+          0.0
+        ],
+        [
+          37.37007493352671,
+          13.790186125211505,
+          7.626299250664733,
+          41.21343969059705
+        ]
+      ]
+    ]
+  },
+  "raw_prediction_sha256": {
+    "data/matched/evidence/runs/final_seed0/maps/stay_fit1.npz": "6695a965a6c5050689e34164d974ed71e1dca596309db88eba558e4feed402e7",
+    "data/matched/evidence/runs/final_seed0/maps/stay_fit2.npz": "6695a965a6c5050689e34164d974ed71e1dca596309db88eba558e4feed402e7",
+    "data/matched/evidence/runs/final_seed0/maps/one_fit1.npz": "212a80991f5fbc4c13e61b81bfab4bd258334faf1bc2c5646d7c683f4a22590a",
+    "data/matched/evidence/runs/final_seed0/maps/one_fit2.npz": "9d34b8ce39874a22f20c2d72d76ca81d4a8f141500616c5204e8549787ea3cf4",
+    "data/matched/evidence/runs/final_seed0/maps/two_fit1.npz": "462477e165b655d404687ec11721b593b69480cc8e1afc248a10a467b992e969",
+    "data/matched/evidence/runs/final_seed0/maps/two_fit2.npz": "fdb8c54e0f2950d1ff9e66b1e899afc3f4dffe70326cb86ec6fbf9b5aa3c7149",
+    "data/matched/evidence/runs/final_seed1/maps/stay_fit1.npz": "6695a965a6c5050689e34164d974ed71e1dca596309db88eba558e4feed402e7",
+    "data/matched/evidence/runs/final_seed1/maps/stay_fit2.npz": "6695a965a6c5050689e34164d974ed71e1dca596309db88eba558e4feed402e7",
+    "data/matched/evidence/runs/final_seed1/maps/one_fit1.npz": "d2798234416948cd68b0d612b9f21072bcbeaf07b638e1ab67bd91e628c90a99",
+    "data/matched/evidence/runs/final_seed1/maps/one_fit2.npz": "e259e8fe3d3cb99707f3b0fecb2172460b740e2c76d965481baf2f6fe7322dab",
+    "data/matched/evidence/runs/final_seed1/maps/two_fit1.npz": "a0e5b210d6088d01ff8f868175b97fc36bae17b50b8fff828168336afe33a149",
+    "data/matched/evidence/runs/final_seed1/maps/two_fit2.npz": "84ea3808a0f7222a0e38d74aef85a2a5d2a1ccf11f917f802947ea3e30c80fdb",
+    "data/matched/evidence/runs/final_seed2/maps/stay_fit1.npz": "6695a965a6c5050689e34164d974ed71e1dca596309db88eba558e4feed402e7",
+    "data/matched/evidence/runs/final_seed2/maps/stay_fit2.npz": "6695a965a6c5050689e34164d974ed71e1dca596309db88eba558e4feed402e7",
+    "data/matched/evidence/runs/final_seed2/maps/one_fit1.npz": "7e1fd1a3c0641a52a477684fa2a2cf05cad88bcc29b8a9e0c5922cb8d075e330",
+    "data/matched/evidence/runs/final_seed2/maps/one_fit2.npz": "6c81ccae73ab48d0a0036aab0b1eeec34b42d2f4286a7f78232b203adddb0f49",
+    "data/matched/evidence/runs/final_seed2/maps/two_fit1.npz": "b117a12dd9a9506687b21f177ad7d0218514d3c9de2253174b7ccc3803c615b7",
+    "data/matched/evidence/runs/final_seed2/maps/two_fit2.npz": "156cc445edf9857f2d65246a4fab5d54820c771e344f9a4b16554edca6d7e621",
+    "data/matched/evidence/runs/final_seed3/maps/stay_fit1.npz": "6695a965a6c5050689e34164d974ed71e1dca596309db88eba558e4feed402e7",
+    "data/matched/evidence/runs/final_seed3/maps/stay_fit2.npz": "6695a965a6c5050689e34164d974ed71e1dca596309db88eba558e4feed402e7",
+    "data/matched/evidence/runs/final_seed3/maps/one_fit1.npz": "1db3bda271c3831f21f9221417c6b9590f0d3c3d2262cd3d198ff68bdd021d03",
+    "data/matched/evidence/runs/final_seed3/maps/one_fit2.npz": "05532c13385ddfb293d270f2872e8469dbc749123d8aac8134d4bb9793f55970",
+    "data/matched/evidence/runs/final_seed3/maps/two_fit1.npz": "da7301c3106362d31f8ffa89dd619654dd3a9b086eb5d8afa809b275a94ef845",
+    "data/matched/evidence/runs/final_seed3/maps/two_fit2.npz": "456649131251f760cf9d8f4e168b868003268ac98992a1f3894cfc44b599deab",
+    "data/matched/evidence/runs/final_seed4/maps/stay_fit1.npz": "6695a965a6c5050689e34164d974ed71e1dca596309db88eba558e4feed402e7",
+    "data/matched/evidence/runs/final_seed4/maps/stay_fit2.npz": "6695a965a6c5050689e34164d974ed71e1dca596309db88eba558e4feed402e7",
+    "data/matched/evidence/runs/final_seed4/maps/one_fit1.npz": "48a3311d2c01bcd9b1799dd42b36f0c8334bb4e7fc3a2a28938a294813320cab",
+    "data/matched/evidence/runs/final_seed4/maps/one_fit2.npz": "b44a549018e77294116be3caf6c6e2ce3ef0c37b257efc73f4de3e8889704308",
+    "data/matched/evidence/runs/final_seed4/maps/two_fit1.npz": "0abf2c870111990431be5d392eab9176e67a0247147a7bf2db07778697db53a3",
+    "data/matched/evidence/runs/final_seed4/maps/two_fit2.npz": "8f58039b66f3298603f7227dde4a3d3c3b82abe2244fd9624c754591c4c88bef",
+    "data/matched/evidence/runs/stepwise_seed0/maps/stay_fit1.npz": "c3ecc534c3170b14e8a9857e6f9dc6fafb64f0cbea24b7ee4a9ca6774e1b222c",
+    "data/matched/evidence/runs/stepwise_seed0/maps/stay_fit2.npz": "c3ecc534c3170b14e8a9857e6f9dc6fafb64f0cbea24b7ee4a9ca6774e1b222c",
+    "data/matched/evidence/runs/stepwise_seed0/maps/one_fit1.npz": "5df8d82857bf367b6ea0ea26340e801cb00889e108be5c44dbb60fd9c9a7cf66",
+    "data/matched/evidence/runs/stepwise_seed0/maps/one_fit2.npz": "5df8d82857bf367b6ea0ea26340e801cb00889e108be5c44dbb60fd9c9a7cf66",
+    "data/matched/evidence/runs/stepwise_seed0/maps/two_fit1.npz": "36feae057db091c0fb245760403b7d2dc7f40fb90f0a5990f5d0b9362502e119",
+    "data/matched/evidence/runs/stepwise_seed0/maps/two_fit2.npz": "9b4de9ce89eaafbacfcb02e3614dd5566a1bedbb40b19402bc44f50df3553f86",
+    "data/matched/evidence/runs/stepwise_seed1/maps/stay_fit1.npz": "c3ecc534c3170b14e8a9857e6f9dc6fafb64f0cbea24b7ee4a9ca6774e1b222c",
+    "data/matched/evidence/runs/stepwise_seed1/maps/stay_fit2.npz": "c3ecc534c3170b14e8a9857e6f9dc6fafb64f0cbea24b7ee4a9ca6774e1b222c",
+    "data/matched/evidence/runs/stepwise_seed1/maps/one_fit1.npz": "5df8d82857bf367b6ea0ea26340e801cb00889e108be5c44dbb60fd9c9a7cf66",
+    "data/matched/evidence/runs/stepwise_seed1/maps/one_fit2.npz": "5df8d82857bf367b6ea0ea26340e801cb00889e108be5c44dbb60fd9c9a7cf66",
+    "data/matched/evidence/runs/stepwise_seed1/maps/two_fit1.npz": "a8b38c5c72863ea4743f48bd9b8afd7a2ab66e9b40323066a4109d096a01be4c",
+    "data/matched/evidence/runs/stepwise_seed1/maps/two_fit2.npz": "1c45e3ac089ea6fe865b91a6231598e7217b54b90cd2099ccbd272bc92cd185f",
+    "data/matched/evidence/runs/stepwise_seed2/maps/stay_fit1.npz": "c3ecc534c3170b14e8a9857e6f9dc6fafb64f0cbea24b7ee4a9ca6774e1b222c",
+    "data/matched/evidence/runs/stepwise_seed2/maps/stay_fit2.npz": "c3ecc534c3170b14e8a9857e6f9dc6fafb64f0cbea24b7ee4a9ca6774e1b222c",
+    "data/matched/evidence/runs/stepwise_seed2/maps/one_fit1.npz": "5df8d82857bf367b6ea0ea26340e801cb00889e108be5c44dbb60fd9c9a7cf66",
+    "data/matched/evidence/runs/stepwise_seed2/maps/one_fit2.npz": "5df8d82857bf367b6ea0ea26340e801cb00889e108be5c44dbb60fd9c9a7cf66",
+    "data/matched/evidence/runs/stepwise_seed2/maps/two_fit1.npz": "054a106449cdf00e04fca0c5f3470d0c40857e11009a346b9d1dd13f06b2fcd0",
+    "data/matched/evidence/runs/stepwise_seed2/maps/two_fit2.npz": "560a7f0ae3039ecb357b981f8d3e55189377a95be88dbbc5858176cf6b2f8893",
+    "data/matched/evidence/runs/stepwise_seed3/maps/stay_fit1.npz": "c3ecc534c3170b14e8a9857e6f9dc6fafb64f0cbea24b7ee4a9ca6774e1b222c",
+    "data/matched/evidence/runs/stepwise_seed3/maps/stay_fit2.npz": "c3ecc534c3170b14e8a9857e6f9dc6fafb64f0cbea24b7ee4a9ca6774e1b222c",
+    "data/matched/evidence/runs/stepwise_seed3/maps/one_fit1.npz": "5df8d82857bf367b6ea0ea26340e801cb00889e108be5c44dbb60fd9c9a7cf66",
+    "data/matched/evidence/runs/stepwise_seed3/maps/one_fit2.npz": "5df8d82857bf367b6ea0ea26340e801cb00889e108be5c44dbb60fd9c9a7cf66",
+    "data/matched/evidence/runs/stepwise_seed3/maps/two_fit1.npz": "018d57e80c3cc36590b51aa7f17afdac34371d92391c4dfd19a990efd142ad7c",
+    "data/matched/evidence/runs/stepwise_seed3/maps/two_fit2.npz": "85de9a255daa2706da5bb02f17453cd46478036f56861511f78b461e08e844d1",
+    "data/matched/evidence/runs/stepwise_seed4/maps/stay_fit1.npz": "c3ecc534c3170b14e8a9857e6f9dc6fafb64f0cbea24b7ee4a9ca6774e1b222c",
+    "data/matched/evidence/runs/stepwise_seed4/maps/stay_fit2.npz": "c3ecc534c3170b14e8a9857e6f9dc6fafb64f0cbea24b7ee4a9ca6774e1b222c",
+    "data/matched/evidence/runs/stepwise_seed4/maps/one_fit1.npz": "5df8d82857bf367b6ea0ea26340e801cb00889e108be5c44dbb60fd9c9a7cf66",
+    "data/matched/evidence/runs/stepwise_seed4/maps/one_fit2.npz": "5df8d82857bf367b6ea0ea26340e801cb00889e108be5c44dbb60fd9c9a7cf66",
+    "data/matched/evidence/runs/stepwise_seed4/maps/two_fit1.npz": "ee69d9c671405cac8c5cf5798fe31d5b60099015517c30f18c32b8638a66eeba",
+    "data/matched/evidence/runs/stepwise_seed4/maps/two_fit2.npz": "3dc29c1f8ad9115ca246057dd45253a0820ee3e8b6b1d0b470bbc0c84de629e1"
+  },
+  "verified_fits": 60
+}

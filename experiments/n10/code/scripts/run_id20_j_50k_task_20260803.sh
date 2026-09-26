@@ -10,10 +10,10 @@ fi
 
 TASK="$1"
 PHYSICAL_GPU="$2"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 CONTROLLER_SEED=211001
 CONTINUATION_SEED=311001
 INITIAL_LABEL="${TASK}_adaptive_step_official_seed0_rank48_identitywarmup_logical1to20_fullrange_anchor1_postfinal_wsd_lr1em4_warmup2048_stable2816_5k_seed${CONTROLLER_SEED}"

@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
 P=Path(__file__).resolve().parent
-O=Path('/Users/jiaju/Documents/looped_transformer_paper_repro_20260920/paper_spotlight_v1/figures/v62/options');O.mkdir(exist_ok=True)
+O=Path('/data/paperexperiment/Documents/looped_transformer_paper_repro_20260920/paper_spotlight_v1/figures/v62/options');O.mkdir(exist_ok=True)
 G=json.loads((P/'graph_summary.json').read_text())['results']['A'];S=json.loads((P/'parallel_confirmation64/analysis.json').read_text())['conditions'];R=json.loads((P/'parallel_restore64/analysis.json').read_text())['conditions'];M=json.loads((P.parent/'localization/localize_confirmation64/analysis.json').read_text())['conditions']
 D=[[],[],[]]
 for metric,idx,typ,ok in [('cf',2,'pattern','pattern'),('cf',2,'context','output'),('donor',1,'pattern','pattern'),('donor',1,'context','output')]:

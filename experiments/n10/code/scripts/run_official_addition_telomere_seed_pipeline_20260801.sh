@@ -7,8 +7,8 @@ if [[ "$#" -ne 1 ]] || ! [[ "$1" =~ ^[0-9]+$ ]]; then
 fi
 
 BACKBONE_SEED="$1"
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-WAITER=/data/wujiaju/LooPlus/scripts/wait_for_empty_gpu_paper_length_telomere_20260731.sh
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+WAITER=/data/paperexperiment/LooPlus/scripts/wait_for_empty_gpu_paper_length_telomere_20260731.sh
 LABEL="addition_adaptive_step_official_seed${BACKBONE_SEED}"
 BACKBONE_MANIFEST="${RUN_ROOT}/manifests/${LABEL}/official_formal.json"
 DIAGNOSIS_MANIFEST="${RUN_ROOT}/manifests/${LABEL}/diagnose.json"

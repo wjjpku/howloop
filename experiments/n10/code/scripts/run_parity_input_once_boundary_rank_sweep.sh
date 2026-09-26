@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-run_root=/data/wujiaju/parity_input_once_20260811
+run_root=/data/paperexperiment/parity_input_once_20260811
 experiment_root="$run_root/boundary_rank_sweep_v1"
 seed="${PARITY_SEED:?set PARITY_SEED to 0, 1, or 2}"
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
 code_root="$run_root/evaluation_code"
 export PYTHONPATH="$code_root${PYTHONPATH:+:$PYTHONPATH}"
 trainer="$code_root/reasoning_loop/paper_length_telomere.py"
 selector="$code_root/reasoning_loop/select_parity_boundary_controller.py"
 checkpoint="$run_root/backbones/parity_input_once_seed${seed}/best.pt"
-log_dir=/data/wujiaju/logs/parity_input_once_20260811/boundary_rank_sweep_v1
+log_dir=/data/paperexperiment/logs/parity_input_once_20260811/boundary_rank_sweep_v1
 log_file="$log_dir/seed${seed}.log"
 pid_file="$experiment_root/seed${seed}.pid"
 manifest="$experiment_root/seed${seed}_manifest.json"

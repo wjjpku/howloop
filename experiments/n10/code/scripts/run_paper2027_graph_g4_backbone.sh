@@ -3,9 +3,9 @@
 # exist; both are rejected by the optimiser's only graph sampler.
 set -euo pipefail
 
-run_root="${PAPER2027_GRAPH_G4_ROOT:-/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v1}"
+run_root="${PAPER2027_GRAPH_G4_ROOT:-/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v1}"
 seed="${PAPER2027_GRAPH_SEED:?set PAPER2027_GRAPH_SEED}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_root="$run_root/code"
 trainer="$code_root/reasoning_loop/paper2027_graph_g4_backbone.py"
 selection_lock="$run_root/locks/selection_permutations_512.pt"

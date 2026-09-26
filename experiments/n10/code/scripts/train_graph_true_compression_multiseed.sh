@@ -15,8 +15,8 @@ if [[ "${loops}" != "3" && "${loops}" != "4" ]]; then
   exit 2
 fi
 
-out_root="/data/wujiaju/graph_path_true_compression_gate_20260725/training"
-log_root="/data/wujiaju/logs/graph_path_true_compression_gate_20260725/training"
+out_root="/data/paperexperiment/graph_path_true_compression_gate_20260725/training"
+log_root="/data/paperexperiment/logs/graph_path_true_compression_gate_20260725/training"
 
 for seed in "$@"; do
   out_dir="${out_root}/D8_L${loops}_seed${seed}"

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-OUTPUT_ROOT=/data/wujiaju/graph_path_component_j_sweep_20260731/screen
-MASTER_LOG=/data/wujiaju/logs/graph_path_component_j_sweep_20260731/master.log
-RUNNER=/data/wujiaju/LooPlus_component_j_sweep_20260731/scripts/run_component_j_sweep_remote.sh
+OUTPUT_ROOT=/data/paperexperiment/graph_path_component_j_sweep_20260731/screen
+MASTER_LOG=/data/paperexperiment/logs/graph_path_component_j_sweep_20260731/master.log
+RUNNER=/data/paperexperiment/LooPlus_component_j_sweep_20260731/scripts/run_component_j_sweep_remote.sh
 
 mkdir -p "${OUTPUT_ROOT}" "$(dirname "${MASTER_LOG}")"
 printf "running\n" > "${OUTPUT_ROOT}/STATUS.txt"

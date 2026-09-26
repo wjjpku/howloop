@@ -17,10 +17,10 @@ case "$arm" in
     ;;
 esac
 
-repo_root=${GLOBAL_DEPTH_REPO_ROOT:-/data/wujiaju/LooPlus}
-out_root=${GLOBAL_DEPTH_OUT_ROOT:-/data/wujiaju/global_depth_supervision_20260717}
-log_root=${GLOBAL_DEPTH_LOG_ROOT:-/data/wujiaju/logs/global_depth_supervision_20260717}
-python_bin=${GLOBAL_DEPTH_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}
+repo_root=${GLOBAL_DEPTH_REPO_ROOT:-/data/paperexperiment/LooPlus}
+out_root=${GLOBAL_DEPTH_OUT_ROOT:-/data/paperexperiment/global_depth_supervision_20260717}
+log_root=${GLOBAL_DEPTH_LOG_ROOT:-/data/paperexperiment/logs/global_depth_supervision_20260717}
+python_bin=${GLOBAL_DEPTH_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}
 steps=${GLOBAL_DEPTH_STEPS:-20000}
 batch_size=${GLOBAL_DEPTH_BATCH_SIZE:-512}
 eval_batch_size=${GLOBAL_DEPTH_EVAL_BATCH_SIZE:-2048}

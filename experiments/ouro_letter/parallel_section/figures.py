@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-P=Path(__file__).resolve().parent;ROOT=Path('/Users/jiaju/Documents/looped_transformer_paper_repro_20260920/paper_spotlight_v1');OUT=ROOT/'figures/v61'
+P=Path(__file__).resolve().parent;ROOT=Path('/data/paperexperiment/Documents/looped_transformer_paper_repro_20260920/paper_spotlight_v1');OUT=ROOT/'figures/v61'
 G=json.loads((P/'graph_summary.json').read_text())['results']['A'];S=json.loads((P/'parallel_confirmation64/analysis.json').read_text())['conditions'];R=json.loads((P/'parallel_restore64/analysis.json').read_text())['conditions'];M=json.loads((P.parent/'localization/localize_confirmation64/analysis.json').read_text())['conditions']
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.spines.top':False,'axes.spines.right':False,'pdf.fonttype':42});BLUE='#1689D4';YELLOW='#D8ED16';GRAY='#BBC4CE'
 def frame(n=2):

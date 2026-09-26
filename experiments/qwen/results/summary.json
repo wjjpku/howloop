@@ -1,0 +1,178 @@
+{
+  "normal": {
+    "all": {
+      "n": 1280,
+      "whole": 1210,
+      "parsed": 1210
+    },
+    "short": {
+      "n": 640,
+      "whole": 636,
+      "parsed": 636
+    },
+    "long": {
+      "n": 640,
+      "whole": 574,
+      "parsed": 574
+    },
+    "per_task_long": {
+      "weekday": {
+        "n": 128,
+        "whole": 128,
+        "parsed": 128
+      },
+      "successor": {
+        "n": 128,
+        "whole": 128,
+        "parsed": 128
+      },
+      "fibonacci": {
+        "n": 128,
+        "whole": 128,
+        "parsed": 128
+      },
+      "doubling": {
+        "n": 128,
+        "whole": 128,
+        "parsed": 128
+      },
+      "collatz": {
+        "n": 128,
+        "whole": 62,
+        "parsed": 62
+      }
+    }
+  },
+  "no_j_after4": {
+    "all": {
+      "n": 1280,
+      "whole": 823,
+      "parsed": 827
+    },
+    "short": {
+      "n": 640,
+      "whole": 640,
+      "parsed": 640
+    },
+    "long": {
+      "n": 640,
+      "whole": 183,
+      "parsed": 187
+    },
+    "per_task_long": {
+      "weekday": {
+        "n": 128,
+        "whole": 79,
+        "parsed": 83
+      },
+      "successor": {
+        "n": 128,
+        "whole": 96,
+        "parsed": 96
+      },
+      "fibonacci": {
+        "n": 128,
+        "whole": 0,
+        "parsed": 0
+      },
+      "doubling": {
+        "n": 128,
+        "whole": 5,
+        "parsed": 5
+      },
+      "collatz": {
+        "n": 128,
+        "whole": 3,
+        "parsed": 3
+      }
+    }
+  },
+  "no_f_after4": {
+    "all": {
+      "n": 1280,
+      "whole": 840,
+      "parsed": 864
+    },
+    "short": {
+      "n": 640,
+      "whole": 640,
+      "parsed": 640
+    },
+    "long": {
+      "n": 640,
+      "whole": 200,
+      "parsed": 224
+    },
+    "per_task_long": {
+      "weekday": {
+        "n": 128,
+        "whole": 100,
+        "parsed": 124
+      },
+      "successor": {
+        "n": 128,
+        "whole": 91,
+        "parsed": 91
+      },
+      "fibonacci": {
+        "n": 128,
+        "whole": 0,
+        "parsed": 0
+      },
+      "doubling": {
+        "n": 128,
+        "whole": 6,
+        "parsed": 6
+      },
+      "collatz": {
+        "n": 128,
+        "whole": 3,
+        "parsed": 3
+      }
+    }
+  },
+  "prefix4": {
+    "all": {
+      "n": 1280,
+      "whole": 804,
+      "parsed": 816
+    },
+    "short": {
+      "n": 640,
+      "whole": 640,
+      "parsed": 640
+    },
+    "long": {
+      "n": 640,
+      "whole": 164,
+      "parsed": 176
+    },
+    "per_task_long": {
+      "weekday": {
+        "n": 128,
+        "whole": 67,
+        "parsed": 79
+      },
+      "successor": {
+        "n": 128,
+        "whole": 90,
+        "parsed": 90
+      },
+      "fibonacci": {
+        "n": 128,
+        "whole": 0,
+        "parsed": 0
+      },
+      "doubling": {
+        "n": 128,
+        "whole": 4,
+        "parsed": 4
+      },
+      "collatz": {
+        "n": 128,
+        "whole": 3,
+        "parsed": 3
+      }
+    }
+  }
+}

@@ -3,13 +3,13 @@
 # replication unit; GPU placement is logged but never treated as a seed.
 set -euo pipefail
 
-run_root="${PAPER2027_GRAPH_ROOT:-/data/wujiaju/paper2027_confirmatory/graph_g1_v1}"
+run_root="${PAPER2027_GRAPH_ROOT:-/data/paperexperiment/paper2027_confirmatory/graph_g1_v1}"
 seed="${PAPER2027_GRAPH_SEED:?set PAPER2027_GRAPH_SEED}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_file="$run_root/code/graph_path_loop.py"
 out_base="$run_root/backbones/seed${seed}"
 out_dir="$out_base/graphpath_N8_D8_d256_B2_L8_seed${seed}"
-log_dir="/data/wujiaju/logs/paper2027_confirmatory/graph_g1_v1"
+log_dir="/data/paperexperiment/logs/paper2027_confirmatory/graph_g1_v1"
 log_file="$log_dir/backbone_seed${seed}.log"
 manifest="$run_root/manifests/backbone_seed${seed}.json"
 

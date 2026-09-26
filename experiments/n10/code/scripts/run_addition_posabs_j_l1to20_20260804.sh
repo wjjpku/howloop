@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/reverse_addition_20260804
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/reverse_addition_20260804
 BACKBONE_LABEL=addition_lsb_fixed_n10_t11_posabs_seed0
 CHECKPOINT="${RUN_ROOT}/backbones/${BACKBONE_LABEL}/selected.pt"
 LABEL="${BACKBONE_LABEL}_rank48_identity_fullanswer_l1to20_anchor1_wsd5376_seed522001"
@@ -10,7 +10,7 @@ AUDIT_DIR="${RUN_ROOT}/audits/${LABEL}_l1to30"
 HEATMAP_DIR="${RUN_ROOT}/audits/${LABEL}_length_loop_accuracy_n1to30_t1to35"
 MATRIX_DIR="${RUN_ROOT}/controllers/${LABEL}_matrix_analysis"
 MANIFEST="${RUN_ROOT}/controllers/${LABEL}_manifest.json"
-PYTHON=/data/wujiaju/.venvs/loopreasoner/bin/python
+PYTHON=/data/paperexperiment/.venvs/loopreasoner/bin/python
 
 if [[ ! -f "${CHECKPOINT}" ]]; then
     echo "missing checkpoint: ${CHECKPOINT}" >&2
@@ -23,7 +23,7 @@ for path in "${CONTROLLER_DIR}" "${AUDIT_DIR}" "${HEATMAP_DIR}" "${MATRIX_DIR}";
     fi
 done
 
-cd /data/wujiaju/LooPlus
+cd /data/paperexperiment/LooPlus
 "${PYTHON}" - "${MANIFEST}" "${CHECKPOINT}" "${CONTROLLER_DIR}" <<'PY'
 import json, sys
 from datetime import datetime

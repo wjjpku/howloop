@@ -1,0 +1,262 @@
+{
+  "status": "complete",
+  "pid": 3192521,
+  "gpu": "3",
+  "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+  "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898",
+  "code_sha": "f41bcbe0f3f237cd69f61972f19d1ad74764a572400741d404fa39ffb373eaf9",
+  "pairs_sha": "a4b54fbc4b53bb15c6c11f1b89533e1f3620531cb63da11a7565fdff6875aec4",
+  "smoke": false,
+  "omit_call": 0,
+  "patch_call": 0,
+  "started": 1790391276.5688953,
+  "conditions": {
+    "selected_rescue_pattern": {
+      "heads": {
+        "41": [
+          2,
+          10,
+          12,
+          15
+        ],
+        "43": [
+          1,
+          6,
+          11,
+          13,
+          15
+        ],
+        "47": [
+          0,
+          2,
+          3,
+          4,
+          7,
+          13,
+          15
+        ]
+      },
+      "calls": [
+        3
+      ]
+    },
+    "selected_damage_pattern": {
+      "heads": {
+        "41": [
+          2,
+          10,
+          12,
+          15
+        ],
+        "43": [
+          1,
+          6,
+          11,
+          13,
+          15
+        ],
+        "47": [
+          0,
+          2,
+          3,
+          4,
+          7,
+          13,
+          15
+        ]
+      },
+      "calls": [
+        3
+      ]
+    },
+    "selected_rescue_value": {
+      "heads": {
+        "41": [
+          2,
+          10,
+          12,
+          15
+        ],
+        "43": [
+          1,
+          6,
+          11,
+          13,
+          15
+        ],
+        "47": [
+          0,
+          2,
+          3,
+          4,
+          7,
+          13,
+          15
+        ]
+      },
+      "calls": [
+        3
+      ]
+    },
+    "selected_unrelated_pattern": {
+      "heads": {
+        "41": [
+          2,
+          10,
+          12,
+          15
+        ],
+        "43": [
+          1,
+          6,
+          11,
+          13,
+          15
+        ],
+        "47": [
+          0,
+          2,
+          3,
+          4,
+          7,
+          13,
+          15
+        ]
+      },
+      "calls": [
+        3
+      ]
+    },
+    "selected_wrong_call_pattern": {
+      "heads": {
+        "41": [
+          2,
+          10,
+          12,
+          15
+        ],
+        "43": [
+          1,
+          6,
+          11,
+          13,
+          15
+        ],
+        "47": [
+          0,
+          2,
+          3,
+          4,
+          7,
+          13,
+          15
+        ]
+      },
+      "calls": [
+        3
+      ]
+    },
+    "selected_self_pattern": {
+      "heads": {
+        "41": [
+          2,
+          10,
+          12,
+          15
+        ],
+        "43": [
+          1,
+          6,
+          11,
+          13,
+          15
+        ],
+        "47": [
+          0,
+          2,
+          3,
+          4,
+          7,
+          13,
+          15
+        ]
+      },
+      "calls": [
+        3
+      ]
+    },
+    "selected_self_output": {
+      "heads": {
+        "41": [
+          2,
+          10,
+          12,
+          15
+        ],
+        "43": [
+          1,
+          6,
+          11,
+          13,
+          15
+        ],
+        "47": [
+          0,
+          2,
+          3,
+          4,
+          7,
+          13,
+          15
+        ]
+      },
+      "calls": [
+        3
+      ]
+    },
+    "neighbor_rescue_pattern": {
+      "heads": {
+        "41": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "43": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        "47": [
+          1,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "calls": [
+        3
+      ]
+    }
+  },
+  "config_sha": "f1bd12bd113dc5899f0da497df27437629854413ccdb3ac937ef1701845a015e",
+  "generate": [
+    "J",
+    "native",
+    "neighbor_rescue_pattern",
+    "selected_damage_pattern",
+    "selected_rescue_pattern",
+    "selected_rescue_value",
+    "selected_unrelated_pattern",
+    "selected_wrong_call_pattern"
+  ],
+  "protocol_sha": "bd87d7d738120dfb5c185ff89e6776aa21add97cfbfcba5c80f265a0a0b0a126",
+  "elapsed": 720.6739213466644,
+  "peak_gib": 10.494274616241455,
+  "parameters_unchanged": true
+}

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
 SEED1_FINAL_AUDIT="${RUN_ROOT}/manifests/parity_adaptive_step_released64_seed1_rank48_logical1to40_seed211001/audit.json"
-PIPELINE=/data/wujiaju/LooPlus/scripts/run_released64_postbackbone_shared_primary_20260801.sh
+PIPELINE=/data/paperexperiment/LooPlus/scripts/run_released64_postbackbone_shared_primary_20260801.sh
 
 while ! [[ -f "${SEED1_FINAL_AUDIT}" ]] \
     || ! grep -q '"status": "complete"' "${SEED1_FINAL_AUDIT}"; do

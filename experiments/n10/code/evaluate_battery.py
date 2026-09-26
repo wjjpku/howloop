@@ -36,7 +36,7 @@ def select(trace: dict[str, torch.Tensor], index: torch.Tensor) -> dict[str, tor
 @torch.no_grad()
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--looplus", type=Path, default=Path("/data/wujiaju/LooPlus"))
+    ap.add_argument("--looplus", type=Path, default=Path("/data/paperexperiment/LooPlus"))
     ap.add_argument("--checkpoint", type=Path, required=True)
     ap.add_argument("--checkpoint-sha256", required=True)
     ap.add_argument("--checkpoint-step", type=int, required=True)

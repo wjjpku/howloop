@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-log_path="/data/wujiaju/logs/graph_path_postnorm_D8L8_20260730/safety_monitor.log"
+log_path="/data/paperexperiment/logs/graph_path_postnorm_D8L8_20260730/safety_monitor.log"
 reserve_mib=16384
 
 mkdir -p "$(dirname "${log_path}")"
@@ -38,7 +38,7 @@ while true; do
       [[ -n "${pid}" ]] || continue
       owner="$(ps -o user= -p "${pid}" | xargs)"
       command="$(ps -o cmd= -p "${pid}")"
-      if [[ "${owner}" == "wujiaju" ]] &&
+      if [[ "${owner}" == "researcher" ]] &&
         [[ "${command}" == *"reasoning_loop.graph_path_loop"* ]] &&
         [[ "${command}" == *"graph_path_postnorm_D8L8_20260730"* ]]; then
         echo "$(date --iso-8601=seconds) STOP_OWN_PROCESS gpu=${gpu} pid=${pid} free_mib=${free_mib}" \

@@ -2,8 +2,8 @@
 set -euo pipefail
 runner_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 runner="$runner_dir/run_paper2027_graph_g1_evaluation.sh"
-run_root="${PAPER2027_GRAPH_ROOT:-/data/wujiaju/paper2027_confirmatory/graph_g1_v1}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+run_root="${PAPER2027_GRAPH_ROOT:-/data/paperexperiment/paper2027_confirmatory/graph_g1_v1}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_root="$run_root/analysis_code"
 seeds="${PAPER2027_GRAPH_SEEDS:-100 101 102 103 104 105 106 107 108 109 110 111}"
 gpus="${PAPER2027_GRAPH_GPUS:-0 1 2}"

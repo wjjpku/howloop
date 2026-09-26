@@ -6,7 +6,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.optimization import Adafactor
 
-MODEL='/data/wujiaju/models/Ouro-2.6B'
+MODEL='/data/paperexperiment/models/Ouro-2.6B'
 NAMES='Alice Bob Carol David Emma Frank Grace Henry Iris Jack'.split()
 def task(seed,k,template):
     r=random.Random(seed); cycle=NAMES.copy();r.shuffle(cycle)
@@ -54,7 +54,7 @@ def prepare(root,tok):
         for line in p.open():
             obj=json.loads(line);text=obj.get('context','')
             if len(text)>1000:add(text,'documents',str(p))
-    for p in sorted(Path('/data/wujiaju/loop-attnres-tinystories-20260729/raw-parquet').glob('*.parquet')):
+    for p in sorted(Path('/data/paperexperiment/loop-attnres-tinystories-20260729/raw-parquet').glob('*.parquet')):
         for batch in pq.ParquetFile(p).iter_batches(batch_size=256,columns=['text']):
             for text in batch.column(0).to_pylist():add(text,'stories',str(p))
             if all(len(pools[s]['stories'])>= (600 if s=='train' else 40) for s in pools):break

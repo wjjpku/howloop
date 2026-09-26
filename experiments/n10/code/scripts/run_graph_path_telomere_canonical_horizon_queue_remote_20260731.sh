@@ -2,10 +2,10 @@
 set -uo pipefail
 
 gpu="${1:-7}"
-runner=/data/wujiaju/LooPlus/scripts/run_graph_path_telomere_canonical_diag_lora_backbone_remote_20260731.sh
-checkpoint=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-phase=/data/wujiaju/LooPlus/results/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
-log=/data/wujiaju/logs/graph_path_telomere_canonical_diag_lora_20260731/horizon_queue_gpu${gpu}.log
+runner=/data/paperexperiment/LooPlus/scripts/run_graph_path_telomere_canonical_diag_lora_backbone_remote_20260731.sh
+checkpoint=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+phase=/data/paperexperiment/LooPlus/results/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
+log=/data/paperexperiment/logs/graph_path_telomere_canonical_diag_lora_20260731/horizon_queue_gpu${gpu}.log
 
 while tmux has-session -t telomere_canonical_identity 2>/dev/null; do sleep 30; done
 

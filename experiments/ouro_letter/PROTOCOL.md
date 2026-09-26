@@ -18,7 +18,7 @@ Frozen step-200 Ouro-2.6B and L4 step-500 affine J; four calls, J before calls 2
 Candidate head corrupt–restore using alternative-start queries, then same-input J/raw pattern rescue and damage. Strong damage alone will not be called sufficient mediation. No existing H5 site is assumed optimal.
 
 ## Resource/provenance
-All outputs under /data/wujiaju/ouro_semantic_20260923; logs under /data/wujiaju/logs. Explicit GPU pinning, no modifications of other processes, no new training/checkpoints. Archive SHA256 identities, exact prompts, graph pairs, settings, code hash, raw per-condition outputs, peak memory and process state.
+All outputs under /data/paperexperiment/ouro_semantic_20260923; logs under /data/paperexperiment/logs. Explicit GPU pinning, no modifications of other processes, no new training/checkpoints. Archive SHA256 identities, exact prompts, graph pairs, settings, code hash, raw per-condition outputs, peak memory and process state.
 
 ## Exploration expansion (specified before expanded-head results)
 After the initial H5 implementation/pilot, scan all 16 heads in shared layers 33 and 34, separately at calls 2,3,4, using the same eight discovery pairs. This region contains the prior causal H5 and L33.H12/H14 candidates. No claim of exhaustive global head search. All sites receive both self controls and source pattern/output interventions. Candidate selection uses crossed specificity, not only accuracy damage. The 64 confirmation pairs are generated but will remain unevaluated until site and contrasts are frozen. If no crossed candidate appears, report the negative terminal-read test and examine other routing hypotheses explicitly rather than relabeling the counterfactual.

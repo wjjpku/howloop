@@ -9,12 +9,12 @@ fi
 
 shared_rank=$1
 stage_rank=16
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
-repo_dir=/data/wujiaju/LooPlus
-checkpoint=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-phase_summary=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
-result_root=/data/wujiaju/graph_path_fixed_h1_j_20260801/wsd_identity_2x/r${shared_rank}_s${stage_rank}
-log_root=/data/wujiaju/logs/graph_path_fixed_h1_j_20260801
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
+repo_dir=/data/paperexperiment/LooPlus
+checkpoint=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+phase_summary=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
+result_root=/data/paperexperiment/graph_path_fixed_h1_j_20260801/wsd_identity_2x/r${shared_rank}_s${stage_rank}
+log_root=/data/paperexperiment/logs/graph_path_fixed_h1_j_20260801
 mkdir -p "$result_root" "$log_root"
 cd "$repo_dir"
 

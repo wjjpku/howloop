@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
 CONTROLLER_SEED=211001
 CURRICULUM=extension
 OUT_DIR="${RUN_ROOT}/released64_formal_aggregate"
-SUMMARIZER=/data/wujiaju/LooPlus/scripts/summarize_released64_telomere_study.py
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
+SUMMARIZER=/data/paperexperiment/LooPlus/scripts/summarize_released64_telomere_study.py
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
 
 while true; do
     COMPLETE=0

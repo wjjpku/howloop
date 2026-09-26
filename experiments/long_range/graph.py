@@ -1,7 +1,7 @@
 import os,sys,time,json,hashlib,itertools,argparse
 from pathlib import Path
 import torch,numpy as np
-ROOT=Path('/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3');sys.path.insert(0,str(ROOT/'analysis_code'))
+ROOT=Path('/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3');sys.path.insert(0,str(ROOT/'analysis_code'))
 from reasoning_loop.graph_path_depth_circuit import fixed_depth_batch,load_checkpoint
 from reasoning_loop.graph_path_temporal_intervention import logits_from_raw_state
 from reasoning_loop.paper2027_graph_g3_controller import _load_controller,_initial

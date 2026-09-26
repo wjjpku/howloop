@@ -12,10 +12,10 @@ depth=$3
 d_model=$4
 seed=$5
 
-repo_root=${RESOURCE_REUSE_REPO_ROOT:-/data/wujiaju/LooPlus}
-out_root=${RESOURCE_REUSE_OUT_ROOT:-/data/wujiaju/resource_conditioned_reuse_20260716/graph_shortage_search}
-log_root=${RESOURCE_REUSE_LOG_ROOT:-/data/wujiaju/logs/resource_conditioned_reuse_20260716}
-python_bin=${RESOURCE_REUSE_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}
+repo_root=${RESOURCE_REUSE_REPO_ROOT:-/data/paperexperiment/LooPlus}
+out_root=${RESOURCE_REUSE_OUT_ROOT:-/data/paperexperiment/resource_conditioned_reuse_20260716/graph_shortage_search}
+log_root=${RESOURCE_REUSE_LOG_ROOT:-/data/paperexperiment/logs/resource_conditioned_reuse_20260716}
+python_bin=${RESOURCE_REUSE_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}
 steps=${GRAPH_SHORTAGE_STEPS:-12000}
 batch_size=${GRAPH_SHORTAGE_BATCH_SIZE:-256}
 eval_batch_size=${GRAPH_SHORTAGE_EVAL_BATCH_SIZE:-1024}

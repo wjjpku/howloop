@@ -6,8 +6,8 @@ from transformers import AutoModelForCausalLM,AutoTokenizer
 from task import bank,score,summarize
 from train_ouro_full import task as training_task
 
-MODEL='/data/wujiaju/models/Ouro-2.6B'
-ROOT=Path('/data/wujiaju/ouro26_antonym_full_20260915/original_baseline_validation')
+MODEL='/data/paperexperiment/models/Ouro-2.6B'
+ROOT=Path('/data/paperexperiment/ouro26_antonym_full_20260915/original_baseline_validation')
 
 def main():
     global ROOT

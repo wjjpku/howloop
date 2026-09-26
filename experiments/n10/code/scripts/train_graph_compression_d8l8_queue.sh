@@ -9,8 +9,8 @@ fi
 gpu="$1"
 shift
 
-out_root="/data/wujiaju/graph_path_compression_circuit_20260725/training"
-log_root="/data/wujiaju/logs/graph_path_compression_circuit_20260725/training"
+out_root="/data/paperexperiment/graph_path_compression_circuit_20260725/training"
+log_root="/data/paperexperiment/logs/graph_path_compression_circuit_20260725/training"
 
 for seed in "$@"; do
   run_out="${out_root}/D8_L8_seed${seed}"

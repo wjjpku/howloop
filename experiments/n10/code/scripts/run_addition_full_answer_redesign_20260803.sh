@@ -16,11 +16,11 @@ if [[ "${ARM}" == "armA" ]] && [[ "${BACKBONE_SEED}" -ne 0 ]]; then
     echo "armA is the historical fixed-n10 seed0 checkpoint; use armB for multiseed runs" >&2
     exit 2
 fi
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-SOURCE_ROOT=/data/wujiaju/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+SOURCE_ROOT=/data/paperexperiment/paper_length_telomere_20260731
 RUN_ROOT="${SOURCE_ROOT}/full_answer_redesign_20260803"
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731/full_answer_redesign_20260803
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731/full_answer_redesign_20260803
 RESERVE_MIB=16384
 DECLARED_PEAK_MIB=6144
 REQUIRED_FREE_MIB=$((RESERVE_MIB + DECLARED_PEAK_MIB))

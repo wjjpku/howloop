@@ -3,11 +3,11 @@ set -euo pipefail
 
 export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-2}"
 
-code_root=/data/wujiaju/LooPlus_postnorm_20260730
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
-checkpoint=/data/wujiaju/graph_path_postnorm_clear_circuit_20260730/trajectory_w1_hold10k_end15k/graphpath_N8_D8_d256_B2_L8_seed1/checkpoint_step_14000.pt
-output_root=/data/wujiaju/postnorm_tangent_rejuvenator_20260730/formal_rollout
-log_root=/data/wujiaju/logs/postnorm_tangent_rejuvenator_20260730
+code_root=/data/paperexperiment/LooPlus_postnorm_20260730
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
+checkpoint=/data/paperexperiment/graph_path_postnorm_clear_circuit_20260730/trajectory_w1_hold10k_end15k/graphpath_N8_D8_d256_B2_L8_seed1/checkpoint_step_14000.pt
+output_root=/data/paperexperiment/postnorm_tangent_rejuvenator_20260730/formal_rollout
+log_root=/data/paperexperiment/logs/postnorm_tangent_rejuvenator_20260730
 
 mkdir -p "${output_root}" "${log_root}"
 cd "${code_root}"

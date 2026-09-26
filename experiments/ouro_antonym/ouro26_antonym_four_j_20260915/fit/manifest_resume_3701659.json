@@ -4,7 +4,7 @@
   "world_size": 3,
   "parallelism": "task and replay microbatches sharded; affine gradients summed once per update at unchanged global loss weights",
   "loops": 4,
-  "checkpoint": "/data/wujiaju/ouro26_antonym_full_20260915/run/checkpoint.pt",
+  "checkpoint": "/data/paperexperiment/ouro26_antonym_full_20260915/run/checkpoint.pt",
   "checkpoint_step": 500,
   "checkpoint_sha256": "f29324252ee3da7eb73de700b1af1a0679d2a1d93c559033ca0906ca080bd3ae",
   "controller": "one shared dense affine h + delta_W h + b, applied four times, initialized exact identity",

@@ -9,10 +9,10 @@ fi
 PHYSICAL_GPU="$1"
 SHARD="$2"
 JOB_FILTER=("${@:3}")
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/architecture_round_20260803
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/architecture_round_20260803
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 RUNNER_INSTANCE="${ARCH_RUNNER_INSTANCE:-shard${SHARD}}"
 SHARD_ROOT="${RUN_ROOT}/${RUNNER_INSTANCE}"
 MANIFEST_PATH="${SHARD_ROOT}/pipeline_manifest.json"

@@ -5,10 +5,10 @@
 # perform the still-missing locked evaluation and aggregation.
 set -euo pipefail
 
-run_root="${PAPER2027_GRAPH_ROOT:-/data/wujiaju/paper2027_confirmatory/graph_g1_v1}"
+run_root="${PAPER2027_GRAPH_ROOT:-/data/paperexperiment/paper2027_confirmatory/graph_g1_v1}"
 code_root="${PAPER2027_GRAPH_CODE_ROOT:-$run_root/analysis_code}"
 sleep_seconds="${PAPER2027_GRAPH_WAIT_SECONDS:-60}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 
 while tmux has-session -t paper2027_g3_seed109 2>/dev/null || tmux has-session -t paper2027_g3_seed110 2>/dev/null; do
   sleep "$sleep_seconds"

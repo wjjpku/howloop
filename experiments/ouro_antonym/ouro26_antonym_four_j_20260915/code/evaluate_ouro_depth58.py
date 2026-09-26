@@ -7,8 +7,8 @@ from task import bank,score,summarize
 from train_ouro_full import task as training_task
 from ouro_eval_panel import EVAL_SEEDS
 
-MODEL='/data/wujiaju/models/Ouro-2.6B'
-ROOT=Path('/data/wujiaju/ouro26_antonym_four_j_20260915/baseline_depth_unique')
+MODEL='/data/paperexperiment/models/Ouro-2.6B'
+ROOT=Path('/data/paperexperiment/ouro26_antonym_four_j_20260915/baseline_depth_unique')
 
 def main():
     global ROOT
@@ -28,7 +28,7 @@ def main():
     lengths={str(i):sorted({len(ids) for r,ids in zip(rows,prompts) if r.get('sequence_id')==i}) for i in range(64)}
     assert all(len(v)==1 for v in lengths.values())
     model=AutoModelForCausalLM.from_pretrained(MODEL,trust_remote_code=True,local_files_only=True,torch_dtype=torch.float32,attn_implementation='sdpa').to('cuda').eval().requires_grad_(False)
-    ckpath=Path('/data/wujiaju/ouro26_antonym_full_20260915/run/checkpoint.pt')
+    ckpath=Path('/data/paperexperiment/ouro26_antonym_full_20260915/run/checkpoint.pt')
     ck=torch.load(ckpath,map_location='cpu',weights_only=False,mmap=True)
     assert ck['step']==500
     model.load_state_dict(ck['model'],strict=True);del ck

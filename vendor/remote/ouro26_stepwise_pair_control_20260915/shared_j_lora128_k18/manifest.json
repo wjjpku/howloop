@@ -4,7 +4,7 @@
   "world_size": 1,
   "parallelism": "task and replay microbatches sharded; affine gradients summed once per update at unchanged global loss weights",
   "loops": 4,
-  "checkpoint": "/data/wujiaju/ouro26_stepwise_pair_control_20260915/checkpoint.pt",
+  "checkpoint": "/data/paperexperiment/ouro26_stepwise_pair_control_20260915/checkpoint.pt",
   "checkpoint_step": 500,
   "checkpoint_sha256": "807db90d207ea86f428b7dfb9602badc4615181c1c0f39fbd555ac2b1917fd72",
   "controller": "one shared rank128 affine h + B A h + b, applied four times; A Kaiming uniform, B/b zero; alpha=rank=128; scale1; dropout0",

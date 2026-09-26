@@ -13,10 +13,10 @@ phase="$4"
 backbone_loss="$5"
 audit_seed="$6"
 oracle_seed="$7"
-code=/data/wujiaju/LooPlus
-root=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
-log_root=/data/wujiaju/logs/graph_path_telomere_canonical_diag_lora_20260731
+code=/data/paperexperiment/LooPlus
+root=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
+log_root=/data/paperexperiment/logs/graph_path_telomere_canonical_diag_lora_20260731
 queue_log="${log_root}/${run}_queue_gpu${gpu}.log"
 
 mkdir -p "${log_root}"

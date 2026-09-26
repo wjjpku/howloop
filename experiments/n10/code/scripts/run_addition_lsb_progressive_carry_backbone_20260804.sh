@@ -12,10 +12,10 @@ if ! [[ "${SEED}" =~ ^[0-9]+$ ]]; then
     exit 2
 fi
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/progressive_carry_addition_20260804
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/progressive_carry_addition_20260804
 OUT_DIR="${RUN_ROOT}/backbones/addition_lsb_variable_n1to10_progressive_carry_nope_seed${SEED}"
-PYTHON=/data/wujiaju/.venvs/loopreasoner/bin/python
-CODE_DIR=/data/wujiaju/LooPlus
+PYTHON=/data/paperexperiment/.venvs/loopreasoner/bin/python
+CODE_DIR=/data/paperexperiment/LooPlus
 
 if [[ -e "${OUT_DIR}" ]]; then
     echo "refusing to overwrite backbone directory: ${OUT_DIR}" >&2

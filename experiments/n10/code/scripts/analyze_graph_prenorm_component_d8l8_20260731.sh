@@ -7,11 +7,11 @@ if [[ $# -ne 1 ]]; then
 fi
 
 physical_gpu="$1"
-repo_dir="${REPO_DIR:-/data/wujiaju/LooPlus_prenorm_component_20260731}"
-experiment_root="/data/wujiaju/graph_path_prenorm_component_D8L8_20260731"
-natural_root="/data/wujiaju/graph_path_compression_circuit_20260725/training"
+repo_dir="${REPO_DIR:-/data/paperexperiment/LooPlus_prenorm_component_20260731}"
+experiment_root="/data/paperexperiment/graph_path_prenorm_component_D8L8_20260731"
+natural_root="/data/paperexperiment/graph_path_compression_circuit_20260725/training"
 component_root="${experiment_root}/training"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
 
 cd "${repo_dir}"
 export CUDA_VISIBLE_DEVICES="${physical_gpu}"

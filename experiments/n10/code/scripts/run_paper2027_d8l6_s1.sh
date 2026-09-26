@@ -3,13 +3,13 @@
 # exactly the same pure-CE controller protocol; only the post-F target differs.
 set -euo pipefail
 
-root="${PAPER2027_D8L6_ROOT:-/data/wujiaju/paper2027_confirmatory/d8l6_s1_v1}"
+root="${PAPER2027_D8L6_ROOT:-/data/paperexperiment/paper2027_confirmatory/d8l6_s1_v1}"
 code="$root/analysis_code"
-py="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
-checkpoint="${PAPER2027_D8L6_CHECKPOINT:-/data/wujiaju/graph_path_functional_multiseed_20260725/training/D8_L6_seed6/graphpath_N8_D8_d256_B2_L6_seed6/best.pt}"
+py="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
+checkpoint="${PAPER2027_D8L6_CHECKPOINT:-/data/paperexperiment/graph_path_functional_multiseed_20260725/training/D8_L6_seed6/graphpath_N8_D8_d256_B2_L6_seed6/best.pt}"
 trainer="$code/reasoning_loop/paper2027_d8l6_s1.py"
 locked="$root/locked/graph_permutations_512_all_starts.pt"
-log_dir="/data/wujiaju/logs/paper2027_confirmatory/d8l6_s1_v1"
+log_dir="/data/paperexperiment/logs/paper2027_confirmatory/d8l6_s1_v1"
 manifest="$root/manifest.json"
 
 [[ -s "$checkpoint" && -s "$trainer" ]] || { echo "missing D8L6 checkpoint or frozen S1 code" >&2; exit 2; }

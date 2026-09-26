@@ -2,14 +2,14 @@
 # Apply the same locked graph-permutation test to one final G1 checkpoint.
 set -euo pipefail
 
-run_root="${PAPER2027_GRAPH_ROOT:-/data/wujiaju/paper2027_confirmatory/graph_g1_v1}"
+run_root="${PAPER2027_GRAPH_ROOT:-/data/paperexperiment/paper2027_confirmatory/graph_g1_v1}"
 seed="${PAPER2027_GRAPH_SEED:?set PAPER2027_GRAPH_SEED}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_root="$run_root/analysis_code"
 checkpoint="$run_root/backbones/seed${seed}/graphpath_N8_D8_d256_B2_L8_seed${seed}/final.pt"
 locked_test="$run_root/locked/graph_permutations_512_all_starts.pt"
 out_dir="$run_root/evaluation/seed${seed}"
-log="/data/wujiaju/logs/paper2027_confirmatory/graph_g1_v1/evaluation_seed${seed}.log"
+log="/data/paperexperiment/logs/paper2027_confirmatory/graph_g1_v1/evaluation_seed${seed}.log"
 manifest="$run_root/manifests/evaluation_seed${seed}.json"
 
 if [[ -s "$out_dir/summary.json" && -s "$manifest" ]] && grep -q '"status": "complete"' "$manifest"; then

@@ -8,8 +8,8 @@ fi
 
 CHECKPOINT="$1"
 OUT_DIR="$2"
-PYTHON=/data/wujiaju/.venvs/loopreasoner/bin/python
-CODE_DIR=/data/wujiaju/LooPlus
+PYTHON=/data/paperexperiment/.venvs/loopreasoner/bin/python
+CODE_DIR=/data/paperexperiment/LooPlus
 
 if [[ ! -f "${CHECKPOINT}" ]]; then
     echo "missing backbone checkpoint: ${CHECKPOINT}" >&2

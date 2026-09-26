@@ -32,10 +32,10 @@ case "$arm" in
     ;;
 esac
 
-repo_root=${RESOURCE_REUSE_REPO_ROOT:-/data/wujiaju/LooPlus}
-out_root=${STAGE_COMPOSITION_OUT_ROOT:-/data/wujiaju/triadic_stage_composition_20260717}
-log_root=${STAGE_COMPOSITION_LOG_ROOT:-/data/wujiaju/logs/triadic_stage_composition_20260717}
-python_bin=${RESOURCE_REUSE_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}
+repo_root=${RESOURCE_REUSE_REPO_ROOT:-/data/paperexperiment/LooPlus}
+out_root=${STAGE_COMPOSITION_OUT_ROOT:-/data/paperexperiment/triadic_stage_composition_20260717}
+log_root=${STAGE_COMPOSITION_LOG_ROOT:-/data/paperexperiment/logs/triadic_stage_composition_20260717}
+python_bin=${RESOURCE_REUSE_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}
 steps=${STAGE_COMPOSITION_STEPS:-15000}
 batch_size=${STAGE_COMPOSITION_BATCH_SIZE:-256}
 eval_batch_size=${STAGE_COMPOSITION_EVAL_BATCH_SIZE:-1024}

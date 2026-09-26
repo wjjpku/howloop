@@ -2,11 +2,11 @@
 set -euo pipefail
 
 gpu="${1:-6}"
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
-code=/data/wujiaju/LooPlus
-checkpoint=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-phase=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
-root=/data/wujiaju/graph_path_age_specific_j_bank_20260801
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
+code=/data/paperexperiment/LooPlus
+checkpoint=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+phase=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
+root=/data/paperexperiment/graph_path_age_specific_j_bank_20260801
 warmup=${root}/seed0_full_affine_final_ce_rank96_ce_init_warmup
 validation=${warmup}/validation_ce_checkpoints
 

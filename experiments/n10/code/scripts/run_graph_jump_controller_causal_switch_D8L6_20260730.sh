@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-repo="${PROJECT_ROOT:-/data/wujiaju/LooPlus}"
-python_bin="${PYTHON_BIN:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
-checkpoint="${CHECKPOINT:-/data/wujiaju/graph_path_functional_multiseed_20260725/training/D8_L6_seed6/graphpath_N8_D8_d256_B2_L6_seed6/best.pt}"
-controllers="${CONTROLLERS:-/data/wujiaju/graph_path_jump_controller_D8L6_20260730/no_prewrite_formal/task_tuned_controllers.pt}"
-output_dir="${OUTPUT_DIR:-/data/wujiaju/graph_path_jump_controller_D8L6_20260730/causal_switch_formal}"
+repo="${PROJECT_ROOT:-/data/paperexperiment/LooPlus}"
+python_bin="${PYTHON_BIN:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
+checkpoint="${CHECKPOINT:-/data/paperexperiment/graph_path_functional_multiseed_20260725/training/D8_L6_seed6/graphpath_N8_D8_d256_B2_L6_seed6/best.pt}"
+controllers="${CONTROLLERS:-/data/paperexperiment/graph_path_jump_controller_D8L6_20260730/no_prewrite_formal/task_tuned_controllers.pt}"
+output_dir="${OUTPUT_DIR:-/data/paperexperiment/graph_path_jump_controller_D8L6_20260730/causal_switch_formal}"
 
 cd "$repo"
 

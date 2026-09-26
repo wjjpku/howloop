@@ -7,10 +7,10 @@ if [[ "$#" -ne 1 ]] || ! [[ "$1" =~ ^[0-7]$ ]]; then
 fi
 
 PHYSICAL_GPU="$1"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 OUT_ROOT="${RUN_ROOT}/dense_horizon_20260803"
 MANIFEST_PATH="${OUT_ROOT}/addition_sumreverse_dense64_l19to100_manifest.json"
 HEARTBEAT_PATH="${LOG_ROOT}/addition_sumreverse_dense64_l19to100.heartbeat.log"

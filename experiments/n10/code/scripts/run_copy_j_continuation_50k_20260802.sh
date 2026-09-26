@@ -7,10 +7,10 @@ if [[ "$#" -ne 1 ]] || ! [[ "$1" =~ ^[0-7]$ ]]; then
 fi
 
 PHYSICAL_GPU="$1"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 BACKBONE="${RUN_ROOT}/backbones/copy_adaptive_step_official_seed0/final.pt"
 SOURCE_LABEL=copy_adaptive_step_official_seed0_rank48_identitywarmup_logical20to40_anchor1_postfinal_wsd_lr3em4_warmup2048_stable2816_5k_seed211001
 SOURCE_CONTROLLER="${RUN_ROOT}/controllers/${SOURCE_LABEL}/controller.pt"

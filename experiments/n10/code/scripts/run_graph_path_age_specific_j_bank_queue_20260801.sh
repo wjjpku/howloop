@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -uo pipefail
 
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
-code=/data/wujiaju/LooPlus
-checkpoint=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-phase=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
-out=/data/wujiaju/graph_path_age_specific_j_bank_20260801/seed0_rank48_final_ce_canonical_init
-log_dir=/data/wujiaju/logs/graph_path_age_specific_j_bank_20260801
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
+code=/data/paperexperiment/LooPlus
+checkpoint=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+phase=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
+out=/data/paperexperiment/graph_path_age_specific_j_bank_20260801/seed0_rank48_final_ce_canonical_init
+log_dir=/data/paperexperiment/logs/graph_path_age_specific_j_bank_20260801
 queue_log=${log_dir}/queue.log
 train_log=${log_dir}/train.log
 required_free_mib=24576
@@ -56,7 +56,7 @@ cd "${code}"
     --rank 48 \
     --seed 820001 \
     --initialization canonical_shared \
-    --canonical-artifact /data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/controllers/final_seed0_ce_h64/task_lora_j.pt \
+    --canonical-artifact /data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/controllers/final_seed0_ce_h64/task_lora_j.pt \
     --canonical-label task_diagonal_lora_r48_seed211001 \
     --eval-trajectories 56 \
     --eval-batch-size 64 \

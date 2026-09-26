@@ -7,8 +7,8 @@ from train_ouro_full import MODEL,task
 from ouro_eval_panel import EVAL_SEEDS
 from score_ouro_content import parse
 
-ROOT=Path('/data/wujiaju/ouro26_antonym_four_j_20260915/baseline_readout34')
-CK=Path('/data/wujiaju/ouro26_antonym_full_20260915/run/checkpoint.pt')
+ROOT=Path('/data/paperexperiment/ouro26_antonym_four_j_20260915/baseline_readout34')
+CK=Path('/data/paperexperiment/ouro26_antonym_full_20260915/run/checkpoint.pt')
 
 def main():
     assert os.environ['CUDA_VISIBLE_DEVICES']=='6'

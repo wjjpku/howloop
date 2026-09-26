@@ -85,11 +85,11 @@
       "two_fraction": 0.0
     }
   ],
-  "checkpoint": "/data/wujiaju/n10_migration_20260923/backbones/local_control_L6_seed5/best.pt",
+  "checkpoint": "/data/paperexperiment/n10_migration_20260923/backbones/local_control_L6_seed5/best.pt",
   "claim_boundary": "single-backbone appendix case study; post-executor target is the only one-vs-two training difference",
-  "controller": "/data/wujiaju/n10_migration_20260923/local/D/hop2_seed1/best_controller.pt",
+  "controller": "/data/paperexperiment/n10_migration_20260923/local/D/hop2_seed1/best_controller.pt",
   "controller_target_hop": 2,
-  "locked_test": "/data/wujiaju/n10_migration_20260923/locks/confirmation.pt",
+  "locked_test": "/data/paperexperiment/n10_migration_20260923/locks/confirmation.pt",
   "locked_test_sha256": "635ccb11c182e41ed046415f3a9f1c4d3043e4a7ca6d14444efa9b6feb20eac4",
   "protocol_id": "paper2027.n10.d8l6.pure_ce.disjoint.v1",
   "status": "complete"

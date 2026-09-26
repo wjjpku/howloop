@@ -1,8 +1,8 @@
 {
-  "analysis_source": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/analysis_code/reasoning_loop/paper2027_graph_g3_controller.py",
+  "analysis_source": "/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3/analysis_code/reasoning_loop/paper2027_graph_g3_controller.py",
   "analysis_source_sha256": "9941d9bed9b2af30095103775cc0cfd8ca46588762f140ca08272b65c17a8d3b",
   "backbone_seed": 105,
-  "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed105/graphpath_N8_D8_d256_B2_L8_seed105/final.pt",
+  "checkpoint": "/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed105/graphpath_N8_D8_d256_B2_L8_seed105/final.pt",
   "checkpoint_sha256": "9e6cd91a5b5271fc2820d2c88ee3507117afe83571c2584e4dc3cb20fe1fde00",
   "controller": {
     "form": "h(D+AB)+b",
@@ -11,12 +11,12 @@
     "rank": 48,
     "replicas": 2
   },
-  "final_test_lock": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/locks/final_test_permutations_512.pt",
+  "final_test_lock": "/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3/locks/final_test_permutations_512.pt",
   "final_test_lock_sha256": "3154ac43e1c58b3fea132ba2864074b1f7c2ae94cabba781a843a97e2523cc9e",
-  "log": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/logs/controller_seed105.log",
+  "log": "/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3/logs/controller_seed105.log",
   "physical_cuda_visible_devices": "3",
   "protocol_id": "paper2027.graph.g4.disjoint_controller.v1",
-  "selection_lock": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/locks/selection_permutations_512.pt",
+  "selection_lock": "/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3/locks/selection_permutations_512.pt",
   "selection_lock_sha256": "72a1bce76b43a8a0256fc36418532b80e50a362d7442ae0eb7d144a803f987e8",
   "status": "complete",
   "updated_at": "2026-08-12T00:42:24.038866+00:00"

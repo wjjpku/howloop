@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-BASELINE_MANAGER=/data/wujiaju/LooPlus/scripts/run_official_task_baselines_20260801.sh
-PIPELINE=/data/wujiaju/LooPlus/scripts/run_official_addition_telomere_seed_pipeline_20260801.sh
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+BASELINE_MANAGER=/data/paperexperiment/LooPlus/scripts/run_official_task_baselines_20260801.sh
+PIPELINE=/data/paperexperiment/LooPlus/scripts/run_official_addition_telomere_seed_pipeline_20260801.sh
 
 # Baseline training is independent of parity's J eligibility and aggregate.
 # This serializes with the all-task baseline master through a task-level lock.

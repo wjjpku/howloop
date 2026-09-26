@@ -8,9 +8,9 @@ fi
 
 queue_id="$1"
 physical_gpu="$2"
-repo_dir="/data/wujiaju/LooPlus"
-output_root="/data/wujiaju/graph_path_functional_multiseed_20260725/training"
-log_root="/data/wujiaju/logs/graph_path_functional_multiseed_20260725/training"
+repo_dir="/data/paperexperiment/LooPlus"
+output_root="/data/paperexperiment/graph_path_functional_multiseed_20260725/training"
+log_root="/data/paperexperiment/logs/graph_path_functional_multiseed_20260725/training"
 
 case "${queue_id}" in
   q0)

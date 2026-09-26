@@ -10,9 +10,9 @@ ACTION="$1"
 TASK="$2"
 SUPERVISION="$3"
 SEED="${4:-0}"
-RUNNER=/data/wujiaju/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
-QUEUE_ROOT=/data/wujiaju/paper_length_telomere_20260731/queue
-LOCK_ROOT=/data/wujiaju/paper_length_telomere_20260731/locks
+RUNNER=/data/paperexperiment/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
+QUEUE_ROOT=/data/paperexperiment/paper_length_telomere_20260731/queue
+LOCK_ROOT=/data/paperexperiment/paper_length_telomere_20260731/locks
 mkdir -p "${QUEUE_ROOT}" "${LOCK_ROOT}"
 
 while true; do

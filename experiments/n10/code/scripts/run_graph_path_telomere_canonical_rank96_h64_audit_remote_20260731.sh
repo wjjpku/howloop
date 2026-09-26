@@ -2,11 +2,11 @@
 set -euo pipefail
 
 gpu="${1:-3}"
-code=/data/wujiaju/LooPlus
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
-root=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731
+code=/data/paperexperiment/LooPlus
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
+root=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731
 run=final_seed0_rank96_ce_h64
-log=/data/wujiaju/logs/graph_path_telomere_canonical_diag_lora_20260731/${run}_audit_queue_gpu${gpu}.log
+log=/data/paperexperiment/logs/graph_path_telomere_canonical_diag_lora_20260731/${run}_audit_queue_gpu${gpu}.log
 
 while tmux has-session -t '=telomere_canonical_rank96_h96_audit' 2>/dev/null; do
     sleep 30
@@ -27,7 +27,7 @@ export PYTHONUNBUFFERED=1
 cd "${code}"
 
 "${python_bin}" -m reasoning_loop.graph_path_telomere_task_mlp_audit \
-    --checkpoint /data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt \
+    --checkpoint /data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt \
     --phase-summary "${code}/results/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json" \
     --affine-artifact "${root}/initializers/${run}/unit_j_maps.pt" \
     --affine-label explicit_diag_rrr_r96 \

@@ -7,6 +7,6 @@
   "architecture": {"token_embedding_injection": "initial_only", "attention": "causal NoPE", "shared_physical_layers": 1, "d_model": 256, "attention_heads": 64, "mlp_width": 1024},
   "training": {"seed": 1, "logical_lengths": [1, 20], "loss": "answer-region CE only at T(n)=n", "updates": 100001, "batch_size": 64, "precision": "fp32"},
   "physical_gpu": 1,
-  "output_dir": "/data/wujiaju/parity_input_once_20260811/backbones/parity_input_once_seed1",
-  "log": "/data/wujiaju/logs/parity_input_once_20260811/backbone_seed1.log"
+  "output_dir": "/data/paperexperiment/parity_input_once_20260811/backbones/parity_input_once_seed1",
+  "log": "/data/paperexperiment/logs/parity_input_once_20260811/backbone_seed1.log"
 }

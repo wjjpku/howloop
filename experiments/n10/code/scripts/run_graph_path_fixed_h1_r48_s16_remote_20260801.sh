@@ -3,20 +3,20 @@ set -euo pipefail
 
 : "${CUDA_VISIBLE_DEVICES:?set CUDA_VISIBLE_DEVICES to one physical GPU}"
 
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-REPO_DIR=/data/wujiaju/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+REPO_DIR=/data/paperexperiment/LooPlus
 TRAIN_MODULE=reasoning_loop.train_graph_path_age_specific_j_bank
-CHECKPOINT=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-PHASE_SUMMARY=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
-FULL_BANK=/data/wujiaju/graph_path_age_specific_j_bank_20260801/seed0_full_affine_balanced5_continuation/age_specific_j_bank_after_B74_26_lr1e6.pt
+CHECKPOINT=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+PHASE_SUMMARY=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
+FULL_BANK=/data/paperexperiment/graph_path_age_specific_j_bank_20260801/seed0_full_affine_balanced5_continuation/age_specific_j_bank_after_B74_26_lr1e6.pt
 RUN_VARIANT=${RUN_VARIANT:-paired_fullbank_init}
 SINGLE_INITIALIZATION=${SINGLE_INITIALIZATION:-age_specific_bank}
 SINGLE_INIT_ARTIFACT=${SINGLE_INIT_ARTIFACT-$FULL_BANK}
 SHARED_RANK=${SHARED_RANK:-48}
 STAGE_RANK=${STAGE_RANK:-16}
 RANK_LABEL=r${SHARED_RANK}_s${STAGE_RANK}
-RESULT_ROOT=/data/wujiaju/graph_path_fixed_h1_j_20260801/${RUN_VARIANT}/${RANK_LABEL}
-LOG_ROOT=/data/wujiaju/logs/graph_path_fixed_h1_j_20260801
+RESULT_ROOT=/data/paperexperiment/graph_path_fixed_h1_j_20260801/${RUN_VARIANT}/${RANK_LABEL}
+LOG_ROOT=/data/paperexperiment/logs/graph_path_fixed_h1_j_20260801
 
 mkdir -p "$RESULT_ROOT" "$LOG_ROOT"
 cd "$REPO_DIR"

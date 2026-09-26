@@ -9,8 +9,8 @@ fi
 gpu="$1"
 shift
 first_seed="$1"
-root="/data/wujiaju/graph_path_induction_contrast_20260726"
-log_root="/data/wujiaju/logs/graph_path_induction_contrast_20260726/paired_analysis"
+root="/data/paperexperiment/graph_path_induction_contrast_20260726"
+log_root="/data/paperexperiment/logs/graph_path_induction_contrast_20260726/paired_analysis"
 manifest="${root}/paired_analysis_manifest_seed${first_seed}.txt"
 mkdir -p "${log_root}"
 printf 'status=running\npid=%s\nphysical_gpu=%s\nstarted=%s\n' \
@@ -30,11 +30,11 @@ done
 
 export CUDA_VISIBLE_DEVICES="${gpu}"
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-cd /data/wujiaju/LooPlus
+cd /data/paperexperiment/LooPlus
 
 {
   echo "START induction $(date --iso-8601=seconds)"
-  /data/wujiaju/.venvs/loopreasoner/bin/python -u \
+  /data/paperexperiment/.venvs/loopreasoner/bin/python -u \
     -m reasoning_loop.graph_path_induction_contrast \
     "${run_args[@]}" \
     --out-dir "${root}/paired_induction_raw" \
@@ -47,7 +47,7 @@ cd /data/wujiaju/LooPlus
 
 {
   echo "START functional $(date --iso-8601=seconds)"
-  /data/wujiaju/.venvs/loopreasoner/bin/python -u \
+  /data/paperexperiment/.venvs/loopreasoner/bin/python -u \
     -m reasoning_loop.graph_path_functional_circuit \
     "${run_args[@]}" \
     --out-dir "${root}/paired_functional_raw" \
@@ -60,7 +60,7 @@ cd /data/wujiaju/LooPlus
 
 {
   echo "START compression $(date --iso-8601=seconds)"
-  /data/wujiaju/.venvs/loopreasoner/bin/python -u \
+  /data/paperexperiment/.venvs/loopreasoner/bin/python -u \
     -m reasoning_loop.graph_path_compression_circuit \
     "${run_args[@]}" \
     --out-dir "${root}/paired_compression_raw" \

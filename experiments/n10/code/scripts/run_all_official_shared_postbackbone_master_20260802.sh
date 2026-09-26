@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-PIPELINE=/data/wujiaju/LooPlus/scripts/run_official_shared_postbackbone_seed_20260802.sh
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+PIPELINE=/data/paperexperiment/LooPlus/scripts/run_official_shared_postbackbone_seed_20260802.sh
 mkdir -p "${RUN_ROOT}/queue"
 
 # Task slots match the baseline scheduler: Copy=0, Addition=1, Sum-Reverse=2.

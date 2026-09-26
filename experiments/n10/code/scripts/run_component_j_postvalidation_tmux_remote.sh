@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT=/data/wujiaju/graph_path_component_j_sweep_20260731
-LOG_ROOT=/data/wujiaju/logs/graph_path_component_j_sweep_20260731
+ROOT=/data/paperexperiment/graph_path_component_j_sweep_20260731
+LOG_ROOT=/data/paperexperiment/logs/graph_path_component_j_sweep_20260731
 FOLLOWUP_STATUS="${ROOT}/FOLLOWUP_STATUS.txt"
 STATUS="${ROOT}/POSTVALIDATION_STATUS.txt"
-CODE_DIR=/data/wujiaju/LooPlus_component_j_sweep_20260731
+CODE_DIR=/data/paperexperiment/LooPlus_component_j_sweep_20260731
 
 printf "waiting_for_followups\n" > "${STATUS}"
 while [[ "$(cat "${FOLLOWUP_STATUS}")" != "complete" ]]; do

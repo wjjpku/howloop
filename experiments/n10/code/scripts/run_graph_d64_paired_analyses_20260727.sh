@@ -2,10 +2,10 @@
 set -euo pipefail
 
 gpu="${1:-5}"
-root="/data/wujiaju/graph_path_induction_contrast_d64_20260727"
-repo="/data/wujiaju/LooPlus"
-python="/data/wujiaju/.venvs/loopreasoner/bin/python"
-log_root="/data/wujiaju/logs/graph_path_induction_contrast_d64_20260727/analysis"
+root="/data/paperexperiment/graph_path_induction_contrast_d64_20260727"
+repo="/data/paperexperiment/LooPlus"
+python="/data/paperexperiment/.venvs/loopreasoner/bin/python"
+log_root="/data/paperexperiment/logs/graph_path_induction_contrast_d64_20260727/analysis"
 manifest="${root}/analysis_manifest.txt"
 mkdir -p "${log_root}"
 printf 'status=running\npid=%s\nphysical_gpu=%s\nstarted=%s\n' \

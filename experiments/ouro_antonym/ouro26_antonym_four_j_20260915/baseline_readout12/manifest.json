@@ -1,7 +1,7 @@
 {
   "pid": 3751477,
   "gpu": 6,
-  "checkpoint": "/data/wujiaju/ouro26_antonym_full_20260915/run/checkpoint.pt",
+  "checkpoint": "/data/paperexperiment/ouro26_antonym_full_20260915/run/checkpoint.pt",
   "checkpoint_step": 500,
   "loops_executed": 4,
   "readout_loops": [

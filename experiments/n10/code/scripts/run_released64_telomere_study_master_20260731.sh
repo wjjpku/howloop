@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-WAITER=/data/wujiaju/LooPlus/scripts/wait_for_empty_gpu_paper_length_telomere_20260731.sh
-PIPELINE=/data/wujiaju/LooPlus/scripts/run_released64_telomere_seed_pipeline_20260731.sh
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+WAITER=/data/paperexperiment/LooPlus/scripts/wait_for_empty_gpu_paper_length_telomere_20260731.sh
+PIPELINE=/data/paperexperiment/LooPlus/scripts/run_released64_telomere_seed_pipeline_20260731.sh
 BENCHMARK_MANIFEST="${RUN_ROOT}/manifests/parity_adaptive_step_released64_seed0/released_benchmark_fp32.json"
 BENCHMARK_SUMMARY="${RUN_ROOT}/backbones/parity_adaptive_step_released64_seed0_benchmark_fp32/summary.json"
 
@@ -13,7 +13,7 @@ if ! [[ -f "${BENCHMARK_MANIFEST}" ]] || ! grep -q '"status": "complete"' "${BEN
     bash "${WAITER}" released_benchmark_fp32 parity adaptive_step 0
 fi
 
-/data/wujiaju/.venvs/loopreasoner/bin/python - "${BENCHMARK_SUMMARY}" <<'PY'
+/data/paperexperiment/.venvs/loopreasoner/bin/python - "${BENCHMARK_SUMMARY}" <<'PY'
 import json
 import sys
 from pathlib import Path

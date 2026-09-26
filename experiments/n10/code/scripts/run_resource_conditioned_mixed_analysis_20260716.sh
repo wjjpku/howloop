@@ -17,11 +17,11 @@ case "$arm" in
     ;;
 esac
 
-repo_root=${RESOURCE_REUSE_REPO_ROOT:-/data/wujiaju/LooPlus}
-run_root=${RESOURCE_REUSE_RUN_ROOT:-/data/wujiaju/resource_conditioned_reuse_20260716/triadic_mixed/runs}
-out_root=${RESOURCE_REUSE_OUT_ROOT:-/data/wujiaju/resource_conditioned_reuse_20260716/triadic_mixed/analysis}
-log_root=${RESOURCE_REUSE_LOG_ROOT:-/data/wujiaju/logs/resource_conditioned_reuse_20260716}
-python_bin=${RESOURCE_REUSE_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}
+repo_root=${RESOURCE_REUSE_REPO_ROOT:-/data/paperexperiment/LooPlus}
+run_root=${RESOURCE_REUSE_RUN_ROOT:-/data/paperexperiment/resource_conditioned_reuse_20260716/triadic_mixed/runs}
+out_root=${RESOURCE_REUSE_OUT_ROOT:-/data/paperexperiment/resource_conditioned_reuse_20260716/triadic_mixed/analysis}
+log_root=${RESOURCE_REUSE_LOG_ROOT:-/data/paperexperiment/logs/resource_conditioned_reuse_20260716}
+python_bin=${RESOURCE_REUSE_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}
 mkdir -p "$out_root" "$log_root"
 cd "$repo_root"
 

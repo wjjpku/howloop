@@ -17,13 +17,13 @@ if [[ ! "${PHYSICAL_GPU}" =~ ^[0-9]+$ ]]; then
   exit 2
 fi
 
-CODE_ROOT="/data/wujiaju/LooPlus"
-OUTPUT_ROOT="/data/wujiaju/graph_path_telomere_graph_blind_mlp_j_20260731"
+CODE_ROOT="/data/paperexperiment/LooPlus"
+OUTPUT_ROOT="/data/paperexperiment/graph_path_telomere_graph_blind_mlp_j_20260731"
 OUT_DIR="${OUTPUT_ROOT}/${ACTION}"
-LOG_ROOT="/data/wujiaju/logs/graph_path_telomere_graph_blind_mlp_j_20260731"
-PYTHON_BIN="/data/wujiaju/.venvs/loopreasoner/bin/python"
-CHECKPOINT="/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt"
-PHASE_SUMMARY="/data/wujiaju/graph_path_telomere_overloop_20260729/formal/D8_L8_seed0/summary.json"
+LOG_ROOT="/data/paperexperiment/logs/graph_path_telomere_graph_blind_mlp_j_20260731"
+PYTHON_BIN="/data/paperexperiment/.venvs/loopreasoner/bin/python"
+CHECKPOINT="/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt"
+PHASE_SUMMARY="/data/paperexperiment/graph_path_telomere_overloop_20260729/formal/D8_L8_seed0/summary.json"
 LOG_PATH="${LOG_ROOT}/${ACTION}_gpu${PHYSICAL_GPU}_$(date -u +%Y%m%dT%H%M%SZ).log"
 MANIFEST_PATH="${OUTPUT_ROOT}/${ACTION}_launcher_manifest.json"
 

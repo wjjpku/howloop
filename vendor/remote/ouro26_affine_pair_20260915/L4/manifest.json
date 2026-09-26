@@ -2,7 +2,7 @@
   "pid": 1248330,
   "gpu": "5",
   "loops": 4,
-  "checkpoint": "/data/wujiaju/ouro26_letter_full_20260915/run/checkpoint.pt",
+  "checkpoint": "/data/paperexperiment/ouro26_letter_full_20260915/run/checkpoint.pt",
   "checkpoint_step": 200,
   "checkpoint_sha256": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
   "controller": "shared dense affine h + delta_W h + b, initialized exact identity",

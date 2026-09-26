@@ -14,7 +14,7 @@
     1,
     6
   ],
-  "reference": "/data/wujiaju/n10_migration_20260923/backbones/trajectory_L8_seed1/summary.json",
+  "reference": "/data/paperexperiment/n10_migration_20260923/backbones/trajectory_L8_seed1/summary.json",
   "config": {
     "block_schedule": "all_blocks",
     "block_style": "legacy",

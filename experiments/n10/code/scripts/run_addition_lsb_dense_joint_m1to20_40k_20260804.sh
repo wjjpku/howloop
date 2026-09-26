@@ -8,13 +8,13 @@ fi
 
 PHYSICAL_GPU="$1"
 LABEL="$2"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/tn_addition_20260804
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/tn_addition_20260804
 BACKBONE="${RUN_ROOT}/backbones/addition_lsb_variable_m1to10_tn_logicaldigits_nope_seed0/checkpoint_080000.pt"
 SEARCH_ROOT="${RUN_ROOT}/dense_joint_m1to20_40k_20260804"
 OUT_DIR="${SEARCH_ROOT}/training/${LABEL}"
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731/dense_joint_m1to20_40k_20260804
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731/dense_joint_m1to20_40k_20260804
 LOG_PATH="${LOG_ROOT}/${LABEL}.log"
 MANIFEST_PATH="${OUT_DIR}/launch_manifest.json"
 HEARTBEAT_PATH="${OUT_DIR}/heartbeat.json"
@@ -101,7 +101,7 @@ path, gpu, label, backbone, used, free, utilization, active_pids = sys.argv[1:]
 payload = {
     "status": "launched",
     "created_unix": time.time(),
-    "host": "A100-80G-34200",
+    "host": "GPU_ARCHIVE_HOST",
     "physical_gpu": int(gpu),
     "label": label,
     "backbone": backbone,

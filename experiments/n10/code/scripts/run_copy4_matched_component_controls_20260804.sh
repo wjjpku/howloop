@@ -7,11 +7,11 @@ if [[ "$#" -ne 1 ]] || ! [[ "$1" =~ ^[0-7]$ ]]; then
 fi
 
 PHYSICAL_GPU="$1"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
 OUT_ROOT="${RUN_ROOT}/copy4_controls_20260804"
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731/copy4_controls_20260804
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731/copy4_controls_20260804
 DECLARED_PEAK_MIB=2048
 RESERVE_MIB=16384
 REQUIRED_FREE_MIB=$((DECLARED_PEAK_MIB + RESERVE_MIB))

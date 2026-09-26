@@ -1,7 +1,7 @@
 from pathlib import Path
 import json,random,hashlib,shutil,subprocess,sys,os,time
 import torch
-R=Path(__file__).resolve().parent;B=Path('/data/wujiaju/n10_migration_20260923');old=Path('/data/wujiaju/n10_fig4_fresh_20260924')
+R=Path(__file__).resolve().parent;B=Path('/data/paperexperiment/n10_migration_20260923');old=Path('/data/paperexperiment/n10_fig4_fresh_20260924')
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 d=json.loads((B/'datasets.json').read_text());used={tuple(g) for gs in d.values() for g in gs}
 for panel in ['discovery','confirmation','smoke']:

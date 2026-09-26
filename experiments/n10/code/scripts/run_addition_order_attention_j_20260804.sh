@@ -6,8 +6,8 @@ if [[ "$#" -ne 1 ]]; then
     exit 2
 fi
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/reverse_addition_20260804
-PYTHON=/data/wujiaju/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/reverse_addition_20260804
+PYTHON=/data/paperexperiment/.venvs/loopreasoner/bin/python
 VARIANT="$1"
 
 case "${VARIANT}" in

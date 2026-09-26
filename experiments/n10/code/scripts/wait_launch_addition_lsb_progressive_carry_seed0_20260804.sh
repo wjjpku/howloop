@@ -4,11 +4,11 @@ set -euo pipefail
 PHYSICAL_GPU=6
 MAX_OWN_GPUS=2
 REQUIRED_FREE_MIB=18000
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/progressive_carry_addition_20260804
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/progressive_carry_addition_20260804
 OUT_DIR="${RUN_ROOT}/backbones/addition_lsb_variable_n1to10_progressive_carry_nope_seed0"
-LOG_DIR=/data/wujiaju/logs/paper_length_telomere_20260731/progressive_carry_addition_20260804
+LOG_DIR=/data/paperexperiment/logs/paper_length_telomere_20260731/progressive_carry_addition_20260804
 TRAIN_LOG="${LOG_DIR}/seed0_backbone.log"
-CODE_DIR=/data/wujiaju/LooPlus
+CODE_DIR=/data/paperexperiment/LooPlus
 
 mkdir -p "${LOG_DIR}"
 
@@ -22,7 +22,7 @@ own_gpu_count() {
             pid="${pid// /}"
             [[ -n "${pid}" ]] || continue
             owner="$(ps -p "${pid}" -o user= 2>/dev/null | tr -d ' ' || true)"
-            if [[ "${owner}" == "wujiaju" ]]; then
+            if [[ "${owner}" == "researcher" ]]; then
                 count=$((count + 1))
                 break
             fi

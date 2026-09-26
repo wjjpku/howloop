@@ -2,9 +2,9 @@
 set -euo pipefail
 
 SESSION_LABEL=fixed_h1_r48_s16_product
-QUEUE_LOG=/data/wujiaju/logs/graph_path_fixed_h1_j_20260801/queue.log
-MANIFEST=/data/wujiaju/graph_path_fixed_h1_j_20260801/paired_fullbank_init/run_manifest.txt
-RUNNER=/data/wujiaju/LooPlus/scripts/run_graph_path_fixed_h1_r48_s16_remote_20260801.sh
+QUEUE_LOG=/data/paperexperiment/logs/graph_path_fixed_h1_j_20260801/queue.log
+MANIFEST=/data/paperexperiment/graph_path_fixed_h1_j_20260801/paired_fullbank_init/run_manifest.txt
+RUNNER=/data/paperexperiment/LooPlus/scripts/run_graph_path_fixed_h1_r48_s16_remote_20260801.sh
 CANDIDATES=(3 4 5 6)
 MIN_FREE_MIB=16852
 MAX_UTIL=10

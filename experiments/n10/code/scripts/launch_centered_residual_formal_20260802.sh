@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd /data/wujiaju/LooPlus
+cd /data/paperexperiment/LooPlus
 export CUDA_VISIBLE_DEVICES=0
 export TELOMERE_CUDA_MEMORY_FRACTION=0.12
 
-exec /data/wujiaju/.venvs/loopreasoner/bin/python -u \
+exec /data/paperexperiment/.venvs/loopreasoner/bin/python -u \
   -m reasoning_loop.analyze_graph_path_j_centered_residual_telomere \
-  --checkpoint /data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt \
-  --bank-artifact /data/wujiaju/graph_path_fixed_h1_j_20260802/path_equivalence_r64_s16_extension_k24/age_specific_j_bank_after_equivalent_inverse_k3_to_k24.pt \
-  --probe-artifact /data/wujiaju/graph_path_fixed_h1_j_20260802/compressed_subspace_circuit_stage24_v2/probe_weights_and_bases.npz \
-  --out-dir /data/wujiaju/graph_path_fixed_h1_j_20260802/attention_compressed_circuit/centered_residual_formal_5seed_7path_v1 \
+  --checkpoint /data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt \
+  --bank-artifact /data/paperexperiment/graph_path_fixed_h1_j_20260802/path_equivalence_r64_s16_extension_k24/age_specific_j_bank_after_equivalent_inverse_k3_to_k24.pt \
+  --probe-artifact /data/paperexperiment/graph_path_fixed_h1_j_20260802/compressed_subspace_circuit_stage24_v2/probe_weights_and_bases.npz \
+  --out-dir /data/paperexperiment/graph_path_fixed_h1_j_20260802/attention_compressed_circuit/centered_residual_formal_5seed_7path_v1 \
   --device cuda \
   --rank 8 \
   --ridge 0.001 \

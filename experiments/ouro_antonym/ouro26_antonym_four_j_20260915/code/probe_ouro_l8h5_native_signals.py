@@ -9,7 +9,7 @@ from train_ouro_full import MODEL,task
 from ouro_eval_panel import EVAL_SEEDS
 from score_ouro_content import parse
 
-ROOT=Path('/data/wujiaju/ouro_l8h5_native_signals_v2_20260916')
+ROOT=Path('/data/paperexperiment/ouro_l8h5_native_signals_v2_20260916')
 ARMS={'plain4':(False,4),'j4':(True,4),'j8':(True,8)}
 
 def main():

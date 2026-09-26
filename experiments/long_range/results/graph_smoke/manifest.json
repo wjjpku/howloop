@@ -23,15 +23,15 @@
   "models": [
     {
       "seed": 100,
-      "checkpoint": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed100/graphpath_N8_D8_d256_B2_L8_seed100/final.pt",
+      "checkpoint": "/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3/backbones/seed100/graphpath_N8_D8_d256_B2_L8_seed100/final.pt",
       "checkpoint_sha256": "cdfff11ac086ba87266e84a96c684b57395672644c4b9482479998cc86c82e11",
       "controllers": [
         {
-          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed100/rank48_seed1/best_controller.pt",
+          "path": "/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed100/rank48_seed1/best_controller.pt",
           "sha256": "74e4301bd470cc67a2aa7666aba97d8aab8d97103891198e70414dd2de6d33cf"
         },
         {
-          "path": "/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed100/rank48_seed2/best_controller.pt",
+          "path": "/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3/g4_controllers/seed100/rank48_seed2/best_controller.pt",
           "sha256": "13f6c8a717a4e8ff981f14e9f9de5edbed615d4ff6935f0074db6104bc8d54fa"
         }
       ]

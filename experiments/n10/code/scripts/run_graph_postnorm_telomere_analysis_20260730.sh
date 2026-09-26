@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-code_root=/data/wujiaju/LooPlus_postnorm_20260730
-experiment_root=/data/wujiaju/graph_path_postnorm_telomere_20260730
-log_path=/data/wujiaju/logs/graph_path_postnorm_telomere_formal_20260730.log
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
+code_root=/data/paperexperiment/LooPlus_postnorm_20260730
+experiment_root=/data/paperexperiment/graph_path_postnorm_telomere_20260730
+log_path=/data/paperexperiment/logs/graph_path_postnorm_telomere_formal_20260730.log
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
 
-post_trajectory_checkpoint=/data/wujiaju/graph_path_postnorm_clear_circuit_20260730/trajectory_w1_hold10k_end15k/graphpath_N8_D8_d256_B2_L8_seed1/checkpoint_step_14000.pt
-post_final_checkpoint=/data/wujiaju/graph_path_postnorm_clear_circuit_20260730/final_only_warmup5k/graphpath_N8_D8_d256_B2_L8_seed1/final.pt
-pre_final_checkpoint=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt
+post_trajectory_checkpoint=/data/paperexperiment/graph_path_postnorm_clear_circuit_20260730/trajectory_w1_hold10k_end15k/graphpath_N8_D8_d256_B2_L8_seed1/checkpoint_step_14000.pt
+post_final_checkpoint=/data/paperexperiment/graph_path_postnorm_clear_circuit_20260730/final_only_warmup5k/graphpath_N8_D8_d256_B2_L8_seed1/final.pt
+pre_final_checkpoint=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt
 
 mkdir -p "${experiment_root}" "$(dirname "${log_path}")"
 cd "${code_root}"

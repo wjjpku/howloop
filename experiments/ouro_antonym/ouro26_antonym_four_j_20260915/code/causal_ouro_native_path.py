@@ -16,7 +16,7 @@ from localize_ouro_l8h5_combinations import EVAL_SEEDS as PREVIOUS_SEEDS
 from ouro_eval_panel import EVAL_SEEDS as ORIGINAL_SEEDS
 from score_ouro_content import parse
 
-ROOT = Path('/data/wujiaju/ouro_native_causal_20260916')
+ROOT = Path('/data/paperexperiment/ouro_native_causal_20260916')
 
 
 def main():

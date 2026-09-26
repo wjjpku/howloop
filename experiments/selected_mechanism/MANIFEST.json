@@ -1,0 +1,43 @@
+{
+  "seeds": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "protocol": "latest submission Section 5, rank48 diagonal+lowrank affine; 8000 updates; two fits per target; frozen h6 + one F",
+  "head_selection": "independent 32 graph pairs; all 4 L2 heads retained on 512 pair confirmation; no backbone outcome filtering",
+  "datasets": "fixed all-backbone cohorts; 1602 distinct graphs drawn only from donors lock excluded from every backbone and map training",
+  "donors_sha256": "df59428a4445303df66f74327257100b3f42b8aebd76bfc48548ecbc2d31085c",
+  "additional": "512 graphs for whole-layer bidirectional target exchange; same-run patch validation; appendix query-corruption/output-restoration controls",
+  "gpus": [
+    1,
+    3
+  ],
+  "source_hashes": {
+    "evaluate_battery.py": "b40577f8aac6a4bbe8192dada29e16af563cde65149d9174d17f5a32d2ad1ec3",
+    "prepare.py": "e935394ed864e5fb5d528f4db17135c7c71df51ee62da8bfc2f8776ad418cdcc",
+    "target_exchange.py": "b12936ed9faf4a44770ca00ea7cedee8fd73076e8e20c6e46ded95ecf2dd71a6",
+    "worker.py": "dfc586aac94e27029ec8a9948dbacb989950ffbbe11fc122d9dc5cc799d10ee9",
+    "smoke.py": "fa2a6cd6054005d76e6cdc5c9a348cd599822487f1d9aec66a47744fcc437fac",
+    "summarize.py": "a2c7cb3940d70eba1466c0dc07ca07c4d4e1f89003657297a086d22847544957"
+  },
+  "original_planned_seeds": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "scope_change": "User stopped backbone expansion; retain completed seeds8-14; incomplete seed15 excluded and preserved"
+}

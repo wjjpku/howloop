@@ -3,11 +3,11 @@
 # gates have closed.  P4 is required only for a disease-positive backbone.
 set -euo pipefail
 
-run_root="${PAPER2027_PARITY_ROOT:-/data/wujiaju/paper2027_confirmatory/parity_input_once_v2}"
+run_root="${PAPER2027_PARITY_ROOT:-/data/paperexperiment/paper2027_confirmatory/parity_input_once_v2}"
 code_root="${PAPER2027_PARITY_CODE_ROOT:-$run_root/analysis_code}"
 wait_session="${PAPER2027_PARITY_WAIT_SESSION:-paper2027_parity_p4_v2}"
 sleep_seconds="${PAPER2027_PARITY_WAIT_SECONDS:-60}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 
 while tmux has-session -t "$wait_session" 2>/dev/null; do
   sleep "$sleep_seconds"

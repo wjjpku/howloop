@@ -5,7 +5,7 @@
 set -euo pipefail
 
 run_root="${PAPER2027_PARITY_ROOT:?set PAPER2027_PARITY_ROOT}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_root="${PAPER2027_PARITY_CODE_ROOT:-$run_root/analysis_code}"
 scripts_dir="$code_root/scripts"
 log_dir="$run_root/logs"

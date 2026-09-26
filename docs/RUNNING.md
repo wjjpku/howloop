@@ -1,52 +1,9 @@
-# 运行指南
+# Running the archive
 
-## 1. CPU：从保存结果复算提交稿
+Run the commands in `REVIEWER_GUIDE.md` first. They need only Python 3.12 and the packages in `requirements-plot.txt`. They do not require a GPU or external network access after installation.
 
-在仓库根目录使用 Python 3.12：
+For original-weight work, create an empty isolated run directory with `python scripts/prepare_runtime.py --work /your/work --mode replay`. This copies portable source and input snapshots, records their hashes, and rewrites neutral root placeholders. `python scripts/run_experiment.py --help` lists the established training/evaluation stages; commands are dry-run by default and `--execute --gpu ID` is required to launch one. This path needs PyTorch, the original checkpoints, their matching protocol files, and GPU resources. Checkpoints are deliberately absent from the ZIP; `provenance/checkpoints.json` records the established checkpoint identities. The newly revised selected-seed and matched-supervision source is archived in `experiments/selected_mechanism/code/` and `experiments/revision/`; those additional original-weight campaigns require their separate original checkpoint/lock provenance and have not been rerun here.
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements-plot.txt
-python scripts/verify_integrity.py
-python reproduce.py
-python scripts/audit_submission.py
-python scripts/audit_results.py
-python scripts/audit_parity_phase.py
-```
+CPU audits distinguish cohorts and supervision regimes. `scripts/audit_submission.py` checks seed-6 two-step composition and selected-seed target exchange. `scripts/audit_revision.py` checks every prefix of the eight-step sequence. `experiments/revision/audit_paper_matched.py` validates paired initialization, token stream, split disjointness, all archived map predictions, and aggregate values. `experiments/revision/mechanism_aggregate.py` recomputes the three-seed graph aggregate. `scripts/audit_results.py` covers the other saved experiment families; `scripts/audit_parity_phase.py` covers the Parity phase inputs.
 
-`outputs/figures/` 包含与提交稿同名的 15 个 PDF；图 1 是概念矢量图，其余 14 个由数值数据和绘图脚本生成。图 3 的数值直接取两个 fit 的逐样本预测；图 4 的新增 target-exchange 数值取存档预测重算。`outputs/audit/submission.json` 保存新表格审计。
-
-`paper/` 是原样提交的 PDF 和独立 LaTeX 工程。若要试编译，在其副本中运行 `latexmk -pdf main.tex`；要替换重绘图，也只替换副本里的同名文件。重绘不承诺字体、PDF 字节和排版与提交包完全一致。
-
-## 2. 原权重重评估
-
-需要原权重，按 `provenance/checkpoints.json` 的 SHA256 核验；仓库不含模型权重、SSH 凭据。Linux GPU 环境参照 `requirements-experiments.txt` 和 `provenance/a100_environment_freeze.txt`。先在**空目录**生成隔离运行副本：
-
-```bash
-python scripts/prepare_runtime.py --work /your/data/paper-submission --mode replay
-python scripts/fetch_checkpoints.py --work /your/data/paper-submission --group n10
-python scripts/fetch_checkpoints.py --work /your/data/paper-submission --group n10 --download
-```
-
-下载命令仅在加 `--download` 时读取授权服务器。以下命令默认只打印，不启动 GPU；实际运行时显式加 `--gpu 0 --execute`，设备编号按机器情况选择：
-
-```bash
-python scripts/run_experiment.py n10-evaluate --work /your/data/paper-submission --seed 6 --hop 1 --fit 1
-python scripts/run_experiment.py target-exchange --work /your/data/paper-submission
-python scripts/run_experiment.py composition --work /your/data/paper-submission
-python scripts/run_experiment.py native-layer-readout --work /your/data/paper-submission
-python scripts/run_experiment.py dense-pattern-subsets --work /your/data/paper-submission --seed 3
-python scripts/run_experiment.py graph-confirmation --work /your/data/paper-submission --seed 6
-python scripts/run_experiment.py graph-long --work /your/data/paper-submission
-python scripts/run_experiment.py parity-diagnostics --work /your/data/paper-submission --seed 2
-python scripts/run_experiment.py ouro-semantic --work /your/data/paper-submission
-```
-
-`target-exchange` 在 `paper_strengthening_20260925/graph` 产出模型预测；`composition` 依赖这些文件中的 first-step 对照，因此顺序不能颠倒。两项都对 A–E×两个 fit 运行，并保留采样锁、checkpoint SHA 和计算设备记录。完整表格需再运行各实验目录的分析脚本。其他各实验的训练和评估入口见 `scripts/run_experiment.py`；旧版 `pca` 和 `kg` 命令仍在，但**不属于提交稿复现流程**。
-
-`native-layer-readout` 重评估全部 A–E；`dense-pattern-subsets` 须分别用 seeds 3/5/7 运行。该实验的五个 dense 控制器包（每个包含两 fit）是较小的原始权重，随 `experiments/dense_routing/local/` 一起入库并受 SHA256 清单约束；N10 backbone 仍需单独下载。密集控制器的从头训练原脚本在 `experiments/dense_routing/code/train_dense.py`，训练身份和原协议在相邻目录。逐层读出的历史运行还与 `experiments/native_layer_readout/prior_confirmation/` 中的原生预测做逐例比对。
-
-## 3. 从头训练
-
-在新的空目录执行 `prepare_runtime.py --mode train`，然后按实验清单依次训练 backbone、冻结它、训练 J、运行评估。每个新重复须保存 seed、数据排除集、模型 SHA 和选择规则；新权重不是原始 checkpoint。N10 L6 五 seeds、L8 十二 seeds，N8 十二 seeds×两 J，Parity 三 seeds，以及 Ouro 两类 backbone／J 是不同训练族；不要把 smoke test 或命令生成当作完整重训。
+For Appendix H CPU verification, `python experiments/qwen/audit_saved.py` recalculates whole-answer accuracy from the archived generated strings, and `python experiments/kg/audit_saved.py` recalculates per-length accuracy from saved predictions. `python plots/figH_kg.py` rebuilds the KG curve. These commands are also included in `reproduce.py`. The original-weight Qwen path needs the pinned Qwen3-8B base revision in `experiments/qwen/code/official_source.json`, the adapted backbone and controller checkpoint hashes in `provenance/additional_controls.json`, PyTorch/Transformers, and suitable GPU memory. The original-weight KG path needs the recorded 64×16 backbone, length-16 parent controller, and final controller; its training/evaluation source and core model files are in `experiments/kg/`. Neither original-weight path was executed as part of this ZIP validation.

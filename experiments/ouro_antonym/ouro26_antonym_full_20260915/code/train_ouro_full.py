@@ -6,7 +6,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.optimization import Adafactor
 
-MODEL='/data/wujiaju/models/Ouro-2.6B'
+MODEL='/data/paperexperiment/models/Ouro-2.6B'
 from task import make_sequence, trace, OPPOSITE, bank
 import re
 from score_ouro_content import parse as parse_answer
@@ -69,7 +69,7 @@ def prepare(root,tok):
         for line in p.open():
             obj=json.loads(line);text=obj.get('context','')
             if len(text)>1000:add(text,'documents',str(p))
-    for p in sorted(Path('/data/wujiaju/loop-attnres-tinystories-20260729/raw-parquet').glob('*.parquet')):
+    for p in sorted(Path('/data/paperexperiment/loop-attnres-tinystories-20260729/raw-parquet').glob('*.parquet')):
         for batch in pq.ParquetFile(p).iter_batches(batch_size=256,columns=['text']):
             for text in batch.column(0).to_pylist():add(text,'stories',str(p))
             if all(len(pools[s]['stories'])>= (600 if s=='train' else 40) for s in pools):break
@@ -86,7 +86,7 @@ def prepare(root,tok):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--mode',choices=['prepare','smoke','train'],required=True);p.add_argument('--steps',type=int,default=500);p.add_argument('--resume',action='store_true');a=p.parse_args()
     torch.set_num_threads(4);tok=AutoTokenizer.from_pretrained(MODEL,local_files_only=True)
-    data=Path('/data/wujiaju/ouro26_letter_full_20260915/data');a.root.mkdir(exist_ok=True,parents=True)
+    data=Path('/data/paperexperiment/ouro26_letter_full_20260915/data');a.root.mkdir(exist_ok=True,parents=True)
     if a.mode=='prepare':raise ValueError('Replay is reused read-only; do not regenerate shared data')
     if shutil.disk_usage(a.root).free < 24_000_000_000:
         raise RuntimeError('Need 24 GB free for safe FP32 checkpoint replacement; no model loaded')

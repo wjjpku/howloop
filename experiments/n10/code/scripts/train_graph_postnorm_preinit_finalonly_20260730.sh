@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-code_root=/data/wujiaju/LooPlus_postnorm_20260730
-experiment_root=/data/wujiaju/graph_path_postnorm_clear_circuit_20260730
-log_root=/data/wujiaju/logs
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
-pre_checkpoint=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt
+code_root=/data/paperexperiment/LooPlus_postnorm_20260730
+experiment_root=/data/paperexperiment/graph_path_postnorm_clear_circuit_20260730
+log_root=/data/paperexperiment/logs
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
+pre_checkpoint=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt
 condition=preinit_finalonly_lr1e4_warmup5k
 output_dir="${experiment_root}/${condition}"
 log_path="${log_root}/graph_path_postnorm_clear_${condition}.log"

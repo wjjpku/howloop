@@ -8,12 +8,12 @@ fi
 
 PHYSICAL_GPU="$1"
 SHARD="$2"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/architecture_round_20260803
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/architecture_round_20260803
 ELIGIBILITY_JSON="${RUN_ROOT}/balanced_carry_screen/aggregate/aggregate.json"
 J_ROOT="${RUN_ROOT}/carry_j_round"
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 MANIFEST_PATH="${J_ROOT}/shard${SHARD}_manifest.json"
 HEARTBEAT_PATH="${J_ROOT}/shard${SHARD}_heartbeat.json"
 DECLARED_PEAK_MIB=6144
@@ -133,9 +133,9 @@ for JOB_INDEX in "${!ELIGIBLE_JOBS[@]}"; do
     JOB="${ELIGIBLE_JOBS[JOB_INDEX]}"
     SEED="${JOB##*_seed}"
     if [[ "${JOB}" == l3h8t11_step40k_seed* ]]; then
-        BACKBONE="/data/wujiaju/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed${SEED}/checkpoint_040000.pt"
+        BACKBONE="/data/paperexperiment/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed${SEED}/checkpoint_040000.pt"
     elif [[ "${JOB}" == l3h8t11_seed* ]]; then
-        BACKBONE="/data/wujiaju/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed${SEED}/checkpoint_010000.pt"
+        BACKBONE="/data/paperexperiment/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed${SEED}/checkpoint_010000.pt"
     else
         BACKBONE="${RUN_ROOT}/backbones/${JOB}/final.pt"
     fi

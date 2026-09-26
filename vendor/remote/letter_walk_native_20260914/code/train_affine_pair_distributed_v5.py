@@ -8,7 +8,7 @@ from torch import nn
 from transformers import AutoModelForCausalLM,AutoTokenizer
 from train_full import MODEL,task,encode_task
 
-BASE=Path('/data/wujiaju/ouro26_letter_full_20260915')
+BASE=Path('/data/paperexperiment/ouro26_letter_full_20260915')
 CK_SHA='ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44'
 
 class Affine(nn.Module):
@@ -23,7 +23,7 @@ def main():
     assert world in (1,2) and (world==1 or a.loops==8)
     torch.cuda.set_device(local_rank)
     if world>1:dist.init_process_group('nccl',device_id=torch.device('cuda',local_rank))
-    root=Path('/data/wujiaju/ouro26_affine_pair_20260915')/f'L{a.loops}'
+    root=Path('/data/paperexperiment/ouro26_affine_pair_20260915')/f'L{a.loops}'
     if rank==0:root.mkdir(parents=True,exist_ok=a.resume)
     if world>1:dist.barrier()
     def emit(row):

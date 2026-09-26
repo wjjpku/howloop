@@ -3,13 +3,13 @@ set -euo pipefail
 
 : "${CUDA_VISIBLE_DEVICES:?set one physical GPU}"
 
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
-repo_dir=/data/wujiaju/LooPlus
-checkpoint=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-phase_summary=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
-source_bank=/data/wujiaju/graph_path_fixed_h1_j_20260801/inverse_reuse_10k_balanced_jcalls_r64_s16/age_specific_j_bank_after_inverse_reuse_10k.pt
-out_dir=/data/wujiaju/graph_path_fixed_h1_j_20260802/path_equivalence_r64_s16_main
-log=/data/wujiaju/logs/graph_path_fixed_h1_j_20260802/path_equivalence_r64_s16_main_gpu${CUDA_VISIBLE_DEVICES}.log
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
+repo_dir=/data/paperexperiment/LooPlus
+checkpoint=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+phase_summary=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
+source_bank=/data/paperexperiment/graph_path_fixed_h1_j_20260801/inverse_reuse_10k_balanced_jcalls_r64_s16/age_specific_j_bank_after_inverse_reuse_10k.pt
+out_dir=/data/paperexperiment/graph_path_fixed_h1_j_20260802/path_equivalence_r64_s16_main
+log=/data/paperexperiment/logs/graph_path_fixed_h1_j_20260802/path_equivalence_r64_s16_main_gpu${CUDA_VISIBLE_DEVICES}.log
 
 mkdir -p "$out_dir" "$(dirname "$log")"
 cd "$repo_dir"

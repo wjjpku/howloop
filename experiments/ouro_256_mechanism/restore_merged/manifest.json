@@ -1,0 +1,170 @@
+{
+  "status": "complete",
+  "shards": [
+    {
+      "status": "complete",
+      "pid": 3810126,
+      "gpu": "1",
+      "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+      "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898",
+      "code_sha": "6eee756de456455a400f0ceb88c7e466e46c9a1e0b9858b2051fdf063f2d3c2b",
+      "pairs_sha": "e86c8698373e57b89aaea1a6ab0346f14c994cff07f31160e349ce9290260370",
+      "smoke": false,
+      "omit_call": 0,
+      "patch_call": 0,
+      "started": 1790397247.399587,
+      "conditions": [
+        "corrupt",
+        "restore_selected",
+        "restore_neighbor",
+        "restore_layer41",
+        "restore_layer43",
+        "restore_layer47",
+        "restore_all"
+      ],
+      "selected_heads": {
+        "47": [
+          4,
+          13,
+          0,
+          3,
+          2,
+          15,
+          7
+        ],
+        "41": [
+          10,
+          12,
+          2,
+          15
+        ],
+        "43": [
+          15,
+          11,
+          13,
+          6,
+          1
+        ]
+      },
+      "neighbor_heads": {
+        "47": [
+          1,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11
+        ],
+        "41": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "43": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "generate": [
+        "base",
+        "corrupt",
+        "restore_all",
+        "restore_neighbor",
+        "restore_selected"
+      ],
+      "protocol_sha": "78314342515b5b5b4bd8a09cde98fb2c765091d7c7c324213c264b6c03c8fd0f",
+      "elapsed": 477.720906496048,
+      "peak_gib": 10.488789081573486,
+      "parameters_unchanged": true
+    },
+    {
+      "status": "complete",
+      "pid": 3811623,
+      "gpu": "3",
+      "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+      "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898",
+      "code_sha": "6eee756de456455a400f0ceb88c7e466e46c9a1e0b9858b2051fdf063f2d3c2b",
+      "pairs_sha": "7453e77ef84507f6e7ef337179fe0d5750d719f90e322d2305e561c2a88f1adc",
+      "smoke": false,
+      "omit_call": 0,
+      "patch_call": 0,
+      "started": 1790397260.9243124,
+      "conditions": [
+        "corrupt",
+        "restore_selected",
+        "restore_neighbor",
+        "restore_layer41",
+        "restore_layer43",
+        "restore_layer47",
+        "restore_all"
+      ],
+      "selected_heads": {
+        "47": [
+          4,
+          13,
+          0,
+          3,
+          2,
+          15,
+          7
+        ],
+        "41": [
+          10,
+          12,
+          2,
+          15
+        ],
+        "43": [
+          15,
+          11,
+          13,
+          6,
+          1
+        ]
+      },
+      "neighbor_heads": {
+        "47": [
+          1,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11
+        ],
+        "41": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "43": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "generate": [
+        "base",
+        "corrupt",
+        "restore_all",
+        "restore_neighbor",
+        "restore_selected"
+      ],
+      "protocol_sha": "78314342515b5b5b4bd8a09cde98fb2c765091d7c7c324213c264b6c03c8fd0f",
+      "elapsed": 496.9109435081482,
+      "peak_gib": 10.488789081573486,
+      "parameters_unchanged": true
+    }
+  ],
+  "n": 256,
+  "rows": 2304,
+  "parameters_unchanged": true
+}

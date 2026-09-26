@@ -1,0 +1,192 @@
+{
+  "conditions": {
+    "J": {
+      "correct": 251,
+      "n": 256,
+      "accuracy": 0.98046875,
+      "wilson95": [
+        0.9551018677503436,
+        0.9916292702154206
+      ],
+      "full_name_correct": 251,
+      "full_name_disagreements": 0,
+      "truncations": 0
+    },
+    "native": {
+      "correct": 0,
+      "n": 256,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "full_name_correct": 0,
+      "full_name_disagreements": 0,
+      "truncations": 0
+    },
+    "neighbor_rescue_pattern": {
+      "correct": 0,
+      "n": 256,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "full_name_correct": 0,
+      "full_name_disagreements": 0,
+      "truncations": 0
+    },
+    "selected_damage_pattern": {
+      "correct": 0,
+      "n": 256,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "full_name_correct": 0,
+      "full_name_disagreements": 0,
+      "truncations": 0
+    },
+    "selected_rescue_pattern": {
+      "correct": 248,
+      "n": 256,
+      "accuracy": 0.96875,
+      "wilson95": [
+        0.9395583934922568,
+        0.9840817411084887
+      ],
+      "full_name_correct": 248,
+      "full_name_disagreements": 0,
+      "truncations": 0
+    },
+    "selected_rescue_value": {
+      "correct": 0,
+      "n": 256,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "full_name_correct": 0,
+      "full_name_disagreements": 0,
+      "truncations": 0
+    },
+    "selected_self_output": {
+      "correct": 0,
+      "n": 256,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "max_logit_error": 0.0
+    },
+    "selected_self_pattern": {
+      "correct": 0,
+      "n": 256,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "max_logit_error": 0.125
+    },
+    "selected_unrelated_pattern": {
+      "correct": 0,
+      "n": 256,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "full_name_correct": 0,
+      "full_name_disagreements": 0,
+      "truncations": 0
+    },
+    "selected_wrong_call_pattern": {
+      "correct": 0,
+      "n": 256,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ],
+      "full_name_correct": 0,
+      "full_name_disagreements": 0,
+      "truncations": 0
+    }
+  },
+  "contrasts": {
+    "selected_rescue_pattern__minus__native": {
+      "effect": 0.96875,
+      "ci": [
+        0.9453125,
+        0.98828125
+      ],
+      "x_only": 248,
+      "y_only": 0
+    },
+    "J__minus__selected_damage_pattern": {
+      "effect": 0.98046875,
+      "ci": [
+        0.9609375,
+        0.99609375
+      ],
+      "x_only": 251,
+      "y_only": 0
+    },
+    "selected_rescue_pattern__minus__selected_rescue_value": {
+      "effect": 0.96875,
+      "ci": [
+        0.9453125,
+        0.98828125
+      ],
+      "x_only": 248,
+      "y_only": 0
+    },
+    "selected_rescue_pattern__minus__selected_unrelated_pattern": {
+      "effect": 0.96875,
+      "ci": [
+        0.9453125,
+        0.98828125
+      ],
+      "x_only": 248,
+      "y_only": 0
+    },
+    "selected_rescue_pattern__minus__selected_wrong_call_pattern": {
+      "effect": 0.96875,
+      "ci": [
+        0.9453125,
+        0.98828125
+      ],
+      "x_only": 248,
+      "y_only": 0
+    },
+    "selected_rescue_pattern__minus__neighbor_rescue_pattern": {
+      "effect": 0.96875,
+      "ci": [
+        0.9453125,
+        0.98828125
+      ],
+      "x_only": 248,
+      "y_only": 0
+    },
+    "J__minus__selected_rescue_pattern": {
+      "effect": 0.01171875,
+      "ci": [
+        -0.00390625,
+        0.02734375
+      ],
+      "x_only": 4,
+      "y_only": 1
+    }
+  },
+  "recovered_gain": {
+    "estimate": 0.9880478087649402,
+    "ci": [
+      0.9715447154471545,
+      1.0040160642570282
+    ]
+  }
+}

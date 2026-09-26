@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-run_root=/data/wujiaju/parity_input_once_20260811
+run_root=/data/paperexperiment/parity_input_once_20260811
 seed="${PARITY_SEED:?set PARITY_SEED}"
 code_file="$run_root/evaluation_code/reasoning_loop/paper_length_telomere.py"
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
 checkpoint="$run_root/backbones/parity_input_once_seed${seed}/best.pt"
-log_file="/data/wujiaju/logs/parity_input_once_20260811/controller_pair_seed${seed}.log"
+log_file="/data/paperexperiment/logs/parity_input_once_20260811/controller_pair_seed${seed}.log"
 pid_file="$run_root/controller_pair_seed${seed}.pid"
 
 mkdir -p "$(dirname "$log_file")"

@@ -6,9 +6,9 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer,AutoModelForCausalLM
 
-MODEL='/data/wujiaju/models/Ouro-2.6B'
-ROOT=Path('/data/wujiaju/ouro_raw_early_answers_20260916')
-DEPENDENCY=Path('/data/wujiaju/ouro26_stepwise_pair_control_20260915/vocab_transfer_20260916/summary.json')
+MODEL='/data/paperexperiment/models/Ouro-2.6B'
+ROOT=Path('/data/paperexperiment/ouro_raw_early_answers_20260916')
+DEPENDENCY=Path('/data/paperexperiment/ouro26_stepwise_pair_control_20260915/vocab_transfer_20260916/summary.json')
 
 def dataset():
     rng=random.Random(20260916);rows=[]

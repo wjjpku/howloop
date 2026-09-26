@@ -2,10 +2,10 @@
 set -uo pipefail
 
 gpu="${1:-6}"
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
-code=/data/wujiaju/LooPlus
-root=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731
-log=/data/wujiaju/logs/graph_path_telomere_canonical_diag_lora_20260731/twostep_oracle_queue_gpu${gpu}.log
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
+code=/data/paperexperiment/LooPlus
+root=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731
+log=/data/paperexperiment/logs/graph_path_telomere_canonical_diag_lora_20260731/twostep_oracle_queue_gpu${gpu}.log
 
 while tmux has-session -t telomere_canonical_loss_audit_queue 2>/dev/null; do sleep 30; done
 
@@ -38,11 +38,11 @@ run_oracle() {
 }
 
 run_oracle final_seed1_ce_h64 \
-    /data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt \
+    /data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt \
     "${code}/results/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed1.json" 214501
 
 run_oracle component_seed1_ce_h64 \
-    /data/wujiaju/graph_path_prenorm_component_D8L8_20260731/training/full/D8_L8_full_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt \
+    /data/paperexperiment/graph_path_prenorm_component_D8L8_20260731/training/full/D8_L8_full_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt \
     "${code}/results/graph_path_telomere_canonical_diag_lora_20260731/config/phase_component_seed1.json" 214601
 
 printf '%s status=queue_complete\n' "$(date -Is)" >> "${log}"

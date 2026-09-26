@@ -6,11 +6,11 @@
 # whose documented behavior is to write a skip manifest and exit before CUDA.
 set -euo pipefail
 
-run_root="${PAPER2027_PARITY_ROOT:-/data/wujiaju/paper2027_confirmatory/parity_input_once_v2}"
+run_root="${PAPER2027_PARITY_ROOT:-/data/paperexperiment/paper2027_confirmatory/parity_input_once_v2}"
 code_root="${PAPER2027_PARITY_CODE_ROOT:-$run_root/analysis_code}"
 namespace="${PAPER2027_PARITY_P2_NAMESPACE:?set the isolated P2 namespace}"
 seed="${PAPER2027_PARITY_SEED:-5}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 recovery="${PAPER2027_PARITY_P2_RECOVERY_ID:-ledger_retry1}"
 previous="$run_root/manifests/p2_finalizer_${namespace}_seed${seed}.json"
 manifest="$run_root/manifests/p2_finalizer_${namespace}_seed${seed}_${recovery}.json"

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-repo_dir="/data/wujiaju/LooPlus_postnorm_20260730"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
-experiment_root="/data/wujiaju/graph_path_postnorm_D8L8_20260730"
-log_root="/data/wujiaju/logs/graph_path_postnorm_D8L8_20260730"
+repo_dir="/data/paperexperiment/LooPlus_postnorm_20260730"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
+experiment_root="/data/paperexperiment/graph_path_postnorm_D8L8_20260730"
+log_root="/data/paperexperiment/logs/graph_path_postnorm_D8L8_20260730"
 orchestrator_log="${log_root}/orchestrator.log"
 status_path="${experiment_root}/orchestrator_status.txt"
 
@@ -160,7 +160,7 @@ for seed in 0 1 2 3 4 5; do
 done
 "${python_bin}" "${repo_dir}/scripts/summarize_graph_postnorm_training_20260730.py" \
   --post-root "${experiment_root}/training" \
-  --pre-root "/data/wujiaju/graph_path_compression_circuit_20260725/training" \
+  --pre-root "/data/paperexperiment/graph_path_compression_circuit_20260725/training" \
   --out-dir "${experiment_root}/training_comparison"
 record_status \
   "FORMAL_COMPLETE gpu=${selected_gpu} seeds=0,1,2,3,4,5 summary=${experiment_root}/training_comparison/training_summary.json"

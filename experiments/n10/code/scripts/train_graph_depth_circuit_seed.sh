@@ -19,7 +19,7 @@ export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 exec >"${log_path}" 2>&1
 
 echo "START $(date --iso-8601=seconds)"
-/data/wujiaju/.venvs/loopreasoner/bin/python -u -m reasoning_loop.graph_path_loop \
+/data/paperexperiment/.venvs/loopreasoner/bin/python -u -m reasoning_loop.graph_path_loop \
   --node-count 8 \
   --max-depth "${max_depth}" \
   --d-model 256 \

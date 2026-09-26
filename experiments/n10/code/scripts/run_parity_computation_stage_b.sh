@@ -8,11 +8,11 @@ fi
 
 GPU_INDEX="$1"
 CODE_ROOT="$2"
-PYTHON_BIN="/data/wujiaju/.venvs/loopreasoner/bin/python"
+PYTHON_BIN="/data/paperexperiment/.venvs/loopreasoner/bin/python"
 OVERLAY_ROOT="$(cd "$(dirname "$0")/.." && pwd -P)"
-RESULT_ROOT="/data/wujiaju/parity_computation_mechanism_20260812"
-LOG_ROOT="/data/wujiaju/logs"
-CHECKPOINT_ROOT="/data/wujiaju/parity_input_once_20260811/backbones"
+RESULT_ROOT="/data/paperexperiment/parity_computation_mechanism_20260812"
+LOG_ROOT="/data/paperexperiment/logs"
+CHECKPOINT_ROOT="/data/paperexperiment/parity_input_once_20260811/backbones"
 
 mkdir -p "$RESULT_ROOT" "$LOG_ROOT"
 

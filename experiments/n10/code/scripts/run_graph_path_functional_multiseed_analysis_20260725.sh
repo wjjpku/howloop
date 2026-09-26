@@ -8,9 +8,9 @@ fi
 
 family="$1"
 physical_gpu="$2"
-repo_dir="/data/wujiaju/LooPlus"
-training_root="/data/wujiaju/graph_path_functional_multiseed_20260725/training"
-output_root="/data/wujiaju/graph_path_functional_multiseed_20260725/analysis/raw"
+repo_dir="/data/paperexperiment/LooPlus"
+training_root="/data/paperexperiment/graph_path_functional_multiseed_20260725/training"
+output_root="/data/paperexperiment/graph_path_functional_multiseed_20260725/analysis/raw"
 
 case "${family}" in
   D6_L6)
@@ -41,7 +41,7 @@ done
 mkdir -p "${output_root}/${family}"
 cd "${repo_dir}"
 CUDA_VISIBLE_DEVICES="${physical_gpu}" \
-  /data/wujiaju/.venvs/loopreasoner/bin/python \
+  /data/paperexperiment/.venvs/loopreasoner/bin/python \
   -m reasoning_loop.graph_path_functional_circuit \
   "${run_args[@]}" \
   --out-dir "${output_root}/${family}" \

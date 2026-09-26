@@ -11,11 +11,11 @@ LABEL="$2"
 CONTROLLER="$3"
 CHECKPOINT="$4"
 
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT="${RUN_ROOT_OVERRIDE:-/data/wujiaju/paper_length_telomere_20260731/tn_addition_20260804/joint_m1to20_j_40k_20260804}"
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT="${RUN_ROOT_OVERRIDE:-/data/paperexperiment/paper_length_telomere_20260731/tn_addition_20260804/joint_m1to20_j_40k_20260804}"
 OUT_ROOT="${RUN_ROOT}/audits/${LABEL}"
-LOG_ROOT="${LOG_ROOT_OVERRIDE:-/data/wujiaju/logs/paper_length_telomere_20260731/joint_m1to20_j_40k_20260804}"
+LOG_ROOT="${LOG_ROOT_OVERRIDE:-/data/paperexperiment/logs/paper_length_telomere_20260731/joint_m1to20_j_40k_20260804}"
 LOG_PATH="${LOG_ROOT}/${LABEL}_audit.log"
 RESERVE_MIB=16384
 DECLARED_PEAK_MIB=2048

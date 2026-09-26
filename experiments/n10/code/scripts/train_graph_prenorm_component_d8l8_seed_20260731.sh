@@ -16,11 +16,11 @@ if [[ "${condition}" != "full" && "${condition}" != "active" && "${condition}" !
   exit 2
 fi
 
-repo_dir="${REPO_DIR:-/data/wujiaju/LooPlus_prenorm_component_20260731}"
-experiment_root="/data/wujiaju/graph_path_prenorm_component_D8L8_20260731"
+repo_dir="${REPO_DIR:-/data/paperexperiment/LooPlus_prenorm_component_20260731}"
+experiment_root="/data/paperexperiment/graph_path_prenorm_component_D8L8_20260731"
 out_root="${experiment_root}/training/${condition}"
-log_root="/data/wujiaju/logs/graph_path_prenorm_component_D8L8_20260731/${condition}"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
+log_root="/data/paperexperiment/logs/graph_path_prenorm_component_D8L8_20260731/${condition}"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
 
 mkdir -p "${out_root}" "${log_root}"
 cd "${repo_dir}"

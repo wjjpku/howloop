@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-REDESIGN_ROOT=/data/wujiaju/paper_length_telomere_20260731/full_answer_redesign_20260803
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731/fullanswer_architecture_j
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+REDESIGN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/full_answer_redesign_20260803
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731/fullanswer_architecture_j
 mkdir -p "${LOG_ROOT}"
 
 wait_complete() {

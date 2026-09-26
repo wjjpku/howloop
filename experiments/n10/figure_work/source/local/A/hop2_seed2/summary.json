@@ -1,5 +1,5 @@
 {
-  "checkpoint": "/data/wujiaju/n10_migration_20260923/backbones/local_control_L6_seed6/best.pt",
+  "checkpoint": "/data/paperexperiment/n10_migration_20260923/backbones/local_control_L6_seed6/best.pt",
   "checkpoint_sha256": "faca3e18f01122fa395e0ba08fc953e840c87b5f4c82cfb61603dab294640291",
   "controller_seed": 2,
   "protocol_id": "paper2027.n10.d8l6.pure_ce.disjoint.v1",

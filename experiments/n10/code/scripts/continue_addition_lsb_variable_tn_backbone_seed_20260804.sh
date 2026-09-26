@@ -9,10 +9,10 @@ fi
 SEED="$1"
 RESUME_STEP="$2"
 TARGET_STEP="$3"
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/tn_addition_20260804
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/tn_addition_20260804
 OUT_DIR="${RUN_ROOT}/backbones/addition_lsb_variable_m1to10_tn_logicaldigits_nope_seed${SEED}"
 CHECKPOINT="${OUT_DIR}/checkpoint_$(printf '%06d' "${RESUME_STEP}").pt"
-PYTHON=/data/wujiaju/.venvs/loopreasoner/bin/python
+PYTHON=/data/paperexperiment/.venvs/loopreasoner/bin/python
 
 if [[ ! -f "${CHECKPOINT}" ]]; then
     echo "missing resume checkpoint: ${CHECKPOINT}" >&2
@@ -23,7 +23,7 @@ if (( TARGET_STEP <= RESUME_STEP )); then
     exit 4
 fi
 
-cd /data/wujiaju/LooPlus
+cd /data/paperexperiment/LooPlus
 exec "${PYTHON}" -u -m reasoning_loop.paper_length_telomere backbone \
     --task addition \
     --supervision adaptive_step \

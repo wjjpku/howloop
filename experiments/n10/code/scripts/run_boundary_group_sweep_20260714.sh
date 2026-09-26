@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT=/data/wujiaju/LooPlus
-PY=/data/wujiaju/.venvs/loopreasoner/bin/python
-LOG_ROOT=/data/wujiaju/logs/post_convergence_boundary_group_sweep_20260714
+ROOT=/data/paperexperiment/LooPlus
+PY=/data/paperexperiment/.venvs/loopreasoner/bin/python
+LOG_ROOT=/data/paperexperiment/logs/post_convergence_boundary_group_sweep_20260714
 
 mkdir -p "$LOG_ROOT"
 cd "$ROOT"
@@ -16,7 +16,7 @@ echo "START $(date --iso-8601=seconds)"
 pids=()
 labels=()
 for groups in 2 4; do
-  output_dir="/data/wujiaju/post_convergence_boundary_g${groups}_20260714"
+  output_dir="/data/paperexperiment/post_convergence_boundary_g${groups}_20260714"
   mkdir -p "$output_dir"
   for seed in 0 1 2 3 4 5; do
     gpu=$((2 + seed % 3))
@@ -63,7 +63,7 @@ if (( failed )); then
 fi
 
 for groups in 2 4; do
-  output_dir="/data/wujiaju/post_convergence_boundary_g${groups}_20260714"
+  output_dir="/data/paperexperiment/post_convergence_boundary_g${groups}_20260714"
   "$PY" -m small_modadd.post_convergence_overloop \
     --output-dir "$output_dir" \
     --merge-only >"$LOG_ROOT/g${groups}_merge.log" 2>&1
@@ -71,8 +71,8 @@ done
 
 residual_pids=()
 for groups in 2 4; do
-  experiment_dir="/data/wujiaju/post_convergence_boundary_g${groups}_20260714"
-  residual_dir="/data/wujiaju/post_convergence_boundary_g${groups}_residual_20260714"
+  experiment_dir="/data/paperexperiment/post_convergence_boundary_g${groups}_20260714"
+  residual_dir="/data/paperexperiment/post_convergence_boundary_g${groups}_residual_20260714"
   mapfile -t complete_seeds < <(
     for payload in "$experiment_dir"/seed_*.json; do
       "$PY" -c 'import json,sys; p=json.load(open(sys.argv[1])); print(p["seed"] if p["status"] == "complete" else "")' "$payload"

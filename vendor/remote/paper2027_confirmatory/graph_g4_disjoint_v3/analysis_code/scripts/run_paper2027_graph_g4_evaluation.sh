@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Evaluate raw and all controller evidence exactly once on the final lock.
 set -euo pipefail
-run_root="${PAPER2027_GRAPH_G4_ROOT:-/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v1}"
+run_root="${PAPER2027_GRAPH_G4_ROOT:-/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v1}"
 seed="${PAPER2027_GRAPH_SEED:?set PAPER2027_GRAPH_SEED}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 evaluation_dir="${PAPER2027_GRAPH_G4_EVALUATION_DIR:-g4_evaluation}"
 manifest_prefix="${PAPER2027_GRAPH_G4_EVALUATION_MANIFEST_PREFIX:-evaluation_seed}"
 [[ "$evaluation_dir" != */* && "$evaluation_dir" != .* && "$evaluation_dir" != "" ]] || {

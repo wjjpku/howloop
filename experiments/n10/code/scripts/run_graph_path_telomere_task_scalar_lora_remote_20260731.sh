@@ -12,23 +12,23 @@ INITIALIZATION_SEED="$3"
 shift 3
 RANKS=("$@")
 
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
 PARAMETERIZATION="${PARAMETERIZATION:-scalar_low_rank}"
 if [[ "${PARAMETERIZATION}" != "scalar_low_rank" && "${PARAMETERIZATION}" != "diagonal_low_rank" ]]; then
     echo "PARAMETERIZATION must be scalar_low_rank or diagonal_low_rank" >&2
     exit 2
 fi
-OUTPUT_ROOT="${OUTPUT_ROOT:-/data/wujiaju/graph_path_telomere_task_${PARAMETERIZATION}_j_ceonly_20260731}"
-LOG_ROOT=/data/wujiaju/logs
+OUTPUT_ROOT="${OUTPUT_ROOT:-/data/paperexperiment/graph_path_telomere_task_${PARAMETERIZATION}_j_ceonly_20260731}"
+LOG_ROOT=/data/paperexperiment/logs
 OUT_DIR="${OUTPUT_ROOT}/${LABEL}"
 RUN_LOG="${LOG_ROOT}/task_scalar_lora_${LABEL}.log"
 HEARTBEAT_LOG="${LOG_ROOT}/task_scalar_lora_${LABEL}.heartbeat.log"
 MANIFEST="${OUT_DIR}/run_manifest.json"
-CHECKPOINT=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-PHASE_SUMMARY=/data/wujiaju/graph_path_telomere_overloop_20260729/phase_grid/D8_L8_seed0/summary.json
-REFERENCE_AFFINE=/data/wujiaju/graph_path_telomere_unit_j_20260731/seed0_curriculum64/unit_j_maps.pt
-INITIAL_AFFINE=/data/wujiaju/graph_path_telomere_unit_j_20260731/seed0_focus_long/unit_j_maps.pt
+CHECKPOINT=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+PHASE_SUMMARY=/data/paperexperiment/graph_path_telomere_overloop_20260729/phase_grid/D8_L8_seed0/summary.json
+REFERENCE_AFFINE=/data/paperexperiment/graph_path_telomere_unit_j_20260731/seed0_curriculum64/unit_j_maps.pt
+INITIAL_AFFINE=/data/paperexperiment/graph_path_telomere_unit_j_20260731/seed0_focus_long/unit_j_maps.pt
 LR_MULTIPLIER="${LR_MULTIPLIER:-30}"
 SCALE_LR_MULTIPLIER="${SCALE_LR_MULTIPLIER:-1}"
 DIAGONAL_SCALE_INIT="${DIAGONAL_SCALE_INIT:-diagonal}"

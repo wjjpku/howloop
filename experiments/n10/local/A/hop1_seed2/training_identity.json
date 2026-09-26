@@ -10,17 +10,17 @@
   "seconds": 118.01266646385193,
   "arguments": {
     "action": "train",
-    "validation_lock": "/data/wujiaju/n10_migration_20260923/locks/selection.pt",
+    "validation_lock": "/data/paperexperiment/n10_migration_20260923/locks/selection.pt",
     "train_exclude_locks": [
-      "/data/wujiaju/n10_migration_20260923/locks/confirmation.pt",
-      "/data/wujiaju/n10_migration_20260923/locks/discovery.pt",
-      "/data/wujiaju/n10_migration_20260923/locks/donors.pt",
-      "/data/wujiaju/n10_migration_20260923/locks/rings.pt",
-      "/data/wujiaju/n10_migration_20260923/locks/selection.pt",
-      "/data/wujiaju/n10_migration_20260923/locks/smoke.pt"
+      "/data/paperexperiment/n10_migration_20260923/locks/confirmation.pt",
+      "/data/paperexperiment/n10_migration_20260923/locks/discovery.pt",
+      "/data/paperexperiment/n10_migration_20260923/locks/donors.pt",
+      "/data/paperexperiment/n10_migration_20260923/locks/rings.pt",
+      "/data/paperexperiment/n10_migration_20260923/locks/selection.pt",
+      "/data/paperexperiment/n10_migration_20260923/locks/smoke.pt"
     ],
-    "checkpoint": "/data/wujiaju/n10_migration_20260923/backbones/local_control_L6_seed6/best.pt",
-    "out_dir": "/data/wujiaju/n10_migration_20260923/local/A/hop1_seed2",
+    "checkpoint": "/data/paperexperiment/n10_migration_20260923/backbones/local_control_L6_seed6/best.pt",
+    "out_dir": "/data/paperexperiment/n10_migration_20260923/local/A/hop1_seed2",
     "target_hop": 1,
     "seed": 2,
     "rank": 48,

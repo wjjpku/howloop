@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="${REPO:-/data/wujiaju/LooPlus}"
-PYTHON="${PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
-OUTPUT_DIR="${OUTPUT_DIR:-/data/wujiaju/scale_causality_overloop_20260715}"
-LOG_DIR="${LOG_DIR:-/data/wujiaju/logs/scale_causality_overloop_20260715}"
-NONE_DIR="${NONE_DIR:-/data/wujiaju/post_convergence_rmsnorm_raw_20260714}"
-G1_DIR="${G1_DIR:-/data/wujiaju/post_convergence_innerg1_outerg1_20260714}"
+REPO="${REPO:-/data/paperexperiment/LooPlus}"
+PYTHON="${PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
+OUTPUT_DIR="${OUTPUT_DIR:-/data/paperexperiment/scale_causality_overloop_20260715}"
+LOG_DIR="${LOG_DIR:-/data/paperexperiment/logs/scale_causality_overloop_20260715}"
+NONE_DIR="${NONE_DIR:-/data/paperexperiment/post_convergence_rmsnorm_raw_20260714}"
+G1_DIR="${G1_DIR:-/data/paperexperiment/post_convergence_innerg1_outerg1_20260714}"
 GPU_LIST_STRING="${GPU_LIST:-1 2 3}"
 FORCE="${FORCE:-0}"
 read -r -a GPUS <<< "${GPU_LIST_STRING}"

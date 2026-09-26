@@ -2,8 +2,8 @@
 set -euo pipefail
 
 gpu="${1:-4}"
-repo="/data/wujiaju/LooPlus"
-log_root="/data/wujiaju/logs/graph_path_hparam_circuit_20260728"
+repo="/data/paperexperiment/LooPlus"
+log_root="/data/paperexperiment/logs/graph_path_hparam_circuit_20260728"
 configs=(beta1_08_b2 layers1_b1 layers3_b3)
 cd "${repo}"
 

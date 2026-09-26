@@ -8,10 +8,10 @@ fi
 
 readonly seed="$1"
 readonly physical_gpu="$2"
-readonly project_dir="/data/wujiaju/LooPlus"
-readonly result_root="/data/wujiaju/graph_path_N10_D8L8_multiseed_20260809/checkpoints"
-readonly log_root="/data/wujiaju/logs/graph_path_N10_D8L8_multiseed_20260809"
-readonly python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
+readonly project_dir="/data/paperexperiment/LooPlus"
+readonly result_root="/data/paperexperiment/graph_path_N10_D8L8_multiseed_20260809/checkpoints"
+readonly log_root="/data/paperexperiment/logs/graph_path_N10_D8L8_multiseed_20260809"
+readonly python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
 readonly seed_out_dir="${result_root}/D8_L8_seed${seed}"
 readonly log_path="${log_root}/train_seed${seed}.log"
 

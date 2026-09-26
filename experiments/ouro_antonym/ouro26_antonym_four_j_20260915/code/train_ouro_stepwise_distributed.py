@@ -11,14 +11,14 @@ from train_ouro_full import MODEL
 from ouro_stepwise_task import encode,example,parse,selftest
 from ouro_eval_panel import EVAL_SEEDS
 
-ROOT=Path('/data/wujiaju/ouro26_stepwise_control_20260915')
+ROOT=Path('/data/paperexperiment/ouro26_stepwise_control_20260915')
 
 def main():
     global ROOT,encode,example,parse,selftest
     p=argparse.ArgumentParser();p.add_argument('--smoke',action='store_true');p.add_argument('--resume',action='store_true');p.add_argument('--steps',type=int,default=500);p.add_argument('--verify-parity',action='store_true');p.add_argument('--pair-only',action='store_true');a=p.parse_args()
     if a.pair_only:
         from ouro_stepwise_pair_task import encode,example,parse,selftest
-        ROOT=Path('/data/wujiaju/ouro26_stepwise_pair_control_20260915')
+        ROOT=Path('/data/paperexperiment/ouro26_stepwise_pair_control_20260915')
     nfields=1 if a.pair_only else 3
     selftest()
     world=int(os.environ.get('WORLD_SIZE','1'));rank=int(os.environ.get('RANK','0'));local=int(os.environ.get('LOCAL_RANK','0'))
@@ -36,7 +36,7 @@ def main():
     model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False})
     model.config.use_cache=False
     opt=Adafactor([x for x in model.parameters() if x.requires_grad],lr=1e-5,scale_parameter=False,relative_step=False,warmup_init=False,beta1=None,weight_decay=0)
-    general={split:{src:np.load(Path('/data/wujiaju/ouro26_letter_full_20260915/data')/f'{split}_{src}.npy') for src in ['documents','stories','code']} for split in ['train','validation']}
+    general={split:{src:np.load(Path('/data/paperexperiment/ouro26_letter_full_20260915/data')/f'{split}_{src}.npy') for src in ['documents','stories','code']} for split in ['train','validation']}
     counts=dict(task_input=0,general_input=0,task_labels=0,general_labels=0);start=0
     if a.resume:
         ck=torch.load(ROOT/'checkpoint.pt',map_location='cpu',weights_only=False,mmap=True)

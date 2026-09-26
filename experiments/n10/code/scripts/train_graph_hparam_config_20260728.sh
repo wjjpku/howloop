@@ -10,13 +10,13 @@ gpu="$1"
 config="$2"
 shift 2
 
-root="/data/wujiaju/graph_path_hparam_circuit_20260728"
+root="/data/paperexperiment/graph_path_hparam_circuit_20260728"
 out_root="${root}/training/${config}"
-log_root="/data/wujiaju/logs/graph_path_hparam_circuit_20260728/training/${config}"
+log_root="/data/paperexperiment/logs/graph_path_hparam_circuit_20260728/training/${config}"
 manifest_suffix="${GRAPH_HPARAM_MANIFEST_SUFFIX:-}"
 manifest="${root}/manifests/training_${config}${manifest_suffix}.txt"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
-repo="/data/wujiaju/LooPlus"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
+repo="/data/paperexperiment/LooPlus"
 mkdir -p "${out_root}" "${log_root}" "$(dirname "${manifest}")"
 
 n_layers=2

@@ -1,0 +1,505 @@
+{
+  "conditions": {
+    "base": {
+      "n": 256,
+      "base": 252,
+      "source": 0,
+      "counterfactual": 0,
+      "other": 4,
+      "ci95": [
+        [
+          0.96875,
+          0.0,
+          0.0
+        ],
+        [
+          0.99609375,
+          0.0,
+          0.0
+        ]
+      ],
+      "generation_counts": [
+        252,
+        0,
+        0
+      ],
+      "generation_other": 4,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.9605207372908033,
+          0.9939074017966336
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ]
+      ]
+    },
+    "counterfactual": {
+      "n": 256,
+      "base": 0,
+      "source": 4,
+      "counterfactual": 251,
+      "other": 1,
+      "ci95": [
+        [
+          0.0,
+          0.00390625,
+          0.9609375
+        ],
+        [
+          0.0,
+          0.03125,
+          0.99609375
+        ]
+      ],
+      "generation_counts": [
+        0,
+        4,
+        251
+      ],
+      "generation_other": 1,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.0,
+          0.01478385642587143
+        ],
+        [
+          0.006092598203366294,
+          0.039479262709196654
+        ],
+        [
+          0.9551018677503436,
+          0.9916292702154206
+        ]
+      ]
+    },
+    "neighbor_source_output": {
+      "n": 256,
+      "base": 252,
+      "source": 0,
+      "counterfactual": 0,
+      "other": 4,
+      "ci95": [
+        [
+          0.96875,
+          0.0,
+          0.0
+        ],
+        [
+          0.99609375,
+          0.0,
+          0.0
+        ]
+      ],
+      "generation_counts": [
+        252,
+        0,
+        0
+      ],
+      "generation_other": 4,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.9605207372908033,
+          0.9939074017966336
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ]
+      ]
+    },
+    "neighbor_source_pattern": {
+      "n": 256,
+      "base": 251,
+      "source": 0,
+      "counterfactual": 0,
+      "other": 5,
+      "ci95": [
+        [
+          0.9609375,
+          0.0,
+          0.0
+        ],
+        [
+          0.99609375,
+          0.0,
+          0.0
+        ]
+      ],
+      "generation_counts": [
+        251,
+        0,
+        0
+      ],
+      "generation_other": 5,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.9551018677503436,
+          0.9916292702154206
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ]
+      ]
+    },
+    "selected_self_output": {
+      "n": 256,
+      "base": 252,
+      "source": 0,
+      "counterfactual": 0,
+      "other": 4,
+      "ci95": [
+        [
+          0.96875,
+          0.0,
+          0.0
+        ],
+        [
+          0.99609375,
+          0.0,
+          0.0
+        ]
+      ],
+      "max_logit_error": 0.0,
+      "wilson_ci95": [
+        [
+          0.9605207372908033,
+          0.9939074017966336
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ]
+      ]
+    },
+    "selected_self_pattern": {
+      "n": 256,
+      "base": 252,
+      "source": 0,
+      "counterfactual": 0,
+      "other": 4,
+      "ci95": [
+        [
+          0.96875,
+          0.0,
+          0.0
+        ],
+        [
+          0.99609375,
+          0.0,
+          0.0
+        ]
+      ],
+      "max_logit_error": 0.125,
+      "wilson_ci95": [
+        [
+          0.9605207372908033,
+          0.9939074017966336
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ]
+      ]
+    },
+    "selected_source_output": {
+      "n": 256,
+      "base": 5,
+      "source": 240,
+      "counterfactual": 7,
+      "other": 4,
+      "ci95": [
+        [
+          0.00390625,
+          0.90625,
+          0.0078125
+        ],
+        [
+          0.0390625,
+          0.96484375,
+          0.04697265624999858
+        ]
+      ],
+      "generation_counts": [
+        5,
+        240,
+        7
+      ],
+      "generation_other": 4,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.008370729784579391,
+          0.04489813224965644
+        ],
+        [
+          0.9008977667558741,
+          0.9611663588714884
+        ],
+        [
+          0.013307156355121155,
+          0.05535570792246043
+        ]
+      ]
+    },
+    "selected_source_pattern": {
+      "n": 256,
+      "base": 37,
+      "source": 0,
+      "counterfactual": 182,
+      "other": 37,
+      "ci95": [
+        [
+          0.1015625,
+          0.0,
+          0.65625
+        ],
+        [
+          0.1875,
+          0.0,
+          0.765625
+        ]
+      ],
+      "generation_counts": [
+        37,
+        0,
+        182
+      ],
+      "generation_other": 37,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.10671067600593546,
+          0.1928622219218325
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ],
+        [
+          0.6526113609415182,
+          0.7630266996288174
+        ]
+      ]
+    },
+    "selected_source_value": {
+      "n": 256,
+      "base": 221,
+      "source": 0,
+      "counterfactual": 24,
+      "other": 11,
+      "ci95": [
+        [
+          0.8203125,
+          0.0,
+          0.05859375
+        ],
+        [
+          0.90234375,
+          0.0,
+          0.1328125
+        ]
+      ],
+      "generation_counts": [
+        221,
+        0,
+        24
+      ],
+      "generation_other": 11,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.8157948225987579,
+          0.9000262817168199
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ],
+        [
+          0.0638098481830768,
+          0.13570203516294374
+        ]
+      ]
+    },
+    "selected_wrong_call_pattern": {
+      "n": 256,
+      "base": 137,
+      "source": 3,
+      "counterfactual": 0,
+      "other": 116,
+      "ci95": [
+        [
+          0.47265625,
+          0.0,
+          0.0
+        ],
+        [
+          0.59765625,
+          0.02734375,
+          0.0
+        ]
+      ],
+      "generation_counts": [
+        137,
+        3,
+        0
+      ],
+      "generation_other": 116,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.4739903018869167,
+          0.5952827082081391
+        ],
+        [
+          0.003993287123007758,
+          0.033881572667882304
+        ],
+        [
+          0.0,
+          0.01478385642587143
+        ]
+      ]
+    },
+    "source": {
+      "n": 256,
+      "base": 0,
+      "source": 252,
+      "counterfactual": 2,
+      "other": 2,
+      "ci95": [
+        [
+          0.0,
+          0.96875,
+          0.0
+        ],
+        [
+          0.0,
+          0.99609375,
+          0.01953125
+        ]
+      ],
+      "generation_counts": [
+        0,
+        252,
+        2
+      ],
+      "generation_other": 2,
+      "truncations": 0,
+      "first_token_name_disagreements": 0,
+      "wilson_ci95": [
+        [
+          0.0,
+          0.01478385642587143
+        ],
+        [
+          0.9605207372908033,
+          0.9939074017966336
+        ],
+        [
+          0.002145090367681419,
+          0.028032768301535768
+        ]
+      ]
+    }
+  },
+  "paired_contrasts": {
+    "pattern_minus_output_counterfactual": {
+      "delta": 0.68359375,
+      "ci95": [
+        0.625,
+        0.7421875
+      ],
+      "a_only": 178,
+      "b_only": 3,
+      "conservative_ci95": [
+        0.5888028085634675,
+        0.7566144782567862
+      ],
+      "exact_p_two_sided": 6.4498849989573976e-49,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "output_minus_pattern_source": {
+      "delta": 0.9375,
+      "ci95": [
+        0.90625,
+        0.96484375
+      ],
+      "a_only": 240,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.8778499008392222,
+        0.9667615574820292
+      ],
+      "exact_p_two_sided": 1.131959884853339e-72,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "pattern_minus_wrong_call_counterfactual": {
+      "delta": 0.7109375,
+      "ci95": [
+        0.65625,
+        0.765625
+      ],
+      "a_only": 182,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.6257295766628551,
+        0.7729018747524821
+      ],
+      "exact_p_two_sided": 3.2626522339992623e-55,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    },
+    "pattern_minus_neighbor_base_route": {
+      "delta": 0.7109375,
+      "ci95": [
+        0.65625,
+        0.765625
+      ],
+      "a_only": 182,
+      "b_only": 0,
+      "conservative_ci95": [
+        0.6257295766628551,
+        0.7729018747524821
+      ],
+      "exact_p_two_sided": 3.2626522339992623e-55,
+      "interval_method": "Bonferroni simultaneous97.5% Clopper-Pearson intervals for discordant proportions"
+    }
+  },
+  "bootstrap_replicates": 10000,
+  "unit": "paired graph/input; one backbone and map"
+}

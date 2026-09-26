@@ -20,12 +20,12 @@
   },
   "eligible_training_graphs": 3603080,
   "extra_excluded_locks": {
-    "/data/wujiaju/n10_migration_20260923/locks/discovery.pt": "b3af6af8d58b6f9a0a9c16eabaf98ae486e76c3c19470feae5134a9a0a896279",
-    "/data/wujiaju/n10_migration_20260923/locks/donors.pt": "df59428a4445303df66f74327257100b3f42b8aebd76bfc48548ecbc2d31085c",
-    "/data/wujiaju/n10_migration_20260923/locks/rings.pt": "23a0d47e4bf6e50f3fbf17c4d20d34e9a077a8ded990a6297225ceb403660066",
-    "/data/wujiaju/n10_migration_20260923/locks/smoke.pt": "5d7dbd317536d4784fcde4501020f7eb02787de2dc905452695cebd1a9cc1534"
+    "/data/paperexperiment/n10_migration_20260923/locks/discovery.pt": "b3af6af8d58b6f9a0a9c16eabaf98ae486e76c3c19470feae5134a9a0a896279",
+    "/data/paperexperiment/n10_migration_20260923/locks/donors.pt": "df59428a4445303df66f74327257100b3f42b8aebd76bfc48548ecbc2d31085c",
+    "/data/paperexperiment/n10_migration_20260923/locks/rings.pt": "23a0d47e4bf6e50f3fbf17c4d20d34e9a077a8ded990a6297225ceb403660066",
+    "/data/paperexperiment/n10_migration_20260923/locks/smoke.pt": "5d7dbd317536d4784fcde4501020f7eb02787de2dc905452695cebd1a9cc1534"
   },
-  "final_test_lock": "/data/wujiaju/n10_migration_20260923/locks/confirmation.pt",
+  "final_test_lock": "/data/paperexperiment/n10_migration_20260923/locks/confirmation.pt",
   "final_test_lock_sha256": "635ccb11c182e41ed046415f3a9f1c4d3043e4a7ca6d14444efa9b6feb20eac4",
   "parameter_count": 1598208,
   "physical_gpu": "3",
@@ -33,7 +33,7 @@
   "protocol_id": "paper2027.graph.n10.disjoint_backbone.v1",
   "sampler": "uniform rejection from all N! permutation graphs excluding both locks",
   "seed": 4,
-  "selection_lock": "/data/wujiaju/n10_migration_20260923/locks/selection.pt",
+  "selection_lock": "/data/paperexperiment/n10_migration_20260923/locks/selection.pt",
   "selection_lock_sha256": "d101bbdd50f61fd179bc1bfd8ba8c4151734ec6c6f1158f32e4197454adacd74",
   "training": {
     "aux_loss": 0.0,

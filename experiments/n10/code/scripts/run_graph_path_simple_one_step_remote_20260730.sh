@@ -13,12 +13,12 @@ if [[ ! "${PHYSICAL_GPU}" =~ ^[0-9]+$ ]]; then
   exit 2
 fi
 
-CODE_ROOT="/data/wujiaju/LooPlus"
-OUTPUT_ROOT="/data/wujiaju/graph_path_telomere_simple_one_step_D8L8_20260730"
-LOG_ROOT="/data/wujiaju/logs/graph_path_telomere_simple_one_step_D8L8_20260730"
-PYTHON_BIN="/data/wujiaju/.venvs/loopreasoner/bin/python"
-CHECKPOINT="/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt"
-PHASE_SUMMARY="/data/wujiaju/graph_path_telomere_overloop_20260729/formal/D8_L8_seed1/summary.json"
+CODE_ROOT="/data/paperexperiment/LooPlus"
+OUTPUT_ROOT="/data/paperexperiment/graph_path_telomere_simple_one_step_D8L8_20260730"
+LOG_ROOT="/data/paperexperiment/logs/graph_path_telomere_simple_one_step_D8L8_20260730"
+PYTHON_BIN="/data/paperexperiment/.venvs/loopreasoner/bin/python"
+CHECKPOINT="/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt"
+PHASE_SUMMARY="/data/paperexperiment/graph_path_telomere_overloop_20260729/formal/D8_L8_seed1/summary.json"
 
 export CUDA_VISIBLE_DEVICES="${PHYSICAL_GPU}"
 export PYTHONPATH="${CODE_ROOT}"

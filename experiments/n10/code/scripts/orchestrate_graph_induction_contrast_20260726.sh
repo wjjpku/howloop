@@ -2,11 +2,11 @@
 set -euo pipefail
 
 gpu="${1:-5}"
-root="/data/wujiaju/graph_path_induction_contrast_20260726"
-repo="/data/wujiaju/LooPlus"
-python="/data/wujiaju/.venvs/loopreasoner/bin/python"
+root="/data/paperexperiment/graph_path_induction_contrast_20260726"
+repo="/data/paperexperiment/LooPlus"
+python="/data/paperexperiment/.venvs/loopreasoner/bin/python"
 manifest="${root}/orchestration_manifest.txt"
-log_root="/data/wujiaju/logs/graph_path_induction_contrast_20260726"
+log_root="/data/paperexperiment/logs/graph_path_induction_contrast_20260726"
 mkdir -p "${root}" "${log_root}"
 
 write_status() {

@@ -9,7 +9,7 @@ from train_ouro_full import MODEL,task
 from ouro_eval_panel import EVAL_SEEDS
 from score_ouro_content import parse
 
-ROOT=Path('/data/wujiaju/ouro26_j_positions_20260915')
+ROOT=Path('/data/paperexperiment/ouro26_j_positions_20260915')
 CONDITIONS={'all':[0,1,2,3],'none':[]}
 CONDITIONS.update({f'drop_{i+1}':[j for j in range(4) if j!=i] for i in range(4)})
 CONDITIONS.update({f'only_{i+1}':[i] for i in range(4)})

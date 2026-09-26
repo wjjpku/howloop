@@ -7,9 +7,9 @@ if [[ "$#" -ne 1 ]] || ! [[ "$1" =~ ^[0-7]$ ]]; then
 fi
 
 PHYSICAL_GPU="$1"
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-RUNNER=/data/wujiaju/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
-PIPELINE_LOG=/data/wujiaju/logs/paper_length_telomere_20260731/official_addition_j_horizon_shared_20260804.log
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+RUNNER=/data/paperexperiment/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
+PIPELINE_LOG=/data/paperexperiment/logs/paper_length_telomere_20260731/official_addition_j_horizon_shared_20260804.log
 DECLARED_PEAK_MIB=6144
 RESERVE_MIB=16384
 

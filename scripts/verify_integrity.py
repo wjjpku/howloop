@@ -4,6 +4,10 @@ from pathlib import Path
 import hashlib,json,re,sys
 ROOT=Path(__file__).resolve().parents[1]
 manifest=json.loads((ROOT/'provenance/SHA256SUMS.json').read_text());failed=[]
+expected_files=set(manifest)|{'provenance/SHA256SUMS.json'}
+actual_files={str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file() and not any(x in p.relative_to(ROOT).parts for x in ('outputs','.venv','__pycache__','.git')) and p.suffix!='.pyc' and p.name not in ('.DS_Store','.git')}
+for name in sorted(expected_files-actual_files):failed.append((name,'missing from package'))
+for name in sorted(actual_files-expected_files):failed.append((name,'unexpected in package'))
 for name,expected in manifest.items():
  p=ROOT/name
  if not p.is_file():failed.append((name,'missing'));continue
@@ -13,10 +17,12 @@ for name,expected in manifest.items():
  if h.hexdigest()!=expected:failed.append((name,'hash mismatch'))
 figs=json.loads((ROOT/'provenance/figures.json').read_text());used=set(re.findall(r'\\includegraphics(?:\[[^]]*\])?\{([^}]+)\}',(ROOT/'paper/main.tex').read_text()))
 assert used=={x['paper_asset'] for x in figs},'Incomplete paper figure mapping'
+scope=json.loads((ROOT/'provenance/experiment_scope.json').read_text())
+assert set(scope)=={p.name for p in (ROOT/'experiments').iterdir() if p.is_dir()},'Experiment directory scope differs from submission manifest'
 for row in figs:
  for name in row['inputs']+[row['script']]:
   assert (ROOT/name).exists(),name
-assert len(used)==15
+assert len(used)==json.loads((ROOT/'provenance/submission_manifest.json').read_text())['figures']
 if failed:
  print(json.dumps(failed,indent=2));raise SystemExit(1)
 print(f'Verified {len(manifest)} hashes and all {len(used)} manuscript figure assets.')

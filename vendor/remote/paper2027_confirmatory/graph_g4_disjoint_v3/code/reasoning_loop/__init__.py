@@ -1,2 +1,0 @@
-"""Looped-transformer reasoning experiments."""
-

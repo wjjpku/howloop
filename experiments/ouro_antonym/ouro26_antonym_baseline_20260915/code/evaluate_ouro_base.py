@@ -5,8 +5,8 @@ import torch
 from transformers import AutoModelForCausalLM,AutoTokenizer
 from task import bank,score,summarize
 
-MODEL='/data/wujiaju/models/Ouro-2.6B'
-ROOT=Path('/data/wujiaju/ouro26_antonym_baseline_20260915/results')
+MODEL='/data/paperexperiment/models/Ouro-2.6B'
+ROOT=Path('/data/paperexperiment/ouro26_antonym_baseline_20260915/results')
 
 def main():
     assert os.environ['CUDA_VISIBLE_DEVICES']=='7'

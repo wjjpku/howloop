@@ -1,7 +1,7 @@
 """Watch only this campaign; terminate its own jobs if GPU reserve is breached."""
 import json,os,signal,subprocess,time
 from pathlib import Path
-R=Path(__file__).resolve().parents[1];log=Path('/data/wujiaju/logs/n10_migration_20260923/resource.jsonl')
+R=Path(__file__).resolve().parents[1];log=Path('/data/paperexperiment/logs/n10_migration_20260923/resource.jsonl')
 def stop_own(pid):
  p=Path(f'/proc/{pid}')
  if not p.exists():return

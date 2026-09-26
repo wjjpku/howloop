@@ -8,34 +8,10 @@
     "kind": "conceptual_artwork"
   },
   {
-    "paper_asset": "figures/fig02a_readout.pdf",
-    "script": "plots/fig2.py",
+    "paper_asset": "figures/fig02_readouts.pdf",
+    "script": "plots/revision_figures.py",
     "inputs": [
-      "experiments/n10/figure_work/source"
-    ],
-    "kind": "data_plot"
-  },
-  {
-    "paper_asset": "figures/fig02b_readout.pdf",
-    "script": "plots/fig2.py",
-    "inputs": [
-      "experiments/n10/figure_work/source"
-    ],
-    "kind": "data_plot"
-  },
-  {
-    "paper_asset": "figures/fig02c_readout.pdf",
-    "script": "plots/fig2.py",
-    "inputs": [
-      "experiments/n10/figure_work/source"
-    ],
-    "kind": "data_plot"
-  },
-  {
-    "paper_asset": "figures/fig02d_readout.pdf",
-    "script": "plots/fig2.py",
-    "inputs": [
-      "experiments/n10/figure_work/source"
+      "experiments/revision/trajectories"
     ],
     "kind": "data_plot"
   },
@@ -80,12 +56,50 @@
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig04_attention_mechanism.pdf",
-    "script": "plots/fig4_submission.py",
+    "paper_asset": "figures/fig08_long_composition_mean.pdf",
+    "script": "plots/revision_figures.py",
     "inputs": [
-      "experiments/target_exchange/graph_summary.json",
-      "experiments/target_exchange/values.json",
-      "experiments/target_exchange/fig04_before.pdf"
+      "experiments/revision/composition_summary.json",
+      "experiments/revision/long_composition/A_fit1.npz",
+      "experiments/revision/long_composition/A_fit2.npz"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/fig04_attention_mechanism.pdf",
+    "script": "plots/revision_figures.py",
+    "inputs": [
+      "experiments/revision/mechanism_aggregate.json",
+      "experiments/ouro_256_steering/summary.json",
+      "experiments/ouro_256_mechanism/semantic_merged/analysis.json"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/fig04_target_switching.pdf",
+    "script": "plots/revision_figures.py",
+    "inputs": [
+      "experiments/revision/mechanism_aggregate.json",
+      "experiments/ouro_256_steering/summary.json",
+      "experiments/ouro_256_mechanism/semantic_merged/analysis.json"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/fig09_matched_supervision.pdf",
+    "script": "plots/revision_figures.py",
+    "inputs": [
+      "experiments/revision/matched/plot_data.json",
+      "experiments/revision/matched/paper_audit.json"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/fig07_supervision_capacity.pdf",
+    "script": "plots/fig7_submission.py",
+    "inputs": [
+      "data/plot/ouro_readouts.json",
+      "data/plot/ouro_fixed4.json"
     ],
     "kind": "data_plot"
   },
@@ -126,11 +140,54 @@
     "kind": "data_plot"
   },
   {
-    "paper_asset": "figures/fig07_supervision_capacity.pdf",
-    "script": "plots/fig7_submission.py",
+    "paper_asset": "figures/figA_trajectory_a.pdf",
+    "script": "plots/revision_figures.py",
     "inputs": [
-      "data/plot/ouro_readouts.json",
-      "data/plot/ouro_fixed4.json"
+      "experiments/revision/trajectories"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/figA_trajectory_b.pdf",
+    "script": "plots/revision_figures.py",
+    "inputs": [
+      "experiments/revision/trajectories"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/figA_trajectory_c.pdf",
+    "script": "plots/revision_figures.py",
+    "inputs": [
+      "experiments/revision/trajectories"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/figA_selected_mechanism_readouts.pdf",
+    "script": "plots/revision_figures.py",
+    "inputs": [
+      "experiments/revision/trajectories/L6_seed6.json",
+      "experiments/selected_mechanism/heatmaps/data/L6_seed10/summary.json",
+      "experiments/selected_mechanism/heatmaps/data/L6_seed13/summary.json"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/figS_matched_supervision_pairs.pdf",
+    "script": "plots/revision_figures.py",
+    "inputs": [
+      "experiments/revision/matched/plot_data.json",
+      "experiments/revision/matched/paper_audit.json"
+    ],
+    "kind": "data_plot"
+  },
+  {
+    "paper_asset": "figures/figH_kg_state_control.pdf",
+    "script": "plots/figH_kg.py",
+    "inputs": [
+      "experiments/kg/results/key_cells_1024.jsonl",
+      "experiments/kg/results/key_cells_1024_summary.json"
     ],
     "kind": "data_plot"
   }

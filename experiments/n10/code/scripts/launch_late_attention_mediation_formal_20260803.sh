@@ -4,14 +4,14 @@ set -euo pipefail
 export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0}"
 export TELOMERE_CUDA_MEMORY_FRACTION="${TELOMERE_CUDA_MEMORY_FRACTION:-0.12}"
 
-exec /data/wujiaju/.venvs/loopreasoner/bin/python -u -m \
+exec /data/paperexperiment/.venvs/loopreasoner/bin/python -u -m \
   reasoning_loop.analyze_graph_path_j_late_attention_mediation \
   --checkpoint \
-  /data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt \
+  /data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt \
   --bank-artifact \
-  /data/wujiaju/graph_path_fixed_h1_j_20260802/path_equivalence_r64_s16_extension_k24/age_specific_j_bank_after_equivalent_inverse_k3_to_k24.pt \
+  /data/paperexperiment/graph_path_fixed_h1_j_20260802/path_equivalence_r64_s16_extension_k24/age_specific_j_bank_after_equivalent_inverse_k3_to_k24.pt \
   --out-dir \
-  /data/wujiaju/graph_path_fixed_h1_j_20260802/attention_compressed_circuit/late_attention_mediation_formal_5seed_7path_v1 \
+  /data/paperexperiment/graph_path_fixed_h1_j_20260802/attention_compressed_circuit/late_attention_mediation_formal_5seed_7path_v1 \
   --device cuda \
   --examples 64 \
   --batch-size 64 \

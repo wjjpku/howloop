@@ -13,4 +13,4 @@ while tmux has-session -t "${predecessor}" 2>/dev/null; do
   sleep 20
 done
 
-exec /data/wujiaju/LooPlus/scripts/train_graph_depth_circuit_seed.sh "$@"
+exec /data/paperexperiment/LooPlus/scripts/train_graph_depth_circuit_seed.sh "$@"

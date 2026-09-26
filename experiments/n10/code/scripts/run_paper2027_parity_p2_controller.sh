@@ -4,9 +4,9 @@
 # and skipped; it is never silently removed from the result table.
 set -euo pipefail
 
-run_root="${PAPER2027_PARITY_ROOT:-/data/wujiaju/paper2027_confirmatory/parity_input_once_v2}"
+run_root="${PAPER2027_PARITY_ROOT:-/data/paperexperiment/paper2027_confirmatory/parity_input_once_v2}"
 seed="${PAPER2027_PARITY_SEED:?set PAPER2027_PARITY_SEED}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_root="$run_root/analysis_code"
 trainer="$code_root/reasoning_loop/paper_length_telomere.py"
 selector="$code_root/reasoning_loop/select_parity_boundary_controller.py"
@@ -16,7 +16,7 @@ namespace="${PAPER2027_PARITY_P2_NAMESPACE:-}"
 suffix=""
 [[ -z "$namespace" ]] || suffix="_${namespace}"
 experiment_root="$run_root/p2_controllers${suffix}/seed${seed}"
-log_dir="/data/wujiaju/logs/paper2027_confirmatory/parity_input_once_v2"
+log_dir="/data/paperexperiment/logs/paper2027_confirmatory/parity_input_once_v2"
 labels="${PAPER2027_PARITY_P2_LABELS:-rank48_seed1 rank128_seed1 dense_seed1 rank48_seed2 rank128_seed2 dense_seed2}"
 read -r -a label_array <<< "$labels"
 [[ ${#label_array[@]} -ge 1 ]] || { echo "P2 needs at least one controller label" >&2; exit 2; }

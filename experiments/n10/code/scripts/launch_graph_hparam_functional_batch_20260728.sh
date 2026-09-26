@@ -8,8 +8,8 @@ fi
 
 gpu="$1"
 shift
-repo="/data/wujiaju/LooPlus"
-log_root="/data/wujiaju/logs/graph_path_hparam_circuit_20260728"
+repo="/data/paperexperiment/LooPlus"
+log_root="/data/paperexperiment/logs/graph_path_hparam_circuit_20260728"
 cd "${repo}"
 
 pids=()

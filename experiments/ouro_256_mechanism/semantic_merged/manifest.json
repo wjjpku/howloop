@@ -1,0 +1,534 @@
+{
+  "status": "complete",
+  "shards": [
+    {
+      "status": "complete",
+      "pid": 3726702,
+      "gpu": "1",
+      "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+      "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898",
+      "code_sha": "4f8ce05154d74c12f4b1caf235345afffcfa225928d60d3636f6ee2eb611f6c6",
+      "pairs_sha": "c8e5a4162c02a2eecffae12729583f3f40600c25264d77db871b1c538d09fddf",
+      "smoke": false,
+      "omit_call": 0,
+      "patch_call": 0,
+      "started": 1790396433.5262928,
+      "conditions": {
+        "selected_source_pattern": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "selected_source_output": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "selected_source_value": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "selected_self_pattern": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "selected_self_output": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "selected_wrong_call_pattern": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "neighbor_source_pattern": {
+          "heads": {
+            "41": [
+              0,
+              1,
+              3,
+              4
+            ],
+            "43": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ],
+            "47": [
+              1,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "neighbor_source_output": {
+          "heads": {
+            "41": [
+              0,
+              1,
+              3,
+              4
+            ],
+            "43": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ],
+            "47": [
+              1,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          "calls": [
+            3
+          ]
+        }
+      },
+      "config_sha": "331ee42ca71b9bcda080d610b08ba1392bb4ac9a2f9577b9c96c167098ae2116",
+      "generate": [
+        "base",
+        "counterfactual",
+        "neighbor_source_output",
+        "neighbor_source_pattern",
+        "selected_source_output",
+        "selected_source_pattern",
+        "selected_source_value",
+        "selected_wrong_call_pattern",
+        "source"
+      ],
+      "protocol_sha": "78314342515b5b5b4bd8a09cde98fb2c765091d7c7c324213c264b6c03c8fd0f",
+      "elapsed": 776.5522351264954,
+      "peak_gib": 10.494457721710205,
+      "parameters_unchanged": true
+    },
+    {
+      "status": "complete",
+      "pid": 3726707,
+      "gpu": "3",
+      "base_sha": "ed5b5bff0825de33d5f3a48267bc3b6b721cd6596db03ae22551eb4037aa0f44",
+      "j_sha": "15b55ed1255915fe785891735a6a83a9c3baf851bc42c6a73e2eabe6c058c898",
+      "code_sha": "4f8ce05154d74c12f4b1caf235345afffcfa225928d60d3636f6ee2eb611f6c6",
+      "pairs_sha": "4788a71190bb904637647ffb20b928051bea486aec47aba61ae829584fbe217c",
+      "smoke": false,
+      "omit_call": 0,
+      "patch_call": 0,
+      "started": 1790396433.9614143,
+      "conditions": {
+        "selected_source_pattern": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "selected_source_output": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "selected_source_value": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "selected_self_pattern": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "selected_self_output": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "selected_wrong_call_pattern": {
+          "heads": {
+            "41": [
+              2,
+              10,
+              12,
+              15
+            ],
+            "43": [
+              1,
+              6,
+              11,
+              13,
+              15
+            ],
+            "47": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              13,
+              15
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "neighbor_source_pattern": {
+          "heads": {
+            "41": [
+              0,
+              1,
+              3,
+              4
+            ],
+            "43": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ],
+            "47": [
+              1,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          "calls": [
+            3
+          ]
+        },
+        "neighbor_source_output": {
+          "heads": {
+            "41": [
+              0,
+              1,
+              3,
+              4
+            ],
+            "43": [
+              0,
+              2,
+              3,
+              4,
+              5
+            ],
+            "47": [
+              1,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ]
+          },
+          "calls": [
+            3
+          ]
+        }
+      },
+      "config_sha": "331ee42ca71b9bcda080d610b08ba1392bb4ac9a2f9577b9c96c167098ae2116",
+      "generate": [
+        "base",
+        "counterfactual",
+        "neighbor_source_output",
+        "neighbor_source_pattern",
+        "selected_source_output",
+        "selected_source_pattern",
+        "selected_source_value",
+        "selected_wrong_call_pattern",
+        "source"
+      ],
+      "protocol_sha": "78314342515b5b5b4bd8a09cde98fb2c765091d7c7c324213c264b6c03c8fd0f",
+      "elapsed": 790.0292391777039,
+      "peak_gib": 10.494457721710205,
+      "parameters_unchanged": true
+    }
+  ],
+  "n": 256,
+  "rows": 2816,
+  "parameters_unchanged": true
+}

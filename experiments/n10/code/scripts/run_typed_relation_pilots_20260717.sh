@@ -16,10 +16,10 @@ case "$suite" in
     ;;
 esac
 
-repo_root=${TYPED_RELATION_REPO_ROOT:-/data/wujiaju/LooPlus}
-out_root=${TYPED_RELATION_OUT_ROOT:-/data/wujiaju/typed_relation_composition_20260717}
-log_root=${TYPED_RELATION_LOG_ROOT:-/data/wujiaju/logs/typed_relation_composition_20260717}
-python_bin=${TYPED_RELATION_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}
+repo_root=${TYPED_RELATION_REPO_ROOT:-/data/paperexperiment/LooPlus}
+out_root=${TYPED_RELATION_OUT_ROOT:-/data/paperexperiment/typed_relation_composition_20260717}
+log_root=${TYPED_RELATION_LOG_ROOT:-/data/paperexperiment/logs/typed_relation_composition_20260717}
+python_bin=${TYPED_RELATION_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}
 
 mkdir -p "$out_root" "$log_root"
 cd "$repo_root"

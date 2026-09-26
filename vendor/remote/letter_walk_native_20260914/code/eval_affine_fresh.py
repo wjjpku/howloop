@@ -50,13 +50,13 @@ def main():
     if a.prepare_only:return
     assert os.environ['CUDA_VISIBLE_DEVICES']==('5' if a.loops==4 else '7')
     torch.set_num_threads(4);torch.manual_seed(20260915)
-    root=Path('/data/wujiaju/ouro26_affine_fresh_eval_20260915')/f'L{a.loops}';root.mkdir(parents=True,exist_ok=False)
+    root=Path('/data/paperexperiment/ouro26_affine_fresh_eval_20260915')/f'L{a.loops}';root.mkdir(parents=True,exist_ok=False)
     backbone=BASE/'run/checkpoint.pt';assert sha(backbone)==CK_SHA
     ck=torch.load(backbone,map_location='cpu',weights_only=False,mmap=True);assert ck['step']==200
     model=AutoModelForCausalLM.from_pretrained(MODEL,trust_remote_code=True,local_files_only=True,torch_dtype=torch.float32,attn_implementation='sdpa')
     model.load_state_dict(ck['model'],strict=True);del ck
     model=model.to('cuda').eval().requires_grad_(False);model.config.total_ut_steps=a.loops;model.model.total_ut_steps=a.loops
-    jpath=Path('/data/wujiaju/ouro26_affine_pair_20260915')/f'L{a.loops}'/'checkpoint.pt'
+    jpath=Path('/data/paperexperiment/ouro26_affine_pair_20260915')/f'L{a.loops}'/'checkpoint.pt'
     jc=torch.load(jpath,map_location='cpu',weights_only=False);assert jc['step']==500 and jc['loops']==a.loops and jc['backbone_sha256']==CK_SHA
     affine=Affine(model.config.hidden_size);affine.load_state_dict(jc['affine']);del jc
     affine=affine.to('cuda').eval().requires_grad_(False)

@@ -11,7 +11,7 @@ gpu_index=$2
 completed_arm=$3
 completed_seed=$4
 shift 4
-repo_root=${GLOBAL_DEPTH_REPO_ROOT:-/data/wujiaju/LooPlus}
+repo_root=${GLOBAL_DEPTH_REPO_ROOT:-/data/paperexperiment/LooPlus}
 
 wait_for_idle_gpu() {
   local idle_samples=0

@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "pid": 3648409,
+  "gpu": 5,
+  "training": false,
+  "torch": "2.12.1+cu130",
+  "hashes": {
+    "backbone": "2d07a4256fdc327f5ba796f35cce4614697c2f74b4d32072089cf35a8c9fabbd",
+    "controller": "e652e59973ec1fe92ec00c73c7fe87a6390c52343387e5fe493b5727d2bada09"
+  },
+  "panel_sha256": "61d5840870a5d9c2734bee3b154ac531829fb709c26d5e5d7508bdc48be3ac05",
+  "arms": [
+    "normal",
+    "no_j_after4",
+    "no_f_after4",
+    "prefix4"
+  ],
+  "parameter_dtype": "float32",
+  "compute_dtype": "bfloat16",
+  "source_hashes": {
+    "model.py": "be142831cbee1aa77cdd65ae66deb60b427499f8e3fe84c9cb1d3606cda8920c",
+    "data.py": "0923cc9982718dfcbe5a06ce91ecaa73069b551da8340ddd6e6fbec417b8cf05",
+    "semantic_data.py": "0b3e5fae8cbbbc2eae06c8283b8942f32d0e4a5835b6547575dcb6561ed52a56",
+    "tasks.py": "d6bdeff2dff0e64a2025e2e001fe8f1260f1aef54a24e41c39c2393506168af0"
+  },
+  "audit_source_sha256": "54b439c2d86c6cd49831eeb8eeaeaec137b2d0a0d72814f4becaacdccd93c756",
+  "smoke_passed": true,
+  "frozen_verified": true,
+  "elapsed_seconds": 1469.4873521104455,
+  "predictions_sha256": "5391a8e9c86bef55d327624c82c56abd3e3af670338a6769ffd54ae7807374ba",
+  "summary_sha256": "52809fad8693da753632065c13ab0d7115e78017a7e6503ff6a6336a23106a79"
+}

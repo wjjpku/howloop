@@ -2,14 +2,14 @@
 set -euo pipefail
 
 GPU="${1:-0}"
-CODE=/data/wujiaju/LooPlus
-PYTHON=/data/wujiaju/.venvs/loopreasoner/bin/python
-ROOT=/data/wujiaju/graph_path_strict_dense_h8_continue_20260806
-LOG_ROOT=/data/wujiaju/logs/graph_path_strict_dense_h8_continue_20260806
-CHECKPOINT=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-PHASE=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
-AFFINE=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/initializers/final_seed0_ce_h64/unit_j_maps.pt
-BEFORE=/data/wujiaju/graph_path_strict_h8_single_j_20260806/controller/task_lora_j.pt
+CODE=/data/paperexperiment/LooPlus
+PYTHON=/data/paperexperiment/.venvs/loopreasoner/bin/python
+ROOT=/data/paperexperiment/graph_path_strict_dense_h8_continue_20260806
+LOG_ROOT=/data/paperexperiment/logs/graph_path_strict_dense_h8_continue_20260806
+CHECKPOINT=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+PHASE=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
+AFFINE=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/initializers/final_seed0_ce_h64/unit_j_maps.pt
+BEFORE=/data/paperexperiment/graph_path_strict_h8_single_j_20260806/controller/task_lora_j.pt
 CONTROLLER="${ROOT}/controller"
 AUDIT="${ROOT}/matched_strict_unseen"
 REPORT="${ROOT}/comparison"

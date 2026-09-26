@@ -1,0 +1,17 @@
+{
+  "parity_phase": "Figures 5 and 6 Parity",
+  "composition": "Figure 3 seed-6 controller composition",
+  "ouro_letter": "Figure 4 Ouro Letter-Walk",
+  "n10": "Figures 2 and 3 Graph Traversal",
+  "ouro_256_steering": "Figure 4 Ouro 256-pair steering",
+  "ouro_256_mechanism": "Figure 4 Ouro 256-pair semantic and restore",
+  "target_exchange": "Figure 4 target exchange",
+  "ouro_antonym": "Figure 7 Ouro Antonym",
+  "long_range": "Figure 5 long-range curves",
+  "graph_continuation": "Figure 5 Graph Continuation",
+  "graph_mechanism": "Figure 4 seed-6 Graph mechanism",
+  "revision": "Figures 2, 8, 9 and matched-supervision appendix; revised source and saved results",
+  "selected_mechanism": "Figure 4 selected D8L6 seeds 10 and 13",
+  "kg": "Appendix H synthetic KG relation-composition control",
+  "qwen": "Appendix H Qwen3-8B continued-computation control"
+}

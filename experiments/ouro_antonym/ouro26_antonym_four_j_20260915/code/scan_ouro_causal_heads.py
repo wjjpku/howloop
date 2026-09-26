@@ -15,7 +15,7 @@ from train_ouro_full import MODEL,task
 from ouro_eval_panel import EVAL_SEEDS
 from score_ouro_content import parse
 
-ROOT=Path('/data/wujiaju/ouro26_causal_head_scan_20260915')
+ROOT=Path('/data/paperexperiment/ouro26_causal_head_scan_20260915')
 ARMS={'plain4':(False,4),'j4':(True,4),'j8':(True,8)}
 
 def select_candidates(root):

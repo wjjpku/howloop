@@ -51,6 +51,6 @@
       100.0
     ]
   ],
-  "stepwise_source": "/Users/jiaju/Documents/looped_transformer_paper_repro_20260920/paper_database/source_data/ouro_delta/stepwise_pair_control_20260915_eval.jsonl",
-  "final_source": "/Users/jiaju/Documents/looped_transformer_paper_repro_20260920/sec08_supervision/p2b_ouro_antonym_delta_deps/ouro26_antonym_four_j_20260915"
+  "stepwise_source": "/data/paperexperiment/Documents/looped_transformer_paper_repro_20260920/paper_database/source_data/ouro_delta/stepwise_pair_control_20260915_eval.jsonl",
+  "final_source": "/data/paperexperiment/Documents/looped_transformer_paper_repro_20260920/sec08_supervision/p2b_ouro_antonym_delta_deps/ouro26_antonym_four_j_20260915"
 }

@@ -2,13 +2,13 @@
 set -euo pipefail
 
 GPU="${1:-0}"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-ROOT=/data/wujiaju/graph_path_strict_h8_single_j_20260806
-LOG_ROOT=/data/wujiaju/logs/graph_path_strict_h8_single_j_20260806
-CHECKPOINT=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-PHASE=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
-INITIALIZER=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/initializers/final_seed0_ce_h64/unit_j_maps.pt
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+ROOT=/data/paperexperiment/graph_path_strict_h8_single_j_20260806
+LOG_ROOT=/data/paperexperiment/logs/graph_path_strict_h8_single_j_20260806
+CHECKPOINT=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+PHASE=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/config/phase_final_seed0.json
+INITIALIZER=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/initializers/final_seed0_ce_h64/unit_j_maps.pt
 CONTROLLER_DIR="${ROOT}/controller"
 AUDIT_DIR="${ROOT}/strict_unseen"
 RAW_DIR="${ROOT}/raw_hidden_direction"
@@ -28,7 +28,7 @@ Path(path).write_text(json.dumps({
     "physical_gpu": int(gpu),
     "prelaunch_used_mib": int(used),
     "prelaunch_free_mib": int(free),
-    "checkpoint": "/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt",
+    "checkpoint": "/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt",
     "controller": "one shared loop-boundary J(h)=hD+(hA)B+b, rank 48",
     "training_support": "K in {1,2,4,6,8}; no training unroll exceeds 8",
     "loss": "successor CE only at every controlled continuation; hidden-state loss 0",

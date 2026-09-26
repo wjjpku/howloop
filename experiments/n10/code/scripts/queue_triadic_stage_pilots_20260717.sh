@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-repo_root=${RESOURCE_REUSE_REPO_ROOT:-/data/wujiaju/LooPlus}
+repo_root=${RESOURCE_REUSE_REPO_ROOT:-/data/paperexperiment/LooPlus}
 widths=${STAGE_COMPOSITION_WIDTHS:-"4 8 12 16 24"}
 
 queue_one() {

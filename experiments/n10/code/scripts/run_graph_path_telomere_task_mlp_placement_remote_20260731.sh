@@ -14,14 +14,14 @@ if [[ "${PLACEMENT}" != "pre_block2" && "${PLACEMENT}" != "loop_boundary" ]]; th
     exit 2
 fi
 
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-OUTPUT_ROOT=/data/wujiaju/graph_path_telomere_task_mlp_j_ceonly_placement_20260731
-LOG_ROOT=/data/wujiaju/logs
-CHECKPOINT=/data/wujiaju/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
-PHASE_SUMMARY=/data/wujiaju/graph_path_telomere_overloop_20260729/phase_grid/D8_L8_seed0/summary.json
-POST_DAGGER_AFFINE=/data/wujiaju/graph_path_telomere_unit_j_20260731/seed0_focus_long/unit_j_maps.pt
-REFERENCE_AFFINE=/data/wujiaju/graph_path_telomere_unit_j_20260731/seed0_curriculum64/unit_j_maps.pt
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+OUTPUT_ROOT=/data/paperexperiment/graph_path_telomere_task_mlp_j_ceonly_placement_20260731
+LOG_ROOT=/data/paperexperiment/logs
+CHECKPOINT=/data/paperexperiment/graph_path_compression_circuit_20260725/training/D8_L8_seed0/graphpath_N8_D8_d256_B2_L8_seed0/best.pt
+PHASE_SUMMARY=/data/paperexperiment/graph_path_telomere_overloop_20260729/phase_grid/D8_L8_seed0/summary.json
+POST_DAGGER_AFFINE=/data/paperexperiment/graph_path_telomere_unit_j_20260731/seed0_focus_long/unit_j_maps.pt
+REFERENCE_AFFINE=/data/paperexperiment/graph_path_telomere_unit_j_20260731/seed0_curriculum64/unit_j_maps.pt
 OUT_DIR="${OUTPUT_ROOT}/${PLACEMENT}_w${HIDDEN_WIDTH}"
 RUN_LOG="${LOG_ROOT}/task_mlp_ceonly_${PLACEMENT}_w${HIDDEN_WIDTH}.log"
 HEARTBEAT_LOG="${LOG_ROOT}/task_mlp_ceonly_${PLACEMENT}_w${HIDDEN_WIDTH}.heartbeat.log"

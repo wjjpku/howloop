@@ -2,9 +2,9 @@
 # Fit two controllers for every G4 backbone. No final-lock metric selects a
 # seed; both locks are rejected during controller training.
 set -euo pipefail
-run_root="${PAPER2027_GRAPH_G4_ROOT:-/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v1}"
+run_root="${PAPER2027_GRAPH_G4_ROOT:-/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v1}"
 seed="${PAPER2027_GRAPH_SEED:?set PAPER2027_GRAPH_SEED}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_root="$run_root/analysis_code"
 trainer="$code_root/reasoning_loop/paper2027_graph_g3_controller.py"
 checkpoint="$run_root/backbones/seed${seed}/graphpath_N8_D8_d256_B2_L8_seed${seed}/final.pt"

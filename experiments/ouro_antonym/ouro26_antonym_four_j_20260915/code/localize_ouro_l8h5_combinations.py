@@ -18,7 +18,7 @@ for seed in range(9105000,9200000):
 assert len(EVAL_SEEDS)==64
 from score_ouro_content import parse
 
-ROOT=Path('/data/wujiaju/ouro_l8h5_combinations_20260916')
+ROOT=Path('/data/paperexperiment/ouro_l8h5_combinations_20260916')
 ARMS={'plain4':(False,4),'j4':(True,4),'j8':(True,8)}
 
 def main():

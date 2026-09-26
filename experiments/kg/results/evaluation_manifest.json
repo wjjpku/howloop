@@ -1,0 +1,14 @@
+{
+  "controller": "dense",
+  "current_command": null,
+  "current_exit_code": 0,
+  "current_log": "/data/paperexperiment/logs/kg_input_complexity_20260922/ood20_mixed4to16_half16_wsd3e-5_10k_20260922/dense/dense_eval.log",
+  "current_pid": null,
+  "evaluator_sha256": "81cb621e1c6158e6c798599d452ff85e78f8a0a20634ab1d3b7873b488f25d3c",
+  "grid_sha256": "2740b58c5fb9c58fa1a355ec577a986f6debad14aa377d3b18e2dbca0ff98cbd",
+  "key_summary_sha256": "8c9ba7f616576bd510584dfe120fe1457700e189b53de1637f2d9258b21bd969",
+  "per_example_sha256": "c7a205d94b7ff4bd16e3847353cd103b1ac9ff7d1bbee83695d236704ef17dff",
+  "physical_gpu": 0,
+  "status": "complete",
+  "training_manifest_sha256": "76841d08f31944f1e5876d69ef2965145a78bc4888a2ec2abdee653c78017458"
+}

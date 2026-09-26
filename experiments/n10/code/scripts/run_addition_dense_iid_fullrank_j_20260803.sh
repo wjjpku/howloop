@@ -8,13 +8,13 @@ fi
 
 PHYSICAL_GPU="$1"
 EXPERIMENT_VARIANT="${2:-standard}"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 case "${EXPERIMENT_VARIANT}" in
     standard)
-        RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/dense_iid_fullrank_addition_20260803
-        BACKBONE=/data/wujiaju/paper_length_telomere_20260731/backbones/addition_adaptive_step_official_seed0/final.pt
+        RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/dense_iid_fullrank_addition_20260803
+        BACKBONE=/data/paperexperiment/paper_length_telomere_20260731/backbones/addition_adaptive_step_official_seed0/final.pt
         EXPECTED_BACKBONE_STEP=100001
         EXPECTED_FIXED_LOGICAL_LENGTH=none
         BACKBONE_DESCRIPTION="official Addition seed-0, update 100001, adaptive-step CE, n=1..19"
@@ -23,8 +23,8 @@ case "${EXPERIMENT_VARIANT}" in
         EVAL_LENGTHS=(19 20 24 25 30 35 38 40 50 60)
         ;;
     fixed_n10_t11)
-        RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/dense_iid_fullrank_addition_fixed_n10_t11_20260803
-        BACKBONE=/data/wujiaju/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed0/checkpoint_040000.pt
+        RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/dense_iid_fullrank_addition_fixed_n10_t11_20260803
+        BACKBONE=/data/paperexperiment/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed0/checkpoint_040000.pt
         EXPECTED_BACKBONE_STEP=40000
         EXPECTED_FIXED_LOGICAL_LENGTH=10
         BACKBONE_DESCRIPTION="official Addition seed-0, update 40000, fixed n=10 with T(n)=11"

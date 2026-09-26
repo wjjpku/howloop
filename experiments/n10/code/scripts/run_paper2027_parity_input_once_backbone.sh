@@ -4,12 +4,12 @@
 # in its manifest, while the result itself remains the backbone seed.
 set -euo pipefail
 
-run_root="${PAPER2027_PARITY_ROOT:-/data/wujiaju/paper2027_confirmatory/parity_input_once_v2}"
+run_root="${PAPER2027_PARITY_ROOT:-/data/paperexperiment/paper2027_confirmatory/parity_input_once_v2}"
 seed="${PAPER2027_PARITY_SEED:?set PAPER2027_PARITY_SEED}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_file="$run_root/code/paper_length_telomere.py"
 out_dir="$run_root/backbones/parity_input_once_seed${seed}"
-log_dir="/data/wujiaju/logs/paper2027_confirmatory/parity_input_once_v2"
+log_dir="/data/paperexperiment/logs/paper2027_confirmatory/parity_input_once_v2"
 log_file="$log_dir/backbone_seed${seed}.log"
 pid_file="$run_root/manifests/backbone_seed${seed}.pid"
 manifest="$run_root/manifests/backbone_seed${seed}.json"

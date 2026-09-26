@@ -6,7 +6,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-ROOT=Path('/data/wujiaju/ouro26_causal_head_scan_20260915')
+ROOT=Path('/data/paperexperiment/ouro26_causal_head_scan_20260915')
 ARMS=['plain4','j4','j8'];LABELS=['No J, k=4','J, k=4','J, k=8']
 def rows(path):return [json.loads(l) for l in path.read_text().splitlines()] if path.exists() else []
 def main():

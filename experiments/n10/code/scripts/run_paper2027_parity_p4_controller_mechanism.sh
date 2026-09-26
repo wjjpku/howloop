@@ -3,9 +3,9 @@
 # the independently fitted phase plane, then localize its matrix components.
 set -euo pipefail
 
-run_root="${PAPER2027_PARITY_ROOT:-/data/wujiaju/paper2027_confirmatory/parity_input_once_v2}"
+run_root="${PAPER2027_PARITY_ROOT:-/data/paperexperiment/paper2027_confirmatory/parity_input_once_v2}"
 seed="${PAPER2027_PARITY_SEED:?set PAPER2027_PARITY_SEED}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_root="$run_root/analysis_code"
 checkpoint="$run_root/backbones/parity_input_once_seed${seed}/final.pt"
 boundary="$run_root/evaluation/seed${seed}/prospective_boundary.json"
@@ -14,7 +14,7 @@ suffix=""
 [[ -z "$namespace" ]] || suffix="_${namespace}"
 controller="$run_root/p2_controllers${suffix}/seed${seed}/rank48_seed1/best_controller.pt"
 out_dir="$run_root/p4_mechanism${suffix}/seed${seed}"
-log="/data/wujiaju/logs/paper2027_confirmatory/parity_input_once_v2/p4_mechanism_seed${seed}.log"
+log="/data/paperexperiment/logs/paper2027_confirmatory/parity_input_once_v2/p4_mechanism_seed${seed}.log"
 manifest="$run_root/manifests/p4_mechanism${suffix}_seed${seed}.json"
 
 [[ ! -e "$manifest" ]] || { echo "refusing existing P4 manifest: $manifest" >&2; exit 2; }

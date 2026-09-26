@@ -9,9 +9,9 @@ fi
 gpu_index=$1
 train_seed=$2
 shift 2
-repo_root=${GLOBAL_DEPTH_REPO_ROOT:-/data/wujiaju/LooPlus}
-out_root=${GLOBAL_DEPTH_OUT_ROOT:-/data/wujiaju/global_depth_supervision_20260717}
-python_bin=${GLOBAL_DEPTH_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}
+repo_root=${GLOBAL_DEPTH_REPO_ROOT:-/data/paperexperiment/LooPlus}
+out_root=${GLOBAL_DEPTH_OUT_ROOT:-/data/paperexperiment/global_depth_supervision_20260717}
+python_bin=${GLOBAL_DEPTH_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}
 
 cd "$repo_root"
 ./scripts/run_graph_global_depth_20260717.sh \

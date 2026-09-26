@@ -1,0 +1,13 @@
+from pathlib import Path
+p=Path('n10_migration_20260923/code/reasoning_loop/paper2027_graph_g4_backbone.py');s=p.read_text();s=s.replace('import argparse','import argparse\nimport hashlib',1)
+s=s.replace('REPO_ROOT = Path(__file__).resolve().parents[1]','REPO_ROOT = Path("/data/paperexperiment/n10_migration_20260923/code")')
+s=s.replace('PROTOCOL_ID = "paper2027.graph.n10.disjoint_backbone.v1"','PROTOCOL_ID = "reviewer.graph.n10.fixed8.matched_aux.v1"')
+s=s.replace('    metadata: dict[str, Any] = {','    sample_digest = hashlib.sha256()\n    initial_digest = hashlib.sha256(b"".join(v.detach().cpu().numpy().tobytes() for v in model.state_dict().values())).hexdigest()\n    metadata: dict[str, Any] = {\n        "supervision": args.supervision, "initial_state_sha256": initial_digest, "aux_coefficient_per_loop": (1/7 if args.supervision == "stepwise" else 0),')
+a='            logits = model.forward_all(tokens, max_loops=cfg.max_loops)["logits_by_loop"][:, -1]\n            loss = F.cross_entropy(logits, target)'
+b='            all_logits = model.forward_all(tokens, max_loops=cfg.max_loops)["logits_by_loop"]\n            logits = all_logits[:, -1]\n            endpoint_loss = F.cross_entropy(logits, target)\n            aux_loss = F.cross_entropy(all_logits[:, :7].reshape(-1,cfg.node_count), targets[:, :7].reshape(-1))\n            loss = endpoint_loss + (aux_loss if args.supervision == "stepwise" else 0.0)'
+assert a in s;s=s.replace(a,b);s=s.replace('        optimizer.zero_grad(set_to_none=True)','        sample_digest.update(tokens.detach().cpu().numpy().tobytes())\n        optimizer.zero_grad(set_to_none=True)')
+s=s.replace('    final_selection = _locked_endpoint_accuracy(','    metadata["training_tokens_sha256"] = sample_digest.hexdigest()\n    metadata["loss_definition"] = "CE8 + mean(CE1..CE7)" if args.supervision == "stepwise" else "CE8"\n    final_selection = _locked_endpoint_accuracy(')
+s=s.replace('parser.add_argument("--out-dir", type=Path, required=True)','parser.add_argument("--supervision", choices=["final","stepwise"], required=True)\n    parser.add_argument("--out-dir", type=Path, required=True)')
+# Metadata must describe the actual new fixed-depth loss.
+s=s.replace('"loss": f"final-only endpoint CE at call {cfg.max_loops}"','"loss": "CE8 + mean(CE1..CE7)" if args.supervision == "stepwise" else "CE8"').replace('"trajectory_aux_weight": 0.0, "aux_loss": 0.0','"trajectory_aux_weight": 1/7 if args.supervision == "stepwise" else 0.0, "aux_loss": 1.0 if args.supervision == "stepwise" else 0.0')
+Path('reviewer_revision_20260926/experiments/matched_train.py').write_text(s)

@@ -5,7 +5,7 @@ import torch
 from transformers import AutoTokenizer,AutoModelForCausalLM
 from train_full import MODEL,task
 
-ROOT=Path('/data/wujiaju/ouro26_letter_full_20260915')
+ROOT=Path('/data/paperexperiment/ouro26_letter_full_20260915')
 OUT=ROOT/'eval_step200_k5_k8_v1'
 
 def main():

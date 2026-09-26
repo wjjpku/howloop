@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-MANAGER=/data/wujiaju/LooPlus/scripts/run_official_task_baselines_20260801.sh
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+MANAGER=/data/paperexperiment/LooPlus/scripts/run_official_task_baselines_20260801.sh
 mkdir -p "${RUN_ROOT}/queue"
 
 # Parity seeds 0/1/2 are already complete.  The remaining three managers each

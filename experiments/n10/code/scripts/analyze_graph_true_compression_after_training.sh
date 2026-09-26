@@ -10,9 +10,9 @@ gpu="$1"
 loops="$2"
 shift 2
 
-training_root="/data/wujiaju/graph_path_true_compression_gate_20260725/training"
-analysis_root="/data/wujiaju/graph_path_true_compression_gate_20260725/analysis"
-log_root="/data/wujiaju/logs/graph_path_true_compression_gate_20260725/analysis"
+training_root="/data/paperexperiment/graph_path_true_compression_gate_20260725/training"
+analysis_root="/data/paperexperiment/graph_path_true_compression_gate_20260725/analysis"
+log_root="/data/paperexperiment/logs/graph_path_true_compression_gate_20260725/analysis"
 export CUDA_VISIBLE_DEVICES="${gpu}"
 mkdir -p "${analysis_root}/raw" "${analysis_root}/functional" "${log_root}"
 
@@ -25,7 +25,7 @@ for seed in "$@"; do
   done
 
   if [[ ! -s "${analysis_root}/raw/${name}/summary.json" ]]; then
-    /data/wujiaju/.venvs/loopreasoner/bin/python -u \
+    /data/paperexperiment/.venvs/loopreasoner/bin/python -u \
       -m reasoning_loop.graph_path_compression_circuit \
       --run "${name}=${checkpoint}" \
       --out-dir "${analysis_root}/raw" \
@@ -37,7 +37,7 @@ for seed in "$@"; do
   fi
 
   if [[ ! -s "${analysis_root}/functional/${name}/summary.json" ]]; then
-    /data/wujiaju/.venvs/loopreasoner/bin/python -u \
+    /data/paperexperiment/.venvs/loopreasoner/bin/python -u \
       -m reasoning_loop.graph_path_functional_circuit \
       --run "${name}=${checkpoint}" \
       --out-dir "${analysis_root}/functional" \

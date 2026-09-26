@@ -4,7 +4,7 @@
   "pid": 3204293,
   "gpu": "5,7",
   "mode": "train",
-  "model": "/data/wujiaju/models/Ouro-2.6B",
+  "model": "/data/paperexperiment/models/Ouro-2.6B",
   "parameters": 2667974657,
   "trainable_parameters": 2667972608,
   "frozen_names": [

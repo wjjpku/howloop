@@ -7,13 +7,13 @@ if [[ $# -ne 1 ]]; then
 fi
 
 physical_gpu="$1"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
-repo="/data/wujiaju/LooPlus"
-run_root="/data/wujiaju/paper_length_telomere_20260731"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
+repo="/data/paperexperiment/LooPlus"
+run_root="/data/paperexperiment/paper_length_telomere_20260731"
 train_dir="${run_root}/addition_internal_weight_adapter_official_k_3x_20260805/official_seed0_k_total3x"
-train_log_dir="/data/wujiaju/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_official_k_3x_20260805/official_seed0_k_total3x"
+train_log_dir="/data/paperexperiment/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_official_k_3x_20260805/official_seed0_k_total3x"
 comparison_root="${run_root}/addition_internal_weight_adapter_official_k_3x_20260805/comparison"
-log_root="/data/wujiaju/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_official_k_3x_20260805/comparison"
+log_root="/data/paperexperiment/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_official_k_3x_20260805/comparison"
 checkpoint="${run_root}/backbones/addition_adaptive_step_official_seed0/checkpoint_100000.pt"
 k_1x="${run_root}/addition_internal_weight_adapter_20260804/official_seed0_k/adapter_best.pt"
 k_2x="${train_dir}/checkpoints/adapter_005376.pt"

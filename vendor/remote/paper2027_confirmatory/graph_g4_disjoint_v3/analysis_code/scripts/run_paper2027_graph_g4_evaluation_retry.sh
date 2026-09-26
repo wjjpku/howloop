@@ -6,7 +6,7 @@
 set -euo pipefail
 
 run_root="${PAPER2027_GRAPH_G4_ROOT:?set PAPER2027_GRAPH_G4_ROOT}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 runner_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 runner="$runner_dir/run_paper2027_graph_g4_evaluation.sh"
 evaluation_dir="${PAPER2027_GRAPH_G4_RETRY_EVALUATION_DIR:-g4_evaluation_rerun_v1}"

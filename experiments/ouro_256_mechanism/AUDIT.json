@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "semantic_n": 256,
+  "restore_n": 256,
+  "semantic_conditions": 11,
+  "restore_conditions": 9,
+  "semantic_generation_disagreements": 0,
+  "restore_generation_disagreements": 0,
+  "full_restore_max_logit_error": 0.0,
+  "all_model_versions_unchanged": true
+}

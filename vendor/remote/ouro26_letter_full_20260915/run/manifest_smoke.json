@@ -2,7 +2,7 @@
   "pid": 1003628,
   "gpu": 7,
   "mode": "smoke",
-  "model": "/data/wujiaju/models/Ouro-2.6B",
+  "model": "/data/paperexperiment/models/Ouro-2.6B",
   "parameters": 2667974657,
   "trainable_parameters": 2667972608,
   "frozen_names": [

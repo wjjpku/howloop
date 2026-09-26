@@ -58,10 +58,10 @@ case "${TASK}" in
         ;;
 esac
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
-RUNNER=/data/wujiaju/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
+RUNNER=/data/paperexperiment/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
 LOCK_ROOT="${RUN_ROOT}/locks"
 LABEL="${TASK}_adaptive_step_official_seed${BACKBONE_SEED}"
 BACKBONE_MANIFEST="${RUN_ROOT}/manifests/${LABEL}/official_formal.json"

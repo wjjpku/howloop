@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-run_root=/data/wujiaju/parity_input_once_20260811
+run_root=/data/paperexperiment/parity_input_once_20260811
 code_file="$run_root/code/paper_length_telomere.py"
-python_bin=/data/wujiaju/.venvs/loopreasoner/bin/python
+python_bin=/data/paperexperiment/.venvs/loopreasoner/bin/python
 out_dir="$run_root/backbones/parity_input_once_seed0"
-log_file=/data/wujiaju/logs/parity_input_once_20260811/backbone_seed0.log
+log_file=/data/paperexperiment/logs/parity_input_once_20260811/backbone_seed0.log
 pid_file="$run_root/backbone_seed0.pid"
 
 mkdir -p "$out_dir" "$(dirname "$log_file")"

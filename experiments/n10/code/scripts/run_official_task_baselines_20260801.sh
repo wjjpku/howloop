@@ -29,9 +29,9 @@ case "${TASK}" in
         ;;
 esac
 
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-WAITER=/data/wujiaju/LooPlus/scripts/wait_for_empty_gpu_paper_length_telomere_20260731.sh
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+WAITER=/data/paperexperiment/LooPlus/scripts/wait_for_empty_gpu_paper_length_telomere_20260731.sh
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
 LABEL="${TASK}_adaptive_step_official_seed0"
 BENCHMARK_MANIFEST="${RUN_ROOT}/manifests/${LABEL}/official_benchmark_fp32.json"
 BENCHMARK_SUMMARY="${RUN_ROOT}/backbones/${LABEL}_benchmark_fp32/summary.json"

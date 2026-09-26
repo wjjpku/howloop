@@ -11,10 +11,10 @@ DECLARED_PEAK_MIB=1536
 REQUIRED_FREE_MIB=$((RESERVE_MIB + DECLARED_PEAK_MIB))
 MEMORY_TOLERANCE_MIB=128
 
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 LABEL=parity_adaptive_step_released64_seed0
 CHECKPOINT="${RUN_ROOT}/backbones/${LABEL}/final.pt"
 OUT_DIR="${RUN_ROOT}/diagnosis/${LABEL}"

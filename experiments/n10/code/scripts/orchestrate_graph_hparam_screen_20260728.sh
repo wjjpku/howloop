@@ -2,10 +2,10 @@
 set -euo pipefail
 
 gpu="${1:-0}"
-root="/data/wujiaju/graph_path_hparam_circuit_20260728"
-repo="/data/wujiaju/LooPlus"
+root="/data/paperexperiment/graph_path_hparam_circuit_20260728"
+repo="/data/paperexperiment/LooPlus"
 manifest="${root}/manifests/orchestrator.txt"
-log_root="/data/wujiaju/logs/graph_path_hparam_circuit_20260728"
+log_root="/data/paperexperiment/logs/graph_path_hparam_circuit_20260728"
 configs=(
   baseline_b2
   attn2_mlp05_b2

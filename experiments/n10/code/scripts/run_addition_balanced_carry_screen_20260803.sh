@@ -8,12 +8,12 @@ fi
 
 PHYSICAL_GPU="$1"
 SHARD="$2"
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/architecture_round_20260803
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/architecture_round_20260803
 SCREEN_ROOT="${RUN_ROOT}/balanced_carry_screen"
 ID_SCREEN_ROOT="${RUN_ROOT}/balanced_carry_id1to10_screen"
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 MANIFEST_PATH="${SCREEN_ROOT}/shard${SHARD}_manifest.json"
 DECLARED_PEAK_MIB=2048
 RESERVE_MIB=16384
@@ -156,7 +156,7 @@ done
 if [[ "${SHARD}" -eq 0 ]]; then
     for BACKBONE_SEED in 0 1 2; do
         JOB="l3h8t11_seed${BACKBONE_SEED}"
-        BACKBONE="/data/wujiaju/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed${BACKBONE_SEED}/checkpoint_010000.pt"
+        BACKBONE="/data/paperexperiment/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed${BACKBONE_SEED}/checkpoint_010000.pt"
         OUT_DIR="${SCREEN_ROOT}/${JOB}"
         if [[ ! -f "${OUT_DIR}/summary.json" ]]; then
             run_screen "${JOB}" "${BACKBONE}" "${OUT_DIR}" \
@@ -176,7 +176,7 @@ if [[ "${SHARD}" -eq 0 ]]; then
     # n=10 Addition answer, so it is the non-undertrained J reference.
     for BACKBONE_SEED in 0 1 2; do
         JOB="l3h8t11_step40k_seed${BACKBONE_SEED}"
-        BACKBONE="/data/wujiaju/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed${BACKBONE_SEED}/checkpoint_040000.pt"
+        BACKBONE="/data/paperexperiment/paper_length_telomere_20260731/backbones/addition_fixed_n10_t11_official_seed${BACKBONE_SEED}/checkpoint_040000.pt"
         OUT_DIR="${SCREEN_ROOT}/${JOB}"
         if [[ ! -f "${OUT_DIR}/summary.json" ]]; then
             run_screen "${JOB}" "${BACKBONE}" "${OUT_DIR}" \

@@ -10,16 +10,16 @@ from train_ouro_full import MODEL,task
 from score_ouro_content import parse
 
 FINE='--fine' in sys.argv
-ROOT=Path('/data/wujiaju/ouro_rescue_fine_20260916' if FINE else '/data/wujiaju/ouro_rescue_localization_20260916')
+ROOT=Path('/data/paperexperiment/ouro_rescue_fine_20260916' if FINE else '/data/paperexperiment/ouro_rescue_localization_20260916')
 
 def main():
     ROOT.mkdir(exist_ok=False);torch.set_num_threads(4)
     assert digest(BASE)==CK_SHA and digest(JPATH)==JSHA
-    prior=json.loads(Path('/data/wujiaju/ouro_native_causal_20260916/manifest.json').read_text())
+    prior=json.loads(Path('/data/paperexperiment/ouro_native_causal_20260916/manifest.json').read_text())
     discovery=[p['recipient'] for p in prior['pairs'][:16]]
     seen={task(p[key],4,0)[2] for p in prior['pairs'] for key in ('recipient','donor')}
     if FINE:
-        coarse=json.loads(Path('/data/wujiaju/ouro_rescue_localization_20260916/manifest.json').read_text())
+        coarse=json.loads(Path('/data/paperexperiment/ouro_rescue_localization_20260916/manifest.json').read_text())
         seen.update(task(s,8,0)[2] for s in coarse['confirmation'])
     confirmation=[]
     for seed in range(9160000 if FINE else 9140000,9199000):

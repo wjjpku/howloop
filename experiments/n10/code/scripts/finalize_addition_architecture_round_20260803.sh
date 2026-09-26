@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/architecture_round_20260803
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/architecture_round_20260803
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 FINAL_ROOT="${RUN_ROOT}/finalizer"
 MANIFEST_PATH="${FINAL_ROOT}/manifest.json"
 mkdir -p "${FINAL_ROOT}" "${LOG_ROOT}"
@@ -54,7 +54,7 @@ bash scripts/run_addition_balanced_carry_screen_20260803.sh 4 1 \
 write_status running aggregate_round2
 "${PYTHON_BIN}" -m scripts.aggregate_addition_architecture_round \
     --round-root "${RUN_ROOT}" \
-    --reference-root /data/wujiaju/paper_length_telomere_20260731/checkpoint_sweep_20260803 \
+    --reference-root /data/paperexperiment/paper_length_telomere_20260731/checkpoint_sweep_20260803 \
     --out-dir "${RUN_ROOT}/aggregate" \
     > "${LOG_ROOT}/addition_architecture_round_aggregate.log" 2>&1
 "${PYTHON_BIN}" -m scripts.aggregate_addition_balanced_carry_screen \
@@ -115,7 +115,7 @@ done
     > "${LOG_ROOT}/addition_architecture_carry_j_spectra_aggregate.log" 2>&1
 "${PYTHON_BIN}" -m scripts.compose_addition_architecture_final_report \
     --experiment-root "${RUN_ROOT}" \
-    --checkpoint-root /data/wujiaju/paper_length_telomere_20260731/checkpoint_sweep_20260803/aggregate \
+    --checkpoint-root /data/paperexperiment/paper_length_telomere_20260731/checkpoint_sweep_20260803/aggregate \
     --out-path "${RUN_ROOT}/FINAL_REPORT.md" \
     > "${LOG_ROOT}/addition_architecture_final_report.log" 2>&1
 

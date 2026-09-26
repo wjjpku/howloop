@@ -17,7 +17,7 @@ esac
 
 case "$baseline" in
   official)
-    checkpoint="/data/wujiaju/paper_length_telomere_20260731/backbones/addition_adaptive_step_official_seed0/checkpoint_100000.pt"
+    checkpoint="/data/paperexperiment/paper_length_telomere_20260731/backbones/addition_adaptive_step_official_seed0/checkpoint_100000.pt"
     id_min=1
     id_max=19
     repair_min=20
@@ -27,7 +27,7 @@ case "$baseline" in
     final_lengths="1,5,10,15,19,20,25,30,35,40,41,45,50,55,60"
     ;;
   lsb)
-    checkpoint="/data/wujiaju/paper_length_telomere_20260731/tn_addition_20260804/backbones/addition_lsb_variable_m1to10_tn_logicaldigits_nope_seed0/checkpoint_080000.pt"
+    checkpoint="/data/paperexperiment/paper_length_telomere_20260731/tn_addition_20260804/backbones/addition_lsb_variable_m1to10_tn_logicaldigits_nope_seed0/checkpoint_080000.pt"
     id_min=1
     id_max=10
     repair_min=11
@@ -39,10 +39,10 @@ case "$baseline" in
   *) echo "unsupported baseline: $baseline" >&2; exit 2 ;;
 esac
 
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
-repo="/data/wujiaju/LooPlus"
-output_root="/data/wujiaju/paper_length_telomere_20260731/addition_internal_weight_adapter_20260804"
-log_root="/data/wujiaju/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_20260804"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
+repo="/data/paperexperiment/LooPlus"
+output_root="/data/paperexperiment/paper_length_telomere_20260731/addition_internal_weight_adapter_20260804"
+log_root="/data/paperexperiment/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_20260804"
 label="${baseline}_seed0_${site}"
 out_dir="${output_root}/${label}"
 log_dir="${log_root}/${label}"

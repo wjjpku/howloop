@@ -9,9 +9,9 @@ fi
 SEED="$1"
 BACKBONE_PID="$2"
 PHYSICAL_GPU="$3"
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731/tn_addition_20260804
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON=/data/wujiaju/.venvs/loopreasoner/bin/python
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731/tn_addition_20260804
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON=/data/paperexperiment/.venvs/loopreasoner/bin/python
 BACKBONE_DIR="${RUN_ROOT}/backbones/addition_lsb_variable_m1to10_tn_logicaldigits_nope_seed${SEED}"
 REPLICATION_ROOT="${RUN_ROOT}/replication_seed${SEED}"
 REQUIRED_FREE_MIB=18000

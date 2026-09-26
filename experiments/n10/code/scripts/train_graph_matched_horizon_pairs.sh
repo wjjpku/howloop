@@ -10,9 +10,9 @@ gpu="$1"
 shift
 manifest_seed="$1"
 
-out_root="/data/wujiaju/graph_path_induction_contrast_20260726/training"
-log_root="/data/wujiaju/logs/graph_path_induction_contrast_20260726/training"
-manifest="/data/wujiaju/graph_path_induction_contrast_20260726/training_manifest_seed${manifest_seed}.txt"
+out_root="/data/paperexperiment/graph_path_induction_contrast_20260726/training"
+log_root="/data/paperexperiment/logs/graph_path_induction_contrast_20260726/training"
+manifest="/data/paperexperiment/graph_path_induction_contrast_20260726/training_manifest_seed${manifest_seed}.txt"
 mkdir -p "${out_root}" "${log_root}"
 printf 'status=running\npid=%s\nphysical_gpu=%s\nstarted=%s\noutput=%s\n' \
   "$$" "${gpu}" "$(date --iso-8601=seconds)" "${out_root}" >"${manifest}"
@@ -36,7 +36,7 @@ for seed in "$@"; do
       echo "PHYSICAL_GPU ${gpu}"
       echo "INITIALIZATION_SEED ${initialization_seed}"
       echo "DATA_SEED ${data_seed}"
-      /data/wujiaju/.venvs/loopreasoner/bin/python -u \
+      /data/paperexperiment/.venvs/loopreasoner/bin/python -u \
         -m reasoning_loop.graph_path_loop \
         --node-count 8 \
         --max-depth 8 \

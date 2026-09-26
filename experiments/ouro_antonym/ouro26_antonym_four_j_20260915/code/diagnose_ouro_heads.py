@@ -9,9 +9,9 @@ from train_ouro_four_j import Affine, CK_SHA
 from ouro_eval_panel import EVAL_SEEDS
 from score_ouro_content import parse
 
-ROOT = Path('/data/wujiaju/ouro26_antonym_heads_20260915')
-BASE = Path('/data/wujiaju/ouro26_antonym_full_20260915/run/checkpoint.pt')
-JPATH = Path('/data/wujiaju/ouro26_antonym_four_j_20260915/fit/checkpoint.pt')
+ROOT = Path('/data/paperexperiment/ouro26_antonym_heads_20260915')
+BASE = Path('/data/paperexperiment/ouro26_antonym_full_20260915/run/checkpoint.pt')
+JPATH = Path('/data/paperexperiment/ouro26_antonym_four_j_20260915/fit/checkpoint.pt')
 JSHA = '203712ced24e6dd3be01bc275a2fc5983a3372db9bde380d08b7db4069972e0f'
 ARMS = {'j4': (True, 4), 'plain4': (False, 4), 'j8': (True, 8)}
 

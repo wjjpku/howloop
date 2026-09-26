@@ -9,7 +9,7 @@ from ouro_eval_panel import EVAL_SEEDS
 from task import PAIRS
 from train_ouro_finalonly_pair_lora128 import Affine
 
-BASE=Path('/data/wujiaju/ouro26_antonym_full_20260915/run')
+BASE=Path('/data/paperexperiment/ouro26_antonym_full_20260915/run')
 ROOT=BASE/'vocab_lora128_20260916'
 A=[('big','small'),('tall','short'),('strong','weak'),('left','right'),('up','down'),('day','night'),('black','white'),('true','false'),('hard','soft'),('thick','thin'),('loud','quiet'),('smooth','rough')]
 B=[('good','bad'),('wide','narrow'),('deep','shallow'),('early','late'),('love','hate'),('win','lose'),('buy','sell'),('rise','fall'),('accept','reject'),('begin','end'),('increase','decrease'),('push','pull')]
@@ -44,7 +44,7 @@ def sha(path):
 
 def main():
     ROOT.mkdir(exist_ok=False)
-    trainlog=Path('/data/wujiaju/logs/ouro_finalonly_lora128_3gpu.log')
+    trainlog=Path('/data/paperexperiment/logs/ouro_finalonly_lora128_3gpu.log')
     deadline=time.time()+3600
     while '"event": "complete", "smoke": false' not in trainlog.read_text():
         if time.time()>deadline:raise RuntimeError('Training dependency timeout; no GPU allocated')

@@ -13,12 +13,12 @@ case "$site" in
   *) echo "unsupported site: $site" >&2; exit 2 ;;
 esac
 
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
-repo="/data/wujiaju/LooPlus"
-backbone="/data/wujiaju/paper_length_telomere_20260731/tn_addition_20260804/backbones/addition_lsb_variable_m1to10_tn_logicaldigits_nope_seed0/checkpoint_080000.pt"
-source_root="/data/wujiaju/paper_length_telomere_20260731/addition_internal_weight_adapter_20260804"
-output_root="/data/wujiaju/paper_length_telomere_20260731/addition_internal_weight_adapter_lsb_3x_20260804"
-log_root="/data/wujiaju/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_lsb_3x_20260804"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
+repo="/data/paperexperiment/LooPlus"
+backbone="/data/paperexperiment/paper_length_telomere_20260731/tn_addition_20260804/backbones/addition_lsb_variable_m1to10_tn_logicaldigits_nope_seed0/checkpoint_080000.pt"
+source_root="/data/paperexperiment/paper_length_telomere_20260731/addition_internal_weight_adapter_20260804"
+output_root="/data/paperexperiment/paper_length_telomere_20260731/addition_internal_weight_adapter_lsb_3x_20260804"
+log_root="/data/paperexperiment/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_lsb_3x_20260804"
 label="lsb_seed0_${site}_total3x"
 source_adapter="${source_root}/lsb_seed0_${site}/adapter_best.pt"
 out_dir="${output_root}/${label}"

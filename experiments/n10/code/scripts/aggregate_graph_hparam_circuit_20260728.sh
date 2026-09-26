@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-root="/data/wujiaju/graph_path_hparam_circuit_20260728"
-repo="/data/wujiaju/LooPlus"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
+root="/data/paperexperiment/graph_path_hparam_circuit_20260728"
+repo="/data/paperexperiment/LooPlus"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
 configs=(
   baseline_b2
   attn2_mlp05_b2

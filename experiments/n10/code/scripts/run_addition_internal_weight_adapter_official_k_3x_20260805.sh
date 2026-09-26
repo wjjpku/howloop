@@ -7,12 +7,12 @@ if [[ $# -ne 1 ]]; then
 fi
 
 physical_gpu="$1"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
-repo="/data/wujiaju/LooPlus"
-backbone="/data/wujiaju/paper_length_telomere_20260731/backbones/addition_adaptive_step_official_seed0/checkpoint_100000.pt"
-source_adapter="/data/wujiaju/paper_length_telomere_20260731/addition_internal_weight_adapter_20260804/official_seed0_k/adapter_best.pt"
-output_root="/data/wujiaju/paper_length_telomere_20260731/addition_internal_weight_adapter_official_k_3x_20260805"
-log_root="/data/wujiaju/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_official_k_3x_20260805"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
+repo="/data/paperexperiment/LooPlus"
+backbone="/data/paperexperiment/paper_length_telomere_20260731/backbones/addition_adaptive_step_official_seed0/checkpoint_100000.pt"
+source_adapter="/data/paperexperiment/paper_length_telomere_20260731/addition_internal_weight_adapter_20260804/official_seed0_k/adapter_best.pt"
+output_root="/data/paperexperiment/paper_length_telomere_20260731/addition_internal_weight_adapter_official_k_3x_20260805"
+log_root="/data/paperexperiment/logs/paper_length_telomere_20260731/addition_internal_weight_adapter_official_k_3x_20260805"
 label="official_seed0_k_total3x"
 out_dir="${output_root}/${label}"
 log_dir="${log_root}/${label}"

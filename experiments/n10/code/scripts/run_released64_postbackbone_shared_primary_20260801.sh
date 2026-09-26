@@ -15,8 +15,8 @@ LAUNCH_BACKBONE=false
 if [[ "$#" -eq 3 ]]; then
     LAUNCH_BACKBONE=true
 fi
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-RUNNER=/data/wujiaju/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+RUNNER=/data/paperexperiment/LooPlus/scripts/run_paper_length_telomere_remote_20260731.sh
 LABEL="parity_adaptive_step_released64_seed${BACKBONE_SEED}"
 BACKBONE_MANIFEST="${RUN_ROOT}/manifests/${LABEL}/released_formal.json"
 CONTROLLER_SEED=211001

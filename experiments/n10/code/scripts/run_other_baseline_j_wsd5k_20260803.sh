@@ -10,9 +10,9 @@ fi
 
 TASK="$1"
 PHYSICAL_GPU="$2"
-CODE_DIR=/data/wujiaju/LooPlus
-RUN_ROOT=/data/wujiaju/paper_length_telomere_20260731
-LOG_ROOT=/data/wujiaju/logs/paper_length_telomere_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+RUN_ROOT=/data/paperexperiment/paper_length_telomere_20260731
+LOG_ROOT=/data/paperexperiment/logs/paper_length_telomere_20260731
 RUNNER="${CODE_DIR}/scripts/run_paper_length_telomere_remote_20260731.sh"
 CONTROLLER_SEED=211001
 AUDIT_SEED=261001

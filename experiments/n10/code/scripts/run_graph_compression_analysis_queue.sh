@@ -26,7 +26,7 @@ for run_spec in "$@"; do
     echo "SKIP ${name}"
     continue
   fi
-  /data/wujiaju/.venvs/loopreasoner/bin/python -u \
+  /data/paperexperiment/.venvs/loopreasoner/bin/python -u \
     -m reasoning_loop.graph_path_compression_circuit \
     --run "${name}=${checkpoint}" \
     --out-dir "${out_dir}" \

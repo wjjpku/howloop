@@ -4,12 +4,12 @@
 # a failed P2 run is an error, never an eligibility filter.
 set -euo pipefail
 
-run_root="${PAPER2027_PARITY_ROOT:-/data/wujiaju/paper2027_confirmatory/parity_input_once_v2}"
+run_root="${PAPER2027_PARITY_ROOT:-/data/paperexperiment/paper2027_confirmatory/parity_input_once_v2}"
 code_root="${PAPER2027_PARITY_CODE_ROOT:-$run_root/analysis_code}"
 seed="${PAPER2027_PARITY_P4_SEED:-5}"
 wait_session="${PAPER2027_PARITY_WAIT_SESSION:-paper2027_parity_p1_eval_p2_v2}"
 sleep_seconds="${PAPER2027_PARITY_WAIT_SECONDS:-60}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 controller_manifest="$run_root/manifests/p2_controller_seed${seed}.json"
 evaluation_manifest="$run_root/manifests/p2_evaluation_seed${seed}.json"
 runner="$code_root/scripts/run_paper2027_parity_p4_controller_mechanism.sh"
@@ -43,5 +43,5 @@ fi
 
 PAPER2027_PARITY_ROOT="$run_root" \
 PAPER2027_PARITY_SEED="$seed" \
-PAPER2027_PYTHON="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}" \
+PAPER2027_PYTHON="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}" \
   bash "$runner"

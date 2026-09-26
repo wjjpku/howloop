@@ -12,7 +12,7 @@ analysis_arm=$3
 analysis_seed=$4
 next_arm=$5
 next_seed=$6
-repo_root=${GLOBAL_DEPTH_REPO_ROOT:-/data/wujiaju/LooPlus}
+repo_root=${GLOBAL_DEPTH_REPO_ROOT:-/data/paperexperiment/LooPlus}
 
 while tmux has-session -t "$wait_session" 2>/dev/null; do
   sleep 15

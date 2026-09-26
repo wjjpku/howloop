@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT=/data/wujiaju/LooPlus
-PYTHON=/data/wujiaju/.venvs/loopreasoner/bin/python
+ROOT=/data/paperexperiment/LooPlus
+PYTHON=/data/paperexperiment/.venvs/loopreasoner/bin/python
 RESULT_ROOT=results/boolean_dag_macrostep_seed0_retry2_20260710
-LOG=/data/wujiaju/logs/macro_no_instruction_serial_train.log
+LOG=/data/paperexperiment/logs/macro_no_instruction_serial_train.log
 GPU=6
 EXPECTED_PEAK_MIB=2048
 RESERVE_MIB=16384

@@ -10,11 +10,11 @@ gpu="$1"
 config="$2"
 shift 2
 
-root="/data/wujiaju/graph_path_hparam_circuit_20260728"
-repo="/data/wujiaju/LooPlus"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
+root="/data/paperexperiment/graph_path_hparam_circuit_20260728"
+repo="/data/paperexperiment/LooPlus"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
 out_dir="${root}/behavior_screen/${config}"
-log_root="/data/wujiaju/logs/graph_path_hparam_circuit_20260728/behavior_screen"
+log_root="/data/paperexperiment/logs/graph_path_hparam_circuit_20260728/behavior_screen"
 manifest="${root}/manifests/behavior_${config}.txt"
 mkdir -p "${out_dir}" "${log_root}" "$(dirname "${manifest}")"
 

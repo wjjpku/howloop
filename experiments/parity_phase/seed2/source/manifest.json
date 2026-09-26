@@ -1,8 +1,8 @@
 {
   "status": "complete",
   "task": "Parity t approximately n diagonal band",
-  "checkpoint": "/data/wujiaju/parity_input_once_20260811/backbones/parity_input_once_seed2/best.pt",
-  "controller": "/data/wujiaju/parity_input_once_20260811/controllers/seed2/extension20to40/controller.pt",
+  "checkpoint": "/data/paperexperiment/parity_input_once_20260811/backbones/parity_input_once_seed2/best.pt",
+  "controller": "/data/paperexperiment/parity_input_once_20260811/controllers/seed2/extension20to40/controller.pt",
   "checkpoint_step": 99000,
   "backbone_seed": 2,
   "backbone_loss_placement": "adaptive_step",

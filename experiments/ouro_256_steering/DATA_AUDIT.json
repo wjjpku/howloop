@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "pairs": 256,
+  "unique_graphs": 512,
+  "excluded_unique_graphs": 672,
+  "prior_cohort_sources": [
+    "/data/paperexperiment/ouro_semantic_20260923/discovery_pairs.json",
+    "/data/paperexperiment/ouro_semantic_20260923/confirmation_pairs.json",
+    "/data/paperexperiment/ouro_semantic_20260923/shared_path_discovery.json",
+    "/data/paperexperiment/ouro_semantic_20260923/shared_path_confirmation.json",
+    "/data/paperexperiment/ouro_semantic_20260923/shared_path_discovery_with_cf.json",
+    "/data/paperexperiment/ouro_semantic_20260923/shared_path_confirmation_with_cf.json",
+    "/data/paperexperiment/ouro_semantic_20260923/restore_confirmation.json",
+    "/data/paperexperiment/ouro_semantic_20260923/restore_confirmation_with_cf.json",
+    "/data/paperexperiment/ouro_semantic_20260923/exclude_all.json",
+    "/data/paperexperiment/ouro_semantic_20260923/localize_holdout64.json",
+    "/data/paperexperiment/ouro_semantic_20260923/parallel_pairs64.json",
+    "/data/paperexperiment/ouro_semantic_20260923/parallel_pairs64_with_cf.json"
+  ],
+  "overlap": 0,
+  "token_slots_aligned": true,
+  "shards_partition_exact": true,
+  "training_exclusion_verified": false
+}

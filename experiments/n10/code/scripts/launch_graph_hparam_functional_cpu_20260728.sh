@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-root="/data/wujiaju/graph_path_hparam_circuit_20260728"
-repo="/data/wujiaju/LooPlus"
-python_bin="/data/wujiaju/.venvs/loopreasoner/bin/python"
-log_root="/data/wujiaju/logs/graph_path_hparam_circuit_20260728/functional_cpu"
+root="/data/paperexperiment/graph_path_hparam_circuit_20260728"
+repo="/data/paperexperiment/LooPlus"
+python_bin="/data/paperexperiment/.venvs/loopreasoner/bin/python"
+log_root="/data/paperexperiment/logs/graph_path_hparam_circuit_20260728/functional_cpu"
 mkdir -p "${root}/functional_raw" "${root}/manifests" "${log_root}"
 
 if [[ $# -eq 0 ]]; then

@@ -21,7 +21,7 @@ run_args=()
 for run_spec in "$@"; do
   run_args+=(--run "${run_spec}")
 done
-/data/wujiaju/.venvs/loopreasoner/bin/python -u \
+/data/paperexperiment/.venvs/loopreasoner/bin/python -u \
   -m reasoning_loop.graph_path_depth_circuit \
   "${run_args[@]}" \
   --out-dir "${out_dir}" \

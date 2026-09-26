@@ -18,10 +18,10 @@ DECLARED_PEAK_GIB="${DECLARED_PEAK_GIB:-4.0}"
 CUDA_MEMORY_FRACTION="${CUDA_MEMORY_FRACTION:-0.05}"
 RESERVE_GIB="${RESERVE_GIB:-16.0}"
 
-CODE_DIR=/data/wujiaju/LooPlus
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-OUTPUT_ROOT=/data/wujiaju/graph_path_telomere_canonical_diag_lora_20260731/audits
-LOG_ROOT=/data/wujiaju/logs/graph_path_telomere_canonical_diag_lora_20260731
+CODE_DIR=/data/paperexperiment/LooPlus
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+OUTPUT_ROOT=/data/paperexperiment/graph_path_telomere_canonical_diag_lora_20260731/audits
+LOG_ROOT=/data/paperexperiment/logs/graph_path_telomere_canonical_diag_lora_20260731
 OUT_DIR="${OUTPUT_ROOT}/${RUN_LABEL}"
 RUN_LOG="${LOG_ROOT}/audit_${RUN_LABEL}.log"
 MANIFEST="${OUT_DIR}/run_manifest.json"

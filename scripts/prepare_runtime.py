@@ -14,25 +14,25 @@ W.mkdir(parents=True,exist_ok=True);records=[]
 maps=[(ROOT/'vendor/remote',W),
 (ROOT/'experiments/n10/code',W/'n10_migration_20260923/code'),
 (ROOT/'experiments/n10/locks',W/'n10_migration_20260923/locks'),
-(ROOT/'experiments/graph_mechanism/code',W/'n10_selected_mechanism_20260924/code'),
-(ROOT/'experiments/graph_mechanism_discovery/code',W/'n10_fig4_fresh_20260924/code'),
 (ROOT/'experiments/ouro_antonym',W),
-(ROOT/'experiments/kg',W/'kg_curriculum_controllers'),
 (ROOT/'experiments/ouro_letter',W/'ouro_mechanism_20260923'),
 (ROOT/'experiments/long_range',W/'fig6_retest_20260924'),
-(ROOT/'experiments/pca',W/'n10_hop_pca_20260924'),
 (ROOT/'experiments/composition',W/'continuous_composition_20260925'),
 (ROOT/'experiments/target_exchange',W/'paper_strengthening_20260925/code'),
-(ROOT/'experiments/dense_routing/code',W/'dense_affine_mechanism_20260925/code'),
-(ROOT/'experiments/multihead_pattern',W/'multihead_pattern_20260926'),
-(ROOT/'experiments/native_layer_readout',W/'native_layer_readout_20260926')]
+(ROOT/'experiments/kg/code',W/'kg_additional_control/code'),
+(ROOT/'experiments/kg/core',W/'kg_additional_control/core'),
+(ROOT/'experiments/qwen/code',W/'qwen_additional_control/code'),
+(ROOT/'experiments/revision',W/'reviewer_revision_20260926'),
+(ROOT/'experiments/selected_mechanism',W/'d8l6_section5_20260926'),
+(ROOT/'experiments/ouro_256_steering',W/'ouro_expansion_20260926'),
+(ROOT/'experiments/ouro_256_mechanism',W/'ouro_all256_20260926')]
 text_suffix={'.py','.sh','.json','.yaml','.yml','.md','.txt'}
 def write(src,dst):
  # Preserve historical evidence in the repository; run dirs get only inputs/code.
  dst.parent.mkdir(parents=True,exist_ok=True);old=src.read_bytes();new=old
  if src.suffix in text_suffix:
-  s=old.decode();s=s.replace('/data/wujiaju/.venvs/loopreasoner/bin/python',sys.executable)
-  s=s.replace('/data/wujiaju',str(W))
+  s=old.decode();s=s.replace('/data/paperexperiment/.venvs/loopreasoner/bin/python',sys.executable)
+  s=s.replace('/data/paperexperiment',str(W))
   if src == ROOT/'vendor/remote/letter_walk_native_20260914/code/train_full.py':
    # The paper uses step200 of a schedule configured for500, not a200-step schedule.
    s=s.replace("p.add_argument('--resume',action='store_true');a=p.parse_args()", "p.add_argument('--resume',action='store_true');p.add_argument('--stop-after',type=int);a=p.parse_args()")
@@ -48,23 +48,45 @@ for source,dest in maps:
   is_code=src.suffix in {'.py','.sh','.yaml','.yml','.toml'}
   is_input=(source.name=='locks' or 'locks' in rel.parts or src.name in {'datasets.json','config.json','configuration.json','tokenizer.json','tokenizer_config.json','special_tokens_map.json','vocab.json','merges.txt'} or 'data' in rel.parts or 'configs' in rel.parts or 'pairs' in src.name or (len(rel.parts)==1 and src.suffix=='.json' and ('confirmation' in src.name or 'discovery' in src.name)))
   if is_code or is_input:write(src,dest/rel)
-for srcdir,dstdir in [('graph_mechanism','n10_selected_mechanism_20260924'),('graph_mechanism_discovery','n10_fig4_fresh_20260924')]:
+kgcode=W/'kg_additional_control/code'
+kg_source_hash=hashlib.sha256((kgcode/'train_5k.py').read_bytes()).hexdigest()
+for name in ['train_dense_variant.py','train_other_controllers_variant.py']:
+ dst=kgcode/name
+ original=ROOT/'experiments/kg/code'/name
+ original_hash=hashlib.sha256((ROOT/'experiments/kg/code/train_5k.py').read_bytes()).hexdigest()
+ dst.write_text(dst.read_text().replace(original_hash,kg_source_hash))
+ for record in records:
+  if record['target']==str(dst.relative_to(W)):
+   record['runtime_sha256']=hashlib.sha256(dst.read_bytes()).hexdigest()
+   break
+for src in sorted((ROOT/'experiments/revision').glob('*.py')):
+ write(src,W/'reviewer_revision_20260926/code'/src.name)
+shutil.copytree(W/'n10_migration_20260923/code',W/'n10_selected_mechanism_20260924/code',dirs_exist_ok=True)
+write(ROOT/'experiments/graph_mechanism/code/evaluate_battery.py',W/'n10_selected_mechanism_20260924/code/evaluate_battery.py')
+for dst in sorted((W/'n10_selected_mechanism_20260924/code').rglob('*')):
+ if not dst.is_file() or dst.name=='evaluate_battery.py':continue
+ rel=dst.relative_to(W/'n10_selected_mechanism_20260924/code');src=ROOT/'experiments/n10/code'/rel
+ records.append({'source':str(src.relative_to(ROOT)),'target':str(dst.relative_to(W)),'original_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'runtime_sha256':hashlib.sha256(dst.read_bytes()).hexdigest()})
+g4rel=Path('paper2027_confirmatory/graph_g4_disjoint_v3/code')
+g4dst=W/g4rel
+records[:]=[r for r in records if not r['target'].startswith(str(g4rel)+'/')]
+shutil.copytree(W/'n10_migration_20260923/code',g4dst,dirs_exist_ok=True)
+g4unique={str(p.relative_to(ROOT/'vendor/remote'/g4rel)) for p in (ROOT/'vendor/remote'/g4rel).rglob('*') if p.is_file()}
+for rel in sorted(g4unique):write(ROOT/'vendor/remote'/g4rel/rel,g4dst/rel)
+for dst in sorted(g4dst.rglob('*')):
+ if not dst.is_file() or str(dst.relative_to(g4dst)) in g4unique:continue
+ rel=dst.relative_to(g4dst);src=ROOT/'experiments/n10/code'/rel
+ records.append({'source':str(src.relative_to(ROOT)),'target':str(dst.relative_to(W)),'original_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'runtime_sha256':hashlib.sha256(dst.read_bytes()).hexdigest()})
+for srcdir,dstdir in [('graph_mechanism','n10_selected_mechanism_20260924')]:
  for name in ['datasets.json','SELECTION_LOCK.json']:
   src=ROOT/'experiments'/srcdir/name
   if src.exists():write(src,W/dstdir/name)
 for name in ['MANIFEST.json','datasets.json','locks_manifest.json']:
  write(ROOT/'experiments/n10'/name,W/'n10_migration_20260923'/name)
 write(ROOT/'experiments/target_exchange/graph_data.json',W/'paper_strengthening_20260925/graph_data.json')
-for name in ['graph_data.json']:
- write(ROOT/'experiments/dense_routing'/name,W/'dense_affine_mechanism_20260925'/name)
-for model in 'ABCDE':
- for name in ['controllers.pt','export.json']:
-  write(ROOT/'experiments/dense_routing/local'/model/name,W/'dense_affine_mechanism_20260925/local'/model/name)
- write(ROOT/'experiments/dense_routing/graph'/f'{model}_fit1.json',W/'dense_affine_mechanism_20260925/graph'/f'{model}_fit1.json')
-for name in ['selection.json','prior_selection.json']:
- write(ROOT/'experiments/multihead_pattern'/name,W/'multihead_pattern_20260926'/name)
-for model in 'ABCDE':
- write(ROOT/'experiments/native_layer_readout/prior_confirmation'/f'{model}.npz',W/'state_recombination_20260926/confirmation'/f'{model}.npz')
+write(ROOT/'experiments/qwen/code/official_source.json',W/'qwen_additional_control/code/official_source.json')
+for fit in (1,2):
+ write(ROOT/'experiments/composition'/f'A_fit{fit}.npz',W/'continuous_composition_20260925'/f'A_fit{fit}.npz')
 # Extension cohort lives in its own directory, not the original four-seed queue.
 ext=W/'n10_migration_20260923/trajectory_seed_extension_20260924'
 shutil.copytree(W/'n10_migration_20260923/code',ext/'code',dirs_exist_ok=True)

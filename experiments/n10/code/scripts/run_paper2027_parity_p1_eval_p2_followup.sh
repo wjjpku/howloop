@@ -4,7 +4,7 @@
 # gated so a failed backbone cannot disappear from the population silently.
 set -euo pipefail
 
-run_root="${PAPER2027_PARITY_ROOT:-/data/wujiaju/paper2027_confirmatory/parity_input_once_v2}"
+run_root="${PAPER2027_PARITY_ROOT:-/data/paperexperiment/paper2027_confirmatory/parity_input_once_v2}"
 code_root="${PAPER2027_PARITY_CODE_ROOT:-$run_root/analysis_code}"
 scripts_dir="$code_root/scripts"
 wait_session="${PAPER2027_PARITY_WAIT_SESSION:-paper2027_parity_p1_v2b}"
@@ -33,9 +33,9 @@ done
 
 cd "$code_root"
 PAPER2027_PARITY_ROOT="$run_root" \
-PAPER2027_PYTHON="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}" \
+PAPER2027_PYTHON="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}" \
   bash ./scripts/run_paper2027_parity_p1_evaluation_campaign.sh
 
 PAPER2027_PARITY_ROOT="$run_root" \
-PAPER2027_PYTHON="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}" \
+PAPER2027_PYTHON="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}" \
   bash ./scripts/run_paper2027_parity_p2_campaign.sh

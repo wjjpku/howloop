@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CODE_DIR=/data/wujiaju/LooPlus_prenorm_component_20260731
-OUTPUT_DIR=/data/wujiaju/graph_path_prenorm_component_unit_j_direct_H3_curriculum64_20260731/schur_intervention/formal_eval
-LOG_FILE=/data/wujiaju/logs/graph_path_component_j_schur_intervention_formal_20260731.log
-PYTHON_BIN=/data/wujiaju/.venvs/loopreasoner/bin/python
-CHECKPOINT=/data/wujiaju/graph_path_prenorm_component_D8L8_20260731/training/full/D8_L8_full_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt
+CODE_DIR=/data/paperexperiment/LooPlus_prenorm_component_20260731
+OUTPUT_DIR=/data/paperexperiment/graph_path_prenorm_component_unit_j_direct_H3_curriculum64_20260731/schur_intervention/formal_eval
+LOG_FILE=/data/paperexperiment/logs/graph_path_component_j_schur_intervention_formal_20260731.log
+PYTHON_BIN=/data/paperexperiment/.venvs/loopreasoner/bin/python
+CHECKPOINT=/data/paperexperiment/graph_path_prenorm_component_D8L8_20260731/training/full/D8_L8_full_seed1/graphpath_N8_D8_d256_B2_L8_seed1/best.pt
 PHASE_SUMMARY="${CODE_DIR}/phase_summary_twohop.json"
-J_ARTIFACT=/data/wujiaju/graph_path_prenorm_component_unit_j_direct_H3_curriculum64_20260731/h64/unit_j_maps.pt
-SCHUR_ARTIFACT=/data/wujiaju/graph_path_prenorm_component_unit_j_direct_H3_curriculum64_20260731/schur_intervention/real_schur_bands.pt
+J_ARTIFACT=/data/paperexperiment/graph_path_prenorm_component_unit_j_direct_H3_curriculum64_20260731/h64/unit_j_maps.pt
+SCHUR_ARTIFACT=/data/paperexperiment/graph_path_prenorm_component_unit_j_direct_H3_curriculum64_20260731/schur_intervention/real_schur_bands.pt
 TRAINING_STREAMS="${CODE_DIR}/training_streams_direct_H3.json"
 
 export CUDA_VISIBLE_DEVICES=2

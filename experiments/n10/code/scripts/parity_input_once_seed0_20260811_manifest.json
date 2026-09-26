@@ -23,6 +23,6 @@
     "precision": "fp32"
   },
   "physical_gpu": 0,
-  "output_dir": "/data/wujiaju/parity_input_once_20260811/backbones/parity_input_once_seed0",
-  "log": "/data/wujiaju/logs/parity_input_once_20260811/backbone_seed0.log"
+  "output_dir": "/data/paperexperiment/parity_input_once_20260811/backbones/parity_input_once_seed0",
+  "log": "/data/paperexperiment/logs/parity_input_once_20260811/backbone_seed0.log"
 }

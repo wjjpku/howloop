@@ -23,7 +23,7 @@ def encode_task(tok,seed,k,template):
 from ouro_eval_panel import EVAL_SEEDS
 import re
 
-BASE=Path('/data/wujiaju/ouro26_stepwise_control_20260915')
+BASE=Path('/data/paperexperiment/ouro26_stepwise_control_20260915')
 CK_SHA='f2139f62efb7a72c50801e7a320e7d56429e3708bbd2babe23125e0f02485664'
 
 class Affine(nn.Module):
@@ -62,7 +62,7 @@ def main():
     affine=Affine(model.config.hidden_size).to('cuda')
     opt=torch.optim.AdamW(affine.parameters(),lr=1e-4,weight_decay=0)
     versions={n:p._version for n,p in model.named_parameters()}
-    general={s:{src:np.load(Path('/data/wujiaju/ouro26_letter_full_20260915/data')/f'{s}_{src}.npy') for src in ['documents','stories','code']} for s in ['train','validation']}
+    general={s:{src:np.load(Path('/data/paperexperiment/ouro26_letter_full_20260915/data')/f'{s}_{src}.npy') for src in ['documents','stories','code']} for s in ['train','validation']}
     enabled=True;trace=[];audit=False;boundary_grads={}
     stage_counter=0
     def reset_counter(module,args,kwargs):

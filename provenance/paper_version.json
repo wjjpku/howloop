@@ -1,10 +1,9 @@
 {
-  "version": "ICLR 2027 submission, 2026-09-26",
+  "version": "ICLR 2027 revised submission with KG and Qwen, 2026-09-26",
   "source": "paper/main.tex",
-  "source_sha256": "0a379fb01efa9ff8982d06cb21339c84d0f2eb5efe6b376c966d96c2a670ee72",
+  "source_sha256": "26e0a17d82c698374cfb1b308826bf978a32b4003937ede03ef379d05d71413c",
   "pdf": "paper/submission.pdf",
-  "pdf_sha256": "696a248291eb2ca99ac8f2c27aee76e2251f39361c17faaa913d26691920fcfb",
-  "figure_count": 15,
-  "submission_zip_sha256": "9112329d430a68f1558ca5fbb8a814f3bcd6b020a77c16c574f85592b881dbf1",
-  "historical_version": 66
+  "pdf_sha256": "a3310052183188261891bf62e9f9426332533a13d4c424e9962da38397b2ae8f",
+  "pages": 34,
+  "figure_assets": 21
 }

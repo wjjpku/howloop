@@ -1,12 +1,5 @@
-.DS_Store
-._*
+outputs/
+.venv/
 __pycache__/
 *.pyc
-.venv*/
-.runtime*/
-.validation-assets/
-outputs/
-runs/
-*.partial
-.cache/
-*.incomplete
+.DS_Store

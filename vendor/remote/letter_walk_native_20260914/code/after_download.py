@@ -7,9 +7,9 @@ import signal
 import subprocess
 import time
 
-ROOT=Path('/data/wujiaju/letter_walk_native_20260914')
-MODEL=Path('/data/wujiaju/models/huginn-0125')
-PY='/data/wujiaju/.venvs/loopreasoner/bin/python'
+ROOT=Path('/data/paperexperiment/letter_walk_native_20260914')
+MODEL=Path('/data/paperexperiment/models/huginn-0125')
+PY='/data/paperexperiment/.venvs/loopreasoner/bin/python'
 
 def emit(event,**kw):
     row=dict(event=event,time=time.time(),pid=os.getpid(),**kw)
@@ -28,9 +28,9 @@ def main():
         if used>100:raise RuntimeError('GPU5 occupied; no automatic co-location')
         time.sleep(60 if _==0 else 0)
     if shutil.disk_usage(ROOT).free<2**30:raise RuntimeError('Insufficient output reserve')
-    env=os.environ.copy();env.update(CUDA_VISIBLE_DEVICES='5',HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',HF_HOME='/data/wujiaju/cache/huggingface',OMP_NUM_THREADS='4')
+    env=os.environ.copy();env.update(CUDA_VISIBLE_DEVICES='5',HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',HF_HOME='/data/paperexperiment/cache/huggingface',OMP_NUM_THREADS='4')
     cmd=[PY,'-u',str(ROOT/'code/probe.py'),'--model',str(MODEL),'--output',str(ROOT/'huginn_results_v1')]
-    with open('/data/wujiaju/logs/letter_walk_huginn_20260914.log','x') as f:
+    with open('/data/paperexperiment/logs/letter_walk_huginn_20260914.log','x') as f:
         child=subprocess.Popen(cmd,env=env,stdout=f,stderr=subprocess.STDOUT,start_new_session=True)
         emit('evaluation_started',child_pid=child.pid,gpu=5,command=cmd)
         begun=time.time()

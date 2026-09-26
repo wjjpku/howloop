@@ -5,8 +5,8 @@
 # per-backbone/controller/evaluation runners and carry their own hashes.
 set -euo pipefail
 
-run_root="${PAPER2027_GRAPH_G4_ROOT:-/data/wujiaju/paper2027_confirmatory/graph_g4_disjoint_v3}"
-python_bin="${PAPER2027_PYTHON:-/data/wujiaju/.venvs/loopreasoner/bin/python}"
+run_root="${PAPER2027_GRAPH_G4_ROOT:-/data/paperexperiment/paper2027_confirmatory/graph_g4_disjoint_v3}"
+python_bin="${PAPER2027_PYTHON:-/data/paperexperiment/.venvs/loopreasoner/bin/python}"
 code_root="$run_root/code"
 analysis_root="$run_root/analysis_code"
 seeds="100 101 102 103 104 105 106 107 108 109 110 111"

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite the paper and this repository when using the reproduction archive."
+title: "howloop: reproduction archive for Shared Weights, Selected Computations"
+authors:
+  - name: "wjjpku"
+type: software
+repository-code: "https://github.com/wjjpku/howloop"
+license: MIT

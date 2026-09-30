@@ -1,8 +1,8 @@
 # Reviewer quick start
 
-This ZIP corresponds to the 34-page manuscript in `paper/submission.pdf`. The source is `paper/main.tex`, SHA-256 `26e0a17d82c698374cfb1b308826bf978a32b4003937ede03ef379d05d71413c`; it references 21 figure assets, including the new KG figure in Appendix H.
+This repository or its ZIP download corresponds to the 34-page manuscript in `paper/submission.pdf`. The source is `paper/main.tex`, SHA-256 `26e0a17d82c698374cfb1b308826bf978a32b4003937ede03ef379d05d71413c`; it references 21 figure assets, including the KG figure in Appendix H.
 
-With Python 3.12, run these commands from the extracted `PaperExperiment` directory:
+With Python 3.12, run these commands from the repository root or extracted ZIP directory:
 
 ```bash
 python3 -m venv .venv

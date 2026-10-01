@@ -73,17 +73,17 @@ def trajectories():
 
 def composition():
     style()
-    data = read_json(PAPER / 'composition_summary.json')['results']['A']
-    assert data['seed'] == 6 and data['n_distinct'] == 3200
-    fig, ax = plt.subplots(figsize=(5.1, 2.4))
-    fig.subplots_adjust(left=.14, right=.97, bottom=.22, top=.97)
-    for key, label, color in [('one', 'One-hop', '#287EAD'), ('two', 'Two-hop', '#D46B46'), ('mixed', 'Mixed', '#28AD54')]:
-        d = data['groups'][key]
+    data = read_json(PAPER / 'arxiv_v1_composition/summary.json')['A']
+    assert data['seed'] == 6 and data['n'] == 3175 and data['graphs'] == 512
+    fig, ax = plt.subplots(figsize=(4.8, 2.45))
+    fig.subplots_adjust(left=.16, right=.98, bottom=.25, top=.97)
+    for key, label, color in [('one', 'One-hop', '#287EAD'), ('two', 'Two-hop', '#D46B46'), ('mixed', 'Mixed', '#388775')]:
+        d = data['metrics']['predictions'][key]
         ci = np.asarray(d['ci95_pct'])
         ax.fill_between(range(1, 9), ci[:, 0], ci[:, 1], color=color, alpha=.2, linewidth=0)
-        ax.plot(range(1, 9), d['endpoint_pct'], color=color, lw=1.7, marker='o', ms=3.5, label=label)
-    ax.set(xlim=(.85, 8.15), ylim=(-1, 104), xticks=range(1, 9), yticks=[0, 25, 50, 75, 100],
-           xlabel='loops', ylabel='Accuracy (%)')
+        ax.plot(range(1, 9), d['endpoint_pct'], color=color, lw=1.5, marker='o', ms=3, label=label)
+    ax.set(xlim=(.85, 8.15), ylim=(-2, 103), xticks=range(1, 9), yticks=[0, 25, 50, 75, 100],
+           xlabel='Additional controlled loops', ylabel='Exact match (%)')
     for side in ['left', 'bottom']:
         ax.spines[side].set_color('#000000')
         ax.spines[side].set_linewidth(1.0)
@@ -92,8 +92,8 @@ def composition():
     ax.yaxis.label.set_color('#000000')
     ax.grid(axis='y', alpha=.18)
     ax.legend(loc='upper right', frameon=False, fontsize=10, labelspacing=.35)
-    assert data['groups']['mixed']['prefix_pct'][-1] == 0
-    VALUES['fig4'] = data
+    assert data['metrics']['predictions']['mixed']['prefix_pct'][-1] == 0
+    VALUES['fig8_arxiv_v1'] = data
     save(fig, 'fig08_long_composition_mean')
 
 def matched():

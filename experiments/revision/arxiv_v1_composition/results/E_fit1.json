@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "seed": 7,
+  "fit": 1,
+  "pid": 268186,
+  "gpu": "1",
+  "seconds": 26.834871768951416,
+  "backbone_sha256": "d52b0108af764e408e7ef1010defc206997f1065bd8838720abe4ce8dc89eb33",
+  "controllers_sha256": "ded34ddf5772907bce190130440a8d6559662f9da4e2e586bc3f35ca28468f47",
+  "code_sha256": "20fc58ca4f3a3370640a4abf26958811d687e8b771058a3527b349ad489af831",
+  "weights_unchanged": true,
+  "locked_graphs_excluded_from_backbone_and_controller_training": true,
+  "peak_mib": 818.68017578125
+}

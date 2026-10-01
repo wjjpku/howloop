@@ -1,10 +1,10 @@
 {
-  "version": "arXiv:2609.39892v1, 2026-09-30",
   "source": "paper/main.tex",
   "source_sha256": "a899f438566e5365e752875aceb2e4cb48898e0477cb96365ea3a7c0a75ce562",
   "pdf": "paper/arxiv_v1.pdf",
   "pdf_sha256": "aba4d4758e088bd4dcb8265e11a87df3bdd2ca00ba7d08beb4592c3390be35cd",
-  "pages": 36,
-  "figure_assets": 21,
+  "total_pages": 36,
+  "figures": 21,
+  "status": "CPU saved-result audit; full GPU retraining not run",
   "paper_url": "https://arxiv.org/abs/2609.39892v1"
 }

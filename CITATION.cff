@@ -1,8 +1,14 @@
 cff-version: 1.2.0
-message: "Please cite the paper and this repository when using the reproduction archive."
+message: "Please cite arXiv:2609.39892 and this repository when using the reproduction archive."
 title: "howloop: reproduction archive for Shared Weights, Selected Computations"
 authors:
-  - name: "wjjpku"
+  - given-names: Jiaju
+    family-names: Wu
+  - given-names: Yi
+    family-names: Hu
+  - given-names: Muhan
+    family-names: Zhang
 type: software
 repository-code: "https://github.com/wjjpku/howloop"
+url: "https://arxiv.org/abs/2609.39892"
 license: MIT

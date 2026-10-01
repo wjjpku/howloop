@@ -22,7 +22,7 @@ assert set(scope)=={p.name for p in (ROOT/'experiments').iterdir() if p.is_dir()
 for row in figs:
  for name in row['inputs']+[row['script']]:
   assert (ROOT/name).exists(),name
-assert len(used)==json.loads((ROOT/'provenance/submission_manifest.json').read_text())['figures']
+assert len(used)==json.loads((ROOT/'provenance/arxiv_v1_manifest.json').read_text())['figures']
 if failed:
  print(json.dumps(failed,indent=2));raise SystemExit(1)
 print(f'Verified {len(manifest)} hashes and all {len(used)} manuscript figure assets.')

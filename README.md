@@ -1,12 +1,20 @@
 # howloop
 
-Reproduction archive for **“Shared Weights, Selected Computations: How Looped Transformers Route What Each Loop Does.”** It contains the manuscript snapshot, experiment and plotting code, archived numerical evidence, and scripts that check the reported results.
+[![Paper](https://img.shields.io/badge/arXiv-2609.39892-b31b1b.svg)](https://arxiv.org/abs/2609.39892)
+[![Reproduction checks](https://github.com/wjjpku/howloop/actions/workflows/reproduce.yml/badge.svg)](https://github.com/wjjpku/howloop/actions/workflows/reproduce.yml)
+[![License: MIT](https://img.shields.io/badge/Code-MIT-2f6f5e.svg)](LICENSE)
 
-The included [manuscript PDF](paper/submission.pdf) has 34 pages. Its [source](paper/main.tex) references 21 figure assets. The archive covers the graph, Ouro, Parity, long-range, matched-supervision, Qwen3-8B, and synthetic knowledge-graph experiments in that snapshot. [The experiment index](docs/EXPERIMENTS.md) maps each reported result to its inputs and code.
+**Code, archived results, and figure reproduction for** [*Shared Weights, Selected Computations: How Looped Transformers Route What Each Loop Does*](https://arxiv.org/abs/2609.39892) by Jiaju Wu, Yi Hu, and Muhan Zhang.
 
-## Quick start
+A looped Transformer reuses its weights, but its loops need not perform the same operation. The paper follows three steps: observe variable progress in native graph-walk trajectories; use a learned linear map at the loop boundary to select the next transition of a frozen backbone; and use attention interventions to test how that selection is routed. Matched backbone-training comparisons show how intermediate supervision changes which transitions the map can induce. The repository connects each reported result to its source code, saved evidence, and plotting command.
 
-Use Python 3.12 on Linux or macOS. From a clone:
+![Overview of native loop behavior, state control, and attention routing](docs/assets/overview.png)
+
+[Paper PDF](paper/arxiv_v1.pdf) · [Reviewer guide](REVIEWER_GUIDE.md) · [Experiment-to-paper index](docs/EXPERIMENTS.md) · [Reproducibility limits](docs/REPRODUCIBILITY_LIMITS.md)
+
+## Reproduce the published figures and saved results
+
+The archive is pinned to **arXiv:2609.39892v1**: the included [36-page PDF](paper/arxiv_v1.pdf) and [TeX source](paper/main.tex) reference 21 figure assets. Use Python 3.12 on Linux or macOS:
 
 ```bash
 git clone https://github.com/wjjpku/howloop.git
@@ -18,9 +26,9 @@ python scripts/verify_integrity.py
 python reproduce.py
 ```
 
-If using a downloaded ZIP, start at `python3 -m venv .venv` inside its extracted directory. `verify_integrity.py` checks the file manifest and the manuscript-to-figure mapping. `reproduce.py` writes the manuscript figure assets to `outputs/figures/` and checks the archived Qwen and KG predictions. Figure 1 is supplied conceptual artwork; the other 20 assets are generated from archived numerical inputs. PDF files generated locally may differ byte-for-byte from those embedded in the manuscript.
+For a downloaded ZIP, start at `python3 -m venv .venv` inside the extracted directory. The integrity check validates file hashes and the figure map. `reproduce.py` writes the paper's 21 referenced assets to `outputs/figures/` and audits the saved graph-composition, Qwen, and knowledge-graph predictions. Figure 1 is supplied artwork; the other 20 assets are generated from archived numerical inputs. Locally generated PDF encodings need not be byte-identical to the paper's embedded PDFs.
 
-Run the remaining saved-result checks with:
+The remaining saved-result audits are:
 
 ```bash
 python scripts/audit_results.py
@@ -29,20 +37,37 @@ python experiments/revision/audit_paper_matched.py
 python experiments/revision/mechanism_aggregate.py
 ```
 
-The Qwen audit recalculates four suffix branches from 5,120 prompt-level records. The KG audit recalculates 32 length points from 32,768 paired queries and the four Appendix H table rows. [REVIEWER_GUIDE.md](REVIEWER_GUIDE.md) gives the short walkthrough; [docs/VALIDATION.md](docs/VALIDATION.md) records what was checked for this version.
+## Find the evidence
 
-## What this archive can verify
-
-| Material included | What you can check |
+| Paper result | Where to start |
 | --- | --- |
-| Manuscript source, figure inputs, and plotting scripts | Regenerate all 21 figure assets referenced by the manuscript. |
-| Saved predictions and result records | Recalculate reported counts, aggregates, Qwen and KG tables, and matched-run checks. |
-| Training and evaluation source snapshots | Inspect protocols and prepare original-weight runs using [docs/RUNNING.md](docs/RUNNING.md). |
+| Native loop trajectories and target selection | [Graph experiments](experiments/n10/) and [trajectory records](experiments/revision/trajectories/) |
+| State steering and controller composition | [Two-step records](experiments/composition/) and [independent Figure 8 confirmation](experiments/revision/arxiv_v1_composition/) |
+| Attention routing in graph walk and Ouro | [Graph mechanism](experiments/graph_mechanism/) and [Ouro interventions](experiments/ouro_256_mechanism/) |
+| Matched intermediate-supervision comparison | [Five paired runs and audit](experiments/revision/matched/) |
+| Depth limits, Parity, and graph continuation | [Long-range results](experiments/long_range/), [Parity](experiments/parity_phase/), and [graph continuation](experiments/graph_continuation/) |
+| Appendix H: Qwen3-8B and synthetic KG | [Qwen predictions](experiments/qwen/) and [KG predictions](experiments/kg/) |
 
-Large model checkpoints are **not included**. The CPU commands above verify archived predictions and their aggregation; they do not independently repeat training or every GPU forward pass. Checkpoint identities and hashes are recorded under [`provenance/`](provenance/). [Reproducibility limits](docs/REPRODUCIBILITY_LIMITS.md) distinguish these checks from full original-weight execution.
+The [full experiment index](docs/EXPERIMENTS.md) gives the figure, table, protocol, and code path for each result. [Figure provenance](provenance/figures.json) lists every manuscript asset and its inputs. In particular, arXiv v1's Figure 8 uses **512 additional held-out graphs** and 3,175 retained examples; its five-backbone, two-fit saved predictions and audit are under [`experiments/revision/arxiv_v1_composition/`](experiments/revision/arxiv_v1_composition/).
 
-## Citation and license
+## Scope of reproduction
 
-Cite the paper and this repository at **https://github.com/wjjpku/howloop**. GitHub's “Cite this repository” menu reads [CITATION.cff](CITATION.cff). Repository-authored code and documentation use the [MIT license](LICENSE); the manuscript and third-party components retain their own terms, as described in [NOTICE.md](NOTICE.md).
+The CPU commands recompute figures and statistics from archived predictions. They do **not** repeat training or every GPU forward pass. Large original checkpoints are excluded; their identities are recorded under [`provenance/`](provenance/). [Running original-weight experiments](docs/RUNNING.md) describes the external dependencies, and [reproducibility limits](docs/REPRODUCIBILITY_LIMITS.md) identify what the public archive verifies.
 
-This archive is pinned to [`paper/main.tex`](paper/main.tex) with SHA-256 `26e0a17d82c698374cfb1b308826bf978a32b4003937ede03ef379d05d71413c`. The complete file manifest is [`provenance/SHA256SUMS.json`](provenance/SHA256SUMS.json).
+## Cite
+
+Please cite both the [paper](https://arxiv.org/abs/2609.39892) and this repository. GitHub's **Cite this repository** menu reads [CITATION.cff](CITATION.cff).
+
+```bibtex
+@misc{wu2026sharedweights,
+  title         = {Shared Weights, Selected Computations: How Looped Transformers Route What Each Loop Does},
+  author        = {Jiaju Wu and Yi Hu and Muhan Zhang},
+  year          = {2026},
+  eprint        = {2609.39892},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2609.39892}
+}
+```
+
+Repository-authored code and documentation use the [MIT license](LICENSE). The manuscript and third-party components retain their respective terms; see [NOTICE.md](NOTICE.md). The exact arXiv source and PDF hashes are in [the paper manifest](provenance/arxiv_v1_manifest.json).

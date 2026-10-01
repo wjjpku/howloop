@@ -1,6 +1,6 @@
 # Source and attribution record
 
-The repository's original experiment code, plotting code, archived numerical inputs, and documentation are released under the root MIT license. The manuscript and third-party files retain their respective rights and notices; the root MIT license does not replace those terms. Large model weights are not distributed here.
+The repository's original experiment code, plotting code, archived numerical inputs, and documentation are released under the root MIT license. The [arXiv v1 manuscript](https://arxiv.org/abs/2609.39892v1), its figure PDFs, and the README overview image derived from Figure 1 are distributed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party files retain their respective rights and notices; the root MIT license does not replace those terms. Large model weights are not distributed here.
 
 `vendor/remote/models/Ouro-2.6B/` contains model configuration, tokenizer files, and implementation from [ByteDance/Ouro-2.6B](https://huggingface.co/ByteDance/Ouro-2.6B), which identifies its license as Apache-2.0. Its license text is included at `vendor/remote/models/Ouro-2.6B/LICENSE`. Copyright and license headers in individual upstream files remain in place. LaTeX template and package files under `paper/` retain their embedded notices.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CPU-only reproduction of the 2026-09-26 ICLR submission figures."""
+"""CPU-only reproduction of the arXiv:2609.39892v1 figures."""
 from pathlib import Path
 import argparse,os,shutil,subprocess,sys,json,hashlib,time
 ROOT=Path(__file__).resolve().parent
@@ -28,6 +28,8 @@ if not a.only:
 
  for audit in ['audit_submission.py','audit_revision.py']:
   subprocess.run([sys.executable,str(ROOT/'scripts'/audit)],env=env,cwd=ROOT,check=True)
+ subprocess.run([sys.executable,str(ROOT/'experiments/revision/arxiv_v1_composition/analyze.py')],env=env,cwd=ROOT,check=True,
+                stdout=(out/'arxiv_v1_composition_audit.json').open('w'))
  for audit in ['experiments/qwen/audit_saved.py','experiments/kg/audit_saved.py']:
   subprocess.run([sys.executable,str(ROOT/audit)],env=env,cwd=ROOT,check=True,
                  stdout=(out/(Path(audit).parts[1]+'_audit.json')).open('w'))

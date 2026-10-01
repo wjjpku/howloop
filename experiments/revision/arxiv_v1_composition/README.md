@@ -1,0 +1,9 @@
+# Independent graph composition confirmation (arXiv v1)
+
+This directory supports Figure 8 and Appendix C.4.4 of [arXiv:2609.39892v1](https://arxiv.org/abs/2609.39892v1). It contains the 2026-09-30 confirmation run: 512 new held-out graphs, ten starting nodes per graph, five D8L6 backbones (seeds 6, 3, 4, 5, 7), two existing controller fits per backbone, and 34 fixed controller sequences evaluated for eight additional calls. No parameters were updated during this evaluation.
+
+The first five semantic nodes must be distinct, leaving 3,175 of 5,120 examples. The new graphs are disjoint from the earlier 512-graph composition set. Targets are cumulative graph successors of the original starting node. The plotted score is exact match at each controlled call; it is not the probability that every earlier call was correct. Figure 8 uses seed 6, while the archived predictions also cover the four confirmation backbones.
+
+Run `python experiments/revision/arxiv_v1_composition/analyze.py` from the repository root to recompute all saved statistics, the 3,000 graph-bootstrap intervals, the sample count, and the old/new graph disjointness check. It compares those values with `summary.json` without rewriting tracked files. `python reproduce.py` runs this audit and redraws the Figure 8 curve.
+
+`run_composition.py` is an adapted snapshot of the original GPU inference source. It needs the original checkpoints, locked graph pool, and a graph helper configured for those external files. Set `HOWLOOP_ORIGINAL_ROOT` to the directory containing the original projects and `HOWLOOP_COMPOSITION_OUTPUT` to an empty output directory before running it. Those dependencies are not in this repository, so this GPU path has not been replayed from the public archive. The JSON files beside the saved predictions retain the SHA-256 of the original inference source and checkpoints; this path adaptation has different bytes from the original source.

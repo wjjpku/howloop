@@ -37,4 +37,4 @@ for seed in (10,13):
     assert np.isclose(actual,row[key],rtol=0,atol=1e-12),(seed,fit,name,key)
   selected[str(seed)][str(fit)]={'n':int(valid.sum()),'conditions':len(summary['target_exchange'])//2}
 (OUT/'submission_graph.json').write_text(json.dumps({'two_step_composition':results,'selected_target_exchange':selected},indent=2)+'\n')
-print('Current-submission two-step composition and selected target exchange match saved predictions.')
+print('Two-step composition and selected target exchange match saved predictions.')

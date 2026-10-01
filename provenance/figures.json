@@ -59,9 +59,9 @@
     "paper_asset": "figures/fig08_long_composition_mean.pdf",
     "script": "plots/revision_figures.py",
     "inputs": [
-      "experiments/revision/composition_summary.json",
-      "experiments/revision/long_composition/A_fit1.npz",
-      "experiments/revision/long_composition/A_fit2.npz"
+      "experiments/revision/arxiv_v1_composition/summary.json",
+      "experiments/revision/arxiv_v1_composition/results/A_fit1.npz",
+      "experiments/revision/arxiv_v1_composition/results/A_fit2.npz"
     ],
     "kind": "data_plot"
   },

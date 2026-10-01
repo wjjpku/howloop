@@ -1,9 +1,0 @@
-{
-  "source": "paper/main.tex",
-  "source_sha256": "26e0a17d82c698374cfb1b308826bf978a32b4003937ede03ef379d05d71413c",
-  "pdf": "paper/submission.pdf",
-  "pdf_sha256": "a3310052183188261891bf62e9f9426332533a13d4c424e9962da38397b2ae8f",
-  "total_pages": 34,
-  "figures": 21,
-  "status": "CPU saved-result audit; full GPU retraining not run"
-}

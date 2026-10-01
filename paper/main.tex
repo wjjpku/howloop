@@ -7,6 +7,7 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{booktabs}
+\usepackage{array}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{placeins}
@@ -15,20 +16,33 @@
 
 % Manuscript metadata.
 \title{Shared Weights, Selected Computations:\\How Looped Transformers Route\\What Each Loop Does}
-\author{Anonymous authors}
-% Review submission: do not enable \iclrfinalcopy.
-\hypersetup{pdfauthor={},pdftitle={Shared Weights, Selected Computations: How Looped Transformers Route What Each Loop Does}}
+\author{Jiaju Wu$^{1,2}$ \qquad Yi Hu$^1$ \qquad Muhan Zhang$^1$}
+% Public preprint: show authors and disable review line numbers.
+\iclrfinalcopy
+\hypersetup{pdfauthor={Jiaju Wu, Yi Hu, Muhan Zhang},pdftitle={Shared Weights, Selected Computations: How Looped Transformers Route What Each Loop Does}}
 
 % Subfigure labels are maintained in LaTeX, including panels with no printed caption.
 \usepackage{subcaption}
 \begin{document}
 \maketitle
+\begingroup
+\makeatletter
+\let\@footnotetext\H@@footnotetext
+\makeatother
+\renewcommand{\thefootnote}{}
+\footnotetext{\textsuperscript{1}Institute for Artificial Intelligence, Peking University. \textsuperscript{2}School of Mathematical Sciences, Peking University. Correspondence to: Muhan Zhang \textless\href{mailto:muhan@pku.edu.cn}{muhan@pku.edu.cn}\textgreater.}
+\endgroup
+\fancyhead[L]{Preprint}
 
 \begin{abstract}
-Looped Transformers repeatedly apply the same set of Transformer layers, giving them a recurrent architecture for latent computation. Their strong performance on iterative reasoning and length-generalization tasks suggests an appealing explanation: recurrence may provide an inductive bias that lets the model reuse a learned algorithm across loops. However, weight sharing alone does not imply that every loop performs the same operation. This raises a basic question: what computation is actually reused across loops, and what determines how the shared parameters are used at each loop?
-We study these questions in Looped Transformers. In a graph-walk setting, successive loops show different decoded progress: predictions can advance by different amounts or remain at an already reached target. Thus, weight sharing does not fix the decoded progress at each recurrence. We then show that these behaviors can be controlled through the hidden state entering each loop. A learned affine map applied to this state selects one-hop or two-hop transitions under the same frozen block.
-Attention interventions separate routing from retrieved content, recover steering effects through patching, and switch the semantic target between controlled runs. Matched training across five pairs of graph models shows that intermediate supervision changes both native transitions and controllability. The controllers also support short-range reuse with sequence-dependent accuracy, but control breaks down over longer compositions. These results identify the entering state as a control interface for shared computation and attention routing as a causal pathway for this control.
+Looped Transformers repeatedly apply the same set of Transformer layers, giving them a recurrent architecture for latent computation. Their strong performance on iterative reasoning and length-generalization tasks suggests an appealing explanation: recurrence may provide an inductive bias that lets the model reuse a learned algorithm across loops. However, weight sharing alone does not imply that every loop performs the same operation. This raises a basic question: \textbf{is each loop actually repeating the same computation, and if not, what routes the shared parameters to different operations?}
+We study this question using graph walks as a test case. In the model's native trajectories, decoded predictions can advance by different numbers of graph steps or remain at a reached target, showing that recurrent progress need not follow a fixed one-loop-one-step pattern. We then show that a frozen loop can be steered toward different transitions by modifying its entering hidden state: a learned linear layer $J$ selects the desired transition without changing the shared Transformer layers.
+To test how this steering works, we use activation patching and find that attention patterns can recover its effects and switch the selected transition. Across five matched pairs of graph models, changing intermediate supervision during backbone training changes which transitions $J$ can induce. This suggests that $J$ selects computations learned by the backbone rather than creating new algorithms. Together, these results show that the hidden state can control shared computation, with attention routing as a causal pathway.
 \end{abstract}
+
+\begin{center}
+\small Code and reproduction materials: \url{https://github.com/wjjpku/howloop}
+\end{center}
 
 % --- Introduction ---
 \section{Introduction}
@@ -36,7 +50,7 @@ Attention interventions separate routing from retrieved content, recover steerin
 
 Recent work on \emph{latent reasoning} studies how models can carry out multi-step reasoning within their hidden states, without generating every intermediate step as text \citep{saunshi2025looped,geiping2025scaling}.
 Recurrent architectures provide a natural way to support this kind of computation: the same parameters can be applied repeatedly while the internal state continues to evolve.
-Looped Transformers bring this idea to Transformer models by reusing the same set of Transformer layers over multiple loops \citep{dehghani2019universal,yang2024learning}.
+Looped Transformers bring this idea to Transformer models \citep{vaswani2017attention} by reusing the same set of Transformer layers over multiple loops \citep{dehghani2019universal,yang2024learning}.
 This recurrent design provides a useful inductive bias for iterative computation.
 Looped Transformers can learn iterative learning algorithms and multi-step optimization procedures \citep{yang2024learning,gatmiry2024gradient}, improve length generalization on tasks with iterative solutions \citep{fan2025looped}, and use additional loops as a source of latent test-time computation at language-model scale \citep{geiping2025scaling,zhu2025ouro}.
 These results suggest that recurrent depth can provide a way to reuse learned computation over multiple internal steps.
@@ -45,7 +59,7 @@ These results suggest that recurrent depth can provide a way to reuse learned co
 \begin{figure}[!b]
   \centering
   \includegraphics[pagebox=cropbox,width=\linewidth]{figures/fig01_overview.pdf}
-  \caption{Overview of looped computation and state steering. Flames mark trainable components; snowflakes mark frozen components.}
+  \caption{Overview of looped computation and state steering. \textbf{Phenomenon:} intermediate readouts reveal different patterns of progress across weight-shared loops. \textbf{Control:} a learned linear layer changes the state entering the next loop to select a different transition while the backbone remains frozen. \textbf{Mechanism:} patching attention patterns from a steered run into an unsteered run transfers routing while preserving the receiving run's values, recovering steering effects. Flames mark trainable components; snowflakes mark frozen components.}
 \label{fig:mechanism}
 \end{figure}
 
@@ -57,7 +71,7 @@ The same network is therefore applied to different internal states, so weight sh
 The training objective can also leave the intermediate trajectory underdetermined.
 When only the final answer is supervised, the loss does not require the model to follow any particular sequence of intermediate steps.
 This leads to a basic question:
-\emph{what computation is actually reused across loops, and what determines how the shared parameters are used at each loop?}
+\emph{is each loop actually repeating the same computation, and if not, what routes the shared parameters to different operations?}
 Answering this question is important for understanding the inductive bias of recurrent depth and the internal process of latent reasoning.
 It also affects when additional loops provide useful computation and whether recurrent test-time computation can be controlled.
 
@@ -79,9 +93,9 @@ This variation makes the entering hidden state a natural candidate for controlli
 We freeze the shared Transformer layers and learn a linear layer at the loop boundary.
 Changing only the entering state selects one-hop or two-hop targets for the same frozen loop (Section~\ref{sec:target}).
 Having established this control, we ask how it is implemented inside the loop.
-Patching attention patterns recovers much of the steering effect in the graph case study and Ouro letter-walk. Patching patterns between one-hop and two-hop runs also switches the semantic target, providing causal evidence that routing carries the choice of transition (Section~\ref{sec:hypothesis}).
-Finally, we test how repeated execution and backbone training shape this control.
-Composition and depth experiments distinguish short-range reuse from sustained execution. A matched comparison across five pairs of graph models shows that intermediate supervision changes both the models' native transitions and which targets our controllers can steer them toward (Section~\ref{sec:generalization}).
+Patching attention patterns recovers much of the steering effect in the graph case study and the Ouro multi-hop language task. Patching patterns between one-hop and two-hop runs also switches the semantic target, providing causal evidence that routing carries the choice of transition (Section~\ref{sec:hypothesis}).
+Finally, we test how backbone training and repeated execution shape this control.
+Across five matched pairs of graph models, intermediate supervision during backbone training changes which computations $J$ can steer. This supports the view that $J$ controls computations learned by the backbone rather than creating new algorithms (Section~\ref{sec:generalization}). The controllers can be composed across two successive loops, but accuracy is order-dependent and drops with longer compositions (Section~\ref{sec:composition}).
 
 % --- Related Work ---
 \section{Related Work}
@@ -104,7 +118,7 @@ State interventions and activation patching provide complementary tools for test
 \label{sec:underdetermined}
 An iterative view of looped Transformers suggests that shared layers may repeatedly apply the same learned algorithm across loops. We examine this view using readouts at intermediate loops on the graph walk task to observe how computation progresses as the model runs.
 
-Each input consists of a permutation $f_G$ on a graph $G$, a start node $s$, and a requested path depth $d = 8$. Writing $f_G(v)$ for the successor of $v$, the target is $f_G^8(s)$. We train two models, D8L8 and D8L6, which repeat a two-layer Transformer block for eight and six loops, respectively. Only the final answer is supervised. Appendix~\ref{app:main-config} provides further details on the experimental setup.
+Each input consists of a permutation $f_G$ on a graph $G$, a start node $s$, and a requested path depth $d = 8$. Writing $f_G(v)$ for the successor of $v$, the target is $f_G^8(s)$. We train two models, D8L8 and D8L6, which repeat a two-layer Transformer block for eight and six loops, respectively. Only the final answer is supervised.
 
 For visualization, we take the trained looped block, repeat it, and apply the final readout head after loops 0--16. We intentionally use ten-node cycles for testing so that the iteration length can be clearly identified from the node index. Each plotted block in Figure~\ref{fig:trajectory} summarizes predictions across examples for each individual walk. We show selected representative trajectories; Appendix~\ref{app:all-native-trajectories} provides all twelve D8L8 and five D8L6 trajectories.
 
@@ -117,28 +131,34 @@ For visualization, we take the trained looped block, repeat it, and apply the fi
 
 As shown in Figure~\ref{fig:trajectory}, the models can reach the same target through different readout trajectories. For D8L8, one trajectory advances mainly one node per loop, whereas another advances mainly two nodes per loop. For D8L6, the model must fit the advancement process into six loops, thus producing trajectories with irregular speeds. But eventually they stabilize at the final answer, even if additional loops are run. This shows that, within a single model, the algorithm can differ across loops. Some loops advance quickly, others slowly, and all eventually stabilize at the end. Sharing weights does not guarantee the same algorithm.
 
-Before selecting models for mechanistic analysis, we must inspect these readouts. These trajectories reveal which mechanism the model primarily uses. Additional D8L6 heatmaps appear in Appendix~\ref{app:all-native-trajectories}, and the selection of mechanism backbones is described in Appendix~\ref{app:selected-mechanism}. We next turn this observed variation into a control test.
+Before selecting models for mechanistic analysis, we must inspect these readouts. These trajectories reveal which mechanism the model primarily uses. We next turn this observed variation into a control test.
 
 \section{Control: State Steering Redirects the Next Target of a Frozen Loop}
 \label{sec:target}
-The different algorithms observed above motivate us to study why they differ. To this end, we try to control the next transition by modifying the hidden state entering the block. We keep the graph walk backbone weights and the number of additional loops fixed. Additional state-control experiments and supporting evidence on Qwen and synthetic knowledge-graph relation composition are provided in Appendix~\ref{app:additional-control}.
+The different algorithms observed above motivate us to study why they differ. To this end, we try to control the next transition by modifying the hidden state entering the block. We train a linear layer to control the next loop's target while keeping the backbone weights frozen. We use graph walks as a test case for steering the computation through the state entering the loop. Additional state-control experiments and supporting evidence on Qwen and synthetic knowledge-graph relation composition are provided in Appendix~\ref{app:additional-control}.
 
 \subsection{State Steering with a Frozen Backbone}
 Let $F$ denote the shared Transformer block and $h_t$ the sequence of token states after loop $t$. Our original model computes $h_{t+1}=F(h_t)$. To change the next transition, we apply a linear layer $J$ before the next loop, which acts independently on every token:
 \begin{equation}
  h_{t+1}=F(J(h_t)).
 \end{equation}
-We train $J$ while keeping the backbone frozen. In the graph experiments, $J$ consists of a learned diagonal term, a rank-48 term, and a bias (Appendix~\ref{app:target-setup}). Since $J$ acts within each token state, it cannot directly aggregate information across token positions, which limits its expressive power. The low-rank form restricts its expressiveness even further.
+We train $J$ while keeping the backbone frozen. In the graph experiments, $J$ consists of a learned diagonal term, a rank-48 term, and a bias. The token-wise transformation, linear form, and low-rank parameterization constrain the expressive power of $J$. In particular, $J$ cannot aggregate graph information across token positions on its own; the frozen block $F$ must execute that part of the transition.
 
-We evaluate the fitted map on out-of-distribution graphs that were unseen during both backbone training and map training. This tests whether the map generalizes to unseen graphs and whether modifying the information already represented in each token can actually redirect computation.
+We evaluate the fitted map on out-of-distribution graphs that were unseen during both backbone training and map training. This tests whether the map generalizes to unseen graphs and whether modifying the information already represented in each token can actually redirect computation. Appendix~\ref{app:main-config} details the graph setup, controller training, and composition evaluations.
 
-\subsection{Control One-Hop and Two-Hop Targets}
 We first test whether two maps can select different next targets from the same state. D8L6 seed 6 processes an eight-hop query for six loops to produce $h_6$. Let $u=f_G^8(s)$ be the correct answer to this query. We train $J_{\mathrm{one}}$ so that one additional loop $F(J_{\mathrm{one}}(h_6))$ predicts $f_G(u)$. We train $J_{\mathrm{two}}$ in the same way, with target $f_G^2(u)$.
 
-\begin{figure}[!t]
+
+
+Both maps select their intended targets on held-out graphs (Figure~\ref{fig:target-behavior}). Without steering, one-hop accuracy is 48.2\%, but with $J_{\mathrm{one}}$ it rises to 99.6\%. Two-hop accuracy reaches 98.2\% with $J_{\mathrm{two}}$. Thus, changing the entering state selects different next targets under the same frozen weights and one additional loop.
+
+
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionsetup{type=figure}
 \centering
 \includegraphics[width=.80\linewidth]{figures/fig03_legend.pdf}\par\smallskip
-\captionsetup[subfigure]{hypcap=true,labelformat=parens,labelsep=space,justification=centering}
+\captionsetup[subfigure]{font=normalsize,hypcap=true,labelformat=parens,labelsep=space,justification=centering}
 \setcounter{subfigure}{0}%
 \begin{subfigure}[t]{.32\linewidth}
 \includegraphics[width=\linewidth]{figures/fig03a_target_accuracy.pdf}
@@ -154,51 +174,49 @@ We first test whether two maps can select different next targets from the same s
 \end{subfigure}
 \caption{One-loop answer distributions for D8L6. Each row corresponds to a map applied to the labeled starting state before $F$. In panels (a), (b), and (c), colors are referenced to $u$, $f_G(u)$, and $f_G^2(u)$, respectively. Bars show the average over two map fits.}
 \label{fig:target}
-\end{figure}
-
-Both maps select their intended targets on held-out graphs (Figure~\ref{fig:target-behavior}). Without steering, one-hop accuracy is 48.2\%, but with $J_{\mathrm{one}}$ it rises to 99.6\%. Two-hop accuracy reaches 98.2\% with $J_{\mathrm{two}}$. Thus, changing the entering state selects different next targets under the same frozen weights and one additional loop.
+\end{minipage}\end{center}
 
 \begin{figure}[!b]
 \centering
-\includegraphics[width=.68\linewidth]{figures/fig08_long_composition_mean.pdf}
-\caption{Controller reuse in D8L6 with seed 6. ``One-hop'' and ``Two-hop'' repeatedly apply the corresponding map; ``Mixed'' averages over 32 fixed map sequences. Lines show the average of two map fits, and shading indicates 95\% graph-bootstrap intervals.}
+\includegraphics[width=.72\linewidth]{figures/fig08_long_composition_mean.pdf}
+\caption{Controller reuse on 512 new held-out graphs with D8L6 seed 6. The horizontal axis counts additional controlled loops after $h_6$; exact match compares the predicted node with the cumulative target at each call. Curves average two map fits on the same 3,175 examples; mixed averages 32 fixed sequences. Shading shows 95\% graph-bootstrap intervals.}
 \label{fig:long-composition}
 \end{figure}
 
 \subsection{Composing Controller J}
 \label{sec:composition}
-The maps were trained for one additional loop. We next test whether they still work when the state has already been transformed by a previous map and the frozen block. We compose the maps without any further training:
-\begin{equation}
- h'=F(J_a(h_6)),\qquad h''=F(J_b(h')),\qquad a,b\in\{\mathrm{one},\mathrm{two}\}.
-\end{equation}
-We keep the input fixed and provide no intermediate answer. As a matched control, we omit only the second map.
+Although each map is trained for a single additional loop, it can continue to control the next target when reused on a state produced by a previous controlled loop. We first evaluate all four two-map orders, then test repeated control for up to eight additional calls.
 
-Applying the one-hop map twice reaches the two-hop target in 93.6\% of examples. Omitting the second map reduces accuracy to 48.3\%. Applying the one-hop map followed by the two-hop map reaches the three-hop target with 65.3\% accuracy. Reversing their order reaches the same target with 74.5\% accuracy (Figure~\ref{fig:target}). Thus, the maps can be reused over two loops, but their order affects accuracy. Appendix~\ref{app:composition} reports all four sequences and their controls.
+Applying the one-hop map twice reaches the two-hop target in 93.6\% of examples. Omitting the second map reduces accuracy to 48.3\%. Applying the one-hop map followed by the two-hop map reaches the three-hop target with 65.3\% accuracy. Reversing their order reaches the same target with 74.5\% accuracy (Figure~\ref{fig:target}). Thus, the maps can be reused over two loops, but their order affects accuracy.
 
-Accuracy declines when the maps are reused over longer sequences. After eight calls, mixed-sequence accuracy drops to 10.1\%. No evaluated trajectory is correct at every call (Figure~\ref{fig:long-composition}; Appendix~\ref{app:long-composition}). Success over one or two loops therefore does not guarantee sustained control. We next intervene inside the frozen block to study how this control works.
+We separately test longer reuse on 512 new held-out graphs, retaining 3,175 examples with distinct targets through four graph hops. Figure~\ref{fig:long-composition} follows repeated one-hop, repeated two-hop, and mixed maps for eight additional controlled loops after $h_6$. The target advances by the cumulative number of requested hops. We score exact match between the predicted node and this cumulative target at each call. At the third call, repeated one-hop and two-hop maps reach 56.3\% and 23.6\% accuracy. At the eighth, mixed exact match is 10.1\%. Thus, control persists beyond the single-loop training setting but degrades under longer reuse. We next intervene inside the frozen block to study how this control works.
 
 
 
 \section{Mechanism: Attention Routing Mediates State-Dependent Computation}
 \label{sec:hypothesis}\label{sec:large}
-State steering changes the next target, but it does not reveal how the frozen block uses the changed state. We therefore test whether attention routing explains this effect. We first separate the attention pattern from the content it retrieves. We then test whether patching attention patterns reproduces the effect of $J$ and switches between the one-hop and two-hop targets.
+State steering changes the next target, but it does not reveal how the frozen block uses the changed state. We first identify how attention patterns route retrieved content. We then test whether attention-pattern patching produces the same steering effect as the linear map $J$. Finally, we directly switch the selected transition by exchanging patterns between one-hop and two-hop controlled runs.
 
-To make steering cleaner, we need backbones that use both one-hop and two-hop algorithms. We therefore examine the readout at intermediate loops and select backbones whose trajectories advance at different speeds. D8L6 models with seeds 6, 10, and 13 work well (Appendix~\ref{app:selected-mechanism}). For each backbone, we average two map fits, and then average the three backbone results with equal weights.
+To make steering cleaner, we need backbones that use both one-hop and two-hop algorithms. We therefore examine the readout at intermediate loops and select backbones whose trajectories advance at different speeds. For each backbone, we average two map fits, and then average the three backbone results with equal weights.
 
-We also test Ouro-2.6B on letter-walk, which expresses a graph walk as sentences about who passes a letter to whom. We lightly fine-tune Ouro on 1--4-step requests with four loops. Then we freeze the backbone and train a dense linear layer on 1--8-step requests. The layer is applied before loops 2--4.
+To test whether the mechanism extends to a large language model, we also evaluate Ouro-2.6B on a multi-hop language task. The model reads sentences describing successive letter transfers and answers who holds the letter after a requested number of transfers. We lightly fine-tune Ouro on 1--4-step requests with four loops. Then we freeze the backbone and train a dense linear layer on 1--8-step requests. The layer is applied before loops 2--4.
 
-The patching sites depend on the experiment. Tests between different graphs use one selected second-layer head per D8L6 backbone and sixteen selected Ouro heads. In the graph models, when we patch between steered and raw runs, we replace all second-layer heads at the answer position. When we patch between the two target maps, we replace all second-layer heads and all token positions. We select heads and evaluate them on separate data (Appendices~\ref{app:n10-mechanism} and~\ref{app:ouro-evaluation}).
+The three D8L6 interventions use different sets of activations. The pattern-versus-output experiment patches one selected head in the second layer at the answer position (Figure~\ref{fig:parallel-mechanism}b). The steering-transfer experiment patches the attention patterns of all four second-layer heads at that same position (Figure~\ref{fig:parallel-mechanism}c). The target-switching experiment patches the patterns of all four second-layer heads at every token position (Figure~\ref{fig:target-pattern-patching}). Ouro uses a fixed set of sixteen selected heads at its fourth loop. Head selection and evaluation use separate data. Appendices~\ref{app:main-config} and~\ref{app:parallel} provide the full setups, intervention protocols, and results for D8L6 and Ouro, respectively.
 
 \subsection{Pattern and Output Patches Select Different Answers}
 \label{sec:causal}
-We first test whether an attention pattern determines where the model reads, separately from the content available at those positions. We run the model on two different graphs and patch activations from run 1 into run 2. Let $\alpha$ be the attention pattern, $V$ the values, and $z=\alpha V$ the head output. Pattern patching replaces $\alpha$ but keeps the values from run 2. Output patching replaces the entire head output:
+We patch activations from run 1 into run 2 to separate attention routing from retrieved content. The inputs have aligned token positions. Writing $\alpha_i$ for attention patterns and $V_i$ for values, the original head output in run 2 is $z_{\mathrm{raw}}=\alpha_2V_2$. We compare:
 \begin{equation}
- z_{\mathrm{pattern}}=\alpha_1 V_2,
- \qquad z_{\mathrm{output}}=z_1.
+\begin{aligned}
+z_{\mathrm{raw}} &\xrightarrow{\text{pattern patch}} z_{\mathrm{pattern}}=\alpha_1V_2,\\
+z_{\mathrm{raw}} &\xrightarrow{\text{output patch}} z_{\mathrm{output}}=z_1=\alpha_1V_1.
+\end{aligned}
 \end{equation}
-The two inputs have aligned token positions but different graphs and starting nodes. Suppose attention in run 1 selects a position containing D, while the same position contains C in run 2. Patching the attention pattern should then favor C, whereas patching the attention output should favor D. We require both patched answers to differ from the original answer in run 2. For D8L6, we additionally require the readout before patching to be correct. For Ouro, we form pairs based only on graph structure (Appendices~\ref{app:n10-mechanism} and~\ref{app:ouro-evaluation}).
+In D8L6, both runs use $J_{\mathrm{one}}$. Suppose run 1 starts the controlled transition at C with C$\to$D, while run 2 starts at A with A$\to$B and C$\to$E. Their original answers are D and B. Patching run 1's pattern into run 2 should select its C record but read E, changing B$\to$E. Patching the output should instead transfer D, changing B$\to$D.
 
-Both types of patches favor their predicted answers (Figure~\ref{fig:parallel-mechanism}b). Pattern patches produce the answer at the corresponding position in the second graph in 77.8\% of D8L6 cases and 71.1\% of Ouro cases. Output patches produce the answer from the first graph in 80.9\% and 93.8\% of cases, respectively. Thus, changing the attention pattern can change the answer by selecting different content within the graph currently being processed.
+For Ouro, the rule sets share seven transfers from $s_1$: $s_1\xrightarrow{7}\mathrm{C}\to\mathrm{D}$ in run 1 and $s_1\xrightarrow{7}\mathrm{C}\to\mathrm{E}$ in run 2. Run 2's query instead follows $s_2\xrightarrow{8}\mathrm{B}$. We again expect B$\to$E from pattern patching and B$\to$D from output patching. We require distinct B, D, E; D8L6 also requires correct pre-patch current-node and next-node readouts, while Ouro retains all 256 constructed pairs.
+
+The results follow these predictions (Figure~\ref{fig:parallel-mechanism}b). Pattern patches produce E in 77.8\% of D8L6 cases and 71.1\% of Ouro cases; output patches produce D in 80.9\% and 93.8\%, respectively. Thus, attention patterns can steer which content is selected while preserving the patched run's values.
 
 \begin{figure}[!t]
 \centering
@@ -207,9 +225,13 @@ Both types of patches favor their predicted answers (Figure~\ref{fig:parallel-me
 \label{fig:parallel-mechanism}\label{fig:causal}
 \end{figure}
 
+
+
+
+
 \subsection{Attention Patterns Carry State-Steering Effects}
 \label{sec:routing}\label{sec:qkv}
-We next test whether changing the attention pattern alone can reproduce the effect of $J$. We patch attention patterns between steered and unsteered runs on the same input. D8L6 uses the one-hop map. Ouro is evaluated on eight-step letter-walk requests. Each run keeps its own values and steering schedule; only the attention pattern changes:
+We next test whether changing the attention pattern alone can reproduce the effect of $J$. We patch attention patterns between steered and unsteered runs on the same input. D8L6 uses the one-hop map. Ouro is evaluated on eight-hop requests in the language task. Each run keeps its own values and steering schedule; only the attention pattern changes:
 \begin{equation}
  z_{J\rightarrow0}=\alpha_J V_0,\qquad
  z_{0\rightarrow J}=\alpha_0 V_J.
@@ -218,9 +240,20 @@ Here $J\rightarrow0$ patches the steered pattern into the unsteered run, and $0\
 
 The mean effects follow this prediction (Figure~\ref{fig:parallel-mechanism}c). In D8L6, patching steered patterns into the unsteered run raises one-hop accuracy from 39.2\% to 61.6\%. The reverse patch reduces accuracy from 99.7\% to 68.1\%.
 
-The effect on the unsteered run varies across backbones, but on average the patch still improves accuracy. Thus, a steered pattern partially reproduces the steering effect, while other components of the state also affect whether the patch succeeds.
+The effect on the unsteered run varies across backbones, but on average the patch still improves accuracy. A single selected head can already transfer part of this effect: for seed 10, patching head 0 raises accuracy from 68.3\% to 89.4\%, compared with 93.8\% when all four heads are patched (means of two map fits). Thus, a steered pattern partially reproduces the steering effect, while other components of the state also affect whether the patch succeeds.
 
-In Ouro, steered patterns produce 248/256 correct answers, close to 251/256 under full steering. Both the unsteered run and the steered run patched with unsteered patterns score zero. Patches using only values, patterns from an unrelated graph, patterns from the wrong loop, or comparison heads also score zero (Appendix~\ref{app:ouro-results}).
+In Ouro, steered patterns produce 248/256 correct answers, close to 251/256 under full steering. Both the unsteered run and the steered run patched with unsteered patterns score zero. Patches using only values, patterns from an unrelated graph, patterns from the wrong loop, or comparison heads also score zero.
+
+
+
+
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/fig04_target_switching.pdf}
+\caption{Pattern patching between one-hop and two-hop runs. Arrows indicate the patch direction. ``Raw pattern'' uses the run's own attention pattern, while ``Patched pattern'' uses the second-layer pattern from the other run. Points show means across backbones, and horizontal bars show their ranges.}
+\label{fig:target-pattern-patching}\label{fig:routing-swap}
+\end{figure}
 
 \subsection{Attention Routing Switches the Next Target}
 \label{sec:target-routing}
@@ -231,43 +264,46 @@ We next ask whether attention patterns determine which of the two controlled tar
 \end{equation}
 Each patched run keeps its own values but takes the attention pattern from the run using the other map.
 
-\begin{figure}[!b]
-\centering
-\includegraphics[width=\linewidth]{figures/fig04_target_switching.pdf}
-\caption{Pattern patching between one-hop and two-hop runs. Arrows indicate the patch direction. ``Raw pattern'' uses the run's own attention pattern, while ``Patched pattern'' uses the second-layer pattern from the other run. Points show means across backbones, and horizontal bars show their ranges.}
-\label{fig:target-pattern-patching}\label{fig:routing-swap}
-\end{figure}
 
-Patching second-layer attention patterns switches the predicted target in both directions (Figure~\ref{fig:target-pattern-patching}). Patching two-hop patterns into the one-hop run raises the frequency of two-hop answers from 0.1\% to 65.9\%. The reverse patch raises the frequency of one-hop answers from 0.5\% to 78.5\%. Both effects appear in all three selected backbones (Appendix~\ref{app:target-exchange}).
 
-Restoring head outputs provides a complementary test. After replacing queries causes errors, restoring selected outputs repairs 74.0\% of eligible D8L6 errors and all 249 eligible Ouro errors. Restoring comparison heads repairs 0.5\% and none, respectively (Appendix~\ref{sec:restore}). Together, these interventions identify attention routing as a causal pathway through which the entering state controls the next target. We next examine how backbone training affects this control.
+Patching second-layer attention patterns switches the predicted target in both directions (Figure~\ref{fig:target-pattern-patching}). Patching two-hop patterns into the one-hop run raises the frequency of two-hop answers from 0.1\% to 65.9\%. The reverse patch raises the frequency of one-hop answers from 0.5\% to 78.5\%. Both effects appear in all three selected backbones.
+
+Restoring head outputs provides a complementary test. After replacing queries causes errors, restoring selected outputs repairs 74.0\% of eligible D8L6 errors and all 249 eligible Ouro errors. Restoring comparison heads repairs 0.5\% and none, respectively. Together, these interventions identify attention routing as a causal pathway through which the entering state controls the next target. We next examine how backbone training affects this control.
 
 \section{Steering Depends on the Backbone's Learned Algorithms}
 \label{sec:generalization}\label{sec:supervision-boundary}
 The preceding experiments show that attention patterns can switch between controlled targets. The three graph backbones were selected because their readouts showed both one-hop and two-hop progression. We now ask whether $J$ and the frozen $F$ can implement a transition that the backbone has not learned. To study this question, we change the backbone supervision before fitting $J$.
 
-We train five pairs of ten-node D8L8 models. Within each pair, the models have identical initializations, inputs, architectures, and update budgets. Every query requests eight hops. Final-only training supervises loop 8 and leaves intermediate predictions unconstrained. Stepwise training adds losses for $f_G^t(s)$ at loops 1--7 to encourage one-hop progression.
+We train five pairs of ten-node D8L8 models. Within each pair, the models have identical initializations, inputs, architectures, and update budgets. Every query requests eight hops. Final-only training supervises loop 8 and leaves intermediate predictions unconstrained. Stepwise training adds losses for $f_G^t(s)$ at loops 1--7 to encourage one-hop progression. Writing $R(h_t)$ for the readout distribution and $\ell_t=\operatorname{CE}(R(h_t),f_G^t(s))$, the objectives are
+\begin{equation}
+\mathcal{L}_{\mathrm{final}}=\ell_8,\qquad
+\mathcal{L}_{\mathrm{stepwise}}=\ell_8+\frac{1}{7}\sum_{t=1}^{7}\ell_t.
+\end{equation}
 
-We then freeze each backbone and fit separate maps for staying at the current node, advancing one hop, and advancing two hops. Each map acts on $h_8$ and is followed by one frozen loop. Both supervision regimes use the same map family and fitting protocol (Appendix~\ref{app:matched-supervision}).
 
-Supervision changes both unsteered behavior and steering accuracy (Figure~\ref{fig:matched-supervision}). Unsteered final-only models retain the answer, whereas stepwise models advance one hop. With $J$, one-hop accuracy is 100\% for stepwise models and 66.5\% for final-only models. The ordering reverses for two hops: accuracy is 50.5\% for final-only models and 13.2\% for stepwise models. Final-only models have higher two-hop accuracy in all five pairs. Thus, the transitions reached by the same map family depend on backbone supervision.
+
+We then freeze each backbone and fit separate maps for staying at the current node, advancing one hop, and advancing two hops. Each map acts on $h_8$ and is followed by one frozen loop. Both supervision regimes use the same map family and fitting protocol.
+
+Supervision changes both unsteered behavior and steering accuracy (Figure~\ref{fig:matched-supervision}). Unsteered final-only models retain the answer, whereas stepwise models advance one hop. With $J$, one-hop accuracy is 100\% for stepwise models and 66.5\% for final-only models. The ordering reverses for two hops: accuracy is 50.5\% for final-only models and 13.2\% for stepwise models. Final-only models have higher two-hop accuracy in all five pairs. Thus, the transitions reached by the same map family depend on backbone supervision. Appendix~\ref{app:matched-supervision} reports the training protocol and paired comparisons.
+
+
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=.90\linewidth]{figures/fig09_matched_supervision.pdf}
-\caption{Matched graph supervision. Colors mark answers relative to $u=f_G^8(s)$. Bars average two map fits per backbone and five paired backbone seeds. Paired comparisons appear in Appendix~\ref{app:matched-supervision}.}
+\includegraphics[width=\linewidth]{figures/fig09_matched_supervision.pdf}
+\caption{Matched graph supervision. Colors mark answers relative to $u=f_G^8(s)$. Bars average two map fits per backbone and five paired backbone seeds.}
 \label{fig:matched-supervision}
 \end{figure}
 
-We also compare supervision strategies on Ouro antonym cancellation. Each step removes the leftmost adjacent antonym pair. The answer is the pair removed at the requested step. Both backbones are trained for four loops on deletions 1--4. Stepwise training requests four deletions and supervises the current deletion at each loop. Final-only training requests a particular deletion depth and supervises its answer at loop 4. Because the prompts differ, this comparison does not isolate the effect of adding intermediate losses (Appendix~\ref{app:supervision}).
+We also compare supervision strategies on Ouro antonym cancellation. Each step removes the leftmost adjacent antonym pair. The answer is the pair removed at the requested step. Both backbones are trained for four loops on deletions 1--4. Stepwise training requests four deletions and supervises the current deletion at each loop. Final-only training requests a particular deletion depth and supervises its answer at loop 4.
 
 The two strategies produce different readout sequences. The stepwise model predicts one deletion per loop. The final-only model answers 255/256 requests correctly by loop 3 (Figure~\ref{fig:ouro-native-readouts}a,b).
 
-We freeze each backbone and fit a shared rank-128 residual affine map on deletions 1--8 with four loops. The map acts after each loop's RMSNorm, including before the final output head. Depths 5--8 are included in map training. On held-out sequences at these depths, accuracy is 98.0\% for final-only plus $J$ and 7.8\% for stepwise plus $J$. Both unsteered models score zero (Figure~\ref{fig:steering-boundaries}c).
+We freeze each backbone and fit a shared rank-128 residual affine map on deletions 1--8 with four loops. The map acts after each loop's RMSNorm, including before the final output head. Depths 5--8 are included in map training. On held-out sequences at these depths, accuracy is 98.0\% for final-only plus $J$ and 7.8\% for stepwise plus $J$. Both unsteered models score zero (Figure~\ref{fig:steering-boundaries}c). Appendix~\ref{app:supervision} provides the Ouro task, training, and evaluation details.
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=\linewidth]{figures/fig07_supervision_capacity.pdf}
+\includegraphics[width=.90\linewidth]{figures/fig07_supervision_capacity.pdf}
 \caption{Ouro antonym cancellation. (a,b) Readout accuracy (\%) as a function of loop and deletion depth. (c) Accuracy using four loops and a fitted map.}
 \label{fig:ouro-native-readouts}\label{fig:steering-boundaries}
 \end{figure}
@@ -283,16 +319,15 @@ Looped Transformers reuse the same parameters across recurrent depth, but our re
 These findings suggest a view of recurrent computation in which the shared Transformer block acts as a reusable executor, while the evolving hidden state determines how that executor is routed across loops. Weight sharing therefore does not imply a fixed ``one loop = one algorithmic step'' rule. At the same time, this reuse has a finite operating regime: controllers that work over one or two loops degrade under longer composition. Successful long-horizon recurrent reasoning therefore requires not only reusable computation, but also states that remain compatible with repeatedly routing that computation.
 
 % These unnumbered disclosure statements are excluded from the main-text limit.
-% Begin disclosure statements on a new page after the main text.
-\clearpage
+% Disclosure statements follow the main text without a forced page break.
 \subsection*{AI Use Statement}
-We used ChatGPT and Codex to assist with code implementation, literature search, and manuscript drafting and editing. The authors take responsibility for the final content and reported results.
+In this work, we used ChatGPT and Codex primarily to assist with code implementation and debugging, literature search, and manuscript refinement. During writing, these tools helped improve wording, clarity, and readability; the authors determined the scientific claims and conclusions presented in the manuscript. All AI-assisted work was manually reviewed. We checked code for correctness, verified references, and reviewed the text for accuracy and consistency with the experimental results. The authors take full responsibility for the final content of this work, including all text, claims, and artifacts produced with the aid of generative AI.
 
 \subsection*{Ethics Statement}
 The experiments study recurrent computation using synthetic graph, parity, and rule-based language tasks. They do not involve human participants. The attention interventions are used to analyze model computation; the experiments do not evaluate the safety of deploying steered models in downstream applications.
 
 \subsection*{Reproducibility Statement}
-The appendices document task definitions, input and output formats, supervision, steering configurations, and evaluation protocols for graph walk (Appendix~\ref{app:main-config}), Ouro letter-walk (Appendix~\ref{app:parallel}), parity (Appendix~\ref{app:parity}), graph continuation (Appendix~\ref{sec:boundary}), matched graph supervision (Appendix~\ref{app:matched-supervision}), and Ouro antonym cancellation (Appendix~\ref{app:supervision}). The corresponding appendices report sample counts, selection rules, uncertainty estimates, and additional runs where available, and distinguish evaluations beyond backbone training from those beyond steering-map training.
+Reproduction materials are available in the repository linked below the abstract. Please refer to its README for setup and reproduction instructions.
 
 % Single bibliography database; retain the conference bibliography style.
 \bibliography{references}
@@ -520,7 +555,7 @@ This appendix supports Sections~\ref{sec:underdetermined}--\ref{sec:hypothesis}.
 \label{app:graph-task}
 
 The task predicts the node reached after a requested number of edges from a specified start. Each node has a discrete token ID. The input consists of a beginning token, one three-token record per directed edge, and a query:
-\begin{quote}\small
+\begin{quote}
 \texttt{BOS [EDGE source destination] ... QUERY start DEPTH[k] ANSWER}
 \end{quote}
 The brackets group records for display; they are not input tokens. \texttt{BOS}, \texttt{EDGE}, \texttt{QUERY}, and \texttt{ANSWER} are dedicated tokens, as is each supported depth. The model predicts a node from the hidden state at \texttt{ANSWER}. A ten-node input has 35 tokens. The graph is supplied in the input, rather than stored as a fixed set of edges in the model.
@@ -579,10 +614,10 @@ For each map fit, we bootstrap 5,000 samples of the 512 graph pairs. All ten sta
 Direct evaluation, reconstructed attention, an independent output hook, and same-run activation replacement agree on predictions when no effective intervention is made.
 
 \begin{table}[!htbp]
-\centering\small
+\centering
 \caption{D8L6 evaluation populations. Counts are graph--start instances or paired runs, as appropriate. All map fits within a row use the stated graph population; correctness-based eligibility can differ by fit.}
 \label{tab:graph-populations}
-\begin{tabular}{@{}p{.23\linewidth}p{.20\linewidth}p{.49\linewidth}@{}}\toprule
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.23\linewidth}>{\raggedright\arraybackslash}p{.20\linewidth}>{\raggedright\arraybackslash}p{.49\linewidth}@{}}\toprule
 Experiment & Scored count & Inclusion and intervention\\\midrule
 Native trajectories & 5,120 per backbone & 512 ten-node cycles; all starts; no prediction filtering.\\
 Target selection & 4,110 & Distinct current, one-hop, and two-hop labels; no prediction filtering; one additional $F$.\\
@@ -590,7 +625,7 @@ Pattern vs. output & 3,966 / 3,963 & Distinct semantic answers and correct clean
 Steering-pattern patching, Figure~\ref{fig:parallel-mechanism}c & 4,044 & Distinct current, one-hop, and two-hop labels; no prediction filtering; all L2 heads at the answer position.\\
 Output restoration & 4,413 / 4,417 & Eligible clean transitions broken by query replacement; restore H2 or control H3.\\
 Target switching & 4,116 & Separate 512-graph cohort; distinct current, one-hop, and two-hop labels; all second-layer heads and token positions.\\
-Two- and eight-step composition & 3,200 & Same 512 graphs as target switching; $u$ through $f_G^4(u)$ distinct; no prediction filtering.\\
+Original two- and eight-step composition & 3,200 & Same 512 graphs as target switching; $u$ through $f_G^4(u)$ distinct; no prediction filtering.\\
 \bottomrule\end{tabular}
 \end{table}
 
@@ -660,27 +695,59 @@ We reuse the same frozen maps over sequences of lengths 1--8 without further tra
 
 This exploratory evaluation uses the same 512 graphs and starting nodes as the two-step study. The primary set contains the same 3,200 instances with distinct $u,\ldots,f_G^4(u)$ at every sequence length. We do not filter on predictions, and both map fits exactly reproduce the saved two-step predictions.
 
-A ten-node graph cannot have sixteen distinct successive nodes. Different cumulative targets can therefore coincide in the longer sequences. We report accuracy at the final step and the stricter fraction correct at every step. These tests measure repeated use on the same graph inputs; they do not test sixteen-hop extrapolation with distinct nodes at every step.
+A ten-node graph cannot have sixteen distinct successive nodes. Different cumulative targets can therefore coincide in the longer sequences. We report exact match between the predicted node and the cumulative target at each step. These tests measure repeated use on the same graph inputs; they do not test sixteen-hop extrapolation with distinct nodes at every step.
 
 \begin{center}\begin{minipage}{\linewidth}\centering
 \captionsetup{hypcap=false}
-\captionof{table}{Eight-step reuse (percent). The final column scores every prefix correct; it is zero for both map fits and every sequence family.}
-\begin{tabular}{lrrrr}\toprule
-Seed & Repeated one & Repeated two & Mixed & Every prefix correct\\\midrule
-6 & 9.66 & 10.62 & 10.11 & 0.00 \\
+\captionof{table}{Exact match at the eighth additional controlled loop (percent, mean of two fits).}
+\begin{tabular}{lrrr}\toprule
+Seed & Repeated one & Repeated two & Mixed\\\midrule
+6 & 9.66 & 10.62 & 10.11 \\
 \bottomrule\end{tabular}\end{minipage}\end{center}
 
-On the fixed 3,200-instance set, no seed-6 trajectory is correct at all eight steps. Successful control over one or two loops therefore does not ensure that the resulting states remain controllable over longer sequences.
+On the fixed 3,200-instance set, eighth-call exact match is approximately 10\% for each sequence family. Successful control over one or two loops therefore does not ensure that the resulting states remain controllable over longer sequences.
 
 \begin{center}\begin{minipage}{\linewidth}\centering
 \captionsetup{hypcap=false}
 \captionof{table}{Accuracy at every controller-sequence length on the fixed 3,200-example population (percent, mean of two fits). Mixed averages the 32 fixed random strings.}
-\small
+
 \begin{tabular}{@{}llrrrrrrrr@{}}\toprule
 Seed & Sequence & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\\midrule
 6 & one & 99.6 & 93.6 & 57.9 & 20.5 & 8.3 & 6.0 & 6.7 & 9.7 \\
 6 & two & 98.0 & 68.1 & 23.4 & 10.8 & 11.6 & 11.1 & 10.4 & 10.6 \\
 6 & mixed & 99.0 & 78.9 & 39.7 & 12.3 & 9.3 & 9.1 & 9.7 & 10.1 \\
+\bottomrule\end{tabular}\end{minipage}\end{center}
+
+\paragraph{Independent graph confirmation.}
+We repeat the composition evaluation on 512 additional graphs sampled from the training-excluded locked pool with seed 2026093001. These graphs are disjoint from the 512 graphs used above. All ten starting nodes produce 5,120 examples; the same distinct-$u,\ldots,f_G^4(u)$ rule retains 3,175 examples, without filtering on predictions. We evaluate five existing D8L6 backbones and two existing map fits per backbone. No parameters are updated. The 32 mixed strings are fixed to those used in the earlier evaluation. Figure~\ref{fig:long-composition} shows this independent evaluation for seed 6, with 3,000 graph-bootstrap resamples for its intervals.
+
+\begin{center}\begin{minipage}{\linewidth}\centering
+\captionsetup{hypcap=false}
+\captionof{table}{Independent composition evaluation (percent, mean of two fits). The final column gives the mixed-sequence target accuracy at the eighth additional call.}
+\begin{tabular}{lrrrrr}\toprule
+Seed & One--one & One--two & Two--one & Two--two & Mixed, call 8\\\midrule
+6 & 93.64 & 65.04 & 75.13 & 68.03 & 10.09 \\
+3 & 22.76 & 12.11 & 46.96 & 97.83 & 10.98 \\
+4 & 83.15 & 41.81 & 56.57 & 28.79 & 9.05 \\
+5 & 17.69 & 6.68 & 29.89 & 84.61 & 10.64 \\
+7 & 19.80 & 9.15 & 26.61 & 91.72 & 11.57 \\
+\bottomrule\end{tabular}\end{minipage}\end{center}
+
+The independent results reproduce the dependence on map order and backbone. For seed 6, the four two-step accuracies are close to those in the original evaluation. At eight calls, mixed-sequence exact match is between 9.05\% and 11.57\% across the five backbones.
+
+We also compare continuous control with omitting the current map after the identical controlled prefix, using the map only at the first call, and running the backbone without any map. We record the answer after $J$ but before $F$ and a baseline that simply copies $u$. The table below reports the mixed strings for seed 6 on the same 3,175 examples. Omitting only the second map reduces accuracy from 78.89\% to 32.93\%; reading directly after the second map gives 0.66\%. At longer lengths, continuous control no longer maintains an advantage. The copy baseline can score above zero when the requested walk returns to $u$; the recorded per-example results also support scoring only targets different from $u$.
+
+\begin{center}\begin{minipage}{\linewidth}\centering
+\captionsetup{hypcap=false}
+\captionof{table}{Independent mixed-sequence controls for seed 6 (percent, mean of two fits). Columns count additional calls after $h_6$.}
+\begin{tabular}{lrrr}\toprule
+Condition & Call 2 & Call 4 & Call 8\\\midrule
+Continuous $J$ & 78.89 & 12.62 & 10.09 \\
+Omit current $J$ & 32.93 & 13.12 & 10.00 \\
+$J$ at first call only & 32.93 & 7.52 & 14.99 \\
+No $J$ & 2.93 & 10.47 & 16.18 \\
+Read after $J$, before $F$ & 0.66 & 7.72 & 10.32 \\
+Copy $u$ & 0.00 & 14.25 & 17.08 \\
 \bottomrule\end{tabular}\end{minipage}\end{center}
 
 \subsubsection{Selected Backbones and Aggregation}
@@ -716,7 +783,7 @@ Letter-walk expresses a graph walk in text and has a known answer at each reques
 Each example defines a cycle over ten people using ten sentences of the form ``Alice passes the letter to Bob.'' The input also names the starting person and the number of steps to follow. Names are Alice, Bob, Carol, David, Emma, Frank, Grace, Henry, Iris, and Jack. Rules appear in shuffled order, so their textual order does not give the path. Ouro's tokenizer and chat template encode the instructions, rule sentences, and question as a user message. The target is an assistant message containing only the final person's name.
 
 For example, take the cycle Alice $\to$ Bob $\to$ Carol $\to$ David $\to$ Emma $\to$ Frank $\to$ Grace $\to$ Henry $\to$ Iris $\to$ Jack $\to$ Alice. The prompt includes all ten rules. Starting with Alice, the two-step answer is \texttt{Carol} and the eight-step answer is \texttt{Iris}. For illustration, the question can be phrased as:
-\begin{quote}\small
+\begin{quote}
 The letter starts with Alice. After exactly 02 steps, who has it? Answer directly with only the person's name.
 \end{quote}
 This example paraphrases the question wording; \texttt{02} preserves the template's two-digit encoding of the requested step count. The rules and question are ordinary text, not one special token per person or per edge. Different prompt templates express the same task.
@@ -813,7 +880,7 @@ On this new set, the fixed pattern patch reaches 248/256 correct answers (96.9\%
 
 \begin{center}
 \begin{minipage}{\linewidth}
-\centering\small
+\centering
 \captionsetup{hypcap=false}
 \captionof{table}{Independent Ouro steering-pattern evaluation with the fixed sixteen heads. First-token and complete-name scores agree in all conditions.}
 \label{tab:ouro-steering-256}
@@ -951,11 +1018,11 @@ We evaluate one backbone and one map per training strategy. Depths 5--8 are beyo
 Table~\ref{tab:training-summary} summarizes the training budgets and intervention schedules for the main-text experiments. The corresponding appendices specify losses, sampling rules, optimizer settings, and checkpoint selection. Repeated map fits optimize separate maps on a frozen backbone; they are not independent backbone runs.
 
 \begin{table}[!htbp]
-\centering\small
+\centering
 \caption{Training budgets and intervention sites for the main-text experiments. Backbone updates identify the selected checkpoint or the training budget as specified; map updates give the fitting budget.}
 \label{tab:training-summary}
 \setlength{\tabcolsep}{3pt}
-\begin{tabular}{@{}p{.22\linewidth}p{.24\linewidth}p{.18\linewidth}p{.28\linewidth}@{}}\toprule
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.22\linewidth}>{\raggedright\arraybackslash}p{.24\linewidth}>{\raggedright\arraybackslash}p{.18\linewidth}>{\raggedright\arraybackslash}p{.28\linewidth}@{}}\toprule
 Experiment & Backbone & Map & Placement\\\midrule
 D8L6 control & 20,000 updates; seed 6 selected at 16,000 & Rank 48; 8,000 updates; two fits per target & All tokens before the next $F$; maps reused in compositions.\\
 Matched graph supervision & 20,000 updates; five paired final checkpoints & Rank 48; 8,000 updates; two fits per target & At $h_8$, followed by one additional $F$.\\
@@ -966,9 +1033,6 @@ Ouro cancellation & 500 updates per training strategy & Residual rank 128; 500 u
 
 \FloatBarrier
 \clearpage
-\begingroup
-\setlength{\intextsep}{10pt plus 2pt minus 2pt}
-\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
 \section{Additional Evidence for State Steering}
 \label{app:additional-control}
 We provide two further demonstrations of state steering: numerical and calendar tasks with a task-adapted Qwen3-8B model, and relation composition in a synthetic knowledge graph. In both settings, a shared affine map modifies hidden states between calls to a frozen backbone and substantially improves the model's ability to reach the requested target.
@@ -985,7 +1049,7 @@ We form a recurrent model by sharing Qwen3-8B's full stack of 36 decoder layers 
 The evaluation contains 32 base cases per task and all eight requested counts, giving 1,280 prompts. Every branch preserves the controlled first four loops. From this common boundary $h_4$, we compare four suffixes: four further $J$--$F$ pairs, four $F$ calls without $J$, four applications of $J$ without $F$, and immediate readout. Thus, the $J+F$ and $F$-only branches both use eight backbone calls in total. Answers are generated greedily, without a KV cache, with a 12-token limit. Accuracy requires the complete generated answer to match the target after trimming surrounding whitespace and ignoring case. Each branch generates its own continuation from the same prompt.
 
 \begin{table}[!htbp]
-\centering\small
+\centering
 \caption{Qwen continuation accuracy (\%). All branches share the controlled computation through $h_4$; column headings specify what happens afterward. Each task row contains 128 long requests ($k=5$--8). The pooled short and long rows each contain 640 prompts.}
 \label{tab:qwen-additional-control}
 \begin{tabular}{@{}lrrrr@{}}\toprule
@@ -1004,6 +1068,7 @@ All short requests ($k=1$--4) & 99.38 & 100.00 & 100.00 & 100.00\\
 Continuing with $J+F$ answers 574/640 long requests correctly, compared with 183/640 for continued $F$ alone, 200/640 for continued $J$ alone, and 164/640 for stopping at $h_4$ (Table~\ref{tab:qwen-additional-control}). The full controlled execution reaches 100\% on successor, weekday, doubling, and Fibonacci, and 48.44\% on Collatz. Removing either the state intervention or the backbone from the suffix sharply reduces long-request accuracy. These results show that a shared state intervention can support effective continued computation across several task families in the same frozen language model.
 
 \FloatBarrier
+\clearpage
 \subsection{Controlled Relation Composition in a Synthetic Knowledge Graph}
 \label{app:kg-control}
 
@@ -1030,7 +1095,7 @@ The reported map first follows a length curriculum through every integer length 
 We evaluate every length from 1 to 32 on 1,024 sampled queries per length. Across lengths 4--16, the affine map raises target accuracy from 2.53\% to 99.92\% (Table~\ref{tab:kg-additional-control}). Accuracy with $J$ remains 99.61\% at length 17, 97.75\% at length 18, and 85.74\% at length 19, before declining with longer compositions (Figure~\ref{fig:kg-additional-control}). The average is 42.87\% over lengths 17--24 and 1.65\% over lengths 25--32. The affine intervention therefore enables reliable relation composition well beyond the backbone's original training lengths, with a clear decline as execution moves farther beyond the map's training range.
 
 \begin{table}[!htbp]
-\centering\small
+\centering
 \caption{KG target accuracy aggregated over equally sized per-length evaluation sets. Every row compares the same queries and the same number of frozen-backbone calls.}
 \label{tab:kg-additional-control}
 \begin{tabular}{@{}lrrr@{}}\toprule
@@ -1045,5 +1110,4 @@ Relation length & Queries & $F$ only (\%) & With affine $J$ (\%)\\\midrule
 \FloatBarrier
 Together, the Qwen and KG experiments provide additional evidence that shared affine interventions at loop boundaries can substantially improve controlled execution with frozen backbones, extending the state-steering results to a task-adapted language model and a learned symbolic relation executor.
 
-\endgroup
 \end{document}
